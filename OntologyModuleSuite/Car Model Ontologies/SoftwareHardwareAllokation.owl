@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#"
+     xml:base="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#distributedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#distributedTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hasRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hasRequirement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#runsOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#runsOn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#function"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hardware_part -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hardware_part"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hardware_part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#mechanical_component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#mechanical_component">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#memory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#memory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hardware_part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#memory_access_time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#memory_access_time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#processor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#processor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hardware_part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#property"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#real_hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#real_hardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hardware_part"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#virtual_hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#schedule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#schedule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#software_component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#software_component">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#software_function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#software_function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#function"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#runsOn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#virtual_hardware"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#virtual_hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#virtual_hardware">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hasRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#interface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hasRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#memory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hasRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#memory_access_time"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#hasRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#performance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#distributedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94#real_hardware"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

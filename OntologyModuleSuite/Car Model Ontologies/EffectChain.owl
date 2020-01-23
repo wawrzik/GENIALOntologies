@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#"
+     xml:base="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectKind -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectKind"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#isConnectedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#isConnectedTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Interconnection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Interconnection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectKind"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#isConnectedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#DesiredEffect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#DesiredEffect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Mechanical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Mechanical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Software -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#UndesiredEffect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#UndesiredEffect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Acoustic/Sound -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Acoustic/Sound">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Electrical/Electronic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Electrical/Electronic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#HV/Power -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#HV/Power">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Misuse(User) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Misuse(User)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Stuff/Material -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Stuff/Material">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Thermic/Optical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Thermic/Optical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

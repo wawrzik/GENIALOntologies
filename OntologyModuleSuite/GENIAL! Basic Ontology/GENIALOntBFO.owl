@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cpsagila.cs.uni-kl.de/GENIALOnt#"
+     xml:base="http://cpsagila.cs.uni-kl.de/GENIALOnt"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+        <rdfs:comment>Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of">
+        <owl:equivalentProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <obo:IAO_0000115>Links properties with dependencies.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#function_of -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#function_of">
+        <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_function"/>
+        <obo:IAO_0000115>models purposes of Parts or Functions and links Functions back to components</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#has_function -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_function">
+        <obo:IAO_0000115>models purposes of components or functions and links components to functions</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part">
+        <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115>models hierarchical de-composition/integration</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly">
+        <rdfs:subPropertyOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property">
+        <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of"/>
+        <obo:IAO_0000115>links components to their properties</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of">
+        <obo:IAO_0000115>models hierarchical de-composition/integration</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of">
+        <obo:IAO_0000115>links properties back to their components</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit">
+        <obo:IAO_0000115>Links measure with their unit</obo:IAO_0000115>
+        <rdfs:label>has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue">
+        <obo:IAO_0000115>Links properties or quantities to their measure (concrete value)</obo:IAO_0000115>
+        <rdfs:label>has value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
+        <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#component -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#component">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                                        <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                                        <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                                        <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"/>
+        <obo:IAO_0000115>according to ISO26262: non-system level element (3.41) that is logically or technically separable and is comprised of more than one hardware part (3.71) or one or more software units (3.159)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#context -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#context">
+        <obo:IAO_0000115>The circumstances that form the setting for an event, statement or idea and in terms of which it can be fully understood, e.g. Market, legal  frame conditions</obo:IAO_0000115>
+        <rdfs:label>context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#property"/>
+        <obo:IAO_0000115>A gbo:property that is a boolean or arithmetic function / equation on properties. Used to be calculated with GENIAL constraint propagation. As string in LaTex syntax</obo:IAO_0000115>
+        <rdfs:label>dependency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#element -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#element">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#context"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000141"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <obo:IAO_0000115>according ISO 26262: (continuant that is a) system (3.163), components (3.21) (hardware or software), hardware parts (3.71), or software units (3.159)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <obo:IAO_0000115>An object created, designed or engineered by humans</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object"/>
+        <obo:IAO_0000115>engineered object that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition</obo:IAO_0000115>
+        <rdfs:label>hardware part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#legal_boundary_conditions -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#legal_boundary_conditions">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#context"/>
+        <rdfs:label>legal boundary condiitons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#market -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#market">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#context"/>
+        <rdfs:label>market</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
+        <owl:disjointWith rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element"/>
+        <obo:IAO_0000115>An element that is not on the system-level</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#property -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#property">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000112>drag coefficient</obo:IAO_0000112>
+        <obo:IAO_0000112>power</obo:IAO_0000112>
+        <obo:IAO_0000112>temperature</obo:IAO_0000112>
+        <obo:IAO_0000115>A quality or characteristic of a hardware part, software unit or function. A property has a boolean, integer, or real variable through the measure class.</obo:IAO_0000115>
+        <rdfs:label>property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115>generically dependent continuant and element that is (according to ISO26262) an atomic level softwarecomponent (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)</obo:IAO_0000115>
+        <rdfs:label>software unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#system -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#system">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object"/>
+        <obo:IAO_0000115>according to ISO 26262: (continuant that is a) set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#system_function -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#system_function">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
+        <obo:IAO_0000115>An element that is on the system level</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/measure -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/measure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A bfo:quality that are amounts of quantities</obo:IAO_0000115>
+        <rdfs:label>measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/quantity -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#property"/>
+        <obo:IAO_0000115>A quantity is a (property that is quanitifiable and a) representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/unit -->
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/unit">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>is a quality that is any standard used for comparison in measurements</obo:IAO_0000115>
+        <rdfs:label>unit</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

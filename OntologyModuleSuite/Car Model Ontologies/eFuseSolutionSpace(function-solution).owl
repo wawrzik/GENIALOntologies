@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21#"
+     xml:base="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-21="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasAlgorithm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasAlgorithm">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/isSolutionOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/isSolutionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/isSolutionOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solves"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/test"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/BCD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/BCD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/BCD_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/BCD_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/BioProblem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/BioProblem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/test"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasAlgorithm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Algorithm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/CMOS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/CMOS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/CMOS_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/CMOS_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/CombinatorialPatternMatching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/CombinatorialPatternMatching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Algorithm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solves"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/SequenceAlignment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/DynamicProgramming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/ComparingSequences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/ComparingSequences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/BioProblem"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/InheritedLimitation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Divide-and-conquer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Divide-and-conquer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Algorithm"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/DynamicProgramming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/DynamicProgramming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/DynamicProgramming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/GiveMeAllClassesThatCanBeSolvedByAnDynamicProgrammingAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/GiveMeAllClassesThatCanBeSolvedByAnDynamicProgrammingAlgorithm">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasAlgorithm"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Divide-and-conquer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/InheritedLimitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/InheritedLimitation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasAlgorithm"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/CombinatorialPatternMatching"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/OtherAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/OtherAlgorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/SS01_hardware_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/SS01_hardware_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solution_space"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/SS02_hardware_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/SS02_hardware_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solution_space"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/SequenceAlignment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/SequenceAlignment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/ComparingSequences"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasAlgorithm"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/CombinatorialPatternMatching"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Divide-and-conquer"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/DynamicProgramming"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Technology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/discrete_power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/discrete_power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/discrete_power_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/discrete_power_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/discrete_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/discrete_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_solution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Technology"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/function">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/technical_solution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/function"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/platform_solution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/function"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/platform_solution"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/BCD_solution"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/CMOS_solution"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_solution"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/software_solution"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/function"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/software_solution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/function"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/BCD"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_solution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionsThatHaveAHardwareSolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionsThatHaveAHardwareSolution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/function"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_solution"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_part -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_part"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/technical_solution"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/software_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/mixed_signal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/mixed_signal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/mixed_signal_power_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/mixed_signal_power_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/partly_integrated_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/partly_integrated_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/platform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/platform_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/platform_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/technical_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/smart_power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/smart_power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/smart_power_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/smart_power_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/software_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/software_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/technical_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/software_unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/software_unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solution"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solution_space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solution_space"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/technical_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/technical_solution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/isSolutionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/SS02_hardware_solution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/things_that_have_a_hardware_solution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/things_that_have_a_hardware_solution">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hasSolution"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_solution"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/MySequenceAlignment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/MySequenceAlignment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/SequenceAlignment"/>
+        <untitled-ontology-21:hasAlgorithm rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/TestAlgorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/TestAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/TestAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/Divide-and-conquer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionB1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionB1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/functionB"/>
+        <untitled-ontology-21:hasSolution rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solution1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solution1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/solution1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/test"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/BCD_solution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/CMOS_solution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/discrete_power_solution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/mixed_signal_power_solution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/smart_power_solution"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/discrete_solution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/fully_integrated_solution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/partly_integrated_solution"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/hardware_solution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/platform_solution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21/software_solution"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
