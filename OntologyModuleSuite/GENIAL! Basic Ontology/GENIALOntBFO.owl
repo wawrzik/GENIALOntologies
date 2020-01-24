@@ -240,6 +240,7 @@
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <obo:IAO_0000115>An object created, designed or engineered by humans</obo:IAO_0000115>
+        <rdfs:label>engineered object</rdfs:label>
     </owl:Class>
     
 
@@ -273,6 +274,15 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#material_object -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#material_object">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:label>material object</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element">
@@ -292,6 +302,15 @@
         <obo:IAO_0000112>temperature</obo:IAO_0000112>
         <obo:IAO_0000115>A quality or characteristic of a hardware part, software unit or function. A property has a boolean, integer, or real variable through the measure class.</obo:IAO_0000115>
         <rdfs:label>property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#social_object -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#social_object">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:label>social object</rdfs:label>
     </owl:Class>
     
 
