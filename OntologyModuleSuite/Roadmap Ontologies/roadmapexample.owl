@@ -135,6 +135,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/is_admittance_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/is_admittance_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/is_denial_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/is_denial_of"/>
+    
+
+
     <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/liberates -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/liberates"/>
@@ -773,6 +785,7 @@ Over a certain distance theres no noise. Even military cant detect it.</rdfs:com
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/admittance1">
         <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/admittance"/>
         <untitled-ontology-24:has_time rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_admittance1"/>
+        <untitled-ontology-24:is_admittance_of rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/L5_autonomy"/>
     </owl:NamedIndividual>
     
 
@@ -959,6 +972,15 @@ Over a certain distance theres no noise. Even military cant detect it.</rdfs:com
     
 
 
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/denial1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/denial1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/denial"/>
+        <untitled-ontology-24:is_denial_of rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/internal_combustion_engine"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency_battery_energy_density -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency_battery_energy_density">
@@ -1136,11 +1158,28 @@ https://www.youtube.com/watch?v=GMyRSJVQMOw</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/internal_combustion_engine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/internal_combustion_engine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/technology"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/law_for_autonomous_driving -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/law_for_autonomous_driving">
         <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/legislation"/>
         <untitled-ontology-24:has_consequence rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/admittance1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/law_for_banning_internal_combustion_engine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/law_for_banning_internal_combustion_engine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/legislation"/>
+        <untitled-ontology-24:has_consequence rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/denial1"/>
     </owl:NamedIndividual>
     
 
@@ -1280,6 +1319,24 @@ Seems to be mostly influenced by numbers of evs, the gigafactory etc</rdfs:comme
         <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time"/>
         <untitled-ontology-24:has_numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</untitled-ontology-24:has_numerical_value>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_denial1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_denial1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time"/>
+        <untitled-ontology-24:has_numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2050</untitled-ontology-24:has_numerical_value>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_denial1"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2050</owl:annotatedTarget>
+        <rdfs:comment>Expected time when Germany will ban the internal combustion engine 
+
+Source:
+https://www.focus.de/auto/elektroauto/verbrenner-verbote-weltweit-2025-bis-2050-focus-online-zeigt-wann-welches-land-benziner-und-diesel-verbietet_id_9632138.html</rdfs:comment>
+    </owl:Axiom>
     
 
 
