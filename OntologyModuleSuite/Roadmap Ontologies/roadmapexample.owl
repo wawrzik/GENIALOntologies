@@ -42,6 +42,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#hasPet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#hasPet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#has_law -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#has_law"/>
+    
+
+
     <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/causesDisruption -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/causesDisruption"/>
@@ -216,6 +228,38 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Pet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Pet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#TibbsOwners -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#TibbsOwners">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#hasPet"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Tibbs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#explanation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#explanation"/>
     
 
 
@@ -755,11 +799,45 @@ Over a certain distance theres no noise. Even military cant detect it.</rdfs:com
     
 
 
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Jim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Jim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Person"/>
+        <hasPet rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Tibbs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Tibbs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Tibbs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#Pet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barriers_fulfilled -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barriers_fulfilled">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#explanation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#law_does_not_yet_admit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#law_does_not_yet_admit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#explanation"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/L5_autonomy -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/L5_autonomy">
         <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Problem"/>
+        <has_law rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/law_for_autonomous_driving"/>
     </owl:NamedIndividual>
     
 
@@ -976,6 +1054,7 @@ Over a certain distance theres no noise. Even military cant detect it.</rdfs:com
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/denial1">
         <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/denial"/>
+        <untitled-ontology-24:has_time rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_denial1"/>
         <untitled-ontology-24:is_denial_of rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/internal_combustion_engine"/>
     </owl:NamedIndividual>
     
