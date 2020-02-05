@@ -824,6 +824,14 @@ Over a certain distance theres no noise. Even military cant detect it.</rdfs:com
     
 
 
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#charging_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#charging_time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/e-mobility_barriers"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#law_does_not_yet_admit -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#law_does_not_yet_admit">
