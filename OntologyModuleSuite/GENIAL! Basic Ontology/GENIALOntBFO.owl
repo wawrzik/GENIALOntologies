@@ -106,6 +106,7 @@
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of -->
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>models hierarchical de-composition/integration</obo:IAO_0000115>
     </owl:ObjectProperty>
     
@@ -273,11 +274,31 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of"/>
+                <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>engineered object that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition</obo:IAO_0000115>
         <rdfs:label>hardware part</rdfs:label>
     </owl:Class>
@@ -346,7 +367,13 @@
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#component"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -354,6 +381,18 @@
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <obo:IAO_0000115>generically dependent continuant and element that is (according to ISO26262) an atomic level softwarecomponent (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)</obo:IAO_0000115>
@@ -365,8 +404,8 @@
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#system -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#system">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element"/>
         <obo:IAO_0000115>according to ISO 26262: (continuant that is a) set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another</obo:IAO_0000115>
     </owl:Class>
     
