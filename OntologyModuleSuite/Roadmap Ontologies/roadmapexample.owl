@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#"
      xml:base="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:untitled-ontology-24="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-24="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24"/>
     
 
@@ -660,7 +660,7 @@ https://www.youtube.com/watch?v=zIwLWfaAg-8</rdfs:comment>
     <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/roadmap_time -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/roadmap_time">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time"/>
     </owl:Class>
     
 
@@ -676,6 +676,20 @@ https://www.youtube.com/watch?v=zIwLWfaAg-8</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/shared_autonomy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/transportation"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solved_barriers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solved_barriers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solving"/>
     
 
 
@@ -1191,6 +1205,15 @@ It said the price from electric is about half that of the diesel in comparison.<
     
 
 
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/flying_car_companyx -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/flying_car_companyx">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation"/>
+        <untitled-ontology-24:solves rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves_very_noisy"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/fuel_savings -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/fuel_savings">
@@ -1373,6 +1396,15 @@ Seems to be mostly influenced by numbers of evs, the gigafactory etc</rdfs:comme
     
 
 
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves_very_noisy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves_very_noisy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solving"/>
+        <untitled-ontology-24:has_time rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_solves_very_noisy"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience1">
@@ -1424,6 +1456,15 @@ Seems to be mostly influenced by numbers of evs, the gigafactory etc</rdfs:comme
 Source:
 https://www.focus.de/auto/elektroauto/verbrenner-verbote-weltweit-2025-bis-2050-focus-online-zeigt-wann-welches-land-benziner-und-diesel-verbietet_id_9632138.html</rdfs:comment>
     </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_solves_very_noisy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_solves_very_noisy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time"/>
+        <untitled-ontology-24:has_numerical_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2021</untitled-ontology-24:has_numerical_value>
+    </owl:NamedIndividual>
     
 
 
@@ -1516,13 +1557,22 @@ about min 3:00</rdfs:comment>
     <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solv">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solvtime">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rmpt">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#bed">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#bednm">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rt">
@@ -1533,6 +1583,91 @@ about min 3:00</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barrttm">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If roadmap time &gt; ttm for e-mobility barriers, then emobility becomes a feasible innovation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/roadmap_time"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rt"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rt"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#dprt"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/e-mobility_barriers"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_ttm"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barrttm"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#dprt"/>
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barrttm"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/feasible_innovation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/emobility"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
@@ -1644,6 +1779,129 @@ about min 3:00</rdfs:comment>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If a barrier is solved by an innovation at roadmap time it becomes a solved barrier</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solving"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solv"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solv"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_time"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solv"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solvtime"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/roadmap_time"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rmpt"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rmpt"/>
+                                                                                    <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solvtime"/>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solved_barriers"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If the battery energy density gets over 400, then the electric airplane becomes feasible</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
@@ -1744,94 +2002,9 @@ about min 3:00</rdfs:comment>
             </rdf:Description>
         </swrl:head>
     </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If roadmap time &gt; ttm for e-mobility barriers, then emobility becomes a feasible innovation</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/roadmap_time"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rt"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rt"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#dprt"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/e-mobility_barriers"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_ttm"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barrttm"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                                        <swrl:arguments rdf:parseType="Collection">
-                                                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#dprt"/>
-                                                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barrttm"/>
-                                                        </swrl:arguments>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/feasible_innovation"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/emobility"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
