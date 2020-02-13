@@ -49,25 +49,7 @@
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#function_of -->
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#function_of">
-        <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_function"/>
         <obo:IAO_0000115>models purposes of Parts or Functions and links Functions back to components</obo:IAO_0000115>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#has_function -->
-
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_function">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#component"/>
-                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
-                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <obo:IAO_0000115>models purposes of components or functions and links components to functions</obo:IAO_0000115>
     </owl:ObjectProperty>
     
 
@@ -99,6 +81,22 @@
         <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#property"/>
         <obo:IAO_0000115>links components to their properties</obo:IAO_0000115>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#implements -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#implements">
+        <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by"/>
     
 
 
@@ -288,7 +286,7 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
                 </owl:unionOf>
             </owl:Class>
         </owl:disjointWith>
-        <obo:IAO_0000115>according ISO 26262: (continuant that is a) system (3.163), components (3.21) (hardware or software), hardware parts (3.71), or software units (3.159)</obo:IAO_0000115>
+        <obo:IAO_0000115>Continuant that is (according to ISO 26262) a system (3.163), components (3.21) (hardware or software), hardware parts (3.71), or software units (3.159)</obo:IAO_0000115>
     </owl:Class>
     
 
