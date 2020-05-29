@@ -314,7 +314,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component"/>
+                <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>The CPU of a microcontroller, a resistor, flash array of a microcontroller.</obo:IAO_0000112>
@@ -450,6 +450,13 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>generically dependent continuant and element that is (according to ISO26262) an atomic level softwarecomponent (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)</obo:IAO_0000115>
         <rdfs:label>software unit</rdfs:label>
     </owl:Class>
