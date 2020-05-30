@@ -450,6 +450,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                 <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
         <obo:IAO_0000115>one or more softwareunits (3.159)</obo:IAO_0000115>
     </owl:Class>
     
@@ -576,6 +577,26 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         <obo:IAO_0000115>is a quality that is any standard used for comparison in measurements</obo:IAO_0000115>
         <rdfs:label>unit</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
