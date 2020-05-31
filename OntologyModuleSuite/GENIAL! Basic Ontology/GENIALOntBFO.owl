@@ -77,7 +77,6 @@
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property">
         <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of"/>
-        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
         <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#property"/>
         <obo:IAO_0000115>links components to their properties</obo:IAO_0000115>
     </owl:ObjectProperty>
