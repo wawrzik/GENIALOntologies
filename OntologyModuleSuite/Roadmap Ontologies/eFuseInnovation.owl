@@ -319,10 +319,7 @@
     <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
@@ -336,15 +333,7 @@
     <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
-        </owl:propertyChainAxiom>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
     </owl:ObjectProperty>
     
 
@@ -352,15 +341,7 @@
     <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
-        </owl:propertyChainAxiom>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
     </owl:ObjectProperty>
     
 
@@ -368,15 +349,7 @@
     <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
-        </owl:propertyChainAxiom>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
     </owl:ObjectProperty>
     
 
@@ -384,15 +357,7 @@
     <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf">
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
-        </owl:propertyChainAxiom>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
     </owl:ObjectProperty>
     
 
