@@ -5,10 +5,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:OntologyForInnovation="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation">
-        <owl:versionIRI rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/1.0.0"/>
+        <rdfs:comment xml:lang="en">Context: The original ontology for innovation at http://www.lexicater.co.uk/vocabularies/innovation/ns.html
+could not be retrieved from its uri. There was an error for reading it in protégé. Probably it is deprecated. The full credit to this ontology goes there. This ontology was redesigned to adhere to the original version. Some object properties have been specified where it seemed to make sense (e.g. asymmetric, irreflexive, etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The ontology for innovation is used to model roadmap/innovation information for the project GENIAL. It is reused in various models.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -26,31 +27,55 @@
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#affects -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#affects"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#affects">
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The group of things affected by a problem. Again it is recommended that a SKOS model is used for such instances.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#buildsOn -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#buildsOn"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#buildsOn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:comment>It is common for one innovation to build upon others. It doesn&apos;t neccessarily denote or infer that the subject has improvements on the object or is enabled by the object.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#causesDisruption -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#causesDisruption"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#causesDisruption">
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"/>
+        <rdfs:comment>Innovation is always disruptive, either directly or indirectly. Many innovators risk livelihood and reputation in the pursuit of innovation, many organisations capitalise on innovation, many organisations fail as a result.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#deprecates -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#deprecates"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#deprecates">
+        <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeprecatedBy"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"/>
+        <rdfs:comment>Innovation will invariabily deprecate the need for an existing products or services, but not necessarily related products or services e.g the automobile deprecates the horse and carriage, but not necessarily the organisations that provide a carriage service.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#developedBy -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#developedBy"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#developedBy">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/maker"/>
+        <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeveloping"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovator"/>
+        <rdfs:comment>Relates an innovation to the innovator or innovators who developed it. Innovators are generally groups, organisations or people</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -58,13 +83,24 @@
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#embodiedBy">
         <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#embodies"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment"/>
+        <rdfs:comment>Relates an innovation to a device, process, product, or service (make, model or brand) that embodies the innovation e.g The innovation HTTP is emobdied by the browser Firefox e.g The innovation anibiotic is embodied by Amoxicillin</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#embodies -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#embodies"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#embodies">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:comment>Relates a device, process, product, or service (make, model or brand) to an innovation that it embodies e.g The Firefox web browser embodies the innovation HTTP e.g Amoxicillin embodies the innovation Anibiotic</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -72,56 +108,104 @@
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#enabledBy">
         <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#enables"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:comment>Where one innovation is enabled by another innovation or innovations. It is common for innovators to have a solution to a problem that is dependent on something else not yet known, discovered, invented or innovated.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#enables -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#enables"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#enables">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:comment>Where one innovation enables a different innovation or innovations.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#fulfils -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#fulfils"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#fulfils">
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need"/>
+        <rdfs:comment>The applicabiity of an idea can be tested by its ability to fulfil a need. This property therefore links an innovation to a need.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasBenefit -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasBenefit"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasBenefit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"/>
+        <rdfs:comment>Relates an innovation to some benefit or benefts of that innovation.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDeveloped -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDeveloped"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDeveloped">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/made"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovator"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:comment>Relates innovator to the innovations they have developed. Innovators can be groups, organisations or people.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDevelopmentStage -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDevelopmentStage"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDevelopmentStage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"/>
+        <rdfs:comment>Relates the innovations to the DevelopmentStage they are in.
+(This remark is different from the website; the website falsely refers to the hasDeveloped object property)</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasImprovement -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasImprovement"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasImprovement">
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"/>
+        <rdfs:comment>Links an innovation to some improvement or improvements it provides.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasSymptom -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasSymptom"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasSymptom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
+        <rdfs:comment>A symptom of a problem. It is recommended that Symptoms follow a SKOS hierarchy.</rdfs:comment>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasSymptom"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
+        <rdfs:comment>Not specified in the original Document, but in the image.</rdfs:comment>
+    </owl:Axiom>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasUsage -->
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasUsage">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"/>
+        <rdfs:comment>The problem or need of some individual, group or organisation.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -129,7 +213,9 @@
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improves -->
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improves">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Links an improvement to something it improves.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -168,25 +254,45 @@
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeprecatedBy -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeprecatedBy"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeprecatedBy">
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"/>
+        <rdfs:comment>The agents or things deprecated by a particular innovation.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeveloping -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeveloping"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeveloping">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovator"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:comment>Relates an innovator to a current innovation that they are developing.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isLiberatedBy -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isLiberatedBy"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isLiberatedBy">
+        <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#liberates"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"/>
+        <rdfs:comment>The agents or things liberated by a particular innovation.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#liberates -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#liberates"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#liberates">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Innovation has the ability to free or liberate some kind of repressed, constrained or untapped potential.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -200,31 +306,66 @@
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#manifests -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#manifests"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#manifests">
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need"/>
+        <rdfs:comment>The problem that manifests a need. The problem defines the characteristics of the need.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#solves -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#solves"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#solves">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
+        <rdfs:comment>Connects an innovation to the problems it solves. Generally speaking, innovations that solve a need do so by solving similar problems associated with the need.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedBy -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedBy"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedBy">
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Relates a usage node to the thing that makes use of the device or process i.e the activator or implementor.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedOn -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedOn"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedOn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"/>
+        <rdfs:comment>Defines the recipient use.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedWith -->
 
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedWith"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedWith">
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Where something is used in conjunction with something else.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/made -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/made"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/maker"/>
     
 
 
@@ -241,7 +382,11 @@
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#expectedMarketEntry -->
 
-    <owl:DatatypeProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#expectedMarketEntry"/>
+    <owl:DatatypeProperty rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#expectedMarketEntry">
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>The expected date of introduction into the market. Mass production, commoditisation or availability for sale.</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
@@ -258,41 +403,25 @@
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit">
+        <rdfs:comment>A benefit to something or someone.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDevelopmentStage"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>A stage of development. An example set of development stages, but equally those used to describe software lifecylces, music production lifecylces or anything creative can be used. e.g Define a need, Design a solution, Develop the opportunity, Demonstrate the benefits, Distribute the product. (taken from the 5 D&apos;s defined by the National Innovation Centre, 2011)</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"/>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Effectiveness -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Effectiveness">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Efficiency -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Efficiency">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption">
+        <rdfs:comment>Disruption caused by innovation. Typically this due to the liberation of deprecation of something.</rdfs:comment>
     </owl:Class>
     
 
@@ -306,13 +435,16 @@
                 <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>The physical or tangible manfestiation of some idea, invention or innovation. A device, process, service, or product that emobodies some idea, invention or innovation. e.g The Firefox web browser is an embodiment of the innovation HTTP e.g Amoxicillin is an embodiment of the innovation Anibiotic</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement">
+        <rdfs:comment>The class of things that are improvements to something i.e making something better than it was. Specific improvements include those that provide improved efficiency, effectiveness, value or quality.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -339,6 +471,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDevelopmentStage"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasImprovement"/>
                 <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"/>
             </owl:Restriction>
@@ -349,6 +487,7 @@
                 <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>The innovation is a conceptual entity, concerned with the idea. Its application comes in the form of benefits and improvements and the things that embody it.</rdfs:comment>
     </owl:Class>
     
 
@@ -362,6 +501,7 @@
                 <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A person, groups or organisation that can think out of the box, show great expertise or most importantly can find solutions to problems and meet the wants and needs of others.</rdfs:comment>
     </owl:Class>
     
 
@@ -375,13 +515,8 @@
                 <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A need of a particular group or indivual of or for something that is lacking or requires improvement or problem solving.</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Performance -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Performance"/>
     
 
 
@@ -390,43 +525,34 @@
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#affects"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Performance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasSymptom"/>
                 <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Quality -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Quality">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improvesQualityOf"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:comment>The manifestation of a need. This is represented by a set of symptoms (general phenoma) affecting groups of things.</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom">
+        <rdfs:comment>A symptom of a problem. This class is intended to comprise of SKOS concepts belonging to different schemes.</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage">
+        <rdfs:comment>The application or usage of a device or process. Typically this is described using the properties usedBy, usedOn and usedWith</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
     
 
 
@@ -441,283 +567,172 @@
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#AccessTime -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d1-defining-the-need -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#AccessTime">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Quality"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Antifuse -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Antifuse">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
-        <OntologyForInnovation:buildsOn rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Efuse"/>
-        <OntologyForInnovation:fulfils rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#NonVolatileMemory"/>
-        <OntologyForInnovation:improvesEffectivenessOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#OperatingTemperature"/>
-        <OntologyForInnovation:improvesEffectivenessOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#OperatingVoltage"/>
-        <OntologyForInnovation:improvesQualityOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#AccessTime"/>
-        <OntologyForInnovation:improvesQualityOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DurabilityOfMemory"/>
-        <OntologyForInnovation:improvesQualityOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ProgrammableUpdate"/>
-        <OntologyForInnovation:improvesQualityOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ProgrammingTime"/>
-        <OntologyForInnovation:solves rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#CurrentLeakage"/>
-        <OntologyForInnovation:solves rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Scalability"/>
-        <OntologyForInnovation:solves rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Security"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Automobile -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Automobile">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#AutonomousDriving -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#AutonomousDriving">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ClimateChange -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ClimateChange">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#CompanyX -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#CompanyX">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovator"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#CorruptionOfInformation -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#CorruptionOfInformation">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#CurrentLeakage -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#CurrentLeakage">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
-        <OntologyForInnovation:hasSymptom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#CorruptionOfInformation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Development1 -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Development1">
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d1-defining-the-need">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"/>
+        <rdfs:comment>A solution will have the best the chance of success if there is a clear and accurate understanding of the users needs.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DiagnosingTheFailure -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d2-designing-the-solution -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DiagnosingTheFailure">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Efficiency"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d2-designing-the-solution">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"/>
+        <rdfs:comment>A well designed innovation is more likely to succeed. Looking at your users needs, work out how your innovatiion can meet them. Indentify the benefits, considering the users or recipients that will gain from your innovation. Outline final designs for your innovation and how they will meet the users’ needs. Decide when to stop designing and, if appropriate, start developing the idea.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DurabilityOfMemory -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d3-developing-the-oppurtunity -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DurabilityOfMemory">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Quality"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d3-developing-the-oppurtunity">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"/>
+        <rdfs:comment>Develop a prototype allowing for some ‘user preference’ analysis which can be fed back to the designers.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Efuse -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d4-demonstrating-the-benefits -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Efuse">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
-        <OntologyForInnovation:affects rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Scalability"/>
-        <OntologyForInnovation:affects rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usability"/>
-        <OntologyForInnovation:causesDisruption rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#LimitedMemory"/>
-        <OntologyForInnovation:hasBenefit rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#AutonomousDriving"/>
-        <OntologyForInnovation:hasBenefit rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ClimateChange"/>
-        <OntologyForInnovation:improvesEfficiencyOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DiagnosingTheFailure"/>
-        <OntologyForInnovation:improvesEfficiencyOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ReducingCost"/>
-        <OntologyForInnovation:improvesEfficiencyOf rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ReductionOfCarbonDioxide"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d4-demonstrating-the-benefits">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"/>
+        <rdfs:comment>Test and demonstrate both the functional and non-functional qualities of the solution, emphasising the beneftis to the user.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ElectricalDevices -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d5-distributing-the-product -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ElectricalDevices">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment"/>
-        <OntologyForInnovation:usedOn rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Automobile"/>
-        <OntologyForInnovation:usedOn rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#IoTDevices"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d5-distributing-the-product">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"/>
+        <rdfs:comment>Execute marketing plan and conducting key post-launch checks.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ElectronMigration -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/economic-benefits -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ElectronMigration">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
-        <OntologyForInnovation:hasSymptom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ExpansionOfFuse"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/economic-benefits">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"/>
+        <rdfs:comment>Those benefits that are of an economic nature.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ExpansionOfFuse -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/economic-symptoms -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ExpansionOfFuse">
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/economic-symptoms">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
+        <rdfs:comment>Those symptons that are of an economic nature.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#FirmwareUpdate -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/health-benefits -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#FirmwareUpdate">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Quality"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/health-benefits">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"/>
+        <rdfs:comment>Those benefits that are of a health related nature.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#IoTDevices -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/health-symptoms -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#IoTDevices">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/health-symptoms">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
+        <rdfs:comment>Those symptons that are health related.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#LegislationOnCO2 -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/legal-benefits -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#LegislationOnCO2">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/legal-benefits">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"/>
+        <rdfs:comment>Those benefits that are of a legal nature.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#LimitedMemory -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/legal-symptoms -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#LimitedMemory">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/legal-symptoms">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
+        <rdfs:comment>Those symptons that are of a legal nature.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#LimitedNumberOfReads -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/scientific-benefits -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#LimitedNumberOfReads">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/scientific-benefits">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"/>
+        <rdfs:comment>Those benefits that are of a scientific nature.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#NonVolatileMemory -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/scientific-symptoms -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#NonVolatileMemory">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/scientific-symptoms">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
+        <rdfs:comment>Those symptons that are of a scientific nature.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#OperatingTemperature -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/social-benefits -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#OperatingTemperature">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Effectiveness"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/social-benefits">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"/>
+        <rdfs:comment>Those benefits that are of a social nature.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#OperatingVoltage -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/social-symptoms -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#OperatingVoltage">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Effectiveness"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/social-symptoms">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
+        <rdfs:comment>Those symptons that are of a social nature.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#OperationFailure -->
+    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/stages-of-innovation -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#OperationFailure">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/stages-of-innovation">
+        <rdfs:comment>A scheme consisting of the the stages of development, comprised by the National Innovation Centre. It could be inferred by the asserted facts about an innovation what stage it qualifies for e.g if it is asserted that an innovation fulfils a particular need, then it qualifies as beingat least at development stage 1 (defining the need).</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ProgrammableUpdate -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ProgrammableUpdate">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ProgrammingTime -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ProgrammingTime">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Quality"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ReducingCost -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ReducingCost">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Efficiency"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ReductionOfCarbonDioxide -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ReductionOfCarbonDioxide">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Efficiency"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Scalability -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Scalability">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Performance"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Security -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Security">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usability -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usability">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Performance"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#WasteGeneration -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#WasteGeneration">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
-        <OntologyForInnovation:hasSymptom rdf:resource="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#ExpansionOfFuse"/>
-    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"/>
+            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
