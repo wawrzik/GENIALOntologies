@@ -117,6 +117,25 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
+
+    <rdf:Description rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -272,6 +291,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -352,6 +377,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN+SiC"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -427,6 +458,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_SiC"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -564,6 +601,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/difficult_to_grow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/difficult_to_grow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage"/>
+        <untitled-ontology-63:hasDisadvantage rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/no_BulkGaNWafer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_SiC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_SiC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage"/>
+        <untitled-ontology-63:hasDisadvantage rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/6inchWafer"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving">
@@ -603,6 +666,14 @@
         <untitled-ontology-63:improvesMathematicalValueOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/power_efficiency"/>
         <untitled-ontology-63:improvesMathematicalValueOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/switchlosses"/>
         <untitled-ontology-28:improvesEffectivenessOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/design"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/no_BulkGaNWafer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/no_BulkGaNWafer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage"/>
     </owl:NamedIndividual>
     
 
@@ -655,11 +726,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/6inchWafer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/6inchWafer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN+SiC -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN+SiC">
         <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage"/>
+        <untitled-ontology-63:hasDisadvantage rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/difficult_to_grow"/>
     </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN+SiC"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage"/>
+        <obo:IAO_0000116>Streggenommen sind ein paar dieser Nachteile entweder GaN oder SiC spezifisch</obo:IAO_0000116>
+    </owl:Axiom>
     
 
 
