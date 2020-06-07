@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#"
      xml:base="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96"/>
+    <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain">
+        <rdfs:comment>This ontology gives an outline on how to model EffectChains for GENIAL!</rdfs:comment>
+    </owl:Ontology>
     
 
 
@@ -21,21 +23,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectKind -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectKind"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind"/>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectType -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectType"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType"/>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#isConnectedTo -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#isConnectedTo"/>
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo"/>
     
 
 
@@ -50,43 +52,43 @@
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Component -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Component"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component"/>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"/>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Interconnection -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Interconnection">
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectKind"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#hasEffectType"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType"/>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#isConnectedTo"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Component"/>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -104,86 +106,86 @@
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#DesiredEffect -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#DesiredEffect -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#DesiredEffect">
-        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#DesiredEffect">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Mechanical -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Mechanical -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Mechanical">
-        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Mechanical">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Software -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Software -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Software">
-        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Software">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#UndesiredEffect -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#UndesiredEffect -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#UndesiredEffect">
-        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#UndesiredEffect">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Acoustic/Sound -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Acoustic/Sound -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Acoustic/Sound">
-        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Acoustic/Sound">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Electrical/Electronic -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Electrical/Electronic -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Electrical/Electronic">
-        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Electrical/Electronic">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#HV/Power -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#HV/Power -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#HV/Power">
-        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#HV/Power">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Misuse(User) -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Misuse(User) -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Misuse(User)">
-        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectType"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Misuse(User)">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Stuff/Material -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Stuff/Material -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Stuff/Material">
-        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Stuff/Material">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Thermic/Optical -->
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Thermic/Optical -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#Thermic/Optical">
-        <rdf:type rdf:resource="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96#EffectKind"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Thermic/Optical">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
