@@ -19,7 +19,7 @@ public class synchronization {
         final OWLOntology gbo = manager.loadOntologyFromOntologyDocument(new File("/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/GENIAL! Basic Ontology/GENIALOntBFO.owl"));
         final OWLOntology roadmap = manager.loadOntologyFromOntologyDocument(new File("/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/Roadmap Ontologies/roadmapexample.owl"));System.out.println("Loaded " + gbo.getOntologyID());
         //Set<OWLClass> classes = gbo.getClassesInSignature();
-        final OWLOntologyMerger merger 
+        final OWLOntologyMerger merger
 
         //final OWLOntology ontology = manager.loadOntologyFromOntologyDocument(new File("/Users/Frank/local/test.owl"));
         //File f = new File("/Benutzer/Frank/Downloads/test.owl");
