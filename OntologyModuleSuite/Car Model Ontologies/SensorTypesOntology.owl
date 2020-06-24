@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76#"
+     xml:base="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76">
+        <rdfs:comment>First draft from ZVEI roadmap. In respect to AP6.</rdfs:comment>
+        <rdfs:comment>This ontology provides a taxonomy of sensors.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/acceleration_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/acceleration_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/inertial_sensor"/>
+        <rdfs:label>acceleration sensor</rdfs:label>
+        <rdfs:label>g-sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/density_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/density_sensor">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"/>
+        <rdfs:label>density sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/finger_movement_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/finger_movement_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/inductive_sensor"/>
+        <rdfs:label>finger movement sensor</rdfs:label>
+        <rdfs:label>finger print sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/flow_speed_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/flow_speed_sensor">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"/>
+        <rdfs:label>flow speed sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/gyro_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/gyro_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/inertial_sensor"/>
+        <rdfs:label>angular rate sensor</rdfs:label>
+        <rdfs:label>gyro sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/humidity_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/humidity_sensor">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"/>
+        <rdfs:label>humidity sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/imager_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/imager_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/light_sensor"/>
+        <rdfs:label>imager sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/inductive_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/inductive_sensor">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"/>
+        <rdfs:label>capacitive sensor</rdfs:label>
+        <rdfs:label>inductive sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/inertial_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/inertial_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/mems_sensor"/>
+        <rdfs:label>inertial sensor</rdfs:label>
+        <rdfs:label>motion sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/ir_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/ir_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/light_sensor"/>
+        <rdfs:label>IR sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/light_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/light_sensor">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"/>
+        <rdfs:label>light sensor</rdfs:label>
+        <rdfs:label>optical sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/membrane_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/membrane_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/mems_sensor"/>
+        <rdfs:label>membrane sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/mems_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/mems_sensor">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"/>
+        <rdfs:label>MEMS sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/pressure_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/pressure_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/membrane_sensor"/>
+        <rdfs:label>p-sensor</rdfs:label>
+        <rdfs:label>pressure sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/prox_switch_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/prox_switch_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/inductive_sensor"/>
+        <rdfs:label>prox switch sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/radar_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/radar_sensor">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"/>
+        <rdfs:label>radar sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/rf_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/rf_sensor">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"/>
+        <rdfs:label>RF sensor</rdfs:label>
+        <rdfs:label>chemical sensor</rdfs:label>
+        <rdfs:label>microwave sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/temperature_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/temperature_sensor">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"/>
+        <rdfs:label>temperature sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/ultrasonic_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/ultrasonic_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/membrane_sensor"/>
+        <rdfs:label>ultrasonic sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/μphone_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/μphone_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-76/membrane_sensor"/>
+        <rdfs:label>microphone sensor</rdfs:label>
+        <rdfs:label>μPhone sensor</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
