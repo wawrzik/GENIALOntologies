@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
 <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-<uri id="Automatically generated entry, Timestamp=1593344521801" name="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24" uri="roadmapexample.owl"/>
-<uri id="Automatically generated entry, Timestamp=1593344521801" name="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63" uri="eFuse.owl"/>
-<uri id="Automatically generated entry, Timestamp=1593344521801" name="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28" uri="eFuseInnovation.owl"/>
-<uri id="Automatically generated entry, Timestamp=1593344521801" name="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13" uri="eFuseRoadmap.owl"/>
-<uri id="Automatically generated entry, Timestamp=1593344521801" name="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94" uri="SoftwareHardwareAllokation.owl"/>
+<uri id="Automatically generated entry, Timestamp=1593474979989" name="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24" uri="roadmapexample.owl"/>
+<uri id="Automatically generated entry, Timestamp=1593474979989" name="http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63" uri="eFuse.owl"/>
+<uri id="Automatically generated entry, Timestamp=1593474979989" name="http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78" uri="subpropertychain.owl"/>
+<uri id="Automatically generated entry, Timestamp=1593474979989" name="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28" uri="eFuseInnovation.owl"/>
+<uri id="Automatically generated entry, Timestamp=1593474979989" name="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13" uri="eFuseRoadmap.owl"/>
+<uri id="Automatically generated entry, Timestamp=1593474979989" name="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94" uri="SoftwareHardwareAllokation.owl"/>
 </group>
 </catalog>
