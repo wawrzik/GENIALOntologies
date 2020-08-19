@@ -1,0 +1,4 @@
+
+(cl:comment 'CL genial library')
+(cl:comment 'Using example.clif to build useful constructs for the project GENIAL')
+

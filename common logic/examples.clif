@@ -1,0 +1,37 @@
+
+(cl:comment 'Collection of examples of axiomatisations for various uses that go beyond OWL, expressed in common logic')
+(cl:comment 'Examples from First order logic, Temporal Logic, Context Logic, Modal Logic, also in IKL (Knowledge Interchange Language). This library is a collection of a variety of building blocks in order to show how to use the language and build stuff')
+
+
+(cl-comment 'Section: First Order Logic')
+(cl-comment '---------------------------')
+(cl:comment 'existential quantifier')
+(cl:comment '...')
+(cl:comment 'universal quantifier')
+(cl:comment '...')
+(cl:comment 'antecedent->consequent')
+(cl:comment '...')
+
+
+(cl-comment 'Section: Propositions')
+(cl-comment '---------------------------')
+(cl:comment 'proposition using IKL that')
+(that (exists (x)(and (Person x)(taller x Bill))) )
+
+(cl:comment 'IKL that translates in FOL in CL to')
+(cl:comment '...')
+
+(cl:comment 'proposition which is assigned to somehting which Mary believes')
+(Believes Mary (that (forall (x)(if (Person x)(smarter Bill x)))))
+
+(cl:comment 'proposition that Bill and Sue are married)
+((that (Married Bill Sue)))
+
+(cl:comment 'relating two proposiitons')
+(LessLikelyThan (that (forall (x)(if (Person x)(smarter Bill x))))                          (that ((AND Cheese Green)(materialOf Moon))) )
+
+(cl:comment 'names inside proposition names work as usual, so you can quantify into them and reason about them')
+(forall ((x Person))(Believes Mary (that (smarter Bill x))))
+
+(cl-comment 'Section: Translating OWL to CL')
+(cl-comment '---------------------------')
