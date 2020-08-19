@@ -1,5 +1,5 @@
 
-# GENIAL Ontologies Readme
+# GENIAL Ontologies and Knowledge Bases Readme
 
 This repository contains all built and reused ontologies for the GENIAL! project.
 
