@@ -160,6 +160,18 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hasLowerBoundNumericalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hasLowerBoundNumericalValue"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hasUpperBoundNumericalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hasUpperBoundNumericalValue"/>
+    
+
+
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
 
     <owl:DatatypeProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
