@@ -49,14 +49,6 @@
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#function_of -->
-
-    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#function_of">
-        <obo:IAO_0000115>models purposes of Parts or Functions and links Functions back to components</obo:IAO_0000115>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part -->
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part">
