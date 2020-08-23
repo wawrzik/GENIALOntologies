@@ -12,6 +12,7 @@
     <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt">
         <owl:versionIRI rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+        <dc:contributor>Frank Wawrzik (TU Kaiserslautern), Christoph Grimm (TU Kaiserslautern), Peter Neumann (Edacentrum GmbH)</dc:contributor>
         <rdfs:comment>Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL</rdfs:comment>
         <owl:versionInfo>0.1.1</owl:versionInfo>
     </owl:Ontology>
@@ -305,6 +306,7 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#component"/>
         <owl:disjointWith rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"/>
         <obo:IAO_0000115>No ISO definition. Formal Definition derived from other definitions.</obo:IAO_0000115>
     </owl:Class>
@@ -476,6 +478,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#component"/>
         <obo:IAO_0000115>one or more softwareunits (3.159)</obo:IAO_0000115>
     </owl:Class>
     
