@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+<uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.11" uri="domainhardware.owl"/>
 <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.1" uri="domainhardware.owl"/>
 <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1" uri="file:/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/GENIAL!%20Basic%20Ontology/GENIALOntBFO.owl"/>
 <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1" uri="file:/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/GENIAL!%20Basic%20Ontology/GENIALOntBFO.owl"/>
