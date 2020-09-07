@@ -1017,7 +1017,7 @@ A hard disk drive -- often shortened to hard drive -- and hard disk are not the 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory"/>
+                <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
