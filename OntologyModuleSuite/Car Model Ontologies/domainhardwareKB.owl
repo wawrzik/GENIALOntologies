@@ -8,7 +8,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:GENIALOnt="http://cpsagila.cs.uni-kl.de/GENIALOnt#">
     <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB">
         <owl:versionIRI rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/0.1.1"/>
         <owl:imports rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"/>
@@ -32,10 +33,71 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/cnn_accelerator_controller_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/cnn_accelerator_controller_1 -->
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/cnn_accelerator_controller_1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_controller"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit_1"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit_1"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit_1"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit_1"/>
     </owl:NamedIndividual>
     
 
