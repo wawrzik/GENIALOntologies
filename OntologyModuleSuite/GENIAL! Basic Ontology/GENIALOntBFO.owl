@@ -206,17 +206,16 @@
                                 </owl:intersectionOf>
                             </owl:Class>
                             <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                                        <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"/>
+                                    </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
                                         <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
                                     </owl:Restriction>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
-                                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                                        <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
+                                </owl:unionOf>
                             </owl:Class>
                         </owl:unionOf>
                     </owl:Class>
@@ -515,7 +514,14 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"/>
+                            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>generically dependent continuant and element that is (according to ISO26262) an atomic level softwarecomponent (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)</obo:IAO_0000115>

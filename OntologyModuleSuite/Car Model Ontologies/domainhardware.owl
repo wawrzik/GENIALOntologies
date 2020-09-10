@@ -159,6 +159,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogic_funtional_unit -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogic_funtional_unit">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit"/>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array">
@@ -436,6 +444,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter"/>
         <rdfs:label>digital filter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divide_funtional_unit -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divide_funtional_unit">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit"/>
     </owl:Class>
     
 
@@ -769,10 +785,26 @@ A hard disk drive -- often shortened to hard drive -- and hard disk are not the 
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jump_unit -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jump_unit">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit"/>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency">
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit"/>
     </owl:Class>
     
 
@@ -1097,6 +1129,14 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_funtional_unit -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_funtional_unit">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit"/>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix">
@@ -1276,6 +1316,12 @@ The computation of those features consists of several steps: 1. Framing and wind
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
                 <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/türix_processor_core"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1430,7 +1476,7 @@ The computation of those features consists of several steps: 1. Framing and wind
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
@@ -1457,6 +1503,14 @@ The computation of those features consists of several steps: 1. Framing and wind
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stft_matrix">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit"/>
     </owl:Class>
     
 
