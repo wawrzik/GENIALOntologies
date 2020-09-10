@@ -431,14 +431,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dct_matrix -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dct_matrix">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
-    </owl:Class>
-    
-
-
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter">
@@ -867,15 +859,31 @@ A hard disk drive -- often shortened to hard drive -- and hard disk are not the 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/height"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/width"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
     </owl:Class>
     
 
@@ -941,22 +949,6 @@ A hard disk drive -- often shortened to hard drive -- and hard disk are not the 
                 <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/voltage"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mel_filter_result -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mel_filter_result">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mel_weights -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mel_weights">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
     </owl:Class>
     
 
@@ -1105,14 +1097,6 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_matrix -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_matrix">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
-    </owl:Class>
-    
-
-
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microprocessor -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microprocessor">
@@ -1152,14 +1136,6 @@ The computation of those features consists of several steps: 1. Framing and wind
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
         <obo:IAO_0000115>5. Non-linear transform: In this step a non-linear function (logarithm) is applied to the Mel filtered data.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linearity_result -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linearity_result">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
     </owl:Class>
     
 
@@ -1457,14 +1433,6 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/spectogram -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/spectogram">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
-    </owl:Class>
-    
-
-
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/start_address -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/start_address">
@@ -1495,14 +1463,6 @@ The computation of those features consists of several steps: 1. Framing and wind
         <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
         <rdfs:label>SRAM</rdfs:label>
         <rdfs:label>static random access memory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stft_matrix -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stft_matrix">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
     </owl:Class>
     
 
@@ -1625,14 +1585,6 @@ In brief, voltage = pressure, and it is measured in volts (V). The term recogniz
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/window_weights -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/window_weights">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
-    </owl:Class>
-    
-
-
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency">
@@ -1645,14 +1597,6 @@ In brief, voltage = pressure, and it is measured in volts (V). The term recogniz
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports">
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_frames -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_frames">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
     </owl:Class>
     
 
