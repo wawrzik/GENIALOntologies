@@ -155,6 +155,16 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dct_matrix -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dct_matrix">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels_length"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/decode_stage_1 -->
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/decode_stage_1">
@@ -222,6 +232,15 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fft_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fft_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window_1 -->
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window_1">
@@ -244,6 +263,8 @@
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/input_data">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length_16000"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width_1"/>
     </owl:NamedIndividual>
     
 
@@ -358,6 +379,39 @@
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit_1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectrogram -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectrogram">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_2 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_2">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length_16000 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length_16000">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_length_16000"/>
     </owl:NamedIndividual>
     
 
@@ -479,6 +533,15 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_length_16000 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_length_16000">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <om-2:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000</om-2:hasNumericalValue>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_width_1 -->
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_width_1">
@@ -493,6 +556,15 @@
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_fft">
         <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
         <om-2:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</om-2:hasNumericalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <om-2:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</om-2:hasNumericalValue>
     </owl:NamedIndividual>
     
 
@@ -713,6 +785,35 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_length -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_length">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <om-2:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</om-2:hasNumericalValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mel_weights -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mel_weights">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation_1 -->
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation_1">
@@ -733,6 +834,43 @@
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_fft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels_length -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels_length">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linearity_result -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linearity_result">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"/>
     </owl:NamedIndividual>
     
 
@@ -919,6 +1057,26 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/spectogram -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/spectogram">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_length"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stft_matrix -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stft_matrix">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit_1 -->
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit_1">
@@ -955,6 +1113,7 @@
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/win_length">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_win_length"/>
     </owl:NamedIndividual>
     
 
@@ -1044,6 +1203,7 @@
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_x_length"/>
     </owl:NamedIndividual>
     
 
@@ -1054,6 +1214,15 @@
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix"/>
         <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft"/>
         <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_length -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_length">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_length"/>
     </owl:NamedIndividual>
     
 
