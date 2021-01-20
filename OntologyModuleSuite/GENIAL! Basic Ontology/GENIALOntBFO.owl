@@ -285,7 +285,7 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <obo:IAO_0000115>A bfo:function that a component, hardware part or software unit implements</obo:IAO_0000115>
+        <obo:IAO_0000115>A bfo:function that a component, hardware or software implements</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -357,7 +357,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>The CPU of a microcontroller, a resistor, flash array of a microcontroller.</obo:IAO_0000112>
-        <obo:IAO_0000115>engineered object that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition</obo:IAO_0000115>
+        <obo:IAO_0000115>a piece of hardware that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition</obo:IAO_0000115>
         <rdfs:label>hardware part</rdfs:label>
     </owl:Class>
     
@@ -443,7 +443,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         <obo:IAO_0000112>drag coefficient</obo:IAO_0000112>
         <obo:IAO_0000112>power</obo:IAO_0000112>
         <obo:IAO_0000112>temperature</obo:IAO_0000112>
-        <obo:IAO_0000115>A quality or characteristic of a hardware part, software unit or function. A property has a boolean, integer, or real variable through the measure class.</obo:IAO_0000115>
+        <obo:IAO_0000115>A quality or characteristic of a hardware, software or function. A property has a boolean, integer, or real variable through the measure class.</obo:IAO_0000115>
         <rdfs:label>property</rdfs:label>
     </owl:Class>
     
@@ -524,7 +524,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>generically dependent continuant and element that is (according to ISO26262) an atomic level softwarecomponent (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)</obo:IAO_0000115>
+        <obo:IAO_0000115>a piece of software that is (according to ISO26262) an atomic level software component (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)</obo:IAO_0000115>
         <rdfs:label>software unit</rdfs:label>
     </owl:Class>
     

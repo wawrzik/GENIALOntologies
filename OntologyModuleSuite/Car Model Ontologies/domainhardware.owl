@@ -286,7 +286,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit"/>
     </owl:Class>
     
 
@@ -385,6 +385,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
         <obo:IAO_0000115>Yet current is a physical quantity that can be measured and expressed numerically. The current in a circuit can be determined if the quantity of charge Q passing through a cross section of a wire in a time t can be measured. The current is simply the ratio of the quantity of charge and time.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.physicsclassroom.com/class/circuits/Lesson-2/Electric-Current</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
     </owl:Class>
     
 
@@ -511,17 +519,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/external_memory -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/external_memory">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory"/>
-        <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
-        <rdfs:label>external memory</rdfs:label>
-        <rdfs:label>secondary memory</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform">
@@ -634,16 +631,10 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hard_disk_drive -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/general_purpose_unit -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hard_disk_drive">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/external_memory"/>
-        <obo:IAO_0000115>A computer hard disk drive (HDD) is a non-volatile memory hardware device that controls the positioning, reading and writing of the hard disk, which furnishes data storage. Hard disk drives are commonly used as the main storage device in a computer. HDDs often store operating system, software programs and other files, and can be found in desktop computers, mobile devices, consumer electronics and enterprise storage arrays in data centers.
-
-A hard disk drive -- often shortened to hard drive -- and hard disk are not the same things, but they are packaged as a unit and either term can refer to the whole unit.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://searchstorage.techtarget.com/definition/hard-disk-drive</obo:IAO_0000119>
-        <rdfs:label>HDD</rdfs:label>
-        <rdfs:label>hard disk drive</rdfs:label>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/general_purpose_unit">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
     </owl:Class>
     
 
@@ -1017,6 +1008,7 @@ A hard disk drive -- often shortened to hard drive -- and hard disk are not the 
                 <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>memory interconnect</rdfs:label>
     </owl:Class>
     
 
@@ -1256,7 +1248,7 @@ The computation of those features consists of several steps: 1. Framing and wind
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/general_purpose_unit"/>
         <obo:IAO_0000115>the hardware within a computer that executes a program</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Processor</obo:IAO_0000119>
         <rdfs:label>cpu</rdfs:label>
@@ -1488,6 +1480,15 @@ The computation of those features consists of several steps: 1. Framing and wind
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/sychronous_bus">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus"/>
         <rdfs:label>synchronous bus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/system_bus -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/system_bus">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus"/>
+        <rdfs:label>memory inteconnect</rdfs:label>
     </owl:Class>
     
 
