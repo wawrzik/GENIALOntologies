@@ -904,7 +904,7 @@
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_1"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation_1"/>
-        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/türix_processor_core_1"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core_1"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/logarithmic_memory_interconnect_1"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/main_memory_1"/>
     </owl:NamedIndividual>
@@ -1091,9 +1091,9 @@
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/türix_processor_core_1 -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core_1 -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/türix_processor_core_1">
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core_1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/decode_stage_1"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_0"/>
