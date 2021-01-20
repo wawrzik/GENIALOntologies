@@ -1094,7 +1094,7 @@
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/türix_processor_core_1 -->
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/türix_processor_core_1">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/türix_processor_core"/>
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/decode_stage_1"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_0"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_1"/>

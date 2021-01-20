@@ -1529,6 +1529,14 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microprocessor"/>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/türix_processor_core -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/türix_processor_core">
