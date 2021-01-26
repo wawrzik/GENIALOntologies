@@ -1,0 +1,953 @@
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63> <http://www.w3.org/2002/07/owl#imports> <http://cpsagila.cs.uni-kl.de/GENIALOnt> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63> <http://www.w3.org/2002/07/owl#imports> <http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/desired_state
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/desired_state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_compared_to
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_compared_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/for_application
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/for_application> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/for_state
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/for_state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_dependency
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_dependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_function
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_part
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_part> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/isPartOf> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_state
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_state> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/is_state_of> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_value
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvesMathematicalValueOf
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvesMathematicalValueOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvesMathematicalValueOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/isPartOf
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/is_state_of
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/is_state_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/is_state_of> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/is_state_of> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_part> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasnumericalvalue
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasnumericalvalue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#property
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ABS
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ABS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ABS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/load> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Advantage
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Advantage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Application
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Application> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Application> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Car
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Car> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Car> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_part> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/load> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Car> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_state> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/state> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState> <http://www.w3.org/2000/01/rdf-schema#comment> "- Eventuell ändert sich der sichere Zustand eines Verbrauchers nach Nutzungssituation (z.B. E-Fahrzeug beim Tanken und während der Fahrt)" .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Compliance_relevant_area
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Compliance_relevant_area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Compliance_relevant_area> <http://www.w3.org/2000/01/rdf-schema#comment> "- In der bisherigen Diskussion durfte aus Compliance Gründen keine Entscheidung/Abstimmung getroffen werden. Stattdessen wurde ein Lösungsraum ausgearbeitet." .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Compliance_relevant_area> <http://www.w3.org/2000/01/rdf-schema#comment> "can't specialize solution space/type with expert system" .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ConsequenceVoluminous
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ConsequenceVoluminous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ConsequenceVoluminous> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid6 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_compared_to> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/object> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FET
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FET> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FET> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_dependency> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/temperature_profile> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FET> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/diagnosing> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FET> <http://www.w3.org/2000/01/rdf-schema#comment> "- Ein anderer Aspekt ist die Wärmeabgabe. Verschiedene FET Technologien haben unterschiedliche Wärmeprofile." .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FET> <http://www.w3.org/2000/01/rdf-schema#comment> "- Es gibt verschiedene FETs, flache, oder voluminöse. Daraus ergeben sich unterschiedliche Konsequenzen." .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeA
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FET> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeB
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FET> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid13 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeC
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FET> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Form
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Form> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Function
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Fuse
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Fuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Fuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_function> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/security_function> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Inductance
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Inductance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Inductance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Innovation
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Innovation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/diagnosing> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid20 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_dependency> .
+_:genid21 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_forward_resistance_-_area> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> <http://www.w3.org/2000/01/rdf-schema#comment> "- Es gibt Halbleiter-Technologien, die Always-ON sind. Andere sind Always-Off:\n  - MOSFET Always-OFF (braucht Potential zum Schalten)\n  - Gallium-Nitrit Always-ON\n  - Gallium-Nitrit als Kaskode ist Always-OFF, Silizium Carbit Always-Off." .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid22 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> .
+_:genid22 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> .
+_:genid22 <http://www.w3.org/2002/07/owl#annotatedTarget> _:genid21 .
+_:genid22 <http://www.w3.org/2000/01/rdf-schema#comment> "- Durchlasswiderstand bei Mosfet bedeutet Fläche. Eine größere Fläche entspricht relativ direkt höheren Kosten." .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Measure
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Radio
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Radio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Radio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/load> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Relais
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Relais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Relais> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_function> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/relais_function> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Relais> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_function> .
+_:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/security_function> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Switch
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Switch> <http://www.w3.org/2000/01/rdf-schema#comment> "- Silizium, intrinsische Diode. Benötigt zwei Schalter, die anti-seriell sind. Mit nur einem Schalter kann man nur den Stromfluss in eine Richtung abschalten.\n  Mit anderen Materialien (z.B. Gallium-Nitrit) braucht man nur einen Schalter. Für diese anderen Materialien benötigt man jedoch auch neue Treiber um innerhalb der Spezifikation zu bleiben (höhere Spannungen-> Geringerer Durschlasswiderstand)\n  Er ist kleiner als ein Mosfet und hat einen geringeren Widerstand?!" .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Temperature
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Voltage
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Voltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Voltage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/state> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_on
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_on> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/state> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/area
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/area> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/avalanche_voltage
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/avalanche_voltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/avalanche_voltage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/classical_Fuse
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/classical_Fuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/classical_Fuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Fuse> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/classical_Fuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_function> .
+_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/relais_function> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/compactdesign
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/compactdesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/compactdesign> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/diagnosing
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/diagnosing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/diagnosing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/eFuse
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/eFuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/eFuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Fuse> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/eFuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/eFuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_function> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/relais_function> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/eFuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/eFuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage> .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_cost> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Form> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/forward_resistance
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/forward_resistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/forward_resistance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/wide-bandgap> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid30 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_on> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid31 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/1switch> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage> .
+_:genid32 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage> .
+_:genid33 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN+SiC> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite_kascode
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite_kascode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite_kascode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/wide-bandgap> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/gallium_nitrite_kascode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid34 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_on> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/grouping
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/grouping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/grouping> <http://www.w3.org/2000/01/rdf-schema#comment> "- Wenn man sich auf bestimmte Ströme (z.B. 5A, 20A und 200A) fokussiert, hat man einen Volumeneffekt durch größere Stückzahlen." .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/intitial_state
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/intitial_state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/intitial_state> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/state> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/load
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/load> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/load> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_state> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/state> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/low_current_grouping
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/low_current_grouping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/low_current_grouping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/grouping> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/low_current_grouping> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid36 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/low_current_grouping> <http://www.w3.org/2000/01/rdf-schema#comment> "infers to be flat for those currents, could be realized in other ways" .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/low_current_grouping> <http://www.w3.org/2000/01/rdf-schema#label> "5A current grouping" .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/material
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/narrow-bandgap
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/narrow-bandgap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/narrow-bandgap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/material> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/object
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/power_efficiency
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/power_efficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/power_efficiency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/powerdensity
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/powerdensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/powerdensity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/relais_function
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/relais_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/relais_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Function> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/state> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/security_function
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/security_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/security_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Function> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/narrow-bandgap> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid37 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/2switches-antiserial> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium_carbite
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium_carbite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium_carbite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/wide-bandgap> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium_carbite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid38 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium_carbite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage> .
+_:genid39 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_SiC> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium_carbite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage> .
+_:genid40 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN+SiC> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/state
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/state> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/swichtloss
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/swichtloss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/swichtloss> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/technology
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/technology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/temperature_profile
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/temperature_profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/temperature_profile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/temperature_profile> <http://www.w3.org/2000/01/rdf-schema#comment> "- Ein anderer Aspekt ist die Wärmeabgabe. Verschiedene FET Technologien haben unterschiedliche Wärmeprofile." .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Form> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/wide-bandgap
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/wide-bandgap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/wide-bandgap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/material> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/wide-bandgap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/wide-bandgap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> .
+_:genid42 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvement_wide-bandgap> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/1switch
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/1switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/1switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Switch> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/2switches-antiserial
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/2switches-antiserial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/2switches-antiserial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Switch> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ABS
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ABS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ABS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ABS> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ABS> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/desired_state> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state_a> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ABS> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/for_application> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving_on_highway_fast> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Cockpit
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Cockpit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Cockpit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/load> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Cockpit> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_part> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ABS> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Form
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Form> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Form> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/area> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Inductance
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Inductance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Inductance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Inductance> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MyCar
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MyCar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MyCar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Car> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MyCar> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_part> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Cockpit> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MyCar> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_state> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MyFET
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MyFET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MyFET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_on
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_on> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/area
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/area> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/classical_Fuse
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/classical_Fuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/classical_Fuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/classical_Fuse> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/cost
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current1
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_value> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure1> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current2
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current2> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_value> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure2> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current3
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current3> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_value> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure3> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_area_-_cost
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_area_-_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_area_-_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_area_-_cost> <http://www.w3.org/2000/01/rdf-schema#comment> "area = k * cost" .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_forward_resistance_-_area
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_forward_resistance_-_area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_forward_resistance_-_area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_forward_resistance_-_area> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_dependency> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_area_-_cost> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/dependency_forward_resistance_-_area> <http://www.w3.org/2000/01/rdf-schema#comment> "fw res = a * area" .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/design
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/design> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/compactdesign> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/difficult_to_grow
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/difficult_to_grow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/difficult_to_grow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/no_BulkGaNWafer> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_SiC
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_SiC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_SiC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_SiC> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/6inchWafer> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_cost
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_compared_to> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/classical_Fuse> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_compared_to> .
+_:genid45 <http://www.w3.org/2002/07/owl#hasValue> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/classical_Fuse> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Application> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving_city_slow
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving_city_slow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving_city_slow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Application> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving_city_slow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving_on_highway_fast
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving_on_highway_fast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving_on_highway_fast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Application> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving_on_highway_fast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/driving_on_highway_fast> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state_a> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/filling
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/filling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/filling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Application> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/filling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/flat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/always_off> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/forward_resistance
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/forward_resistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/forward_resistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/forward_resistance> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvement_wide-bandgap
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvement_wide-bandgap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvement_wide-bandgap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvement_wide-bandgap> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvesMathematicalValueOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Inductance> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvement_wide-bandgap> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvesMathematicalValueOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/area> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvement_wide-bandgap> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvesMathematicalValueOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/power_efficiency> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvement_wide-bandgap> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvesMathematicalValueOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/switchlosses> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/improvement_wide-bandgap> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/design> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure1
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Measure> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasnumericalvalue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure2
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Measure> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure2> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasnumericalvalue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure3
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Measure> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/measure3> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasnumericalvalue> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet1
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet1> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current1> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet2
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet2> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current2> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet3
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/mosfet3> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current3> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/no_BulkGaNWafer
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/no_BulkGaNWafer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/no_BulkGaNWafer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/power_efficiency
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/power_efficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/power_efficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/power_efficiency> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state_a
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state_a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state_a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state_b
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state_b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state_b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/secure_state> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium_carbite
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium_carbite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium_carbite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/silicium_carbite> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/switchlosses
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/switchlosses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/switchlosses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/swichtloss> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/1switch
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/1switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/1switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Switch> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/2switches-antiserial
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/2switches-antiserial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/2switches-antiserial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Switch> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/6inchWafer
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/6inchWafer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/6inchWafer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> .
+# 
+# http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN+SiC
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN+SiC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN+SiC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Disadvantage> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/disadvantage_GaN+SiC> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasDisadvantage> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/difficult_to_grow> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/voluminous> .
+_:genid47 <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/FETTypeA> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/frank/ontologies/2020/4/cv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#cs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#l> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#app> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#curr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#meas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#measdp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid48 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid48 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid48 <http://www.w3.org/2000/01/rdf-schema#label> "If a FET is voluminous ot has a consequence" .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid48 <http://www.w3.org/2003/11/swrl#body> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid50 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/ConsequenceVoluminous> .
+_:genid50 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/cv> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/2003/11/swrl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid51 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid51 <http://www.w3.org/2000/01/rdf-schema#label> "If CarState equals load state do something" .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid51 <http://www.w3.org/2003/11/swrl#body> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid65 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/CarState> .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#cs> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid63 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/load> .
+_:genid63 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#l> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid61 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_state> .
+_:genid61 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#l> .
+_:genid61 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#cs> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid59 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Application> .
+_:genid59 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#app> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid57 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/for_application> .
+_:genid57 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#l> .
+_:genid57 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#app> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid53 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> .
+<http://www.w3.org/2003/11/swrlb#equal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid53 <http://www.w3.org/2003/11/swrl#arguments> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#cs> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#app> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/2003/11/swrl#head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid66 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid66 <http://www.w3.org/2000/01/rdf-schema#label> "Grouping Effects" .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid66 <http://www.w3.org/2003/11/swrl#body> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid82 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/MOSFET> .
+_:genid82 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#m> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid80 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/current> .
+_:genid80 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#curr> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid78 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid78 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#m> .
+_:genid78 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#curr> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid76 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Measure> .
+_:genid76 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#meas> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid74 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/has_value> .
+_:genid74 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#curr> .
+_:genid74 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#meas> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid72 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/hasnumericalvalue> .
+_:genid72 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#meas> .
+_:genid72 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#measdp> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid68 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid68 <http://www.w3.org/2003/11/swrl#arguments> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#measdp> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/2003/11/swrl#head> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid84 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/low_current_grouping> .
+_:genid84 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#m> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid85 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid85 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid85 <http://www.w3.org/2000/01/rdf-schema#label> "Count number of 5A current groupings" .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid85 <http://www.w3.org/2003/11/swrl#body> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid87 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63/Measure> .
+_:genid87 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#p> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid85 <http://www.w3.org/2003/11/swrl#head> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid89 <http://www.w3.org/2003/11/swrl#builtin> <http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#count> .
+<http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid89 <http://www.w3.org/2003/11/swrl#arguments> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/frank/ontologies/2020/4/untitled-ontology-63#p> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

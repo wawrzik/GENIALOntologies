@@ -1,0 +1,38 @@
+[ {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/Center",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/Institute"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/Institute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/University"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/Martin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/isEmployedAt" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/Center"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/University",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/isEmployedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/isEmployedAt"
+    }, {
+      "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/isPartOf"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ]
+} ]

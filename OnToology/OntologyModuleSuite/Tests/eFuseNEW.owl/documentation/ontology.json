@@ -1,0 +1,508 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#implements"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#implements"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/reverse_protection"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability_sol4_smart_power_switch"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_hb"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_lb"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length_sol4_smart_power_switch"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current_sol4_smart_power_switch"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width_sol4_smart_power_switch"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/BTS50015"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#implements"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/drainsoruce_voltage_monitoring"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#implements"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#implements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Frank Wawrzik (TU Kaiserslautern)"
+  }, {
+    "@value" : "Manfred Fuisting (Hella GmbH)"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/A",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/BTS50015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability_sol4_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_hb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_lb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width_sol4_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/drainsoruce_voltage_monitoring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/monitoring_function"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/eFuse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/inductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/integrated_gate_driver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length_sol4_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current_sol4_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_max_charging_current_sol4_smart_power_switch"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@value" : "2014-01-00T00:00:00"
+  } ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#DateTime"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "9.9"
+  } ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_cold_crank_pulse_width_sol4_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "6"
+  } ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/ms"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.76"
+  } ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_max_charging_current_sol4_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "150"
+  } ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/A"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.65"
+  } ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/monitoring_function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#function"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/ms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_current",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#function"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/reverse_protection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sensing_function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#function"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch"
+  }, {
+    "@id" : "http://org.semanticweb.owlapi/error#Error1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol5_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/temperature_gradient_sensing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sensing_function"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width_sol4_smart_power_switch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith"
+  } ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#DateTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

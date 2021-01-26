@@ -1,0 +1,677 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse#"
+     xml:base="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:om-2="http://www.ontology-of-units-of-measure.org/resource/om-2/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse">
+        <owl:imports rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"/>
+        <dc:contributor>Frank Wawrzik (TU Kaiserslautern)</dc:contributor>
+        <dc:contributor>Manfred Fuisting (Hella GmbH)</dc:contributor>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly -->
+
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property -->
+
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#implements -->
+
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#implements"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#function -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/BTS50015 -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/BTS50015">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#implements"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/drainsoruce_voltage_monitoring -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/drainsoruce_voltage_monitoring">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/monitoring_function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/eFuse -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/eFuse">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/inductivity -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/inductivity">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/integrated_gate_driver -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/integrated_gate_driver">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/monitoring_function -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/monitoring_function">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_current -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_current">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_duration -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_duration">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/reverse_protection -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/reverse_protection">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sensing_function -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sensing_function">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/BTS50015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#implements"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/drainsoruce_voltage_monitoring"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#implements"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#implements"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/reverse_protection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability_sol4_smart_power_switch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_hb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_lb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length_sol4_smart_power_switch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current_sol4_smart_power_switch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
+                <owl:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width_sol4_smart_power_switch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol5_smart_power_switch -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol5_smart_power_switch">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/temperature_gradient_sensing -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/temperature_gradient_sensing">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sensing_function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/measure -->
+
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/quantity -->
+
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/unit -->
+
+
+    <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/unit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/A -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/A"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability_sol4_smart_power_switch -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability_sol4_smart_power_switch">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_hb -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_hb">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_lb -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_lb">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width_sol4_smart_power_switch -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width_sol4_smart_power_switch">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length_sol4_smart_power_switch -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length_sol4_smart_power_switch">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current_sol4_smart_power_switch -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current_sol4_smart_power_switch">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_max_charging_current_sol4_smart_power_switch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <om-2:hasNumericalValue>2014-01-00T00:00:00</om-2:hasNumericalValue>
+        <om-2:hasUnit rdf:resource="http://www.w3.org/2001/XMLSchema#DateTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <om-2:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.9</om-2:hasNumericalValue>
+        <om-2:hasUnit rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <om-2:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</om-2:hasNumericalValue>
+        <om-2:hasUnit rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_cold_crank_pulse_width_sol4_smart_power_switch -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_cold_crank_pulse_width_sol4_smart_power_switch">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <om-2:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</om-2:hasNumericalValue>
+        <om-2:hasUnit rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/ms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <om-2:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.76</om-2:hasNumericalValue>
+        <om-2:hasUnit rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_max_charging_current_sol4_smart_power_switch -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_max_charging_current_sol4_smart_power_switch">
+        <om-2:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</om-2:hasNumericalValue>
+        <om-2:hasUnit rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/A"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
+        <om-2:hasNumericalValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.65</om-2:hasNumericalValue>
+        <om-2:hasUnit rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/ms -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/ms">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width_sol4_smart_power_switch -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width_sol4_smart_power_switch">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width"/>
+        <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#DateTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2001/XMLSchema#DateTime"/>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

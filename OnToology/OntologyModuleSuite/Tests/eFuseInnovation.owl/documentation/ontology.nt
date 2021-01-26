@@ -1,0 +1,571 @@
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#buildsOn
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#buildsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#buildsOn> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#buildsOn> <http://www.w3.org/2000/01/rdf-schema#range> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#buildsOn> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#deprecates
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#deprecates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#deprecates> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#deprecates> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies> <http://www.w3.org/2000/01/rdf-schema#range> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enables> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enables
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enables> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enables> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils> <http://www.w3.org/2000/01/rdf-schema#range> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit> <http://www.w3.org/2000/01/rdf-schema#range> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage> <http://www.w3.org/2000/01/rdf-schema#range> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DevelopmentStage> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> <http://www.w3.org/2000/01/rdf-schema#range> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom> <http://www.w3.org/2000/01/rdf-schema#range> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ReflexiveProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage> <http://www.w3.org/2000/01/rdf-schema#range> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeprecatedBy
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeprecatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeprecatedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeprecatedBy> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping> <http://www.w3.org/2000/01/rdf-schema#range> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isLiberatedBy
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isLiberatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isLiberatedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isLiberatedBy> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#liberates
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#liberates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#liberates> <http://www.w3.org/2000/01/rdf-schema#range> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#liberates> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests> <http://www.w3.org/2000/01/rdf-schema#range> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves> <http://www.w3.org/2000/01/rdf-schema#range> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedBy
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedBy> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedOn
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedOn> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedOn> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedWith
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedWith> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedWith> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#expectedMarketEntry
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#expectedMarketEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DevelopmentStage
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DevelopmentStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DevelopmentStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Effectiveness
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Effectiveness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Effectiveness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AccessTime
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AccessTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AccessTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#buildsOn> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#NonVolatileMemory> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingTemperature> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingVoltage> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AccessTime> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DurabilityOfMemory> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammableUpdate> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammingTime> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CurrentLeakage> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Scalability> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Security> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Automobile
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Automobile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Automobile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AutonomousDriving
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AutonomousDriving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AutonomousDriving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ClimateChange
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ClimateChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ClimateChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CompanyX
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CompanyX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CompanyX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CorruptionOfInformation
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CorruptionOfInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CorruptionOfInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CurrentLeakage
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CurrentLeakage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CurrentLeakage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CurrentLeakage> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CorruptionOfInformation> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Development1
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Development1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Development1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DevelopmentStage> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DiagnosingTheFailure
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DiagnosingTheFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DiagnosingTheFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DurabilityOfMemory
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DurabilityOfMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DurabilityOfMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Scalability> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usability> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedMemory> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AutonomousDriving> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ClimateChange> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DiagnosingTheFailure> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReducingCost> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReductionOfCarbonDioxide> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectricalDevices
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectricalDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectricalDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectricalDevices> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedOn> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Automobile> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectricalDevices> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedOn> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#IoTDevices> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectronMigration
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectronMigration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectronMigration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectronMigration> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ExpansionOfFuse> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ExpansionOfFuse
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ExpansionOfFuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ExpansionOfFuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#FirmwareUpdate
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#FirmwareUpdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#FirmwareUpdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#IoTDevices
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#IoTDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#IoTDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LegislationOnCO2
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LegislationOnCO2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LegislationOnCO2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedMemory
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedNumberOfReads
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedNumberOfReads> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedNumberOfReads> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#NonVolatileMemory
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#NonVolatileMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#NonVolatileMemory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingTemperature
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Effectiveness> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingVoltage
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Effectiveness> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperationFailure
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperationFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperationFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammableUpdate
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammableUpdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammableUpdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammingTime
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReducingCost
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReducingCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReducingCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReductionOfCarbonDioxide
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReductionOfCarbonDioxide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReductionOfCarbonDioxide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Scalability
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Scalability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Scalability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Security
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Security> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Security> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usability
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance> .
+# 
+# http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#WasteGeneration
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#WasteGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#WasteGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem> .
+<http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#WasteGeneration> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom> <http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ExpansionOfFuse> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
