@@ -22,7 +22,7 @@
         <terms:title>GENIAL! Basic Ontology</terms:title>
         <rdfs:label>GENIAL! Basic Ontology</rdfs:label>
         <owl:versionInfo>0.2.0</owl:versionInfo>
-        <foaf:mbox>mailto:wawrzik@cs.uni-kl.de</foaf:mbox>
+        <foaf:mbox xml:lang="cs.uni-kl.de">mailto:wawrzik</foaf:mbox>
     </owl:Ontology>
     
 
@@ -104,6 +104,14 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#executes -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#executes">
+        <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#is_executed_by"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part -->
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part">
@@ -140,6 +148,12 @@
         <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
         <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#is_executed_by -->
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#is_executed_by"/>
     
 
 
