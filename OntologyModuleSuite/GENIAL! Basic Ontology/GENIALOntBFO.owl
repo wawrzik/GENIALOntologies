@@ -8,14 +8,69 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt">
         <owl:versionIRI rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
-        <dc:contributor>Frank Wawrzik (TU Kaiserslautern), Christoph Grimm (TU Kaiserslautern), Peter Neumann (Edacentrum GmbH)</dc:contributor>
-        <rdfs:comment>Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL</rdfs:comment>
+        <dc:description>Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL</dc:description>
+        <dc:title>GENIAL! Basic Ontology</dc:title>
+        <terms:contributor>Christoph Grimm</terms:contributor>
+        <terms:contributor>Peter Neumann</terms:contributor>
+        <terms:created>2021-01-26</terms:created>
+        <terms:creator>Frank Wawrzik</terms:creator>
+        <terms:title>GENIAL! Basic Ontology</terms:title>
+        <rdfs:label>GENIAL! Basic Ontology</rdfs:label>
         <owl:versionInfo>0.1.1</owl:versionInfo>
+        <foaf:mbox>mailto:wawrzik@cs.uni-kl.de</foaf:mbox>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -333,13 +388,17 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"/>
-                <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"/>
+                        <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000112>A flip-flop of the ALU with its logic cone, a register.</obo:IAO_0000112>
         <obo:IAO_0000115>smallest portion of a hardware subpart (3.73) considered in safety (3.132) analysis</obo:IAO_0000115>
     </owl:Class>
@@ -349,13 +408,17 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"/>
-                <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#component"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"/>
+                        <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#component"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000112>The CPU of a microcontroller, a resistor, flash array of a microcontroller.</obo:IAO_0000112>
         <obo:IAO_0000115>a piece of hardware that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition</obo:IAO_0000115>
         <rdfs:label>hardware part</rdfs:label>
@@ -366,33 +429,35 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart"/>
-                            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
-                            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart"/>
+                                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+                                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000112>ALU of a CPU of a microcontroller, register bank of a CPU.</obo:IAO_0000112>
         <obo:IAO_0000115>portion of a hardware part (3.71) that can be logically divided and represents second or greater level of hierarchical decomposition</obo:IAO_0000115>
     </owl:Class>
@@ -503,27 +568,29 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
-                <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"/>
-                            <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                        <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                        <owl:onClass>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"/>
+                                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:onClass>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115>a piece of software that is (according to ISO26262) an atomic level software component (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)</obo:IAO_0000115>
         <rdfs:label>software unit</rdfs:label>
     </owl:Class>
