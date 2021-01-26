@@ -22,7 +22,7 @@
         <terms:title>GENIAL! Basic Ontology</terms:title>
         <rdfs:label>GENIAL! Basic Ontology</rdfs:label>
         <owl:versionInfo>0.2.0</owl:versionInfo>
-        <foaf:mbox xml:lang="cs.uni-kl.de">mailto:wawrzik</foaf:mbox>
+        <foaf:mbox xml:lang="cs.uni-kl.de">mailto:wawrzik@cs.uni-kl.de</foaf:mbox>
     </owl:Ontology>
     
 
