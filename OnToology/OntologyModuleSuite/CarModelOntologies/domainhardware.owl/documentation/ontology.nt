@@ -1,0 +1,1022 @@
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware> <http://www.w3.org/2002/07/owl#versionIRI> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.1> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware> <http://www.w3.org/2002/07/owl#imports> <http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware> <http://purl.org/dc/elements/1.1/contributor> "Frank Wawrzik, Christoph Grimm (both TU Kaiserslautern), \nKonstantin Lübeck, Alexander Jung (both University of Tübingen)" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware> <http://www.w3.org/2000/01/rdf-schema#comment> "Domain ontology of general hardware terms and their functions and properties." .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#minQualifiedCardinality
+<http://www.w3.org/2002/07/owl#minQualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#implements
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#component
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#function
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#component> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#property
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#component> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#system
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/controller
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_code> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/MIPS_architecture
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/MIPS_architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/MIPS_architecture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/computer_architecture> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/MIPS_architecture> <http://purl.obolibrary.org/obo/IAO_0000115> "MIPS (Microprocessor without Interlocked Pipelined Stages)[1] is a reduced instruction set computer (RISC) instruction set architecture (ISA)[2]:A-1[3]:19 developed by MIPS Computer Systems, now MIPS Technologies, based in the United States." .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/MIPS_microprocessor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/MIPS_microprocessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/MIPS_microprocessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microprocessor> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/abstract_interface
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/abstract_interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/abstract_interface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/interface> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/adder
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/adder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/adder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/address_bus
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/address_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/address_bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/address_bus> <http://www.w3.org/2000/01/rdf-schema#label> "address bus" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogic_funtional_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogic_funtional_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogic_funtional_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_array> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array> <http://purl.obolibrary.org/obo/IAO_0000115> "An all-flash array (AFA) is a storage infrastructure that contains only flash memory drives instead of spinning-disk drives. All-flash storage is also referred to as a Solid-State Array (SSA). AFAs and SSAs offer speed, performance and agility for your business applications." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.purestorage.com/resources/glossary/all-flash-array.html" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array> <http://www.w3.org/2000/01/rdf-schema#label> "afa" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array> <http://www.w3.org/2000/01/rdf-schema#label> "all flash array" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_filter
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_filter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_filter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_filter> <http://www.w3.org/2000/01/rdf-schema#label> "analog filter" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/asynchronous_bus
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/asynchronous_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/asynchronous_bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/asynchronous_bus> <http://www.w3.org/2000/01/rdf-schema#label> "asychnronous bus" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bang_bang_characteristic
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bang_bang_characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bang_bang_characteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_characteristic> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branch_functional_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branch_functional_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branch_functional_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/buffer
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/buffer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/buffer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/buffer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> <http://purl.obolibrary.org/obo/IAO_0000115> "Buses serve as the interface between PC components. The CPU, Northbridge and Southbridge are the main components attached to the system bus. There's two types of buses-internal and external" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> <http://purl.obolibrary.org/obo/IAO_0000119> "https://sites.google.com/site/dfwarn/system-bus" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/replacement_policy> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache_interfache
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache_interfache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache_interfache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_interface> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_controller
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_controller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pipeline_stage> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/computer_architecture
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/computer_architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/computer_architecture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000141> .
+<http://purl.obolibrary.org/obo/BFO_0000141> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/computer_architecture> <http://www.w3.org/2000/01/rdf-schema#label> "computer architecture" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_bus
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_bus> <http://www.w3.org/2000/01/rdf-schema#label> "control bus" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_characteristic
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_characteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_function
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_humidity
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_humidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_function> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_humidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/humidity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_temperature
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_function> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/temperature> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/counter
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/counter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/counter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/counter> <http://purl.obolibrary.org/obo/IAO_0000115> "In digital logic and computing, a counter is a device which stores (and sometimes displays) the number of times a particular event or process has occurred, often in relationship to a clock. The most common type is a sequential digital logic circuit with an input line called the clock and multiple output lines. The values on the output lines represent a number in the binary or BCD number system. Each pulse applied to the clock input increments or decrements the number in the counter." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/counter> <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Counter_(digital)" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/current
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/current> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/current> <http://purl.obolibrary.org/obo/IAO_0000115> "Yet current is a physical quantity that can be measured and expressed numerically. The current in a circuit can be determined if the quantity of charge Q passing through a cross section of a wire in a time t can be measured. The current is simply the ratio of the quantity of charge and time." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/current> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.physicsclassroom.com/class/circuits/Lesson-2/Electric-Current" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d-characteristic
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d-characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d-characteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_characteristic> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_controller
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_controller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_controller> <http://www.w3.org/2000/01/rdf-schema#label> "D-controller" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_bus
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_bus> <http://www.w3.org/2000/01/rdf-schema#label> "data bus" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter> <http://www.w3.org/2000/01/rdf-schema#label> "digital filter" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divide_funtional_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divide_funtional_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divide_funtional_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dynamic_random_access_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dynamic_random_access_memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dynamic_random_access_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dynamic_random_access_memory> <http://purl.obolibrary.org/obo/IAO_0000115> "(pronounced DEE-RAM), is widely used as a computer’s main memory. Each DRAM memory cell is made up of a transistor and a capacitor within an integrated circuit, and a data bit is stored in the capacitor. Since transistors always leak a small amount, the capacitors will slowly discharge, causing information stored in it to drain; hence, DRAM has to be refreshed (given a new electronic charge) every few milliseconds to retain data." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dynamic_random_access_memory> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.atpinc.com/blog/computer-memory-types-dram-ram-module" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dynamic_random_access_memory> <http://www.w3.org/2000/01/rdf-schema#label> "DRAM" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dynamic_random_access_memory> <http://www.w3.org/2000/01/rdf-schema#label> "dynamic random access memory" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_code
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_code> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#function> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_code> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_code> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_code> <http://purl.obolibrary.org/obo/IAO_0000115> "function which executes some piece of code or software" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_code> <http://purl.obolibrary.org/obo/IAO_0000116> "TODO: use two different object properties for hardware and software!" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pipeline_stage> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/external_bus
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/external_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/external_bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/external_bus> <http://www.w3.org/2000/01/rdf-schema#label> "external bus" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform> <http://purl.obolibrary.org/obo/IAO_0000115> "2. FFT: In this step the frequency spectrum of all the frames is computed using a fast-fourier transform computation." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform> <http://www.w3.org/2000/01/rdf-schema#label> "fft" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pipeline_stage> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fifo_buffer
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fifo_buffer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fifo_buffer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/buffer> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_array
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_array> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_array> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_array> <http://purl.obolibrary.org/obo/IAO_0000115> "Flash storage is a data storage technology based on high-speed, electrically programmable memory. The speed of flash storage is how got its name: It writes data and performs random I/O operations in a flash." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_array> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.netapp.com/us/info/what-is-flash-storage.aspx" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_array> <http://www.w3.org/2000/01/rdf-schema#label> "flash array" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/nonvolatile_memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_memory> <http://purl.obolibrary.org/obo/IAO_0000115> "Flash memory, also known as flash storage, is a type of nonvolatile memory that erases data in units called blocks..." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_memory> <http://purl.obolibrary.org/obo/IAO_0000119> "https://searchstorage.techtarget.com/definition/flash-memory" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flash_memory> <http://www.w3.org/2000/01/rdf-schema#label> "flash memory" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window> <http://purl.obolibrary.org/obo/IAO_0000115> "1. Framing and windowing: In this step the audio signal is sliced into overlapping frames and the Hamming-window function is applied to it." .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block> <http://www.w3.org/2000/01/rdf-schema#label> "functional block" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/general_purpose_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/general_purpose_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/general_purpose_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_filter
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_filter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_filter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_filter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_filter> <http://www.w3.org/2000/01/rdf-schema#label> "hardware filter" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid21 <http://www.w3.org/2002/07/owl#unionOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware> <http://purl.obolibrary.org/obo/IAO_0000115> "non-system level elements that are either hardware or software" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware> <http://purl.obolibrary.org/obo/IAO_0000116> "here we can relax the definition of the iso terms for sake of ease of definition while at the same time keeping the expressiveness and compatibility" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/height
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/height> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/humidity
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/humidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/humidity> <http://purl.obolibrary.org/obo/IAO_0000115> "A quantity representing the amount of water vapor in the atmosphere or in a gas." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/humidity> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.lexico.com/en/definition/humidity" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/i-characteristic
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/i-characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/i-characteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_characteristic> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/i_controller
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/i_controller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/i_controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/i_controller> <http://www.w3.org/2000/01/rdf-schema#label> "I-controller" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_set
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_set> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_set> <http://purl.obolibrary.org/obo/IAO_0000115> "The complete set of all the instructions in machine code that can be recognized and executed by a central processing unit.\n‘A Script is an instruction set used to execute operations on a controller device.’" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_set> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.lexico.com/definition/instruction_set" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_set> <http://www.w3.org/2000/01/rdf-schema#label> "instruction set" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/interface
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/interface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000002> .
+<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_bus
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_bus> <http://www.w3.org/2000/01/rdf-schema#label> "internal bus" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_memory> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.atpinc.com/blog/computer-memory-types-dram-ram-module" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_memory> <http://www.w3.org/2000/01/rdf-schema#label> "internal memory" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_memory> <http://www.w3.org/2000/01/rdf-schema#label> "main memory" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_memory> <http://www.w3.org/2000/01/rdf-schema#label> "primary memory" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid24 <http://www.w3.org/2002/07/owl#unionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts> <http://www.w3.org/2000/01/rdf-schema#label> "IO parts" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jump_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jump_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jump_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/logarithmic_memory_interconnect
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/logarithmic_memory_interconnect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/logarithmic_memory_interconnect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_interconnect> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/logarithmic_memory_interconnect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/logarithmic_memory_interconnect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/least_recently_used> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram> <http://purl.obolibrary.org/obo/IAO_0000115> "3. Magnitude Spectorgram computation: In this step the result of the FFT is post-processed" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/main_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/main_memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/main_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_current
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_current> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_function> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_current> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/current> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_function
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#function> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_function> <http://purl.obolibrary.org/obo/IAO_0000116> "TODO: consider using controls/measures instead of has_property" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_humidity
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_humidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_function> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_humidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/humidity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_temperature
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_function> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/temperature> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_voltage
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_voltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_voltage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_function> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_voltage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/voltage> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_bank
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_bank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_bank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_interconnect
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_interconnect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_interconnect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_interconnect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_interconnect> <http://www.w3.org/2000/01/rdf-schema#label> "memory interconnect" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_interface
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_interface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/abstract_interface> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/start_address> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> <http://purl.obolibrary.org/obo/IAO_0000115> "MFCC (Mel Frequency Cepstral Co-efficients) is a kind of feature in audio processing. They are used as an input for a CNN for wakeword/keyword detection. The coefficients aim to represent the phonemes the human voice and language use.\n\nThe computation of those features consists of several steps: 1. Framing and windowing: In this step the audio signal is sliced into overlapping frames and the Hamming-window function is applied to it. 2. FFT: In this step the frequency spectrum of all the frames is computed using a fast-fourier transform computation. 3. Magnitude Spectorgram computation: In this step the result of the FFT is post-processed 4. Matrix Multiply: This step applies the Mel filters to the magnitude spectorgram 5. Non-linear transform: In this step a non-linear function (logarithm) is applied to the Mel filtered data. 6. Matrix Multiply: In this step the cepstral coefficients are computed by computing the discrete cosine transform." .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microprocessor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microprocessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microprocessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiplier
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiplier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiplier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_funtional_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_funtional_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_funtional_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix> <http://purl.obolibrary.org/obo/IAO_0000115> "4. Matrix Multiply: This step applies the Mel filters to the magnitude spectorgram\n6. Matrix Multiply: In this step the cepstral coefficients are computed by computing the discrete cosine transform." .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform> <http://purl.obolibrary.org/obo/IAO_0000115> "5. Non-linear transform: In this step a non-linear function (logarithm) is applied to the Mel filtered data." .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/nonvolatile_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/nonvolatile_memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/nonvolatile_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/nonvolatile_memory> <http://www.w3.org/2000/01/rdf-schema#label> "nonvolatile memory" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/p-characteristic
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/p-characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/p-characteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_characteristic> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/p_controller
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/p_controller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/p_controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/p_controller> <http://www.w3.org/2000/01/rdf-schema#label> "P-controller" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/performance
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/performance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/performance> <http://purl.obolibrary.org/obo/IAO_0000115> "Performance is an abstract class to represent any kind of performance number, e.g. runtime." .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pi-characteristic
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pi-characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pi-characteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_characteristic> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pid-characteristic
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pid-characteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pid-characteristic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_characteristic> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pid_controller
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pid_controller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pid_controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pid_controller> <http://www.w3.org/2000/01/rdf-schema#label> "PID-controller" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pipeline_stage
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pipeline_stage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pipeline_stage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pipeline_stage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/buffer> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pipeline_stage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/power_bus
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/power_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/power_bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/power_bus> <http://www.w3.org/2000/01/rdf-schema#label> "power bus" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/general_purpose_unit> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor> <http://purl.obolibrary.org/obo/IAO_0000115> "the hardware within a computer that executes a program" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor> <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Processor" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor> <http://www.w3.org/2000/01/rdf-schema#label> "cpu" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor> <http://www.w3.org/2000/01/rdf-schema#label> "processor" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_architecure
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_architecure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_architecure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/computer_architecture> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/main_memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/system_on_chip> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/volatile_memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory> <http://purl.obolibrary.org/obo/IAO_0000115> "RAM (pronounced ramm) is an acronym for random access memory, a type of computer memory that can be accessed randomly; that is, any byte of memory can be accessed without touching the preceding bytes. RAM is found in servers, PCs, tablets, smartphones and other devices, such as printers." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.webopedia.com/TERM/R/RAM.html" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory> <http://www.w3.org/2000/01/rdf-schema#label> "RAM" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory> <http://www.w3.org/2000/01/rdf-schema#label> "random accesss memory" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_only_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_only_memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_only_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/nonvolatile_memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_only_memory> <http://purl.obolibrary.org/obo/IAO_0000115> "ROM stands for read-only memory. It is non-volatile, which means it can retain data even without power. It is used mainly to start or boot up a computer." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_only_memory> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.atpinc.com/blog/computer-memory-types-dram-ram-module" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_only_memory> <http://www.w3.org/2000/01/rdf-schema#label> "ROM" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_only_memory> <http://www.w3.org/2000/01/rdf-schema#label> "read only memory" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/replacement_policy
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/replacement_policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/replacement_policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/resistor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/resistor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/resistor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/rr_cache
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/rr_cache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/rr_cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cache> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/rr_cache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid58 <http://www.w3.org/2002/07/owl#hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_replacement> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/software_filter
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/software_filter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/software_filter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/software_filter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/software_filter> <http://www.w3.org/2000/01/rdf-schema#label> "software filter" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/start_address
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/start_address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/start_address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_access_memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory> <http://purl.obolibrary.org/obo/IAO_0000115> "(pronounced ES-RAM) is made up of four to six transistors. It keeps data in the memory as long as power is supplied to the system unlike DRAM, which has to be refreshed periodically. As such, SRAM is faster but also more expensive, making DRAM the more prevalent memory in computer systems." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.atpinc.com/blog/computer-memory-types-dram-ram-module" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory> <http://www.w3.org/2000/01/rdf-schema#label> "SRAM" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_random_access_memory> <http://www.w3.org/2000/01/rdf-schema#label> "static random access memory" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/subtractor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/subtractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/subtractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/sychronous_bus
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/sychronous_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/sychronous_bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/sychronous_bus> <http://www.w3.org/2000/01/rdf-schema#label> "synchronous bus" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/system_bus
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/system_bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/system_bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/system_bus> <http://www.w3.org/2000/01/rdf-schema#label> "memory inteconnect" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/system_on_chip
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/system_on_chip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/system_on_chip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#system> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/temperature
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/temperature> <http://purl.obolibrary.org/obo/IAO_0000115> "the degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale and shown by a thermometer or perceived by touch." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/temperature> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.lexico.com/en/definition/temperature" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/timer
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/timer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/timer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/timer> <http://purl.obolibrary.org/obo/IAO_0000115> "A timer is a specialized type of clock used for measuring specific time intervals. Timers can be categorized into two main types. A timer which counts upwards from zero for measuring elapsed time is often called a stopwatch, while a device which counts down from a specified time interval is more usually called a timer. A simple example of this type is an hourglass. Working method timers have two main groups: Hardware and Software timers." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/timer> <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Timer" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/to_process
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/to_process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/to_process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microprocessor> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/volatile_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/volatile_memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/volatile_memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/internal_memory> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/volatile_memory> <http://www.w3.org/2000/01/rdf-schema#label> "volatile memory" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/voltage
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/voltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/voltage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/voltage> <http://purl.obolibrary.org/obo/IAO_0000115> "Voltage is the pressure from an electrical circuit's power source that pushes charged electrons (current) through a conducting loop, enabling them to do work such as illuminating a light.\n\nIn brief, voltage = pressure, and it is measured in volts (V). The term recognizes Italian physicist Alessandro Volta (1745-1827), inventor of the voltaic pile—the forerunner of today's household battery." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/voltage> <http://purl.obolibrary.org/obo/IAO_0000119> "https://www.fluke.com/en/learn/best-practices/measurement-basics/electricity/what-is-voltage" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_access_unit> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/to_process> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> .
+_:genid61 <http://www.w3.org/2002/07/owl#hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_weigths> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/width
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/width> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://org.semanticweb.owlapi/error#Error1
+# 
+# http://purl.obolibrary.org/obo/BFO_0000002
+# 
+# http://purl.obolibrary.org/obo/BFO_0000141
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/quantity
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/to_process> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/least_recently_used
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/least_recently_used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/least_recently_used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/replacement_policy> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_features
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_features> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_features> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/to_process> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_weigths
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_weigths> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_weigths> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/to_process> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_replacement
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_replacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/random_replacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/replacement_policy> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_features
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_features> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_features> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/to_process> .
+# 
+_:genid62 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

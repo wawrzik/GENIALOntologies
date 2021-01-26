@@ -1,0 +1,92 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology gives an outline on how to model EffectChains for GENIAL!"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Acoustic/Sound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#DesiredEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Electrical/Electronic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#HV/Power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Mechanical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Misuse(User)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Software",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Stuff/Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Thermic/Optical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#UndesiredEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]

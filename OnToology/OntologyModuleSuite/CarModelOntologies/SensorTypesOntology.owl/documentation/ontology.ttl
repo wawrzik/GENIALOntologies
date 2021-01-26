@@ -1,0 +1,151 @@
+@prefix : <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology> .
+
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology> rdf:type owl:Ontology ;
+                                                              rdfs:comment "First draft from ZVEI roadmap. In respect to AP6." ,
+                                                                           "This ontology provides a taxonomy of sensors." .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/acceleration_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/acceleration_sensor> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inertial_sensor> ;
+                                                                                 rdfs:label "acceleration sensor" ,
+                                                                                            "g-sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/density_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/density_sensor> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> ;
+                                                                            rdfs:label "density sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/finger_movement_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/finger_movement_sensor> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inductive_sensor> ;
+                                                                                    rdfs:label "finger movement sensor" ,
+                                                                                               "finger print sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/flow_speed_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/flow_speed_sensor> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> ;
+                                                                               rdfs:label "flow speed sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/gyro_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/gyro_sensor> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inertial_sensor> ;
+                                                                         rdfs:label "angular rate sensor" ,
+                                                                                    "gyro sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/humidity_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/humidity_sensor> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> ;
+                                                                             rdfs:label "humidity sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/imager_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/imager_sensor> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/light_sensor> ;
+                                                                           rdfs:label "imager sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inductive_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inductive_sensor> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> ;
+                                                                              rdfs:label "capacitive sensor" ,
+                                                                                         "inductive sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inertial_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inertial_sensor> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/mems_sensor> ;
+                                                                             rdfs:label "inertial sensor" ,
+                                                                                        "motion sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/ir_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/ir_sensor> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/light_sensor> ;
+                                                                       rdfs:label "IR sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/light_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/light_sensor> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> ;
+                                                                          rdfs:label "light sensor" ,
+                                                                                     "optical sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/membrane_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/membrane_sensor> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/mems_sensor> ;
+                                                                             rdfs:label "membrane sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/mems_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/mems_sensor> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> ;
+                                                                         rdfs:label "MEMS sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/pressure_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/pressure_sensor> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/membrane_sensor> ;
+                                                                             rdfs:label "p-sensor" ,
+                                                                                        "pressure sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/prox_switch_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/prox_switch_sensor> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inductive_sensor> ;
+                                                                                rdfs:label "prox switch sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/radar_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/radar_sensor> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> ;
+                                                                          rdfs:label "radar sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/rf_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/rf_sensor> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> ;
+                                                                       rdfs:label "RF sensor" ,
+                                                                                  "chemical sensor" ,
+                                                                                  "microwave sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/temperature_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/temperature_sensor> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> ;
+                                                                                rdfs:label "temperature sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/ultrasonic_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/ultrasonic_sensor> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/membrane_sensor> ;
+                                                                               rdfs:label "ultrasonic sensor" .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/μphone_sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/μphone_sensor> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/membrane_sensor> ;
+                                                                           rdfs:label "microphone sensor" ,
+                                                                                      "μPhone sensor" .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

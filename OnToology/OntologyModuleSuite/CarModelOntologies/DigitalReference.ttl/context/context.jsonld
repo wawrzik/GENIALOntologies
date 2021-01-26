@@ -1,0 +1,5612 @@
+{
+  "@context" : {
+    "" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#made_(the_method_name,_e.g.:_observation,_and_amlification)",
+      "@type" : "@id"
+    },
+    "hasDepartment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasDepartment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isProcessedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isProcessedBy",
+      "@type" : "@id"
+    },
+    "belongsTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#belongsTo",
+      "@type" : "@id"
+    },
+    "hasScrappingProbabilityWafers" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasScrappingProbabilityWafers",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "CapacityBottleneck" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#CapacityBottleneck"
+    },
+    "implements" : {
+      "@id" : "http://www.w3.org/ns/ssn/implements",
+      "@type" : "@id"
+    },
+    "AH_GatekeeperSystem_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_SySD"
+    },
+    "ZigBee_IP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ZigBee_IP"
+    },
+    "hasCycleTimeCommittment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasCycleTimeCommittment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "CustomerLocation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#CustomerLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "documentsAHServiceCommTech" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#documentsAHServiceCommTech",
+      "@type" : "@id"
+    },
+    "SafetyStock" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#SafetyStock"
+    },
+    "Precision" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Precision"
+    },
+    "IntelligentPowerModule" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#IntelligentPowerModule"
+    },
+    "Tempering" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Tempering"
+    },
+    "OrdersReschedule" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#OrdersReschedule"
+    },
+    "Admin_Shell" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Admin_Shell"
+    },
+    "ProjectTeamMember" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#ProjectTeamMember"
+    },
+    "hasFootprintAreaGateDriver" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasFootprintAreaGateDriver",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "AH_automation_supporting_service" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_service"
+    },
+    "hasEventCalendarType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasEventCalendarType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SystemLifetime" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/SystemLifetime"
+    },
+    "executes" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#executes",
+      "@type" : "@id"
+    },
+    "hasDemandQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasDemandQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "EDIFACT_DELFOR" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#EDIFACT_DELFOR"
+    },
+    "fromEquipmentGroupID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#fromEquipmentGroupID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Switch" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Switch"
+    },
+    "ISO-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISO-Standard"
+    },
+    "hasReworkProbabilityWafers" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasReworkProbabilityWafers",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasEmail" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasEmail",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "HalogenFreeStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#HalogenFreeStatus"
+    },
+    "Gate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Gate"
+    },
+    "hasSubApplication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasSubApplication",
+      "@type" : "@id"
+    },
+    "hasHierarchyInformation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasHierarchyInformation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FDDI" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#FDDI"
+    },
+    "Situation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Situation"
+    },
+    "AH_GlobalServiceDiscoveryService_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_SD"
+    },
+    "isEquipmentOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isEquipmentOf",
+      "@type" : "@id"
+    },
+    "OSI_TransportProtocol" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_TransportProtocol"
+    },
+    "StationaryRobot" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#StationaryRobot"
+    },
+    "topologyOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#topologyOf",
+      "@type" : "@id"
+    },
+    "AH_InterCloudNegotiationsService_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_SD"
+    },
+    "ApplicationLevel2" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#ApplicationLevel2"
+    },
+    "SupplyDemandMatch" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#SupplyDemandMatch"
+    },
+    "AH_mandatory_core_system" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_system"
+    },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "has-IT-ModuleOrPart" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#has-IT-ModuleOrPart",
+      "@type" : "@id"
+    },
+    "Communication_security_mechanism" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Communication_security_mechanism"
+    },
+    "_3DMagneticSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#_3DMagneticSensor"
+    },
+    "isCarriedOutBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isCarriedOutBy",
+      "@type" : "@id"
+    },
+    "provide" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#provide",
+      "@type" : "@id"
+    },
+    "hasOpenQuantityOLI" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasOpenQuantityOLI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "hasPackingType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasPackingType",
+      "@type" : "@id"
+    },
+    "InfoService" : {
+      "@id" : "http://purl.org/ontology/is/core#InfoService"
+    },
+    "documentsServicePart" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#documentsServicePart",
+      "@type" : "@id"
+    },
+    "Proxy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Proxy"
+    },
+    "isActivatedByTask" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isActivatedByTask",
+      "@type" : "@id"
+    },
+    "Route" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Route"
+    },
+    "View" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#View"
+    },
+    "AH_core_system_SySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_core_system_SySDD"
+    },
+    "Stimulus" : {
+      "@id" : "http://www.w3.org/ns/ssn/Stimulus"
+    },
+    "DateTimeDescription" : {
+      "@id" : "http://www.w3.org/2006/time#DateTimeDescription"
+    },
+    "LoWPAN" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#6LoWPAN"
+    },
+    "TargetAllocation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#TargetAllocation"
+    },
+    "hasFinishedProductCosts" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasFinishedProductCosts",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isUsedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isUsedBy",
+      "@type" : "@id"
+    },
+    "hasInterfaceComplexityFactor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasInterfaceComplexityFactor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "MagneticCurrentSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MagneticCurrentSensor"
+    },
+    "Industry" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#Industry"
+    },
+    "Simulation_Part" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Simulation_Part"
+    },
+    "ERP-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ERP-System"
+    },
+    "hasCustomerPartNumber" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasCustomerPartNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "MotorControlAndDriveSolution_IndustrialQualification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MotorControlAndDriveSolution_IndustrialQualification"
+    },
+    "Target_Costs" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Target_Costs"
+    },
+    "InformationObject" : {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#InformationObject"
+    },
+    "responsibleForApplicationLevel3_Division" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#responsibleForApplicationLevel3_Division",
+      "@type" : "@id"
+    },
+    "intervalFinishes" : {
+      "@id" : "http://www.w3.org/2006/time#intervalFinishes",
+      "@type" : "@id"
+    },
+    "hasNumberOfParallelTools" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasNumberOfParallelTools",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "usesOneOrMoreTechnology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#usesOneOrMoreTechnology",
+      "@type" : "@id"
+    },
+    "isVersionOf" : {
+      "@id" : "http://purl.org/dc/terms/isVersionOf"
+    },
+    "Robot" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Robot"
+    },
+    "Radar" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#Radar"
+    },
+    "RoHSCompliantStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#RoHSCompliantStatus"
+    },
+    "consume" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#consume",
+      "@type" : "@id"
+    },
+    "documentsAHServiceCommSecurityMechanism" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#documentsAHServiceCommSecurityMechanism",
+      "@type" : "@id"
+    },
+    "NonShippableProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#NonShippableProduct"
+    },
+    "isTaskOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#isTaskOf",
+      "@type" : "@id"
+    },
+    "ISO" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISO"
+    },
+    "EDIFACT_DELJIT" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#EDIFACT_DELJIT"
+    },
+    "hasRouteName" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasRouteName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AH_InterCloudNegotiationsService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_InterCloudNegotiationsService_IDD"
+    },
+    "has_an_Output_Current" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_an_Output_Current",
+      "@type" : "@id"
+    },
+    "hasFootprintAreaProductFamily" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasFootprintAreaProductFamily",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "isSubFlowOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isSubFlowOf",
+      "@type" : "@id"
+    },
+    "hasReleasePlanID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasReleasePlanID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasResidualTimeInFab" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasResidualTimeInFab",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasSupplyVoltage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasSupplyVoltage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "semanticRelation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#semanticRelation"
+    },
+    "AH_mandatory_core_system_SySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_system_SySDD"
+    },
+    "MagneticPositionSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MagneticPositionSensor"
+    },
+    "MQTT_nonTCPIP_based" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MQTT_nonTCPIP_based"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Software" : {
+      "@id" : "http://purl.org/dc/dcmitype/Software"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "hasItemNo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasItemNo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "hasScrappingProbabilityLots" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasScrappingProbabilityLots",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Product_Number" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Product_Number"
+    },
+    "Allocation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#Allocation"
+    },
+    "SMQTT-SN" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SMQTT-SN"
+    },
+    "AH_SystemRegistrySystem_SySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_SySDD"
+    },
+    "has_A_Voltage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_A_Voltage",
+      "@type" : "@id"
+    },
+    "LES" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#LES"
+    },
+    "toFabID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#toFabID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "obtainFrom" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#obtainFrom",
+      "@type" : "@id"
+    },
+    "Constrained_device" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Constrained_device"
+    },
+    "CSV" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CSV"
+    },
+    "consistOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#consistOf",
+      "@type" : "@id"
+    },
+    "hasDemandDueDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasDemandDueDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hasTRS" : {
+      "@id" : "http://www.w3.org/2006/time#hasTRS",
+      "@type" : "@id"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "customerPartNumberSpecification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#customerPartNumberSpecification",
+      "@type" : "@id"
+    },
+    "madeActuation" : {
+      "@id" : "http://www.w3.org/ns/sosa/madeActuation",
+      "@type" : "@id"
+    },
+    "Fieldbus_CP_Family" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Fieldbus_CP_Family"
+    },
+    "isInformationModelOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isInformationModelOf",
+      "@type" : "@id"
+    },
+    "CPF13_EthernetPowerlink" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF13_EthernetPowerlink"
+    },
+    "On-State_Resistance" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#On-State_Resistance"
+    },
+    "OpenOrder" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#OpenOrder"
+    },
+    "isVendorOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#isVendorOf",
+      "@type" : "@id"
+    },
+    "hasLineIDOLI" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasLineIDOLI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "hasTargetServiceLevelBeta" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasTargetServiceLevelBeta",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Threshold_Voltage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Threshold_Voltage"
+    },
+    "hasVendor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#hasVendor",
+      "@type" : "@id"
+    },
+    "DesignTarget" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#DesignTarget"
+    },
+    "AH_system_documentation_document" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_system_documentation_document"
+    },
+    "EDIFACT_ORDRSP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#EDIFACT_ORDRSP"
+    },
+    "FinishedProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#FinishedProduct"
+    },
+    "consitsOfOpenOrder" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#consitsOfOpenOrder",
+      "@type" : "@id"
+    },
+    "inXSDgYear" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDgYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "ANSI_X12-Specification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ANSI_X12-Specification"
+    },
+    "Qualification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#Qualification"
+    },
+    "AH_SystemDiscoveryService_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService_SD"
+    },
+    "hasLotEvent" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLotEvent",
+      "@type" : "@id"
+    },
+    "TimePosition" : {
+      "@id" : "http://www.w3.org/2006/time#TimePosition"
+    },
+    "processes" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#processes",
+      "@type" : "@id"
+    },
+    "OP_Forecast" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#OP_Forecast"
+    },
+    "alternateProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#alternateProduct",
+      "@type" : "@id"
+    },
+    "Platform" : {
+      "@id" : "http://www.w3.org/ns/sosa/Platform"
+    },
+    "hasTechnologyID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasTechnologyID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "madeSampling" : {
+      "@id" : "http://www.w3.org/ns/sosa/madeSampling",
+      "@type" : "@id"
+    },
+    "Technology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Technology"
+    },
+    "hiddenLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hiddenLabel"
+    },
+    "hasDREP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#hasDREP",
+      "@type" : "@id"
+    },
+    "are" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#are",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "hasObject" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasObject",
+      "@type" : "@id"
+    },
+    "Furnace_Process" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Furnace_Process"
+    },
+    "RelationalDatabase-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#RelationalDatabase-System"
+    },
+    "hasTopology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasTopology",
+      "@type" : "@id"
+    },
+    "usesCommTech" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#usesCommTech",
+      "@type" : "@id"
+    },
+    "isOwnedByCustomer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isOwnedByCustomer",
+      "@type" : "@id"
+    },
+    "hasInputin" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#hasInputin",
+      "@type" : "@id"
+    },
+    "isLotSizeOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isLotSizeOf",
+      "@type" : "@id"
+    },
+    "AdditionalPowerManagement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#AdditionalPowerManagement"
+    },
+    "hasSensingType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasSensingType",
+      "@type" : "@id"
+    },
+    "Deployment" : {
+      "@id" : "http://www.w3.org/ns/ssn/Deployment"
+    },
+    "hasSKU_SM" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#hasSKU_SM",
+      "@type" : "@id"
+    },
+    "GateDriver" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#GateDriver"
+    },
+    "hasElectricPowerMax" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasElectricPowerMax",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "LIMS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#LIMS"
+    },
+    "ISA-95_Comm_1_1" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Comm_1_1"
+    },
+    "hasReworkTest" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasReworkTest",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "AH_application_servcice_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_application_servcice_IDD"
+    },
+    "DPWS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DPWS"
+    },
+    "AH_mandatory_core_service_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_service_IDD"
+    },
+    "isSimilarTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#isSimilarTo",
+      "@type" : "@id"
+    },
+    "Depletion_Mode" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Depletion_Mode"
+    },
+    "hasHalogenFreeStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasHalogenFreeStatus",
+      "@type" : "@id"
+    },
+    "AH_Orchestrator_WADL" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_Orchestrator_WADL"
+    },
+    "WSDL" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#WSDL"
+    },
+    "hasDurationDescription" : {
+      "@id" : "http://www.w3.org/2006/time#hasDurationDescription",
+      "@type" : "@id"
+    },
+    "STOMP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#STOMP"
+    },
+    "TemporalDuration" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalDuration"
+    },
+    "Asset" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Asset"
+    },
+    "dayOfWeek" : {
+      "@id" : "http://www.w3.org/2006/time#dayOfWeek",
+      "@type" : "@id"
+    },
+    "hasTotalDeliveredQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasTotalDeliveredQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "SoA_Client" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SoA_Client"
+    },
+    "ISA-95_Comm_2_4" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Comm_2_4"
+    },
+    "PLC" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PLC"
+    },
+    "W3C-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#W3C-Standard"
+    },
+    "describes" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#describes",
+      "@type" : "@id"
+    },
+    "Procedure" : {
+      "@id" : "http://www.w3.org/ns/sosa/Procedure"
+    },
+    "OrderConfirmation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#OrderConfirmation"
+    },
+    "ISA-95_Layer2_DistributedControl_SCADA" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Layer2_DistributedControl_SCADA"
+    },
+    "Connector" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#Connector"
+    },
+    "isShiftOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isShiftOf",
+      "@type" : "@id"
+    },
+    "OversamplingRate" : {
+      "@id" : "http://www.w3.org/ns/ssn/OversamplingRate"
+    },
+    "CAD-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CAD-System"
+    },
+    "definesCompliantService" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#definesCompliantService",
+      "@type" : "@id"
+    },
+    "requiresAction" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#requiresAction",
+      "@type" : "@id"
+    },
+    "hasRobotUnloadingTime" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasRobotUnloadingTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "DayOfWeek" : {
+      "@id" : "http://www.w3.org/2006/time#DayOfWeek"
+    },
+    "SPARQL_Language" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SPARQL_Language"
+    },
+    "ResourceCapacity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#ResourceCapacity"
+    },
+    "hasCapacityLoss" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasCapacityLoss",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "intervalMeets" : {
+      "@id" : "http://www.w3.org/2006/time#intervalMeets",
+      "@type" : "@id"
+    },
+    "finishedProductNumber" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#finishedProductNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OPC_UA_BinaryProtocol" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OPC_UA_BinaryProtocol"
+    },
+    "DurationDescription" : {
+      "@id" : "http://www.w3.org/2006/time#DurationDescription"
+    },
+    "CPF3_Profibus_ProfiNet" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF3_Profibus_ProfiNet"
+    },
+    "refersTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#refersTo",
+      "@type" : "@id"
+    },
+    "FPOS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#FPOS"
+    },
+    "Material" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#Material"
+    },
+    "Programmable_Logic_Controller" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Programmable_Logic_Controller"
+    },
+    "I4.0Component" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#I4.0Component"
+    },
+    "hasDCLinkVoltageMin" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasDCLinkVoltageMin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "SECS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SECS"
+    },
+    "MainPowerDeviceType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MainPowerDeviceType"
+    },
+    "AH_automation_supporting_service_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_service_IDD"
+    },
+    "Physical_Object" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Physical_Object"
+    },
+    "AggregatedCapacity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#AggregatedCapacity"
+    },
+    "Organization" : {
+      "@id" : "http://www.w3.org/ns/org#Organization"
+    },
+    "hasSplitLotChips" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasSplitLotChips",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Demand_Snapshot" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Demand_Snapshot"
+    },
+    "Category" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#Category"
+    },
+    "PressureSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#PressureSensor"
+    },
+    "matchTO" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#matchTO",
+      "@type" : "@id"
+    },
+    "after" : {
+      "@id" : "http://www.w3.org/2006/time#after",
+      "@type" : "@id"
+    },
+    "hasOperatingProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/hasOperatingProperty",
+      "@type" : "@id"
+    },
+    "isInputOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isInputOf",
+      "@type" : "@id"
+    },
+    "Equipment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Equipment"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hasPersonResponsible" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasPersonResponsible",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AH_SessionEstablishService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_IDD"
+    },
+    "Microphone" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#Microphone"
+    },
+    "System_documentation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#System_documentation"
+    },
+    "Tool" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Tool"
+    },
+    "refersToSySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#refersToSySD",
+      "@type" : "@id"
+    },
+    "Infineon_Device" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Infineon_Device"
+    },
+    "Digital-Factory-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Digital-Factory-System"
+    },
+    "ordersScheduleLine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#ordersScheduleLine"
+    },
+    "GeneralDateTimeDescription" : {
+      "@id" : "http://www.w3.org/2006/time#GeneralDateTimeDescription"
+    },
+    "Bridge" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Bridge"
+    },
+    "isAHSystemDocumentedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isAHSystemDocumentedBy",
+      "@type" : "@id"
+    },
+    "connectedTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#connectedTo",
+      "@type" : "@id"
+    },
+    "ISA-95_Comm_1_3" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Comm_1_3"
+    },
+    "Package" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Package"
+    },
+    "hasOperationCritical" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasOperationCritical",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "belongsToOrganizationalUnit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#belongsToOrganizationalUnit",
+      "@type" : "@id"
+    },
+    "toEquipmentGroupID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#toEquipmentGroupID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Ethernet_802_3" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Ethernet_802_3"
+    },
+    "Source" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Source"
+    },
+    "ProductionCellPlanning" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ProductionCellPlanning"
+    },
+    "has_The_Elements" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_The_Elements",
+      "@type" : "@id"
+    },
+    "hasDemand" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasDemand",
+      "@type" : "@id"
+    },
+    "intervalOverlappedBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalOverlappedBy",
+      "@type" : "@id"
+    },
+    "Product" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#Product"
+    },
+    "semiconductorProductStatusOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#semiconductorProductStatusOf",
+      "@type" : "@id"
+    },
+    "containsContactPersonData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#containsContactPersonData",
+      "@type" : "@id"
+    },
+    "hasSolutionQualification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasSolutionQualification",
+      "@type" : "@id"
+    },
+    "AS2" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#AS2"
+    },
+    "PrivateCustomers" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#PrivateCustomers"
+    },
+    "isTargetCostsOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isTargetCostsOf",
+      "@type" : "@id"
+    },
+    "isActivatedByFunction" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isActivatedByFunction",
+      "@type" : "@id"
+    },
+    "packingTypeOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#packingTypeOf",
+      "@type" : "@id"
+    },
+    "hasTravelTime" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasTravelTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasFrequency" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasFrequency",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "DeviceID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#DeviceID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSubProject" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasSubProject",
+      "@type" : "@id"
+    },
+    "TemporalUnit" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalUnit"
+    },
+    "hasSubmodel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#hasSubmodel",
+      "@type" : "@id"
+    },
+    "hosts" : {
+      "@id" : "http://www.w3.org/ns/sosa/hosts",
+      "@type" : "@id"
+    },
+    "PLM2_Module" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PLM2_Module"
+    },
+    "hasName" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isPreceededBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isPreceededBy",
+      "@type" : "@id"
+    },
+    "hasFeature" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasFeature",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "intervalContains" : {
+      "@id" : "http://www.w3.org/2006/time#intervalContains",
+      "@type" : "@id"
+    },
+    "ISA-95_Layer0_PhysicalProcess" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Layer0_PhysicalProcess"
+    },
+    "hasOutput" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasOutput",
+      "@type" : "@id"
+    },
+    "refersToCP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#refersToCP",
+      "@type" : "@id"
+    },
+    "ISA-95_Comm_3_4" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Comm_3_4"
+    },
+    "Priority_Classes" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Priority_Classes"
+    },
+    "actsOnProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/actsOnProperty",
+      "@type" : "@id"
+    },
+    "hasCustomerNo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasCustomerNo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "ISA-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-Standard"
+    },
+    "MarkupLanguage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MarkupLanguage"
+    },
+    "Sputtering" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Sputtering"
+    },
+    "describesSupplier" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#describesSupplier",
+      "@type" : "@id"
+    },
+    "CPF16_SERCOS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF16_SERCOS"
+    },
+    "hasRoHSCompliantStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasRoHSCompliantStatus",
+      "@type" : "@id"
+    },
+    "ISA-95_AutomationHierarchy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_AutomationHierarchy"
+    },
+    "isServiceDocumentedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isServiceDocumentedBy",
+      "@type" : "@id"
+    },
+    "hasPlantName" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasPlantName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasScope" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasScope",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ISA-95_Comm_2_3" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Comm_2_3"
+    },
+    "SensorDevice" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SensorDevice"
+    },
+    "Voltage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Voltage"
+    },
+    "AH_GatewaySystem_SySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_SySDD"
+    },
+    "Solution" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#Solution"
+    },
+    "Workshop" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Workshop"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+    },
+    "Communication_technology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Communication_technology"
+    },
+    "hasInformationModel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#hasInformationModel",
+      "@type" : "@id"
+    },
+    "hasSubUnit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasSubUnit",
+      "@type" : "@id"
+    },
+    "hasVersion" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#hasVersion",
+      "@type" : "@id"
+    },
+    "hasPONumberOO" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasPONumberOO",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "hasOperationName" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasOperationName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SMTP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SMTP"
+    },
+    "hours" : {
+      "@id" : "http://www.w3.org/2006/time#hours",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "CommunicationDevice" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CommunicationDevice"
+    },
+    "ObservationCollection" : {
+      "@id" : "http://www.w3.org/TR/vocab-ssn-ext/ObservationCollection"
+    },
+    "producedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#producedBy",
+      "@type" : "@id"
+    },
+    "AH_system_of_systems_documentation_document" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation_document"
+    },
+    "hasTotalUnconfirmedOpenQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasTotalUnconfirmedOpenQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "IntegrationLevel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#IntegrationLevel"
+    },
+    "AH_OrchestrationSystem_SysDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_SysDD"
+    },
+    "hasSuperiorVACD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasSuperiorVACD",
+      "@type" : "@id"
+    },
+    "Drain-Source_Voltage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Drain-Source_Voltage"
+    },
+    "Object" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Object"
+    },
+    "MinStock" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#MinStock"
+    },
+    "CPF14_EPA" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF14_EPA"
+    },
+    "ServiceDataLanguage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ServiceDataLanguage"
+    },
+    "fromFabID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#fromFabID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAsInput" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasAsInput",
+      "@type" : "@id"
+    },
+    "AH_SessionManagementService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_IDD"
+    },
+    "hasProductFamily" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#hasProductFamily",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "isControlledBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isControlledBy",
+      "@type" : "@id"
+    },
+    "hasMainPowerDeviceType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasMainPowerDeviceType",
+      "@type" : "@id"
+    },
+    "CPF11_TCNet" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF11_TCNet"
+    },
+    "isDeviceOfOSILayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#isDeviceOfOSILayer",
+      "@type" : "@id"
+    },
+    "CustomerPlantData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#CustomerPlantData"
+    },
+    "ConfirmedDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#ConfirmedDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasElectricPower" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasElectricPower",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasChannelStructure" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasChannelStructure",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CAN_Bus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CAN_Bus"
+    },
+    "PackingType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#PackingType"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "EDIForecast" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#EDIForecast"
+    },
+    "AH_OrchestrationService_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_SD"
+    },
+    "AH_automation_supporting_service_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_service_SD"
+    },
+    "hasEventDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasEventDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "ISA-95_Comm_2_2" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Comm_2_2"
+    },
+    "MQTT_TCPIP_based" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MQTT_TCPIP_based"
+    },
+    "RetainedStock" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#RetainedStock"
+    },
+    "AH_GatewaySystem_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_GatewaySystem_SySD"
+    },
+    "inCondition" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/inCondition",
+      "@type" : "@id"
+    },
+    "UDS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#UDS"
+    },
+    "DeviceControlApp" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DeviceControlApp"
+    },
+    "Bit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Bit"
+    },
+    "Target_Revenue" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Target_Revenue"
+    },
+    "Customer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#Customer"
+    },
+    "SECS_GEM" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SECS_GEM"
+    },
+    "BPLandscape" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#BPLandscape"
+    },
+    "hasUnitsPerTimePeriod" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasUnitsPerTimePeriod",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "AH_AuthorizationSystem_SysDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_SysDD"
+    },
+    "hasProductFamilyName" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasProductFamilyName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasRole" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasRole",
+      "@type" : "@id"
+    },
+    "MachineResource" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#MachineResource"
+    },
+    "hasLotSizeQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLotSizeQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SPARQL_protocol" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SPARQL_protocol"
+    },
+    "has_RAMI_Life_Cycle_Layer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#has_RAMI_Life_Cycle_Layer",
+      "@type" : "@id"
+    },
+    "SurvivalRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/SurvivalRange"
+    },
+    "hasOwner" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasOwner",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasUltimateFeatureOfInterest" : {
+      "@id" : "http://www.w3.org/TR/vocab-ssn-ext/hasUltimateFeatureOfInterest",
+      "@type" : "@id"
+    },
+    "domainIncludes" : {
+      "@id" : "http://schema.org/domainIncludes"
+    },
+    "hasToolAvailability" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasToolAvailability",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Constant_Resistance" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Constant_Resistance"
+    },
+    "AH_Historian_SysDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_Historian_SysDD"
+    },
+    "hasSupplierReasonCode" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasSupplierReasonCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OSI_3_4_NetworkTechnology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_3_4_NetworkTechnology"
+    },
+    "isSampleOf" : {
+      "@id" : "http://www.w3.org/ns/sosa/isSampleOf",
+      "@type" : "@id"
+    },
+    "needsPurge" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#needsPurge",
+      "@type" : "@id"
+    },
+    "madeBySensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
+      "@type" : "@id"
+    },
+    "hasCompletelyLeadFreeStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasCompletelyLeadFreeStatus",
+      "@type" : "@id"
+    },
+    "PL_Phase3_Production" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PL_Phase3_Production"
+    },
+    "XOR" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#XOR"
+    },
+    "isDedicatedTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isDedicatedTo",
+      "@type" : "@id"
+    },
+    "ActuatableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ActuatableProperty"
+    },
+    "Promise" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#Promise"
+    },
+    "TTP_C" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#TTP_C"
+    },
+    "AH_service" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_service"
+    },
+    "calculate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#calculate",
+      "@type" : "@id"
+    },
+    "G_UMTS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#3G_UMTS"
+    },
+    "MotorControlAndDriveSolution_ElectricPowerMax200" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MotorControlAndDriveSolution_ElectricPowerMax200"
+    },
+    "AH_application_system" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_application_system"
+    },
+    "altLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "sendTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#sendTo",
+      "@type" : "@id"
+    },
+    "hasMinimumProjectManagerExperience" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasMinimumProjectManagerExperience",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "ISA-95_Comm_4_4" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Comm_4_4"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "standardOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#standardOf",
+      "@type" : "@id"
+    },
+    "ProductLifecyclePhase" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ProductLifecyclePhase"
+    },
+    "refersToSP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#refersToSP",
+      "@type" : "@id"
+    },
+    "ISA-95_Comm_1_2" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Comm_1_2"
+    },
+    "WLAN_802_11" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#WLAN_802_11"
+    },
+    "hasBottlenecks" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasBottlenecks",
+      "@type" : "@id"
+    },
+    "hasIdentifier" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasIdentifier",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasEnterState" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasEnterState",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "contains" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#contains",
+      "@type" : "@id"
+    },
+    "leadsToRule" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#leadsToRule",
+      "@type" : "@id"
+    },
+    "Data_link_and_media_access_technology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Data_link_and_media_access_technology"
+    },
+    "MaxStock" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#MaxStock"
+    },
+    "AH_application_system_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_application_system_SySD"
+    },
+    "ProcessType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#ProcessType"
+    },
+    "definesCompliantSystemArchitecture" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#definesCompliantSystemArchitecture",
+      "@type" : "@id"
+    },
+    "hasTelephone" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasTelephone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "AH_system_of_systems_documentation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_system_of_systems_documentation"
+    },
+    "Diffusion" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Diffusion"
+    },
+    "SOAP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SOAP"
+    },
+    "ProcessGroup" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#ProcessGroup"
+    },
+    "RDF-GraphStore" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#RDF-GraphStore"
+    },
+    "PLM2_Vendor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PLM2_Vendor"
+    },
+    "hasWorkPackage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasWorkPackage",
+      "@type" : "@id"
+    },
+    "PLM-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PLM-System"
+    },
+    "isPartOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#isPartOf",
+      "@type" : "@id"
+    },
+    "shippedTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#shippedTo",
+      "@type" : "@id"
+    },
+    "TimeZone" : {
+      "@id" : "http://www.w3.org/2006/time#TimeZone"
+    },
+    "REST" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#REST"
+    },
+    "System_Description_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#System_Description_SySD"
+    },
+    "historyNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "belongsToProductLine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#belongsToProductLine",
+      "@type" : "@id"
+    },
+    "CPF3_2_Profibus_PA" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF3_2_Profibus_PA"
+    },
+    "hasSupplierComments" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasSupplierComments",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AH_application_system_SySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_application_system_SySDD"
+    },
+    "CustomerPlant" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#CustomerPlant"
+    },
+    "ControlDevice" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ControlDevice"
+    },
+    "hasSampleRelationship" : {
+      "@id" : "http://www.w3.org/ns/sosa/sampling/hasSampleRelationship",
+      "@type" : "@id"
+    },
+    "Electric_Vehicle_Charging" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Electric_Vehicle_Charging"
+    },
+    "isInputFor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isInputFor",
+      "@type" : "@id"
+    },
+    "isPartOfServiceDoc" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isPartOfServiceDoc",
+      "@type" : "@id"
+    },
+    "activatesTask" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#activatesTask",
+      "@type" : "@id"
+    },
+    "Release_Plan" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Release_Plan"
+    },
+    "Dimension" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Dimension"
+    },
+    "CPF3_4_Profinet_IO_ClassA" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF3_4_Profinet_IO_ClassA"
+    },
+    "months" : {
+      "@id" : "http://www.w3.org/2006/time#months",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasPart" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasPart",
+      "@type" : "@id"
+    },
+    "isLinkedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isLinkedBy",
+      "@type" : "@id"
+    },
+    "second" : {
+      "@id" : "http://www.w3.org/2006/time#second",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasCompletionStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasCompletionStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SupplierData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#SupplierData"
+    },
+    "hasSupplyVoltageMin" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasSupplyVoltageMin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Information_Object" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Information_Object"
+    },
+    "inXSDDateTime" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "System_WebApplicationDescription_WADL" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#System_WebApplicationDescription_WADL"
+    },
+    "identifier_product_internetSalesProductNumber" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#identifier_product_internetSalesProductNumber"
+    },
+    "hasFabPseudonym" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasFabPseudonym",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "activates" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#activates",
+      "@type" : "@id"
+    },
+    "has_The_Propeties_of" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_The_Propeties_of",
+      "@type" : "@id"
+    },
+    "On-State_Voltage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#On-State_Voltage"
+    },
+    "G" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#5G"
+    },
+    "MotorControlAndDriveSolution_WithoutSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MotorControlAndDriveSolution_WithoutSensor"
+    },
+    "hasBudgetValue" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasBudgetValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Plant" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Plant"
+    },
+    "Result" : {
+      "@id" : "http://www.w3.org/ns/sosa/Result"
+    },
+    "containsCustomerPlantData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#containsCustomerPlantData",
+      "@type" : "@id"
+    },
+    "subApplicationAreaOfApplicationLevel2" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#subApplicationAreaOfApplicationLevel2",
+      "@type" : "@id"
+    },
+    "hasChipsPerWafer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasChipsPerWafer",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isPriorityClassOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isPriorityClassOf",
+      "@type" : "@id"
+    },
+    "hasAdimension" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#hasAdimension",
+      "@type" : "@id"
+    },
+    "AH_DeviceDiscoveryService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_IDD"
+    },
+    "manuallyLoads" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#manuallyLoads",
+      "@type" : "@id"
+    },
+    "BP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#BP"
+    },
+    "OrderLineItem" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#OrderLineItem"
+    },
+    "hasTemperatueMax" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasTemperatueMax",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "DREP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#DREP"
+    },
+    "evaluates" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#evaluates",
+      "@type" : "@id"
+    },
+    "couldContainSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#couldContainSensor",
+      "@type" : "@id"
+    },
+    "preceeds" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#preceeds",
+      "@type" : "@id"
+    },
+    "AppleTalk" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#AppleTalk"
+    },
+    "hasOperationID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasOperationID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AH_AuthorizationSystem_WADL" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_WADL"
+    },
+    "hasSubordinate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasSubordinate",
+      "@type" : "@id"
+    },
+    "Resolution" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Resolution"
+    },
+    "AutomationML" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#AutomationML"
+    },
+    "hasTargetApplication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasTargetApplication",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "inAccordanceWith" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#inAccordanceWith",
+      "@type" : "@id"
+    },
+    "isHostedBy" : {
+      "@id" : "http://www.w3.org/ns/sosa/isHostedBy",
+      "@type" : "@id"
+    },
+    "System_Design_Description_SySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#System_Design_Description_SySDD"
+    },
+    "AH_core_service" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_core_service"
+    },
+    "Maximum_Junction_Temperature" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Maximum_Junction_Temperature"
+    },
+    "ApplicationArea" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#ApplicationArea"
+    },
+    "Product_Class" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Product_Class"
+    },
+    "Sensors" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Sensors"
+    },
+    "DB" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#DB"
+    },
+    "uniformResourceLocator_productDatasheet" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#uniformResourceLocator_productDatasheet"
+    },
+    "isDocumentedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isDocumentedBy",
+      "@type" : "@id"
+    },
+    "usesStandard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#usesStandard",
+      "@type" : "@id"
+    },
+    "Uses" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Uses",
+      "@type" : "@id"
+    },
+    "SubProject" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#SubProject"
+    },
+    "hasSubFlow" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasSubFlow",
+      "@type" : "@id"
+    },
+    "PLM1_Vendor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PLM1_Vendor"
+    },
+    "isExecutedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isExecutedBy",
+      "@type" : "@id"
+    },
+    "timeZone" : {
+      "@id" : "http://www.w3.org/2006/time#timeZone",
+      "@type" : "@id"
+    },
+    "FunctionObject" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#FunctionObject"
+    },
+    "transferTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#transferTo",
+      "@type" : "@id"
+    },
+    "figureOutFrom" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#figureOutFrom",
+      "@type" : "@id"
+    },
+    "DrainCurrent" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#DrainCurrent"
+    },
+    "hasMission" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasMission",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Off-State_Region" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Off-State_Region"
+    },
+    "BufferStockOrders" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#BufferStockOrders"
+    },
+    "Router" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Router"
+    },
+    "AH_core_service_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_core_service_IDD"
+    },
+    "ZigBee" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ZigBee"
+    },
+    "integrationLevelOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#integrationLevelOf",
+      "@type" : "@id"
+    },
+    "hasImpactFactor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasImpactFactor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "OSI_5_7_ApplicationProtocol" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_5_7_ApplicationProtocol"
+    },
+    "UserAction" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#UserAction"
+    },
+    "Operation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Operation"
+    },
+    "Time_Constraints" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Time_Constraints"
+    },
+    "Length" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Length"
+    },
+    "DetectionLimit" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/DetectionLimit"
+    },
+    "hasSequenceNumber" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasSequenceNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "IEC-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IEC-Standard"
+    },
+    "OSI_L7_ApplicationLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_L7_ApplicationLayer"
+    },
+    "The_process_name_of_the_device_function" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#The_process_name_of_the_device_function"
+    },
+    "N3_TURTLE" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#N3_TURTLE"
+    },
+    "hasPreviousModel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasPreviousModel",
+      "@type" : "@id"
+    },
+    "Allocates" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#Allocates",
+      "@type" : "@id"
+    },
+    "generate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#generate",
+      "@type" : "@id"
+    },
+    "hasProjectStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasProjectStatus",
+      "@type" : "@id"
+    },
+    "Arrowhead" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Arrowhead"
+    },
+    "hasBudgetaryPrice" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasBudgetaryPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasFootprintAreaProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasFootprintAreaProduct",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "SwitchingValue" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#SwitchingValue"
+    },
+    "OSI_Layer_Model_detailed" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_Layer_Model_detailed"
+    },
+    "FactoryLayoutPlanning" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#FactoryLayoutPlanning"
+    },
+    "Topology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#Topology"
+    },
+    "SemiconductorSolution" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#SemiconductorSolution"
+    },
+    "Packet" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Packet"
+    },
+    "inDeployment" : {
+      "@id" : "http://www.w3.org/ns/ssn/inDeployment",
+      "@type" : "@id"
+    },
+    "EDI_Specification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#EDI_Specification"
+    },
+    "carriesOut" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#carriesOut",
+      "@type" : "@id"
+    },
+    "AH_application_service_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_application_service_SD"
+    },
+    "numericDuration" : {
+      "@id" : "http://www.w3.org/2006/time#numericDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "TechnicalTermOutputElement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#TechnicalTermOutputElement"
+    },
+    "hasRobotLoadingTime" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasRobotLoadingTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "AH_SessionEstablishService_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_SessionEstablishService_SD"
+    },
+    "MachineSimulationSystem" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MachineSimulationSystem"
+    },
+    "hasTechnology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasTechnology",
+      "@type" : "@id"
+    },
+    "PL_Phase4_Usage_Maintenance" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PL_Phase4_Usage_Maintenance"
+    },
+    "AH_TokenGenerationServcie_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationServcie_SD"
+    },
+    "SenML" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SenML"
+    },
+    "isReferredToBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isReferredToBy",
+      "@type" : "@id"
+    },
+    "OperationalDemand" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#OperationalDemand"
+    },
+    "Planning_Work_Center" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Planning_Work_Center"
+    },
+    "DigitalBarometricPressureSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#DigitalBarometricPressureSensor"
+    },
+    "WIMAX_802_16" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#WIMAX_802_16"
+    },
+    "Event" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#Event"
+    },
+    "Resistance" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Resistance"
+    },
+    "SiC_MOSFET" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#SiC_MOSFET"
+    },
+    "TCP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#TCP"
+    },
+    "isCertificationLevelOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#isCertificationLevelOf",
+      "@type" : "@id"
+    },
+    "containsOSILayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#containsOSILayer",
+      "@type" : "@id"
+    },
+    "hasChipCountIntelligentPowerModule" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasChipCountIntelligentPowerModule",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "OSI_DetailedLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_DetailedLayer"
+    },
+    "hasPTimePerUnit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasPTimePerUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "follows" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#follows",
+      "@type" : "@id"
+    },
+    "containsAdditionalPowerManagement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#containsAdditionalPowerManagement",
+      "@type" : "@id"
+    },
+    "EndEvent" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#EndEvent"
+    },
+    "SupplyPicture" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#SupplyPicture"
+    },
+    "latestStardardVersion" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#latestStardardVersion"
+    },
+    "hasTimeConstraints" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasTimeConstraints",
+      "@type" : "@id"
+    },
+    "DigitalFactoryTwin" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DigitalFactoryTwin"
+    },
+    "hasChipCountDiscretePowerStage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasChipCountDiscretePowerStage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Interface" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Interface"
+    },
+    "uPnP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#uPnP"
+    },
+    "PrioritizedDemand" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#PrioritizedDemand"
+    },
+    "DSL" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DSL"
+    },
+    "OrderChangeRequest" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#OrderChangeRequest"
+    },
+    "hasBusinessLine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasBusinessLine",
+      "@type" : "@id"
+    },
+    "InformationTechnology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#InformationTechnology"
+    },
+    "AH_core_service_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_core_service_SD"
+    },
+    "OperatingRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/OperatingRange"
+    },
+    "isNeededBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isNeededBy",
+      "@type" : "@id"
+    },
+    "hasProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/hasProperty",
+      "@type" : "@id"
+    },
+    "MQTT-SN" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MQTT-SN"
+    },
+    "wasOriginatedBy" : {
+      "@id" : "http://www.w3.org/ns/ssn/wasOriginatedBy",
+      "@type" : "@id"
+    },
+    "hasFootprintAreaSmartDriver" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasFootprintAreaSmartDriver",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasUsedDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#hasUsedDate",
+      "@type" : "@id"
+    },
+    "Fab" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Fab"
+    },
+    "AH_ServiceRegistrySystem_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_SySD"
+    },
+    "ISA-95_Layer3_MES_LES" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Layer3_MES_LES"
+    },
+    "Target_Service_Level" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Target_Service_Level"
+    },
+    "CPF6_INTERBUS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF6_INTERBUS"
+    },
+    "roboticallyLoads" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#roboticallyLoads",
+      "@type" : "@id"
+    },
+    "hasProjectScope" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasProjectScope",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ComputerHardware" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#ComputerHardware"
+    },
+    "hasAsOutput" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasAsOutput",
+      "@type" : "@id"
+    },
+    "hasIcoterms" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasIcoterms",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PLM2_System_Suite" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PLM2_System_Suite"
+    },
+    "Measure" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Measure"
+    },
+    "calculateBased" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#calculateBased",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "BPActivity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#BPActivity"
+    },
+    "OperatingProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/OperatingProperty"
+    },
+    "Sensitivity" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Sensitivity"
+    },
+    "Materials" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Materials"
+    },
+    "AH_DeviceDiscoveryService_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_DeviceDiscoveryService_SD"
+    },
+    "hour" : {
+      "@id" : "http://www.w3.org/2006/time#hour",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "isTransferTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#isTransferTo",
+      "@type" : "@id"
+    },
+    "xsdDateTime" : {
+      "@id" : "http://www.w3.org/2006/time#xsdDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "DateTimeInterval" : {
+      "@id" : "http://www.w3.org/2006/time#DateTimeInterval"
+    },
+    "CPNSpec" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#CPNSpec"
+    },
+    "is_a_Product_of" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#is_a_Product_of",
+      "@type" : "@id"
+    },
+    "Simulation_Route" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Simulation_Route"
+    },
+    "Local_network" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Local_network"
+    },
+    "hasOperatingRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/hasOperatingRange",
+      "@type" : "@id"
+    },
+    "Services" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Software&Services"
+    },
+    "hasDuration" : {
+      "@id" : "http://www.w3.org/2006/time#hasDuration",
+      "@type" : "@id"
+    },
+    "DHCP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DHCP"
+    },
+    "ElectricDrive" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ElectricDrive"
+    },
+    "SoA_Subscriber" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SoA_Subscriber"
+    },
+    "CPF3_5_Profinet_IO_ClassB" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF3_5_Profinet_IO_ClassB"
+    },
+    "Cycle_Time_Committment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Cycle_Time_Committment"
+    },
+    "Price" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Price"
+    },
+    "DataLanguage_XML-based" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DataLanguage_XML-based"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "TRS" : {
+      "@id" : "http://www.w3.org/2006/time#TRS"
+    },
+    "XML" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#XML"
+    },
+    "requiresUserAction" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#requiresUserAction",
+      "@type" : "@id"
+    },
+    "usesDataFormat" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#usesDataFormat",
+      "@type" : "@id"
+    },
+    "AATP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#AATP"
+    },
+    "documentsAHServiceDataFormat" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#documentsAHServiceDataFormat",
+      "@type" : "@id"
+    },
+    "ProductLine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#ProductLine"
+    },
+    "mountingStyleOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#mountingStyleOf",
+      "@type" : "@id"
+    },
+    "MaintenanceSchedule" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/MaintenanceSchedule"
+    },
+    "hasBenefit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasBenefit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Date" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Date"
+    },
+    "hasProductLevel2ID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasProductLevel2ID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNumberOfProducts" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasNumberOfProducts",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Healthcare" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Healthcare"
+    },
+    "hasContributor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasContributor",
+      "@type" : "@id"
+    },
+    "Timecoupling" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Timecoupling"
+    },
+    "ProductDataManagement-Module" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ProductDataManagement-Module"
+    },
+    "AH_StoreManagementService_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_SD"
+    },
+    "BI-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#BI-System"
+    },
+    "SSO_Stocks" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#SSO_Stocks"
+    },
+    "WirelessHART" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#WirelessHART"
+    },
+    "resultTime" : {
+      "@id" : "http://www.w3.org/ns/sosa/resultTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "usesTransferProtocol" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#usesTransferProtocol",
+      "@type" : "@id"
+    },
+    "consistsOfOrderLineItem" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#consistsOfOrderLineItem",
+      "@type" : "@id"
+    },
+    "AH_OrchestrationSystem_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationSystem_SySD"
+    },
+    "W3C_L5_DataSemantics" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#W3C_L5_DataSemantics"
+    },
+    "ModellingFunctionObject" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#ModellingFunctionObject"
+    },
+    "WAP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#WAP"
+    },
+    "hasDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#hasDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasTask" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasTask",
+      "@type" : "@id"
+    },
+    "has_information_object" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_information_object",
+      "@type" : "@id"
+    },
+    "Service_documentation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Service_documentation"
+    },
+    "isManuallyLoadedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isManuallyLoadedBy",
+      "@type" : "@id"
+    },
+    "isWorkedOnByCollaborationOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isWorkedOnByCollaborationOf",
+      "@type" : "@id"
+    },
+    "OSI_L5_SessionLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_L5_SessionLayer"
+    },
+    "TemporalPosition" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalPosition"
+    },
+    "hasMaxWIP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasMaxWIP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Quality" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Quality"
+    },
+    "CPF18_SafetyNet_p" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF18_SafetyNet_p"
+    },
+    "OPC" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OPC"
+    },
+    "XHTML" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#XHTML"
+    },
+    "hasSubordinateVACD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasSubordinateVACD",
+      "@type" : "@id"
+    },
+    "responsibleForApplicationArea_ProductLine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#responsibleForApplicationArea_ProductLine",
+      "@type" : "@id"
+    },
+    "hasMeanTimeToRepairDistribution" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasMeanTimeToRepairDistribution",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTrainingLevel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasTrainingLevel",
+      "@type" : "@id"
+    },
+    "RealEstate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#RealEstate"
+    },
+    "FactorySimulationSystem" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#FactorySimulationSystem"
+    },
+    "isWorkshopOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isWorkshopOf",
+      "@type" : "@id"
+    },
+    "usesSecurityMechanism" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#usesSecurityMechanism",
+      "@type" : "@id"
+    },
+    "hasPurgeDuration" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasPurgeDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "useIn" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#useIn",
+      "@type" : "@id"
+    },
+    "hasOperation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasOperation",
+      "@type" : "@id"
+    },
+    "SCTP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SCTP"
+    },
+    "hasRfP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#hasRfP",
+      "@type" : "@id"
+    },
+    "refersToSySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#refersToSySDD",
+      "@type" : "@id"
+    },
+    "relatedSample" : {
+      "@id" : "http://www.w3.org/ns/sosa/sampling/relatedSample",
+      "@type" : "@id"
+    },
+    "ownedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#ownedBy",
+      "@type" : "@id"
+    },
+    "Process_Flow" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Process_Flow"
+    },
+    "AH_AuthorizationControlService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_IDD"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "Computer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Computer"
+    },
+    "BusinessLine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#BusinessLine"
+    },
+    "isActedOnBy" : {
+      "@id" : "http://www.w3.org/ns/sosa/isActedOnBy",
+      "@type" : "@id"
+    },
+    "PL_Phase2_Maintenance_Improvement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PL_Phase2_Maintenance_Improvement"
+    },
+    "KPI-ML" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#KPI-ML"
+    },
+    "RoHSCompliantStatusOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#RoHSCompliantStatusOf",
+      "@type" : "@id"
+    },
+    "hasRequestedQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasRequestedQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Lot_Size" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Lot_Size"
+    },
+    "monthOfYear" : {
+      "@id" : "http://www.w3.org/2006/time#monthOfYear",
+      "@type" : "@id"
+    },
+    "hasTotalRequestedQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasTotalRequestedQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "isUnloadedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isUnloadedBy",
+      "@type" : "@id"
+    },
+    "Process_Line" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Process_Line"
+    },
+    "isOperationOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isOperationOf",
+      "@type" : "@id"
+    },
+    "hasCommunicationDevice" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#hasCommunicationDevice",
+      "@type" : "@id"
+    },
+    "Switch_device" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Switch_device"
+    },
+    "FTP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#FTP"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Microcontroller" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Microcontroller"
+    },
+    "isTransformedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isTransformedBy",
+      "@type" : "@id"
+    },
+    "phenomenonTime" : {
+      "@id" : "http://www.w3.org/ns/sosa/phenomenonTime",
+      "@type" : "@id"
+    },
+    "requestsOrderChangeRequest" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#requestsOrderChangeRequest",
+      "@type" : "@id"
+    },
+    "hasFootprintAreaIntelligentPowerModule" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasFootprintAreaIntelligentPowerModule",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "DDS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DDS"
+    },
+    "hasTemporalDuration" : {
+      "@id" : "http://www.w3.org/2006/time#hasTemporalDuration",
+      "@type" : "@id"
+    },
+    "Energy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Energy"
+    },
+    "belongsToOpenOrder" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#belongsToOpenOrder",
+      "@type" : "@id"
+    },
+    "OCF-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OCF-Standard"
+    },
+    "AH_mandatory_core_system_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_system_SySD"
+    },
+    "SensingType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#SensingType"
+    },
+    "containsGateDriver" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#containsGateDriver",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "refersToIDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#refersToIDD",
+      "@type" : "@id"
+    },
+    "Productive" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Productive"
+    },
+    "hasFax" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasFax",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "OCF" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OCF"
+    },
+    "RampUpStock" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#RampUpStock"
+    },
+    "preLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#preLabel"
+    },
+    "Point-to-Point_communication_technology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Point-to-Point_communication_technology"
+    },
+    "G_GPRS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#2G_GPRS"
+    },
+    "isCurrentWIP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isCurrentWIP",
+      "@type" : "@id"
+    },
+    "CPF4_P-NET" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF4_P-NET"
+    },
+    "Width" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Width"
+    },
+    "Role" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#Role"
+    },
+    "Chemical_Polishing" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Chemical_Polishing"
+    },
+    "refersToSD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#refersToSD",
+      "@type" : "@id"
+    },
+    "isPartOfSoSDoc" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isPartOfSoSDoc",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "isDescribedWith" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#isDescribedWith",
+      "@type" : "@id"
+    },
+    "RFID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#RFID"
+    },
+    "ANSI" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ANSI"
+    },
+    "RAMI_Hierarchy_Level_Dimension" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#RAMI_Hierarchy_Level_Dimension"
+    },
+    "hasTransactionCode" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasTransactionCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "subUnitOfDivision" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#subUnitOfDivision",
+      "@type" : "@id"
+    },
+    "intervalAfter" : {
+      "@id" : "http://www.w3.org/2006/time#intervalAfter",
+      "@type" : "@id"
+    },
+    "hasQualification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasQualification",
+      "@type" : "@id"
+    },
+    "CommunicationServices" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#CommunicationServices"
+    },
+    "IndustryPC" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IndustryPC"
+    },
+    "hasResultingFactorAverage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasResultingFactorAverage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasTime" : {
+      "@id" : "http://www.w3.org/2006/time#hasTime",
+      "@type" : "@id"
+    },
+    "MESConnection" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#MESConnection"
+    },
+    "hasReference" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#hasReference",
+      "@type" : "@id"
+    },
+    "subApplicationAreaOfIndustry" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#subApplicationAreaOfIndustry",
+      "@type" : "@id"
+    },
+    "isConnectedTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#isConnectedTo",
+      "@type" : "@id"
+    },
+    "InformationEntity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#InformationEntity"
+    },
+    "hasTargetRevenue" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasTargetRevenue",
+      "@type" : "@id"
+    },
+    "hasCustomerReferenceNo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasCustomerReferenceNo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Stocks" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#Stocks"
+    },
+    "Supplier" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#Supplier"
+    },
+    "resultIsForwardedTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#resultIsForwardedTo",
+      "@type" : "@id"
+    },
+    "has_A_Configuration" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_A_Configuration",
+      "@type" : "@id"
+    },
+    "Device_Elements" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Device_Elements"
+    },
+    "completelyLeadFreeStatusOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#completelyLeadFreeStatusOf",
+      "@type" : "@id"
+    },
+    "hasSubApplicationArea" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasSubApplicationArea",
+      "@type" : "@id"
+    },
+    "hasIPCode" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasIPCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasItemPrice" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasItemPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "X400" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#X400"
+    },
+    "hasTotalConfirmedQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasTotalConfirmedQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "containsIntelligentPowerModule" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#containsIntelligentPowerModule",
+      "@type" : "@id"
+    },
+    "Implantation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Implantation"
+    },
+    "creates" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#creates",
+      "@type" : "@id"
+    },
+    "AH_ServiceRegistry_WADL" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistry_WADL"
+    },
+    "subApplicationAreaOfSensorMainApplication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#subApplicationAreaOfSensorMainApplication",
+      "@type" : "@id"
+    },
+    "Components" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#ElectronicEquipment,Instruments&Components"
+    },
+    "UML" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#UML"
+    },
+    "hasMember" : {
+      "@id" : "http://www.w3.org/TR/vocab-ssn-ext/hasMember",
+      "@type" : "@id"
+    },
+    "numericPosition" : {
+      "@id" : "http://www.w3.org/2006/time#numericPosition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "isBottlenecksOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isBottlenecksOf",
+      "@type" : "@id"
+    },
+    "dataTransmissionUnitOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#dataTransmissionUnitOf",
+      "@type" : "@id"
+    },
+    "rangeIncludes" : {
+      "@id" : "http://schema.org/rangeIncludes"
+    },
+    "IndustrialEthernet" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IndustrialEthernet"
+    },
+    "hasInput" : {
+      "@id" : "http://www.w3.org/ns/ssn/hasInput",
+      "@type" : "@id"
+    },
+    "Is_Working_As" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Is_Working_As",
+      "@type" : "@id"
+    },
+    "AND" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#AND"
+    },
+    "OPNStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#OPNStatus"
+    },
+    "ApplicationLevel3" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#ApplicationLevel3"
+    },
+    "isRequestedByCustomer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isRequestedByCustomer",
+      "@type" : "@id"
+    },
+    "isOutputOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isOutputOf",
+      "@type" : "@id"
+    },
+    "PLM1_System_Suite" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PLM1_System_Suite"
+    },
+    "uniformResourceLocator_productPage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#uniformResourceLocator_productPage"
+    },
+    "UsedDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#UsedDate"
+    },
+    "substituteProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#substituteProduct",
+      "@type" : "@id"
+    },
+    "MagneticSpeedSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MagneticSpeedSensor"
+    },
+    "identifier_organizationalUnit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#identifier_organizationalUnit"
+    },
+    "hasFootprintAreaDiscretePowerStage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasFootprintAreaDiscretePowerStage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Model" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#Model"
+    },
+    "hasPromisedDockDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasPromisedDockDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "implementedBy" : {
+      "@id" : "http://www.w3.org/ns/ssn/implementedBy",
+      "@type" : "@id"
+    },
+    "ISA-95_Layer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Layer"
+    },
+    "OWL" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OWL"
+    },
+    "isRepresentedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isRepresentedBy",
+      "@type" : "@id"
+    },
+    "W3C" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#W3C"
+    },
+    "EnvironmentalData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#EnvironmentalData"
+    },
+    "location" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#location",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "IP_address" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#IP_address",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "describesCustomerPlant" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#describesCustomerPlant",
+      "@type" : "@id"
+    },
+    "ANSI_X12-DataFormat" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ANSI_X12-DataFormat"
+    },
+    "partOfAsIntelligentPowerModule" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#partOfAsIntelligentPowerModule",
+      "@type" : "@id"
+    },
+    "hasStockOutProbability" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasStockOutProbability",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "EPA" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#EPA"
+    },
+    "Weight" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Weight"
+    },
+    "has_an_Operation_Modes" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_an_Operation_Modes",
+      "@type" : "@id"
+    },
+    "hasProductLevel3" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasProductLevel3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "The_method_of_the_device_function" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#The_method_of_the_device_function"
+    },
+    "hasGoal" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasGoal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "RackFeeder" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#RackFeeder"
+    },
+    "intervalOverlaps" : {
+      "@id" : "http://www.w3.org/2006/time#intervalOverlaps",
+      "@type" : "@id"
+    },
+    "Segment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Segment"
+    },
+    "AH_service_documentation_document" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_service_documentation_document"
+    },
+    "goesTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#goesTo",
+      "@type" : "@id"
+    },
+    "hasRequirements" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasRequirements",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "WebAddress" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#WebAddress"
+    },
+    "sensingTypeOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#sensingTypeOf",
+      "@type" : "@id"
+    },
+    "isRoleOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#isRoleOf",
+      "@type" : "@id"
+    },
+    "hasEnd" : {
+      "@id" : "http://www.w3.org/2006/time#hasEnd",
+      "@type" : "@id"
+    },
+    "containsSmartDriver" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#containsSmartDriver",
+      "@type" : "@id"
+    },
+    "Voltage-Controlled" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Voltage-Controlled"
+    },
+    "amplified_by" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#amplified_by",
+      "@type" : "@id"
+    },
+    "AH_GlobalServiceDiscoveryService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_GlobalServiceDiscoveryService_IDD"
+    },
+    "identifier_product_orderablePartNumber" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#identifier_product_orderablePartNumber"
+    },
+    "AH_ServiceRegistrySystem_SysDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_ServiceRegistrySystem_SysDD"
+    },
+    "hasPriceIndication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasPriceIndication",
+      "@type" : "@id"
+    },
+    "hasTargetCosts" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasTargetCosts",
+      "@type" : "@id"
+    },
+    "belongsToISA-95-Layer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#belongsToISA-95-Layer",
+      "@type" : "@id"
+    },
+    "hasPriorityClass" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasPriorityClass",
+      "@type" : "@id"
+    },
+    "SalesDemands" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#SalesDemands"
+    },
+    "CPF8_CC-Link" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF8_CC-Link"
+    },
+    "hasEquipmentGroupID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasEquipmentGroupID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isReleasePlanOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isReleasePlanOf",
+      "@type" : "@id"
+    },
+    "Z-Wave" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Z-Wave"
+    },
+    "Product_Level_2" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Product_Level_2"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "MotorControlAndDriveSolution_DCLinkVoltage155" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MotorControlAndDriveSolution_DCLinkVoltage155"
+    },
+    "MaterialFlowSimulation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MaterialFlowSimulation"
+    },
+    "documentsAHServiceMethod" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#documentsAHServiceMethod",
+      "@type" : "@id"
+    },
+    "identifier_product" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#identifier_product"
+    },
+    "ResponseTime" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/ResponseTime"
+    },
+    "partOfAsDiscretePowerStage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#partOfAsDiscretePowerStage",
+      "@type" : "@id"
+    },
+    "ATP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#ATP"
+    },
+    "intervalDuring" : {
+      "@id" : "http://www.w3.org/2006/time#intervalDuring",
+      "@type" : "@id"
+    },
+    "partOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#partOf",
+      "@type" : "@id"
+    },
+    "hasFootprintAreaMicrocontroller" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasFootprintAreaMicrocontroller",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Product_Line" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Product_Line"
+    },
+    "hasPlant" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasPlant",
+      "@type" : "@id"
+    },
+    "hasPlantInternal" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasPlantInternal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "minutes" : {
+      "@id" : "http://www.w3.org/2006/time#minutes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ISA-95_Layer1_SensorsActuators" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Layer1_SensorsActuators"
+    },
+    "hasDeliveryCommitmentID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasDeliveryCommitmentID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SensML" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SensML"
+    },
+    "Simulation-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Simulation-System"
+    },
+    "hasChipCount" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasChipCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "detects" : {
+      "@id" : "http://www.w3.org/ns/ssn/detects",
+      "@type" : "@id"
+    },
+    "MotorControlAndDriveSolution" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MotorControlAndDriveSolution"
+    },
+    "Software_system" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Software_system"
+    },
+    "ISA-95_Communication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Communication"
+    },
+    "Deposition" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Deposition"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "Leakage_Current" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Leakage_Current"
+    },
+    "ServiceOrientedArchitecture" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ServiceOrientedArchitecture"
+    },
+    "hasBeginning" : {
+      "@id" : "http://www.w3.org/2006/time#hasBeginning",
+      "@type" : "@id"
+    },
+    "ISA" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA"
+    },
+    "isResultOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#isResultOf",
+      "@type" : "@id"
+    },
+    "DNS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DNS"
+    },
+    "Forecast" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#Forecast"
+    },
+    "DC" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#DC"
+    },
+    "NP_Forecast" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#NP_Forecast"
+    },
+    "MountingStyle" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MountingStyle"
+    },
+    "AH_QoS-Manager_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_QoS-Manager_SySD"
+    },
+    "PhysicalResource" : {
+      "@id" : "http://purl.org/dc/terms/PhysicalResource"
+    },
+    "OPC_UA" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OPC_UA"
+    },
+    "ProjectStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#ProjectStatus"
+    },
+    "hasSupplyVoltageMax" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasSupplyVoltageMax",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "partOfAsGateDriver" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#partOfAsGateDriver",
+      "@type" : "@id"
+    },
+    "isLotEventOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isLotEventOf",
+      "@type" : "@id"
+    },
+    "hasConfirmedQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasConfirmedQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "isServiceProducerOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isServiceProducerOf",
+      "@type" : "@id"
+    },
+    "leadsToEvent" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#leadsToEvent",
+      "@type" : "@id"
+    },
+    "Industrials" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Industrials"
+    },
+    "hasMeanTimeOffLine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasMeanTimeOffLine",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "isSupportedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isSupportedBy",
+      "@type" : "@id"
+    },
+    "Process_Output" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Process_Output"
+    },
+    "MaterialFlowPlanning" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MaterialFlowPlanning"
+    },
+    "EDIFACT_DESADV" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#EDIFACT_DESADV"
+    },
+    "hasArchitecturalPart" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#hasArchitecturalPart",
+      "@type" : "@id"
+    },
+    "Method" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Method"
+    },
+    "hasPartialCancelQuantityQuantityBuyer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasPartialCancelQuantityQuantityBuyer",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "SampleRelationship" : {
+      "@id" : "http://www.w3.org/ns/sosa/sampling/SampleRelationship"
+    },
+    "AH_system_documentation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_system_documentation"
+    },
+    "MESA" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MESA"
+    },
+    "identifier" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#identifier"
+    },
+    "IEEE" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IEEE"
+    },
+    "IETF-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IETF-Standard"
+    },
+    "ProperInterval" : {
+      "@id" : "http://www.w3.org/2006/time#ProperInterval"
+    },
+    "CLM" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#CLM"
+    },
+    "Control_Method" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Control_Method"
+    },
+    "Illumination_device" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Illumination_device"
+    },
+    "Screen" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#Screen"
+    },
+    "hasSubSystem" : {
+      "@id" : "http://www.w3.org/ns/ssn/hasSubSystem",
+      "@type" : "@id"
+    },
+    "AH_SystemDiscoveryService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_SystemDiscoveryService_IDD"
+    },
+    "hasChipCountGateDriver" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasChipCountGateDriver",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasEventName" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasEventName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "intervalMetBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalMetBy",
+      "@type" : "@id"
+    },
+    "seconds" : {
+      "@id" : "http://www.w3.org/2006/time#seconds",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasCustomerWishTime" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasCustomerWishTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hasRevenuePerUnit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasRevenuePerUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "contains_Admin_Shell" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#contains_Admin_Shell",
+      "@type" : "@id"
+    },
+    "hasMeanTimeToFailureDistribution" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasMeanTimeToFailureDistribution",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PlanningElement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#PlanningElement"
+    },
+    "OperatingPowerRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/OperatingPowerRange"
+    },
+    "StandardVersion" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#StandardVersion"
+    },
+    "BatteryLifetime" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/BatteryLifetime"
+    },
+    "isPlaceOrders" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#isPlaceOrders",
+      "@type" : "@id"
+    },
+    "Interface_Design_Description_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Interface_Design_Description_IDD"
+    },
+    "hasModeOfTransport" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasModeOfTransport",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasOpenQuantityOCR" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasOpenQuantityOCR",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Message" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Message"
+    },
+    "hasAllocated" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasAllocated",
+      "@type" : "@id"
+    },
+    "hasDCLinkVoltage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasDCLinkVoltage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "SoA_ServiceBroker" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SoA_ServiceBroker"
+    },
+    "GeneralDurationDescription" : {
+      "@id" : "http://www.w3.org/2006/time#GeneralDurationDescription"
+    },
+    "AH_OrchestrationService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_OrchestrationService_IDD"
+    },
+    "hasCurrentDockDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasCurrentDockDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "madeBySampler" : {
+      "@id" : "http://www.w3.org/ns/sosa/madeBySampler",
+      "@type" : "@id"
+    },
+    "Input" : {
+      "@id" : "http://www.w3.org/ns/ssn/Input"
+    },
+    "HallSwitch" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#HallSwitch"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "subUnitOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#subUnitOf",
+      "@type" : "@id"
+    },
+    "Enhancement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Enhancement"
+    },
+    "System-of-Systems_Description_SoSD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#System-of-Systems_Description_SoSD"
+    },
+    "OMG" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OMG"
+    },
+    "has_input" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_input",
+      "@type" : "@id"
+    },
+    "hasChipCountSmartDriver" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasChipCountSmartDriver",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "OSI_L6_PresentationLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_L6_PresentationLayer"
+    },
+    "W3C_L2_DataSyntax" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#W3C_L2_DataSyntax"
+    },
+    "hasDCLinkVoltageMax" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasDCLinkVoltageMax",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "ActuationRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/ActuationRange"
+    },
+    "week" : {
+      "@id" : "http://www.w3.org/2006/time#week",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "JSON" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#JSON"
+    },
+    "natureOfRelationship" : {
+      "@id" : "http://www.w3.org/ns/sosa/sampling/natureOfRelationship",
+      "@type" : "@id"
+    },
+    "hasProductLine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasProductLine",
+      "@type" : "@id"
+    },
+    "Standard_Organisation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Standard_Organisation"
+    },
+    "contribute" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#contribute",
+      "@type" : "@id"
+    },
+    "ApplicationSystemType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#ApplicationSystemType"
+    },
+    "subApplicationAreaOfMainApplication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#subApplicationAreaOfMainApplication",
+      "@type" : "@id"
+    },
+    "Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Standard"
+    },
+    "Customers" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#Customers"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "hasLeaveState" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLeaveState",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "IndustrialWLAN" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IndustrialWLAN"
+    },
+    "IEC" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IEC"
+    },
+    "hasProductLevel3Pseudonym" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasProductLevel3Pseudonym",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Products" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Products"
+    },
+    "hasEventCalendar" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasEventCalendar",
+      "@type" : "@id"
+    },
+    "Raspberry_Pi" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Raspberry_Pi"
+    },
+    "Bluetooth" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Bluetooth"
+    },
+    "Lithography" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Lithography"
+    },
+    "B2MML" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#B2MML"
+    },
+    "inXSDgYearMonth" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDgYearMonth",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+    },
+    "AH_DeviceRegistrySystem_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_SySD"
+    },
+    "EDIFACT-DataFormat" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#EDIFACT-DataFormat"
+    },
+    "responsibleForApplicationArea" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#responsibleForApplicationArea",
+      "@type" : "@id"
+    },
+    "PLM-System-SecondGeneration" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PLM-System-SecondGeneration"
+    },
+    "Duration" : {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    },
+    "isDeviceIn" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isDeviceIn",
+      "@type" : "@id"
+    },
+    "definesCompliantDocumentation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#definesCompliantDocumentation",
+      "@type" : "@id"
+    },
+    "MarketingDemands" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#MarketingDemands"
+    },
+    "APS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#APS"
+    },
+    "hasLotSize" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLotSize",
+      "@type" : "@id"
+    },
+    "Drain" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Drain"
+    },
+    "PL_Phase1_Development" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PL_Phase1_Development"
+    },
+    "ModelElement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#ModelElement"
+    },
+    "Goal" : {
+      "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"
+    },
+    "resultTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#resultTo",
+      "@type" : "@id"
+    },
+    "CPF12_EtherCAT" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF12_EtherCAT"
+    },
+    "DiscretePowerStage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#DiscretePowerStage"
+    },
+    "OMG-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OMG-Standard"
+    },
+    "AH_system" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_system"
+    },
+    "OSI_1_2_NetAccessTechnology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_1_2_NetAccessTechnology"
+    },
+    "hasDateTimeDescription" : {
+      "@id" : "http://www.w3.org/2006/time#hasDateTimeDescription",
+      "@type" : "@id"
+    },
+    "hasHandling" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasHandling",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "containsMicrocontroller" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#containsMicrocontroller",
+      "@type" : "@id"
+    },
+    "halogenFreeStatusOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#halogenFreeStatusOf",
+      "@type" : "@id"
+    },
+    "Documents" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Documents"
+    },
+    "EnergyEfficiency" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#EnergyEfficiency"
+    },
+    "containsOrderLineItem" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#containsOrderLineItem",
+      "@type" : "@id"
+    },
+    "RAMI_IT_Layer_Dimension" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#RAMI_IT_Layer_Dimension"
+    },
+    "PrioritizedOrders" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#PrioritizedOrders"
+    },
+    "CPF9_HART" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF9_HART"
+    },
+    "Personal_computer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Personal_computer"
+    },
+    "constitute" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#constitute",
+      "@type" : "@id"
+    },
+    "years" : {
+      "@id" : "http://www.w3.org/2006/time#years",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "partOfAsAdditionalPowerManagement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#partOfAsAdditionalPowerManagement",
+      "@type" : "@id"
+    },
+    "intervalFinishedBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalFinishedBy",
+      "@type" : "@id"
+    },
+    "Abstract" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Abstract"
+    },
+    "hasServiceDescriptionLanguage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#hasServiceDescriptionLanguage",
+      "@type" : "@id"
+    },
+    "mainPowerDeviceTypeOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#mainPowerDeviceTypeOf",
+      "@type" : "@id"
+    },
+    "inTemporalPosition" : {
+      "@id" : "http://www.w3.org/2006/time#inTemporalPosition",
+      "@type" : "@id"
+    },
+    "hasParentLotEvent" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasParentLotEvent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Transfer_protocol" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Transfer_protocol"
+    },
+    "W3C_Data_Knowledge_Stack" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#W3C_Data_Knowledge_Stack"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "CPF5_WorldFIP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF5_WorldFIP"
+    },
+    "isPartOf-IT-Suite" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#isPartOf-IT-Suite",
+      "@type" : "@id"
+    },
+    "Data_model" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Data_model"
+    },
+    "hasIndustrySector" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#hasIndustrySector",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "EDIFACT-Specification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#EDIFACT-Specification"
+    },
+    "productQualificationOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#productQualificationOf",
+      "@type" : "@id"
+    },
+    "hasElectricPowerMin" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasElectricPowerMin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "RobotCellPlanning" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#RobotCellPlanning"
+    },
+    "isEvaluatedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isEvaluatedBy",
+      "@type" : "@id"
+    },
+    "MQTT_TCPIP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MQTT_TCPIP"
+    },
+    "transfer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#transfer",
+      "@type" : "@id"
+    },
+    "editorialNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "activatesFunction" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#activatesFunction",
+      "@type" : "@id"
+    },
+    "hasSample" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasSample",
+      "@type" : "@id"
+    },
+    "observes" : {
+      "@id" : "http://www.w3.org/ns/sosa/observes",
+      "@type" : "@id"
+    },
+    "AH_SystemRegistrySystem_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_SystemRegistrySystem_SySD"
+    },
+    "hasProductNumber" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasProductNumber",
+      "@type" : "@id"
+    },
+    "SensorSubApplication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#SensorSubApplication"
+    },
+    "RosettaNet-Specification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#RosettaNet-Specification"
+    },
+    "inDateTime" : {
+      "@id" : "http://www.w3.org/2006/time#inDateTime",
+      "@type" : "@id"
+    },
+    "forProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/forProperty",
+      "@type" : "@id"
+    },
+    "links" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#links",
+      "@type" : "@id"
+    },
+    "Lot_Event" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Lot_Event"
+    },
+    "hasDevelopmentTimeout" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasDevelopmentTimeout",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasSKU_PD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#hasSKU_PD",
+      "@type" : "@id"
+    },
+    "containsProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#containsProduct",
+      "@type" : "@id"
+    },
+    "Hub" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Hub"
+    },
+    "Capacity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Capacity"
+    },
+    "hasLot" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLot",
+      "@type" : "@id"
+    },
+    "Project" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#Project"
+    },
+    "hasMinimumJobExperience" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasMinimumJobExperience",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasDeployment" : {
+      "@id" : "http://www.w3.org/ns/ssn/hasDeployment",
+      "@type" : "@id"
+    },
+    "AH_core_system_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_core_system_SySD"
+    },
+    "Furnace" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Furnace"
+    },
+    "hasResult" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasResult",
+      "@type" : "@id"
+    },
+    "hasBudgetFactor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasBudgetFactor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "SMQTT" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SMQTT"
+    },
+    "Lot" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Lot"
+    },
+    "represents" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#represents",
+      "@type" : "@id"
+    },
+    "salesProductNumber" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#salesProductNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SalesProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#SalesProduct"
+    },
+    "hasConfirmedDeliveryDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasConfirmedDeliveryDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "StartEvent" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#StartEvent"
+    },
+    "isDescribedBySupplierData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isDescribedBySupplierData",
+      "@type" : "@id"
+    },
+    "CPF3_3_Profinet_CBA" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF3_3_Profinet_CBA"
+    },
+    "isPartOfOpenOrderBook" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isPartOfOpenOrderBook",
+      "@type" : "@id"
+    },
+    "AH_AuthorizationControlService_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationControlService_SD"
+    },
+    "isArchitecturalPartOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isArchitecturalPartOf",
+      "@type" : "@id"
+    },
+    "TransportInterface" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#TransportInterface"
+    },
+    "Drift" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Drift"
+    },
+    "qualificationOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#qualificationOf",
+      "@type" : "@id"
+    },
+    "partOfAsPotentialSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#partOfAsPotentialSensor",
+      "@type" : "@id"
+    },
+    "Certification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#Certification"
+    },
+    "isTargetRevenueOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isTargetRevenueOf",
+      "@type" : "@id"
+    },
+    "hasMeanTimeToFailure" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasMeanTimeToFailure",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "produces" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#produces",
+      "@type" : "@id"
+    },
+    "usedProcedure" : {
+      "@id" : "http://www.w3.org/ns/sosa/usedProcedure",
+      "@type" : "@id"
+    },
+    "OtherServices" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#OtherServices"
+    },
+    "TransportRobot" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#TransportRobot"
+    },
+    "Supply" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#Supply"
+    },
+    "Property" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Property"
+    },
+    "hasIntegrationLevel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasIntegrationLevel",
+      "@type" : "@id"
+    },
+    "Rule" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#Rule"
+    },
+    "MicroController" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MicroController"
+    },
+    "hasFootprintArea" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasFootprintArea",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasVariancePTime" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasVariancePTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "AH_automation_supporting_system_SySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_system_SySDD"
+    },
+    "ARCNET" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ARCNET"
+    },
+    "Power_loss_Calculated_by" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Power_loss_Calculated_by",
+      "@type" : "@id"
+    },
+    "hasUnitPrice" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasUnitPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasExperience" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasExperience",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Semiconductors" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Semiconductors"
+    },
+    "resultIn" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#resultIn",
+      "@type" : "@id"
+    },
+    "hasSupplierAddress" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasSupplierAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasCategoryLevel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasCategoryLevel",
+      "@type" : "@id"
+    },
+    "year" : {
+      "@id" : "http://www.w3.org/2006/time#year"
+    },
+    "hasMountingStyle" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasMountingStyle",
+      "@type" : "@id"
+    },
+    "days" : {
+      "@id" : "http://www.w3.org/2006/time#days",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasCycleTimeCommitmentID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasCycleTimeCommitmentID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "leadsTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#leadsTo",
+      "@type" : "@id"
+    },
+    "TheDeviceOutput" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#TheDeviceOutput"
+    },
+    "documents" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#documents",
+      "@type" : "@id"
+    },
+    "inXSDDateTimeStamp" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "matchIn" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#matchIn",
+      "@type" : "@id"
+    },
+    "hasPackingSize" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasPackingSize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "isPartOfOpenOrder" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isPartOfOpenOrder",
+      "@type" : "@id"
+    },
+    "auto-gration-Specification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#auto-gration-Specification"
+    },
+    "isRequiredBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isRequiredBy",
+      "@type" : "@id"
+    },
+    "B2MML-based-Service" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#B2MML-based-Service"
+    },
+    "hasFabInternal" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasFabInternal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "AH_DeviceRegistrySystem_SySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_DeviceRegistrySystem_SySDD"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "DemandFulfillement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#DemandFulfillement"
+    },
+    "Product_Level_3" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Product_Level_3"
+    },
+    "isObservedBy" : {
+      "@id" : "http://www.w3.org/ns/sosa/isObservedBy",
+      "@type" : "@id"
+    },
+    "hasSensorSubApplication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasSensorSubApplication",
+      "@type" : "@id"
+    },
+    "Junction_Temperature" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Junction_Temperature"
+    },
+    "pattern" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#pattern"
+    },
+    "OpenOrderBook" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#OpenOrderBook"
+    },
+    "hasWorkforce" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasWorkforce",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "LinearHallSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#LinearHallSensor"
+    },
+    "isTrainingLevelOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#isTrainingLevelOf",
+      "@type" : "@id"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "ISA-95_Layer4_ERP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Layer4_ERP"
+    },
+    "System-of-Systems_Design_Description_SoSDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#System-of-Systems_Design_Description_SoSDD"
+    },
+    "AH_GatekeeperSystem_SySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_GatekeeperSystem_SySDD"
+    },
+    "PPOS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#PPOS"
+    },
+    "AH_ServiceDiscoveryService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_IDD"
+    },
+    "HumanOutput" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#HumanOutput"
+    },
+    "in_deployment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#in_deployment",
+      "@type" : "@id"
+    },
+    "MQTT" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MQTT"
+    },
+    "Height" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Height"
+    },
+    "Vocabulary" : {
+      "@id" : "http://purl.org/vocommons/voaf#Vocabulary"
+    },
+    "deliveryLeadTime" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#deliveryLeadTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "WIP_Station" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#WIP_Station"
+    },
+    "_DataSheet" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#SemiconductorProduct(its_name)_DataSheet"
+    },
+    "IETF" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IETF"
+    },
+    "TokenRing" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#TokenRing"
+    },
+    "hasProductQualification" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasProductQualification",
+      "@type" : "@id"
+    },
+    "RDFS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#RDFS"
+    },
+    "OSI_L1_PhysicalLink" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_L1_PhysicalLink"
+    },
+    "has_an_Operation_Region" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_an_Operation_Region",
+      "@type" : "@id"
+    },
+    "hasFeatureOfInterest" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+      "@type" : "@id"
+    },
+    "ProjectManager" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#ProjectManager"
+    },
+    "isPredecessorOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isPredecessorOf",
+      "@type" : "@id"
+    },
+    "AH_SessionManagementService_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_SessionManagementService_SD"
+    },
+    "Operator" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Operator"
+    },
+    "OSI_Layer_Model_aggregated" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_Layer_Model_aggregated"
+    },
+    "MIS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MIS"
+    },
+    "supportedByTechnologyOrProtocol" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#supportedByTechnologyOrProtocol",
+      "@type" : "@id"
+    },
+    "SoA_property" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#SoA_property"
+    },
+    "HTTPS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#HTTPS"
+    },
+    "uses" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#uses",
+      "@type" : "@id"
+    },
+    "ProcessInterface" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#ProcessInterface"
+    },
+    "hasSurvivalProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/hasSurvivalProperty",
+      "@type" : "@id"
+    },
+    "supports" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#supports",
+      "@type" : "@id"
+    },
+    "BigDataAnalytics-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#BigDataAnalytics-System"
+    },
+    "hasData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#hasData",
+      "@type" : "@id"
+    },
+    "Sampler" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sampler"
+    },
+    "hasPriority" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasPriority",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "JoinRule" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#JoinRule"
+    },
+    "OSI_AL1_NetworkAccessLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_AL1_NetworkAccessLayer"
+    },
+    "OSI_AL2_InternetLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_AL2_InternetLayer"
+    },
+    "customerPartNumber" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#customerPartNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Hot" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Hot"
+    },
+    "runsOn" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#runsOn",
+      "@type" : "@id"
+    },
+    "Granularity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#Granularity",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "match" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#match",
+      "@type" : "@id"
+    },
+    "isProductLevelOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isProductLevelOf",
+      "@type" : "@id"
+    },
+    "isMethodOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isMethodOf",
+      "@type" : "@id"
+    },
+    "IEEE-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IEEE-Standard"
+    },
+    "hasResponseDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasResponseDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Supply_Chain" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Supply_Chain"
+    },
+    "IFXProject" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#IFXProject"
+    },
+    "hasLoadTimeWait" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLoadTimeWait",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "inTimePosition" : {
+      "@id" : "http://www.w3.org/2006/time#inTimePosition",
+      "@type" : "@id"
+    },
+    "HTML" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#HTML"
+    },
+    "CPF10_VNET_IP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF10_VNET_IP"
+    },
+    "consistsOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#consistsOf",
+      "@type" : "@id"
+    },
+    "Owner" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Owner"
+    },
+    "hasPONumberOCR" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasPONumberOCR",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "hasAnApplicationArea" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#hasAnApplicationArea",
+      "@type" : "@id"
+    },
+    "controls" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#controls",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "hasReleasePlan" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasReleasePlan",
+      "@type" : "@id"
+    },
+    "BottleneckResource" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#BottleneckResource"
+    },
+    "hasLeaveMainQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLeaveMainQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "minOrderQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#minOrderQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Deployment-related_Process" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Deployment-related_Process"
+    },
+    "Frequency" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Frequency"
+    },
+    "The_Application_Voltage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#The_Application_Voltage"
+    },
+    "InformationModel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#InformationModel"
+    },
+    "Year" : {
+      "@id" : "http://www.w3.org/2006/time#Year"
+    },
+    "containsDevice" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#containsDevice",
+      "@type" : "@id"
+    },
+    "hasWIPStation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasWIPStation",
+      "@type" : "@id"
+    },
+    "enterTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#enterTo",
+      "@type" : "@id"
+    },
+    "hasSemanticExpression" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#hasSemanticExpression",
+      "@type" : "@id"
+    },
+    "isEquipmentGroupOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isEquipmentGroupOf",
+      "@type" : "@id"
+    },
+    "observedProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/observedProperty",
+      "@type" : "@id"
+    },
+    "WIP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#WIP"
+    },
+    "inside" : {
+      "@id" : "http://www.w3.org/2006/time#inside",
+      "@type" : "@id"
+    },
+    "ManufacturingSimulationSystem" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ManufacturingSimulationSystem"
+    },
+    "AH_QoS-Manager_SySDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_QoS-Manager_SySDD"
+    },
+    "TTP_A" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#TTP_A"
+    },
+    "Database-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Database-System"
+    },
+    "containsSupplierData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#containsSupplierData",
+      "@type" : "@id"
+    },
+    "hasMaxThroughputPerWeek" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasMaxThroughputPerWeek",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasSamplingRate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasSamplingRate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "is_produced_by" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#is_produced_by",
+      "@type" : "@id"
+    },
+    "AH_StoreManagementService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_StoreManagementService_IDD"
+    },
+    "hasUnit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "madeObservation" : {
+      "@id" : "http://www.w3.org/ns/sosa/madeObservation",
+      "@type" : "@id"
+    },
+    "isAllocatedTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isAllocatedTo",
+      "@type" : "@id"
+    },
+    "energy_Efficiency_Value" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#energy_Efficiency_Value",
+      "@type" : "@id"
+    },
+    "Industrial_personal_computer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Industrial_personal_computer"
+    },
+    "ApplicationLevel1" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#ApplicationLevel1"
+    },
+    "ConsumerDiscretionary" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#ConsumerDiscretionary"
+    },
+    "diagramedOn" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#diagramedOn",
+      "@type" : "@id"
+    },
+    "CPF3_1_Profibus_DP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF3_1_Profibus_DP"
+    },
+    "transforms" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#transforms",
+      "@type" : "@id"
+    },
+    "isReconciledOrderLineItem" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isReconciledOrderLineItem",
+      "@type" : "@id"
+    },
+    "uniformResourceLocator_productPicture" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#uniformResourceLocator_productPicture"
+    },
+    "BPFlow" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#BPFlow"
+    },
+    "DeviceName" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#DeviceName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ISA-95_Comm_3_3" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Comm_3_3"
+    },
+    "subApplicationAreaOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#subApplicationAreaOf",
+      "@type" : "@id"
+    },
+    "Production_Requests" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Production_Requests"
+    },
+    "RfP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#RfP"
+    },
+    "minute" : {
+      "@id" : "http://www.w3.org/2006/time#minute",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "identifier_solution" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#identifier_solution"
+    },
+    "isWorkPackageOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#isWorkPackageOf",
+      "@type" : "@id"
+    },
+    "ISA-95_CrossLayerCommunication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_CrossLayerCommunication"
+    },
+    "Process_Group" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Process_Group"
+    },
+    "PhysicalProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#PhysicalProduct"
+    },
+    "isPlantOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isPlantOf",
+      "@type" : "@id"
+    },
+    "Repeater" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Repeater"
+    },
+    "DNS-SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DNS-SD"
+    },
+    "create" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#create",
+      "@type" : "@id"
+    },
+    "Wet_Etching" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Wet_Etching"
+    },
+    "RelationshipNature" : {
+      "@id" : "http://www.w3.org/ns/sosa/sampling/RelationshipNature"
+    },
+    "RDF" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#RDF"
+    },
+    "dedicates" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#dedicates",
+      "@type" : "@id"
+    },
+    "isPropertyOf" : {
+      "@id" : "http://www.w3.org/ns/ssn/isPropertyOf",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "orderablePartNumber" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#orderablePartNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDataType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#hasDataType",
+      "@type" : "@id"
+    },
+    "Gateway" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Gateway"
+    },
+    "hasImplementationTechnology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#hasImplementationTechnology",
+      "@type" : "@id"
+    },
+    "hasSupplierReferenceNo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasSupplierReferenceNo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "TCP_IP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#TCP_IP"
+    },
+    "isContributorOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#isContributorOf",
+      "@type" : "@id"
+    },
+    "MESA-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MESA-Standard"
+    },
+    "PLM1_Module" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PLM1_Module"
+    },
+    "TechnicalTermInputElement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#TechnicalTermInputElement"
+    },
+    "HTTP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#HTTP"
+    },
+    "Entity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Entity"
+    },
+    "DataTransmissionUnit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DataTransmissionUnit"
+    },
+    "Frame" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Frame"
+    },
+    "hasRequestedDockDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasRequestedDockDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "OASIS-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OASIS-Standard"
+    },
+    "hasDCLinkVoltageCharacteristic" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasDCLinkVoltageCharacteristic",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "relevantFor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#relevantFor",
+      "@type" : "@id"
+    },
+    "hasCertificationLevel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasCertificationLevel",
+      "@type" : "@id"
+    },
+    "SmartDriver" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#SmartDriver"
+    },
+    "Latency" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Latency"
+    },
+    "hasSupplyChainName" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasSupplyChainName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isTimeConstraintsOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isTimeConstraintsOf",
+      "@type" : "@id"
+    },
+    "Process" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Process"
+    },
+    "hasDataTransmissionUnit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#hasDataTransmissionUnit",
+      "@type" : "@id"
+    },
+    "CharacterSet" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CharacterSet"
+    },
+    "Material_Transfer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Material_Transfer"
+    },
+    "WorkPackage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#WorkPackage"
+    },
+    "isPartOfSystemDoc" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isPartOfSystemDoc",
+      "@type" : "@id"
+    },
+    "solutionQualificationOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#solutionQualificationOf",
+      "@type" : "@id"
+    },
+    "AssemblyLinePlanning" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#AssemblyLinePlanning"
+    },
+    "hasLineIDOCR" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasLineIDOCR",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Region_of_Operation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Region_of_Operation"
+    },
+    "TechnicalTerm" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#TechnicalTerm"
+    },
+    "definesCompliantSystem" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#definesCompliantSystem",
+      "@type" : "@id"
+    },
+    "belongsToDivision" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#belongsToDivision",
+      "@type" : "@id"
+    },
+    "W3C_L4_SemanticsRepresentation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#W3C_L4_SemanticsRepresentation"
+    },
+    "calculateBasedOn" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#calculateBasedOn",
+      "@type" : "@id"
+    },
+    "containsDiscretePowerStage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#containsDiscretePowerStage",
+      "@type" : "@id"
+    },
+    "Purge" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Purge"
+    },
+    "The_Temperature_Must_Not_Exceed" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#The_Temperature_Must_Not_Exceed",
+      "@type" : "@id"
+    },
+    "SoA_ServiceRepository" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SoA_ServiceRepository"
+    },
+    "intervalBefore" : {
+      "@id" : "http://www.w3.org/2006/time#intervalBefore",
+      "@type" : "@id"
+    },
+    "uniformResourceLocator" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#uniformResourceLocator"
+    },
+    "has_deployment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_deployment",
+      "@type" : "@id"
+    },
+    "Service-oriented_Architecture" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Service-oriented_Architecture"
+    },
+    "Constant_Resistance_Region" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Triode/Constant_Resistance_Region"
+    },
+    "OR" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#OR"
+    },
+    "Selectivity" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Selectivity"
+    },
+    "OSI_L4_TransportLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_L4_TransportLayer"
+    },
+    "Version" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Version"
+    },
+    "hasTotalOpenQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasTotalOpenQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Condition" : {
+      "@id" : "http://www.w3.org/ns/ssn/Condition"
+    },
+    "Fieldbus_Car_Airplane" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Fieldbus_Car_Airplane"
+    },
+    "SoA_Publisher" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SoA_Publisher"
+    },
+    "ISA-95_Comm_1_4" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ISA-95_Comm_1_4"
+    },
+    "mustBeInformedAbout" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#mustBeInformedAbout",
+      "@type" : "@id"
+    },
+    "OSI_L3_NetworkLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_L3_NetworkLayer"
+    },
+    "standardizedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#standardizedBy",
+      "@type" : "@id"
+    },
+    "Has_Voltage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Has_Voltage",
+      "@type" : "@id"
+    },
+    "GeneralCustomers" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#GeneralCustomers"
+    },
+    "documentsAHServiceTransferProtocol" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#documentsAHServiceTransferProtocol",
+      "@type" : "@id"
+    },
+    "salesProductName" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#salesProductName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "GeometricDimension" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#GeometricDimension"
+    },
+    "Product_Level" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Product_Level"
+    },
+    "hasControlMethod" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#hasControlMethod",
+      "@type" : "@id"
+    },
+    "Sample" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sample"
+    },
+    "AP_FCST" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#AP_FCST"
+    },
+    "hasTransferTime" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasTransferTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ElectronicComponents" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#ElectronicComponents"
+    },
+    "hasShift" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasShift",
+      "@type" : "@id"
+    },
+    "OSI_AL4_ApplicationLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_AL4_ApplicationLayer"
+    },
+    "Output" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#Output"
+    },
+    "isAllocatedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isAllocatedBy",
+      "@type" : "@id"
+    },
+    "hasDesignTarget" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasDesignTarget",
+      "@type" : "@id"
+    },
+    "partOfAsSmartDriver" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#partOfAsSmartDriver",
+      "@type" : "@id"
+    },
+    "Tablet_computer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Tablet_computer"
+    },
+    "abbreviation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#abbreviation"
+    },
+    "month" : {
+      "@id" : "http://www.w3.org/2006/time#month"
+    },
+    "AH_automation_supporting_system_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_system_SySD"
+    },
+    "weeks" : {
+      "@id" : "http://www.w3.org/2006/time#weeks",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ServiceOrientedArchitectureImplementation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ServiceOrientedArchitectureImplementation"
+    },
+    "hasEquipmentGroupType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasEquipmentGroupType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "MonthOfYear" : {
+      "@id" : "http://www.w3.org/2006/time#MonthOfYear"
+    },
+    "Function" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#Function"
+    },
+    "On-State_Power_loss" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#On-State_Power_loss"
+    },
+    "hasChipCountMicrocontroller" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasChipCountMicrocontroller",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Mask" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Mask"
+    },
+    "IndutrialSector" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#IndutrialSector"
+    },
+    "Acting_As" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Acting_As",
+      "@type" : "@id"
+    },
+    "SCADA-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SCADA-System"
+    },
+    "refersToSoSD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#refersToSoSD",
+      "@type" : "@id"
+    },
+    "AH_mandatory_core_service" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_service"
+    },
+    "MotorControlAndDriveSolution_WithSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MotorControlAndDriveSolution_WithSensor"
+    },
+    "hasEnterMainQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasEnterMainQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "findsApplicationThrough" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#findsApplicationThrough",
+      "@type" : "@id"
+    },
+    "Actuator" : {
+      "@id" : "http://www.w3.org/ns/sosa/Actuator"
+    },
+    "customer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#customer",
+      "@type" : "@id"
+    },
+    "hasReworkOperation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasReworkOperation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isActivatedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isActivatedBy",
+      "@type" : "@id"
+    },
+    "Blocking_Capability" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Blocking_Capability"
+    },
+    "Confirmation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#Confirmation"
+    },
+    "UDP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#UDP"
+    },
+    "documentsAHServiceInformationModel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#documentsAHServiceInformationModel",
+      "@type" : "@id"
+    },
+    "CPF2_ControlNet" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF2_ControlNet"
+    },
+    "Current_WIP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Current_WIP"
+    },
+    "OASIS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OASIS"
+    },
+    "contributesTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#contributesTo",
+      "@type" : "@id"
+    },
+    "Sensor_device" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Sensor_device"
+    },
+    "ProjectOwner" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#ProjectOwner"
+    },
+    "MainApplication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MainApplication"
+    },
+    "Saturation_Region" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Saturation_Region"
+    },
+    "ConsignmentOrders" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#ConsignmentOrders"
+    },
+    "hasApplicationCharacteristic" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasApplicationCharacteristic",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "StandardisationOrganization" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#StandardisationOrganization"
+    },
+    "containsCustomerData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#containsCustomerData",
+      "@type" : "@id"
+    },
+    "hasCurrentWIP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasCurrentWIP",
+      "@type" : "@id"
+    },
+    "priceIndicationOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#priceIndicationOf",
+      "@type" : "@id"
+    },
+    "PriceIndication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#PriceIndication"
+    },
+    "StandardOrders" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#StandardOrders"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "SubprocessDiagram" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#SubprocessDiagram"
+    },
+    "SupplyChainSimulationSystem" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SupplyChainSimulationSystem"
+    },
+    "madeByActuator" : {
+      "@id" : "http://www.w3.org/ns/sosa/madeByActuator",
+      "@type" : "@id"
+    },
+    "SKU" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#SKU"
+    },
+    "Service" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Service"
+    },
+    "canBeAppliedIn" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#canBeAppliedIn",
+      "@type" : "@id"
+    },
+    "usedInISA-95_Layer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#usedInISA-95_Layer",
+      "@type" : "@id"
+    },
+    "day" : {
+      "@id" : "http://www.w3.org/2006/time#day"
+    },
+    "hasApplicationLevel3" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasApplicationLevel3",
+      "@type" : "@id"
+    },
+    "hasMeanTimeToRepair" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasMeanTimeToRepair",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasRemarkOrExample" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasRemarkOrExample",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Document" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Document"
+    },
+    "IT-Vendor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IT-Vendor"
+    },
+    "AH_AuthorizationSystem_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_AuthorizationSystem_SySD"
+    },
+    "Event_Calendar" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Event_Calendar"
+    },
+    "CustomerData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#CustomerData"
+    },
+    "ObservableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+    },
+    "intervalEquals" : {
+      "@id" : "http://www.w3.org/2006/time#intervalEquals",
+      "@type" : "@id"
+    },
+    "Development" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Development"
+    },
+    "isCategoryLevelOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#isCategoryLevelOf",
+      "@type" : "@id"
+    },
+    "Switcher" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Switcher"
+    },
+    "useUp" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#useUp",
+      "@type" : "@id"
+    },
+    "Operating_Property" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Operating_Property"
+    },
+    "AH_application_service" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_application_service"
+    },
+    "partOfAsMicrocontroller" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#partOfAsMicrocontroller",
+      "@type" : "@id"
+    },
+    "before" : {
+      "@id" : "http://www.w3.org/2006/time#before",
+      "@type" : "@id"
+    },
+    "hasSystemCapability" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/hasSystemCapability",
+      "@type" : "@id"
+    },
+    "AH_automation_supporting_system" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_automation_supporting_system"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "SubApplication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#SubApplication"
+    },
+    "hasRoutePosition" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasRoutePosition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "DocumentTypeDescription" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DocumentTypeDescription"
+    },
+    "hasTemperatureMin" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasTemperatureMin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasPlantAddress" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasPlantAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "MessageBroker-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MessageBroker-System"
+    },
+    "hasEquipment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasEquipment",
+      "@type" : "@id"
+    },
+    "January" : {
+      "@id" : "http://www.w3.org/2006/time#January"
+    },
+    "RDFa" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#RDFa"
+    },
+    "motorTypeOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#motorTypeOf",
+      "@type" : "@id"
+    },
+    "deployedSystem" : {
+      "@id" : "http://www.w3.org/ns/ssn/deployedSystem",
+      "@type" : "@id"
+    },
+    "Product_Group" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Product_Group"
+    },
+    "hasPlantID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasPlantID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "usedInISA-95_Communication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#usedInISA-95_Communication",
+      "@type" : "@id"
+    },
+    "System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#System"
+    },
+    "ToolingMachine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ToolingMachine"
+    },
+    "isDependentOn" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isDependentOn",
+      "@type" : "@id"
+    },
+    "SSN" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SSN"
+    },
+    "hasFPOS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#hasFPOS",
+      "@type" : "@id"
+    },
+    "ProcessGroupMap" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#ProcessGroupMap"
+    },
+    "isOwnedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isOwnedBy",
+      "@type" : "@id"
+    },
+    "hasNextModel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasNextModel",
+      "@type" : "@id"
+    },
+    "owns" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#owns",
+      "@type" : "@id"
+    },
+    "SystemProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/SystemProperty"
+    },
+    "isAssignedTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isAssignedTo",
+      "@type" : "@id"
+    },
+    "isWIPStationOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isWIPStationOf",
+      "@type" : "@id"
+    },
+    "Machine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Machine"
+    },
+    "requires" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#requires",
+      "@type" : "@id"
+    },
+    "Financial" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Financial"
+    },
+    "hasTemperature" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasTemperature",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasMotorType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasMotorType",
+      "@type" : "@id"
+    },
+    "CustomersID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#CustomersID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isLotOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isLotOf",
+      "@type" : "@id"
+    },
+    "hasMainApplication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasMainApplication",
+      "@type" : "@id"
+    },
+    "hasSalesProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#hasSalesProduct",
+      "@type" : "@id"
+    },
+    "WebApplicationProtocol" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#WebApplicationProtocol"
+    },
+    "CPF15_ModBus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF15_ModBus"
+    },
+    "additionalProperty" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#additionalProperty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "DataLanguage_SemanticWebStackBased" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#DataLanguage_SemanticWebStackBased"
+    },
+    "hasSemiconductorProductStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasSemiconductorProductStatus",
+      "@type" : "@id"
+    },
+    "hasMethod" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#hasMethod",
+      "@type" : "@id"
+    },
+    "hasCreator" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasCreator",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ZigBee_RF4CE" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ZigBee_RF4CE"
+    },
+    "OSI_L2_DataLink" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_L2_DataLink"
+    },
+    "End-to-End_communication_technology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#End-to-End_communication_technology"
+    },
+    "AH_local_cloud" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_local_cloud"
+    },
+    "isProxyFor" : {
+      "@id" : "http://www.w3.org/ns/ssn/isProxyFor",
+      "@type" : "@id"
+    },
+    "hasXSDDuration" : {
+      "@id" : "http://www.w3.org/2006/time#hasXSDDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#duration"
+    },
+    "use" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#use",
+      "@type" : "@id"
+    },
+    "qualityOfObservation" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/qualityOfObservation",
+      "@type" : "@id"
+    },
+    "Device" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Device"
+    },
+    "AngleSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#AngleSensor"
+    },
+    "ProcessDiagram" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#ProcessDiagram"
+    },
+    "sortTo" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#sortTo",
+      "@type" : "@id"
+    },
+    "hasSplitLots" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasSplitLots",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Division" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#Division"
+    },
+    "subApplicationAreaOfApplicationLevel1" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#subApplicationAreaOfApplicationLevel1",
+      "@type" : "@id"
+    },
+    "deployedOnPlatform" : {
+      "@id" : "http://www.w3.org/ns/ssn/deployedOnPlatform",
+      "@type" : "@id"
+    },
+    "Equipment_Group" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Equipment_Group"
+    },
+    "Subprocess" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#Subprocess"
+    },
+    "HP_Forecast" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#HP_Forecast"
+    },
+    "isDescribedByCustomerPlantData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isDescribedByCustomerPlantData",
+      "@type" : "@id"
+    },
+    "hasShiftID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasShiftID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SOSA" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SOSA"
+    },
+    "Expression_Semantic" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Expression_Semantic"
+    },
+    "MES" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#MES"
+    },
+    "AH_service_documentation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_service_documentation"
+    },
+    "isServiceDescriptionLanguageOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#isServiceDescriptionLanguageOf",
+      "@type" : "@id"
+    },
+    "RAMI_Life_Cycle_Dimension" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#RAMI_Life_Cycle_Dimension"
+    },
+    "hasOrphan" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasOrphan",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SystemCapability" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/SystemCapability"
+    },
+    "Energy_Storage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Energy_Storage"
+    },
+    "Process_Input" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Process_Input"
+    },
+    "has_a_Voltage_Equals_or_Greater_Than" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_a_Voltage_Equals_or_Greater_Than",
+      "@type" : "@id"
+    },
+    "intervalStarts" : {
+      "@id" : "http://www.w3.org/2006/time#intervalStarts",
+      "@type" : "@id"
+    },
+    "Action" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#Action"
+    },
+    "isResponsibleFor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isResponsibleFor",
+      "@type" : "@id"
+    },
+    "Variable_Resistance" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Variable_Resistance"
+    },
+    "SplitRule" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#SplitRule"
+    },
+    "Process_Class" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Process_Class"
+    },
+    "intervalIn" : {
+      "@id" : "http://www.w3.org/2006/time#intervalIn",
+      "@type" : "@id"
+    },
+    "Delivery_Commitment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Delivery_Commitment"
+    },
+    "flow" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#flow",
+      "@type" : "@id"
+    },
+    "CPF1_FOUNDATION_Fieldbus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF1_FOUNDATION_Fieldbus"
+    },
+    "hasDescription" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#hasDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasWIPCostsPerUnitAndTimeUnit" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasWIPCostsPerUnitAndTimeUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Data_format" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Data_format"
+    },
+    "isDemandOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isDemandOf",
+      "@type" : "@id"
+    },
+    "hasSystemProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/hasSystemProperty",
+      "@type" : "@id"
+    },
+    "XML-Schema" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#XML-Schema"
+    },
+    "ProcessTypeMap" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#ProcessTypeMap"
+    },
+    "XMPP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#XMPP"
+    },
+    "OrganizationalUnit" : {
+      "@id" : "http://www.w3.org/ns/org#OrganizationalUnit"
+    },
+    "IT-System" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IT-System"
+    },
+    "inXSDDate" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "CPF7_SwiftNet" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF7_SwiftNet"
+    },
+    "W3C_L1_WebPlatform" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#W3C_L1_WebPlatform"
+    },
+    "Rocket" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Rocket"
+    },
+    "ownsCustomerPlant" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#ownsCustomerPlant",
+      "@type" : "@id"
+    },
+    "implementsOSILayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#implementsOSILayer",
+      "@type" : "@id"
+    },
+    "Actuation" : {
+      "@id" : "http://www.w3.org/ns/sosa/Actuation"
+    },
+    "hasSupplyChainID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasSupplyChainID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "incompatibleWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#incompatibleWith"
+    },
+    "isDescribedByCustomerData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isDescribedByCustomerData",
+      "@type" : "@id"
+    },
+    "isFabOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isFabOf",
+      "@type" : "@id"
+    },
+    "isDeliveryCommitmentOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isDeliveryCommitmentOf",
+      "@type" : "@id"
+    },
+    "Smartphone" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Smartphone"
+    },
+    "IMAP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#IMAP"
+    },
+    "AMQP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#AMQP"
+    },
+    "Sampling" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sampling"
+    },
+    "IFXProcessFramework" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#IFXProcessFramework"
+    },
+    "isRouteOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isRouteOf",
+      "@type" : "@id"
+    },
+    "Documentation_document" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Documentation_document"
+    },
+    "hasTransferMode" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasTransferMode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Training" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#Training"
+    },
+    "hasProductLevel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasProductLevel",
+      "@type" : "@id"
+    },
+    "ANSI-Standard" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ANSI-Standard"
+    },
+    "AH_core_system" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_core_system"
+    },
+    "IntegratedPressureSensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#IntegratedPressureSensor"
+    },
+    "P-channel_Configuration" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#P-channel_Configuration"
+    },
+    "has_RAMI_Hierarchy_Level" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#has_RAMI_Hierarchy_Level",
+      "@type" : "@id"
+    },
+    "hasSuperior" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasSuperior",
+      "@type" : "@id"
+    },
+    "MeasurementRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/MeasurementRange"
+    },
+    "Region" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#Region"
+    },
+    "PLM-System-FirstGeneration" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#PLM-System-FirstGeneration"
+    },
+    "hasPackageName" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasPackageName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Enocean" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Enocean"
+    },
+    "SemiconductorProductStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#SemiconductorProductStatus"
+    },
+    "isReconciledOrderChangeRequest" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isReconciledOrderChangeRequest",
+      "@type" : "@id"
+    },
+    "OSI_AggregatedLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_AggregatedLayer"
+    },
+    "hasFabType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasFabType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CompletelyLeadFreeStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#CompletelyLeadFreeStatus"
+    },
+    "OSI_AL3_TransportLayer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#OSI_AL3_TransportLayer"
+    },
+    "Task" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#Task"
+    },
+    "WPAN_802_15_4" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#WPAN_802_15_4"
+    },
+    "Communication_Profile_CP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Communication_Profile_CP"
+    },
+    "PowerConverters" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#PowerConverters"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "Utilities" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Utilities"
+    },
+    "hasEquipmentGroup" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasEquipmentGroup",
+      "@type" : "@id"
+    },
+    "EDIFACT_ORDERS" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#EDIFACT_ORDERS"
+    },
+    "AH_ServiceDiscoveryService_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_ServiceDiscoveryService_SD"
+    },
+    "Structure" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Structure"
+    },
+    "hasWorkshop" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasWorkshop",
+      "@type" : "@id"
+    },
+    "System-of-Systems" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#System-of-Systems"
+    },
+    "hasCategoryFactor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#hasCategoryFactor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "MotorType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#MotorType"
+    },
+    "hasPartialCancelQuantitySupplier" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasPartialCancelQuantitySupplier",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Drain_Voltagea" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Drain_Voltagea"
+    },
+    "isUnderResponsibilityOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isUnderResponsibilityOf",
+      "@type" : "@id"
+    },
+    "isSubProjectOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#isSubProjectOf",
+      "@type" : "@id"
+    },
+    "intervalStartedBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalStartedBy",
+      "@type" : "@id"
+    },
+    "hasTotalConfirmedOpenQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasTotalConfirmedOpenQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "NetworkLayerModel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#NetworkLayerModel"
+    },
+    "CoAP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CoAP"
+    },
+    "hasLotOwner" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLotOwner",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Shift" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Shift"
+    },
+    "oversamplingUsed" : {
+      "@id" : "http://www.w3.org/ns/ssn/oversamplingUsed",
+      "@type" : "@id"
+    },
+    "designTargetOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#designTargetOf",
+      "@type" : "@id"
+    },
+    "unitOf" : {
+      "@id" : "http://www.w3.org/ns/org#unitOf",
+      "@type" : "@id"
+    },
+    "hasCustomerRequestedDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasCustomerRequestedDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "NotReleasedProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#NotReleasedProduct"
+    },
+    "hasDeliveryCommitment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasDeliveryCommitment",
+      "@type" : "@id"
+    },
+    "has_Properties" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_Properties",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "Dry_Etching" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Dry_Etching"
+    },
+    "Switching_Frequency" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Switching_Frequency"
+    },
+    "hasProcessingTimeDistribution" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasProcessingTimeDistribution",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasScrappingTest" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasScrappingTest",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Device_Configuration" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Device_Configuration"
+    },
+    "hasFillRate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasFillRate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Bottlenecks" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#Bottlenecks"
+    },
+    "VACD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#VACD"
+    },
+    "CPF3_6_Profinet_IO_ClassC" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF3_6_Profinet_IO_ClassC"
+    },
+    "isRoboticallyLoadedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isRoboticallyLoadedBy",
+      "@type" : "@id"
+    },
+    "hasSurvivalRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/hasSurvivalRange",
+      "@type" : "@id"
+    },
+    "On-State_Region" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#On-State_Region"
+    },
+    "hasHotTimeout" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasHotTimeout",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasLotID" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLotID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Semantic_Profile_SP" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Semantic_Profile_SP"
+    },
+    "SensorMeasurement" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#SensorMeasurement"
+    },
+    "hasLotSizeAmount" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLotSizeAmount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Solar_Energy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Solar_Energy"
+    },
+    "hasFab" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasFab",
+      "@type" : "@id"
+    },
+    "IsUsedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#IsUsedBy",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "ContactPersonData" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#ContactPersonData"
+    },
+    "hasReworkProbabilityLots" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasReworkProbabilityLots",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "ConfirmedQuantity" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#ConfirmedQuantity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "MAC_address" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#MAC_address",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasOPNStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasOPNStatus",
+      "@type" : "@id"
+    },
+    "SensorMainApplication" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#SensorMainApplication"
+    },
+    "unloads" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#unloads",
+      "@type" : "@id"
+    },
+    "AH_Historian_SySD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_Historian_SySD"
+    },
+    "G_LTE" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#4G_LTE"
+    },
+    "ConsumerStaples" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#ConsumerStaples"
+    },
+    "ActuatorDevice" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ActuatorDevice"
+    },
+    "OPNStatusOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#OPNStatusOf",
+      "@type" : "@id"
+    },
+    "nEWs" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#nEWs"
+    },
+    "SoA_Server" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#SoA_Server"
+    },
+    "Submodel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-RAMI40#Submodel"
+    },
+    "SemiconductorEquipment" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Semiconductors&SemiconductorEquipment"
+    },
+    "hasLotDueDate" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasLotDueDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "nominalPosition" : {
+      "@id" : "http://www.w3.org/2006/time#nominalPosition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "W3C_L3_KnowledgeRepresentation" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#W3C_L3_KnowledgeRepresentation"
+    },
+    "SemiconductorProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#SemiconductorProduct"
+    },
+    "Operation_Mode" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Operation_Mode"
+    },
+    "isTechnologyOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isTechnologyOf",
+      "@type" : "@id"
+    },
+    "intervalDisjoint" : {
+      "@id" : "http://www.w3.org/2006/time#intervalDisjoint",
+      "@type" : "@id"
+    },
+    "CPF17_RAPINet" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#CPF17_RAPINet"
+    },
+    "Observation" : {
+      "@id" : "http://www.w3.org/ns/sosa/Observation"
+    },
+    "subUnitOfBusinessLine" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#subUnitOfBusinessLine",
+      "@type" : "@id"
+    },
+    "N-Channel_Configuration" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#N-Channel_Configuration"
+    },
+    "Ontology" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#Ontology"
+    },
+    "describesCustomer" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#describesCustomer",
+      "@type" : "@id"
+    },
+    "StructuralFunctionObject" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#StructuralFunctionObject"
+    },
+    "isEventCalendarOf" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#isEventCalendarOf",
+      "@type" : "@id"
+    },
+    "isAHServiceDocumentedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isAHServiceDocumentedBy",
+      "@type" : "@id"
+    },
+    "AH_TokenGenerationService_IDD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_TokenGenerationService_IDD"
+    },
+    "isDeliveredToCustomerPlant" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#isDeliveredToCustomerPlant",
+      "@type" : "@id"
+    },
+    "hasFinishedProduct" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#hasFinishedProduct",
+      "@type" : "@id"
+    },
+    "hasDemandType" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasDemandType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "The_Enhansment_Mode_Is_Working_As" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#The_Enhansment_Mode_Is_Working_As",
+      "@type" : "@id"
+    },
+    "SurvivalProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/SurvivalProperty"
+    },
+    "hasSubModel" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasSubModel",
+      "@type" : "@id"
+    },
+    "halogenFree" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PROD#halogenFree",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "AH_mandatory_core_service_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#AH_mandatory_core_service_SD"
+    },
+    "isSystemDocumentedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#isSystemDocumentedBy",
+      "@type" : "@id"
+    },
+    "WADL" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#WADL"
+    },
+    "hasRoute" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SO#hasRoute",
+      "@type" : "@id"
+    },
+    "Social_Object" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Social_Object"
+    },
+    "hasKnowledge" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#hasKnowledge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Orders" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-SCP#Orders"
+    },
+    "hasCustomerAddress" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OM#hasCustomerAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Sensor" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#Sensor"
+    },
+    "Blocking_Voltage" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#Blocking_Voltage"
+    },
+    "hasApplicationLevel2" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-OOSMP#hasApplicationLevel2",
+      "@type" : "@id"
+    },
+    "isCreatedBy" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PMV#isCreatedBy",
+      "@type" : "@id"
+    },
+    "LoRaWAN" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#LoRaWAN"
+    },
+    "CentralFunction" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#CentralFunction"
+    },
+    "isProjectStatus" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-ORG#isProjectStatus",
+      "@type" : "@id"
+    },
+    "hasSimpleResult" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasSimpleResult"
+    },
+    "AGV" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#AGV"
+    },
+    "has_output" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-PWR#has_output",
+      "@type" : "@id"
+    },
+    "unitType" : {
+      "@id" : "http://www.w3.org/2006/time#unitType",
+      "@type" : "@id"
+    },
+    "Service_Description_SD" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AH#Service_Description_SD"
+    },
+    "dayOfYear" : {
+      "@id" : "http://www.w3.org/2006/time#dayOfYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "Accuracy" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Accuracy"
+    },
+    "ServiceOrientedArchitecture_FunctionPattern" : {
+      "@id" : "http://www.w3id.org/ecsel-dr-AT#ServiceOrientedArchitecture_FunctionPattern"
+    },
+    "isFeatureOfInterestOf" : {
+      "@id" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf",
+      "@type" : "@id"
+    }
+  }
+}

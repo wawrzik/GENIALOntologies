@@ -1,0 +1,704 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Not specified in the original Document, but in the image."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#range"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasSymptom"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#manifestedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasSymptom"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasUsage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#causesDisruption"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#fulfils"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasBenefit"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDevelopmentStage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasImprovement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#solves"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDeveloped"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Context: The original ontology for innovation at http://www.lexicater.co.uk/vocabularies/innovation/ns.html\ncould not be retrieved from its uri. There was an error for reading it in protégé. Probably it is deprecated. The full credit to this ontology goes there. This ontology was redesigned to adhere to the original version. Some object properties have been specified where it seemed to make sense (e.g. asymmetric, irreflexive, etc.)"
+  }, {
+    "@language" : "en",
+    "@value" : "The ontology for innovation is used to model roadmap/innovation information for the project GENIAL. It is reused in various models."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A benefit to something or someone."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A stage of development. An example set of development stages, but equally those used to describe software lifecylces, music production lifecylces or anything creative can be used. e.g Define a need, Design a solution, Develop the opportunity, Demonstrate the benefits, Distribute the product. (taken from the 5 D's defined by the National Innovation Centre, 2011)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Disruption caused by innovation. Typically this due to the liberation of deprecation of something."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The physical or tangible manfestiation of some idea, invention or innovation. A device, process, service, or product that emobodies some idea, invention or innovation. e.g The Firefox web browser is an embodiment of the innovation HTTP e.g Amoxicillin is an embodiment of the innovation Anibiotic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class of things that are improvements to something i.e making something better than it was. Specific improvements include those that provide improved efficiency, effectiveness, value or quality."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The innovation is a conceptual entity, concerned with the idea. Its application comes in the form of benefits and improvements and the things that embody it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person, groups or organisation that can think out of the box, show great expertise or most importantly can find solutions to problems and meet the wants and needs of others."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A need of a particular group or indivual of or for something that is lacking or requires improvement or problem solving."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The manifestation of a need. This is represented by a set of symptoms (general phenoma) affecting groups of things."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A symptom of a problem. This class is intended to comprise of SKOS concepts belonging to different schemes."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The application or usage of a device or process. Typically this is described using the properties usedBy, usedOn and usedWith"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#affects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The group of things affected by a problem. Again it is recommended that a SKOS model is used for such instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#buildsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is common for one innovation to build upon others. It doesn't neccessarily denote or infer that the subject has improvements on the object or is enabled by the object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#causesDisruption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Innovation is always disruptive, either directly or indirectly. Many innovators risk livelihood and reputation in the pursuit of innovation, many organisations capitalise on innovation, many organisations fail as a result."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#deprecates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Innovation will invariabily deprecate the need for an existing products or services, but not necessarily related products or services e.g the automobile deprecates the horse and carriage, but not necessarily the organisations that provide a carriage service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeprecatedBy"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#developedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an innovation to the innovator or innovators who developed it. Innovators are generally groups, organisations or people"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/maker"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeveloping"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#embodiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an innovation to a device, process, product, or service (make, model or brand) that embodies the innovation e.g The innovation HTTP is emobdied by the browser Firefox e.g The innovation anibiotic is embodied by Amoxicillin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#embodies"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#embodies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a device, process, product, or service (make, model or brand) to an innovation that it embodies e.g The Firefox web browser embodies the innovation HTTP e.g Amoxicillin embodies the innovation Anibiotic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#enabledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Where one innovation is enabled by another innovation or innovations. It is common for innovators to have a solution to a problem that is dependent on something else not yet known, discovered, invented or innovated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#enables"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#enables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Where one innovation enables a different innovation or innovations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#expectedMarketEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The expected date of introduction into the market. Mass production, commoditisation or availability for sale."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#fulfils",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The applicabiity of an idea can be tested by its ability to fulfil a need. This property therefore links an innovation to a need."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an innovation to some benefit or benefts of that innovation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDeveloped",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates innovator to the innovations they have developed. Innovators can be groups, organisations or people."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/made"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDevelopmentStage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates the innovations to the DevelopmentStage they are in.\n(This remark is different from the website; the website falsely refers to the hasDeveloped object property)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasImprovement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links an innovation to some improvement or improvements it provides."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasSymptom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A symptom of a problem. It is recommended that Symptoms follow a SKOS hierarchy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasUsage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The problem or need of some individual, group or organisation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links an improvement to something it improves."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improvesEffectivenessOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improves"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improvesEfficiencyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improves"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improvesQualityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improves"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improvesValueOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improves"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeprecatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The agents or things deprecated by a particular innovation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeveloping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an innovator to a current innovation that they are developing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isLiberatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The agents or things liberated by a particular innovation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#liberates"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#liberates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Innovation has the ability to free or liberate some kind of repressed, constrained or untapped potential."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#manifestedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#manifests"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#manifests",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The problem that manifests a need. The problem defines the characteristics of the need."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#solves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connects an innovation to the problems it solves. Generally speaking, innovations that solve a need do so by solving similar problems associated with the need."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a usage node to the thing that makes use of the device or process i.e the activator or implementor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines the recipient use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Where something is used in conjunction with something else."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d1-defining-the-need",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A solution will have the best the chance of success if there is a clear and accurate understanding of the users needs."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d2-designing-the-solution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A well designed innovation is more likely to succeed. Looking at your users needs, work out how your innovatiion can meet them. Indentify the benefits, considering the users or recipients that will gain from your innovation. Outline final designs for your innovation and how they will meet the users’ needs. Decide when to stop designing and, if appropriate, start developing the idea."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d3-developing-the-oppurtunity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Develop a prototype allowing for some ‘user preference’ analysis which can be fed back to the designers."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d4-demonstrating-the-benefits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Test and demonstrate both the functional and non-functional qualities of the solution, emphasising the beneftis to the user."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/d5-distributing-the-product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Execute marketing plan and conducting key post-launch checks."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/economic-benefits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Those benefits that are of an economic nature."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/economic-symptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Those symptons that are of an economic nature."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/health-benefits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Those benefits that are of a health related nature."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/health-symptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Those symptons that are health related."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/legal-benefits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Those benefits that are of a legal nature."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/legal-symptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Those symptons that are of a legal nature."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/scientific-benefits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Those benefits that are of a scientific nature."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/scientific-symptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Those symptons that are of a scientific nature."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/social-benefits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Those benefits that are of a social nature."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/social-symptoms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Those symptons that are of a social nature."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation/stages-of-innovation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A scheme consisting of the the stages of development, comprised by the National Innovation Centre. It could be inferred by the asserted facts about an innovation what stage it qualifies for e.g if it is asserted that an innovation fulfils a particular need, then it qualifies as beingat least at development stage 1 (defining the need)."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/made",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/maker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]

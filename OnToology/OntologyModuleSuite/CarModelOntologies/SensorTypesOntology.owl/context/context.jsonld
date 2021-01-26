@@ -1,0 +1,73 @@
+{
+  "@context" : {
+    "light_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/light_sensor"
+    },
+    "ir_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/ir_sensor"
+    },
+    "temperature_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/temperature_sensor"
+    },
+    "density_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/density_sensor"
+    },
+    "membrane_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/membrane_sensor"
+    },
+    "mems_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/mems_sensor"
+    },
+    "finger_movement_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/finger_movement_sensor"
+    },
+    "radar_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/radar_sensor"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "μphone_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/μphone_sensor"
+    },
+    "sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+    },
+    "humidity_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/humidity_sensor"
+    },
+    "imager_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/imager_sensor"
+    },
+    "pressure_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/pressure_sensor"
+    },
+    "rf_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/rf_sensor"
+    },
+    "prox_switch_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/prox_switch_sensor"
+    },
+    "inertial_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inertial_sensor"
+    },
+    "flow_speed_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/flow_speed_sensor"
+    },
+    "acceleration_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/acceleration_sensor"
+    },
+    "inductive_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inductive_sensor"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "ultrasonic_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/ultrasonic_sensor"
+    },
+    "gyro_sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/gyro_sensor"
+    }
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "@context" : {
+    "properSpatialPartOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#properSpatialPartOf",
+      "@type" : "@id"
+    },
+    "constitutedOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#constitutedOf",
+      "@type" : "@id"
+    },
+    "whole-part" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#whole-part",
+      "@type" : "@id"
+    },
+    "agentive-physical-object" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#agentive-physical-object"
+    },
+    "hasSelfContainedScatteredPortion" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasSelfContainedScatteredPortion",
+      "@type" : "@id"
+    },
+    "Occurrent" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#Occurrent"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "proper-part" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#proper-part",
+      "@type" : "@id"
+    },
+    "ZeroDimensionalRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion"
+    },
+    "DependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#DependentContinuant"
+    },
+    "ScatteredSpatiotemporalRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#ScatteredSpatiotemporalRegion"
+    },
+    "ProcessAggregate" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#ProcessAggregate"
+    },
+    "amount-of-matter" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#amount-of-matter"
+    },
+    "participant-in" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#participant-in",
+      "@type" : "@id"
+    },
+    "ProcessualContext" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#ProcessualContext"
+    },
+    "part" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#part",
+      "@type" : "@id"
+    },
+    "Object" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Object"
+    },
+    "ConnectedSpatiotemporalRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#ConnectedSpatiotemporalRegion"
+    },
+    "properContainedIn" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#properContainedIn",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "ProcessBoundary" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#ProcessBoundary"
+    },
+    "contains" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#contains",
+      "@type" : "@id"
+    },
+    "FiatProcessPart" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#FiatProcessPart"
+    },
+    "hasPart" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasPart",
+      "@type" : "@id"
+    },
+    "IndependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"
+    },
+    "hasSubquantity" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasSubquantity",
+      "@type" : "@id"
+    },
+    "involvedIn" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#involvedIn",
+      "@type" : "@id"
+    },
+    "containedIn" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#containedIn",
+      "@type" : "@id"
+    },
+    "non-agentive-social-object" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#non-agentive-social-object"
+    },
+    "agentive-social-object" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#agentive-social-object"
+    },
+    "locates" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#locates",
+      "@type" : "@id"
+    },
+    "stuffPartOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#stuffPartOf",
+      "@type" : "@id"
+    },
+    "involves" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#involves",
+      "@type" : "@id"
+    },
+    "proper-part-of" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#proper-part-of",
+      "@type" : "@id"
+    },
+    "ObjectAggregate" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate"
+    },
+    "part-of" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#part-of",
+      "@type" : "@id"
+    },
+    "part-whole" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#part-whole",
+      "@type" : "@id"
+    },
+    "GenericallyDependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"
+    },
+    "Quality" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Quality"
+    },
+    "MaterialEntity" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"
+    },
+    "Continuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Continuant"
+    },
+    "hasSPart" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasSPart",
+      "@type" : "@id"
+    },
+    "social-object" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#social-object"
+    },
+    "OneDimensionalRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Role" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Role"
+    },
+    "hasProperPart" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasProperPart",
+      "@type" : "@id"
+    },
+    "TemporalInterval" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#TemporalInterval"
+    },
+    "hasMember" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasMember",
+      "@type" : "@id"
+    },
+    "participant" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#participant",
+      "@type" : "@id"
+    },
+    "constitutes" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#constitutes",
+      "@type" : "@id"
+    },
+    "subquantityOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#subquantityOf",
+      "@type" : "@id"
+    },
+    "hasContainedScatteredPortion" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasContainedScatteredPortion",
+      "@type" : "@id"
+    },
+    "hasProperSPart" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasProperSPart",
+      "@type" : "@id"
+    },
+    "participatesIn" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#participatesIn",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "partOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#partOf",
+      "@type" : "@id"
+    },
+    "scatteredPortionOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#scatteredPortionOf",
+      "@type" : "@id"
+    },
+    "ThreeDimensionalRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion"
+    },
+    "region" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#region"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "hasSpatialPart" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasSpatialPart",
+      "@type" : "@id"
+    },
+    "properContains" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#properContains",
+      "@type" : "@id"
+    },
+    "deprecated" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#deprecated",
+      "@type" : "@id"
+    },
+    "SpecificallyDependentContinuant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"
+    },
+    "hasProperSpatialPart" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasProperSpatialPart",
+      "@type" : "@id"
+    },
+    "ConnectedTemporalRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#ConnectedTemporalRegion"
+    },
+    "properInvolvedIn" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#properInvolvedIn",
+      "@type" : "@id"
+    },
+    "contiguousPortion" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#contiguousPortion",
+      "@type" : "@id"
+    },
+    "SpatiotemporalInstant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInstant"
+    },
+    "mpartOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#mpartOf",
+      "@type" : "@id"
+    },
+    "hasMPart" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasMPart",
+      "@type" : "@id"
+    },
+    "contiguousPortionOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#contiguousPortionOf",
+      "@type" : "@id"
+    },
+    "TwoDimensionalRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion"
+    },
+    "properLocates" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#properLocates",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "hasParticipant" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasParticipant",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "hasPortion" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasPortion",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "properInvolves" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#properInvolves",
+      "@type" : "@id"
+    },
+    "Site" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Site"
+    },
+    "isSelfContainedScatteredPortionOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#isSelfContainedScatteredPortionOf",
+      "@type" : "@id"
+    },
+    "spatialPartOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#spatialPartOf",
+      "@type" : "@id"
+    },
+    "hasStuffPart" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#hasStuffPart",
+      "@type" : "@id"
+    },
+    "SpatiotemporalInterval" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#SpatiotemporalInterval"
+    },
+    "mental-object" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#mental-object"
+    },
+    "locatedIn" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#locatedIn",
+      "@type" : "@id"
+    },
+    "FiatObjectPart" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart"
+    },
+    "properLocatedIn" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#properLocatedIn",
+      "@type" : "@id"
+    },
+    "Entity" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1#Entity"
+    },
+    "ProcessualEntity" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"
+    },
+    "Process" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#Process"
+    },
+    "non-agentive-physical-object" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#non-agentive-physical-object"
+    },
+    "ObjectBoundary" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary"
+    },
+    "SpatialRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#SpatialRegion"
+    },
+    "properSPartOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#properSPartOf",
+      "@type" : "@id"
+    },
+    "Disposition" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Disposition"
+    },
+    "Function" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#Function"
+    },
+    "RealizableEntity" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"
+    },
+    "ScatteredTemporalRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#ScatteredTemporalRegion"
+    },
+    "memberOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#memberOf",
+      "@type" : "@id"
+    },
+    "isContainedScatteredPortionOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#isContainedScatteredPortionOf",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "non-physical-object" : {
+      "@id" : "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#non-physical-object"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/elements/1.1/language"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "sPartOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#sPartOf",
+      "@type" : "@id"
+    },
+    "TemporalInstant" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#TemporalInstant"
+    },
+    "portionOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#portionOf",
+      "@type" : "@id"
+    },
+    "SpatiotemporalRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#SpatiotemporalRegion"
+    },
+    "scatterPortion" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#scatterPortion",
+      "@type" : "@id"
+    },
+    "format" : {
+      "@id" : "http://purl.org/dc/elements/1.1/format"
+    },
+    "properPartOf" : {
+      "@id" : "http://www.meteck.org/files/ontologies/PW.owl#properPartOf",
+      "@type" : "@id"
+    },
+    "TemporalRegion" : {
+      "@id" : "http://www.ifomis.org/bfo/1.1/span#TemporalRegion"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology gives an outline on how to model EffectChains for GENIAL!" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#DesiredEffect
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#DesiredEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#DesiredEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Mechanical
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Mechanical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Mechanical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Software
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#UndesiredEffect
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#UndesiredEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#UndesiredEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Acoustic/Sound
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Acoustic/Sound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Acoustic/Sound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Electrical/Electronic
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Electrical/Electronic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Electrical/Electronic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#HV/Power
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#HV/Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#HV/Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Misuse(User)
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Misuse(User)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Misuse(User)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Stuff/Material
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Stuff/Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Stuff/Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Thermic/Optical
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Thermic/Optical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Thermic/Optical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

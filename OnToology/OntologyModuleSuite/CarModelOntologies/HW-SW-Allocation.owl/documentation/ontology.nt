@@ -1,0 +1,101 @@
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology addresses the HW-SW Allocation Problem" .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation> <http://www.w3.org/2000/01/rdf-schema#comment> "To be refined with UniTübingen" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#distributedTo
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#distributedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#runsOn
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#runsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#interface
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#interface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#interface> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory_access_time
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory_access_time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory_access_time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#performance
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#performance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#processor
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#processor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#processor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#real_hardware
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#real_hardware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#real_hardware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#real_hardware> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#schedule
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#software_function
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#software_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#software_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#function> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#software_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#runsOn> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware> .
+# 
+# http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#interface> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory_access_time> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#performance> .
+<http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#distributedTo> .
+_:genid6 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#real_hardware> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#function
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#property
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

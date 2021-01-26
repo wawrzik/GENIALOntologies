@@ -1,0 +1,470 @@
+{
+  "@context" : {
+    "actsUpon" : {
+      "@id" : "https://w3id.org/saref#actsUpon",
+      "@type" : "@id"
+    },
+    "Switch" : {
+      "@id" : "https://w3id.org/saref#Switch"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://w3id.org/saref#UnitOfMeasure"
+    },
+    "hasManufacturer" : {
+      "@id" : "https://w3id.org/saref#hasManufacturer",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPrice" : {
+      "@id" : "https://w3id.org/saref#hasPrice",
+      "@type" : "@id"
+    },
+    "NotifyCommand" : {
+      "@id" : "https://w3id.org/saref#NotifyCommand"
+    },
+    "Meter" : {
+      "@id" : "https://w3id.org/saref#Meter"
+    },
+    "isControlledByDevice" : {
+      "@id" : "https://w3id.org/saref#isControlledByDevice",
+      "@type" : "@id"
+    },
+    "EnergyUnit" : {
+      "@id" : "https://w3id.org/saref#EnergyUnit"
+    },
+    "Storage" : {
+      "@id" : "https://w3id.org/saref#Storage"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Commodity" : {
+      "@id" : "https://w3id.org/saref#Commodity"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "Humidity" : {
+      "@id" : "https://w3id.org/saref#Humidity"
+    },
+    "hasModel" : {
+      "@id" : "https://w3id.org/saref#hasModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SmokeSensor" : {
+      "@id" : "https://w3id.org/saref#SmokeSensor"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "MeteringFunction" : {
+      "@id" : "https://w3id.org/saref#MeteringFunction"
+    },
+    "hasThresholdMeasurement" : {
+      "@id" : "https://w3id.org/saref#hasThresholdMeasurement",
+      "@type" : "@id"
+    },
+    "accomplishes" : {
+      "@id" : "https://w3id.org/saref#accomplishes",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "CloseCommand" : {
+      "@id" : "https://w3id.org/saref#CloseCommand"
+    },
+    "TemporalUnit" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalUnit"
+    },
+    "OffState" : {
+      "@id" : "https://w3id.org/saref#OffState"
+    },
+    "hasName" : {
+      "@id" : "https://w3id.org/saref#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isOfferedBy" : {
+      "@id" : "https://w3id.org/saref#isOfferedBy",
+      "@type" : "@id"
+    },
+    "measuresProperty" : {
+      "@id" : "https://w3id.org/saref#measuresProperty",
+      "@type" : "@id"
+    },
+    "PressureUnit" : {
+      "@id" : "https://w3id.org/saref#PressureUnit"
+    },
+    "Generator" : {
+      "@id" : "https://w3id.org/saref#Generator"
+    },
+    "hasValue" : {
+      "@id" : "https://w3id.org/saref#hasValue"
+    },
+    "Motion" : {
+      "@id" : "https://w3id.org/saref#Motion"
+    },
+    "hasMeterReadingType" : {
+      "@id" : "https://w3id.org/saref#hasMeterReadingType",
+      "@type" : "@id"
+    },
+    "Appliance" : {
+      "@id" : "https://w3id.org/saref#Appliance"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "GetMeterDataCommand" : {
+      "@id" : "https://w3id.org/saref#GetMeterDataCommand"
+    },
+    "OnCommand" : {
+      "@id" : "https://w3id.org/saref#OnCommand"
+    },
+    "Measurement" : {
+      "@id" : "https://w3id.org/saref#Measurement"
+    },
+    "StepUpCommand" : {
+      "@id" : "https://w3id.org/saref#StepUpCommand"
+    },
+    "Multimedia" : {
+      "@id" : "https://w3id.org/saref#Multimedia"
+    },
+    "LightingDevice" : {
+      "@id" : "https://w3id.org/saref#LightingDevice"
+    },
+    "OnState" : {
+      "@id" : "https://w3id.org/saref#OnState"
+    },
+    "hasCommand" : {
+      "@id" : "https://w3id.org/saref#hasCommand",
+      "@type" : "@id"
+    },
+    "Gas" : {
+      "@id" : "https://w3id.org/saref#Gas"
+    },
+    "Light" : {
+      "@id" : "https://w3id.org/saref#Light"
+    },
+    "Temperature" : {
+      "@id" : "https://w3id.org/saref#Temperature"
+    },
+    "SetLevelCommand" : {
+      "@id" : "https://w3id.org/saref#SetLevelCommand"
+    },
+    "isAccomplishedBy" : {
+      "@id" : "https://w3id.org/saref#isAccomplishedBy",
+      "@type" : "@id"
+    },
+    "PowerUnit" : {
+      "@id" : "https://w3id.org/saref#PowerUnit"
+    },
+    "Price" : {
+      "@id" : "https://w3id.org/saref#Price"
+    },
+    "LevelControlFunction" : {
+      "@id" : "https://w3id.org/saref#LevelControlFunction"
+    },
+    "OpenCommand" : {
+      "@id" : "https://w3id.org/saref#OpenCommand"
+    },
+    "HVAC" : {
+      "@id" : "https://w3id.org/saref#HVAC"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "GetSensingDataCommand" : {
+      "@id" : "https://w3id.org/saref#GetSensingDataCommand"
+    },
+    "Energy" : {
+      "@id" : "https://w3id.org/saref#Energy"
+    },
+    "OnOffState" : {
+      "@id" : "https://w3id.org/saref#OnOffState"
+    },
+    "Water" : {
+      "@id" : "https://w3id.org/saref#Water"
+    },
+    "GetCurrentMeterValueCommand" : {
+      "@id" : "https://w3id.org/saref#GetCurrentMeterValueCommand"
+    },
+    "Electricity" : {
+      "@id" : "https://w3id.org/saref#Electricity"
+    },
+    "StartState" : {
+      "@id" : "https://w3id.org/saref#StartState"
+    },
+    "hasTime" : {
+      "@id" : "https://w3id.org/saref#hasTime",
+      "@type" : "@id"
+    },
+    "OpenCloseFunction" : {
+      "@id" : "https://w3id.org/saref#OpenCloseFunction"
+    },
+    "StepDownCommand" : {
+      "@id" : "https://w3id.org/saref#StepDownCommand"
+    },
+    "ActuatingFunction" : {
+      "@id" : "https://w3id.org/saref#ActuatingFunction"
+    },
+    "GetCommand" : {
+      "@id" : "https://w3id.org/saref#GetCommand"
+    },
+    "CloseState" : {
+      "@id" : "https://w3id.org/saref#CloseState"
+    },
+    "StopState" : {
+      "@id" : "https://w3id.org/saref#StopState"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "Profile" : {
+      "@id" : "https://w3id.org/saref#Profile"
+    },
+    "isAbout" : {
+      "@id" : "https://w3id.org/saref#isAbout",
+      "@type" : "@id"
+    },
+    "MicroRenewable" : {
+      "@id" : "https://w3id.org/saref#MicroRenewable"
+    },
+    "Pressure" : {
+      "@id" : "https://w3id.org/saref#Pressure"
+    },
+    "EnergyRelated" : {
+      "@id" : "https://w3id.org/saref#EnergyRelated"
+    },
+    "Network" : {
+      "@id" : "https://w3id.org/saref#Network"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://w3id.org/saref#relatesToMeasurement",
+      "@type" : "@id"
+    },
+    "OpenCloseState" : {
+      "@id" : "https://w3id.org/saref#OpenCloseState"
+    },
+    "OffCommand" : {
+      "@id" : "https://w3id.org/saref#OffCommand"
+    },
+    "isMeasuredByDevice" : {
+      "@id" : "https://w3id.org/saref#isMeasuredByDevice",
+      "@type" : "@id"
+    },
+    "hasTypicalConsumption" : {
+      "@id" : "https://w3id.org/saref#hasTypicalConsumption",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "makesMeasurement" : {
+      "@id" : "https://w3id.org/saref#makesMeasurement",
+      "@type" : "@id"
+    },
+    "SensingFunction" : {
+      "@id" : "https://w3id.org/saref#SensingFunction"
+    },
+    "DoorSwitch" : {
+      "@id" : "https://w3id.org/saref#DoorSwitch"
+    },
+    "SetAbsoluteLevelCommand" : {
+      "@id" : "https://w3id.org/saref#SetAbsoluteLevelCommand"
+    },
+    "represents" : {
+      "@id" : "https://w3id.org/saref#represents",
+      "@type" : "@id"
+    },
+    "GetMeterHistoryCommand" : {
+      "@id" : "https://w3id.org/saref#GetMeterHistoryCommand"
+    },
+    "StopCommand" : {
+      "@id" : "https://w3id.org/saref#StopCommand"
+    },
+    "StartStopState" : {
+      "@id" : "https://w3id.org/saref#StartStopState"
+    },
+    "Property" : {
+      "@id" : "https://w3id.org/saref#Property"
+    },
+    "hasFunction" : {
+      "@id" : "https://w3id.org/saref#hasFunction",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Command" : {
+      "@id" : "https://w3id.org/saref#Command"
+    },
+    "SwitchOnService" : {
+      "@id" : "https://w3id.org/saref#SwitchOnService"
+    },
+    "isUsedFor" : {
+      "@id" : "https://w3id.org/saref#isUsedFor",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "Occupancy" : {
+      "@id" : "https://w3id.org/saref#Occupancy"
+    },
+    "TemperatureSensor" : {
+      "@id" : "https://w3id.org/saref#TemperatureSensor"
+    },
+    "LightSwitch" : {
+      "@id" : "https://w3id.org/saref#LightSwitch"
+    },
+    "PauseCommand" : {
+      "@id" : "https://w3id.org/saref#PauseCommand"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://w3id.org/saref#isMeasuredIn",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "Coal" : {
+      "@id" : "https://w3id.org/saref#Coal"
+    },
+    "Smoke" : {
+      "@id" : "https://w3id.org/saref#Smoke"
+    },
+    "Load" : {
+      "@id" : "https://w3id.org/saref#Load"
+    },
+    "hasMeterReading" : {
+      "@id" : "https://w3id.org/saref#hasMeterReading",
+      "@type" : "@id"
+    },
+    "consistsOf" : {
+      "@id" : "https://w3id.org/saref#consistsOf",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "SetRelativeLevelCommand" : {
+      "@id" : "https://w3id.org/saref#SetRelativeLevelCommand"
+    },
+    "EventFunction" : {
+      "@id" : "https://w3id.org/saref#EventFunction"
+    },
+    "WashingMachine" : {
+      "@id" : "https://w3id.org/saref#WashingMachine"
+    },
+    "isCommandOf" : {
+      "@id" : "https://w3id.org/saref#isCommandOf",
+      "@type" : "@id"
+    },
+    "BuildingRelated" : {
+      "@id" : "https://w3id.org/saref#BuildingRelated"
+    },
+    "hasSensingRange" : {
+      "@id" : "https://w3id.org/saref#hasSensingRange",
+      "@type" : "@id"
+    },
+    "MultiLevelState" : {
+      "@id" : "https://w3id.org/saref#MultiLevelState"
+    },
+    "TemperatureUnit" : {
+      "@id" : "https://w3id.org/saref#TemperatureUnit"
+    },
+    "hasSensorType" : {
+      "@id" : "https://w3id.org/saref#hasSensorType",
+      "@type" : "@id"
+    },
+    "StartStopFunction" : {
+      "@id" : "https://w3id.org/saref#StartStopFunction"
+    },
+    "hasState" : {
+      "@id" : "https://w3id.org/saref#hasState",
+      "@type" : "@id"
+    },
+    "State" : {
+      "@id" : "https://w3id.org/saref#State"
+    },
+    "hasProfile" : {
+      "@id" : "https://w3id.org/saref#hasProfile",
+      "@type" : "@id"
+    },
+    "relatesToProperty" : {
+      "@id" : "https://w3id.org/saref#relatesToProperty",
+      "@type" : "@id"
+    },
+    "OnOffFunction" : {
+      "@id" : "https://w3id.org/saref#OnOffFunction"
+    },
+    "Function" : {
+      "@id" : "https://w3id.org/saref#Function"
+    },
+    "Actuator" : {
+      "@id" : "https://w3id.org/saref#Actuator"
+    },
+    "Currency" : {
+      "@id" : "https://w3id.org/saref#Currency"
+    },
+    "IlluminanceUnit" : {
+      "@id" : "https://w3id.org/saref#IlluminanceUnit"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "https://w3id.org/saref#Service"
+    },
+    "controlsProperty" : {
+      "@id" : "https://w3id.org/saref#controlsProperty",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "EnergyMeter" : {
+      "@id" : "https://w3id.org/saref#EnergyMeter"
+    },
+    "OpenState" : {
+      "@id" : "https://w3id.org/saref#OpenState"
+    },
+    "StartCommand" : {
+      "@id" : "https://w3id.org/saref#StartCommand"
+    },
+    "ToggleCommand" : {
+      "@id" : "https://w3id.org/saref#ToggleCommand"
+    },
+    "Device" : {
+      "@id" : "https://w3id.org/saref#Device"
+    },
+    "FunctionRelated" : {
+      "@id" : "https://w3id.org/saref#FunctionRelated"
+    },
+    "hasDescription" : {
+      "@id" : "https://w3id.org/saref#hasDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTimestamp" : {
+      "@id" : "https://w3id.org/saref#hasTimestamp"
+    },
+    "Power" : {
+      "@id" : "https://w3id.org/saref#Power"
+    },
+    "Task" : {
+      "@id" : "https://w3id.org/saref#Task"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "Time" : {
+      "@id" : "https://w3id.org/saref#Time"
+    },
+    "offers" : {
+      "@id" : "https://w3id.org/saref#offers",
+      "@type" : "@id"
+    },
+    "Sensor" : {
+      "@id" : "https://w3id.org/saref#Sensor"
+    }
+  }
+}

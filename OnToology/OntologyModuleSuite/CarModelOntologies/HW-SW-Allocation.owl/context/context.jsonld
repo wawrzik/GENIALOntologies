@@ -1,0 +1,55 @@
+{
+  "@context" : {
+    "interface" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#interface"
+    },
+    "distributedTo" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#distributedTo",
+      "@type" : "@id"
+    },
+    "hardware_element" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"
+    },
+    "software_function" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#software_function"
+    },
+    "schedule" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#schedule"
+    },
+    "real_hardware" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#real_hardware"
+    },
+    "processor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#processor"
+    },
+    "memory" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory"
+    },
+    "property" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property"
+    },
+    "function" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#function"
+    },
+    "runsOn" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#runsOn",
+      "@type" : "@id"
+    },
+    "hasRequirement" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "performance" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#performance"
+    },
+    "virtual_hardware" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware"
+    },
+    "memory_access_time" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory_access_time"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> a prov:Entity;
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo :agent7;
+	 prov:wasAttributedTo :agent8;
+	 prov:wasAttributedTo :agent9;
+	 prov:wasAttributedTo :agent10;
+	 prov:wasAttributedTo :agent11;
+	 prov:wasAttributedTo :agent12;
+	 prov:wasAttributedTo :agent13;
+	 prov:wasAttributedTo :agent14;
+	 prov:wasAttributedTo :agent15;
+	 prov:wasAttributedTo :agent16;
+	 prov:wasAttributedTo :agent17;
+	 prov:wasAttributedTo :agent18;
+	 prov:wasAttributedTo :agent19;
+	 prov:wasAttributedTo :agent20;
+	 prov:wasAttributedTo :agent21;
+	 prov:wasAttributedTo :agent22;
+	 prov:wasAttributedTo :agent23;
+	 prov:wasAttributedTo :agent24;
+	 prov:wasAttributedTo :agent25;
+	 prov:wasAttributedTo :agent26;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
+:agent0 a prov:Agent; foaf:name "Alan Ruttenberg".
+:agent1 a prov:Agent; foaf:name "Albert Goldfain".
+:agent2 a prov:Agent; foaf:name "Barry Smith".
+:agent3 a prov:Agent; foaf:name "Bill Duncan".
+:agent4 a prov:Agent; foaf:name "Bjoern Peters".
+:agent5 a prov:Agent; foaf:name "Chris Mungall".
+:agent6 a prov:Agent; foaf:name "David Osumi-Sutherland".
+:agent7 a prov:Agent; foaf:name "Fabian Neuhaus".
+:agent8 a prov:Agent; foaf:name "James A. Overton".
+:agent9 a prov:Agent; foaf:name "Janna Hastings".
+:agent10 a prov:Agent; foaf:name "Jie Zheng".
+:agent11 a prov:Agent; foaf:name "Jonathan Bona".
+:agent12 a prov:Agent; foaf:name "Larry Hunter".
+:agent13 a prov:Agent; foaf:name "Leonard Jacuzzo".
+:agent14 a prov:Agent; foaf:name "Ludger Jansen".
+:agent15 a prov:Agent; foaf:name "Mark Ressler".
+:agent16 a prov:Agent; foaf:name "Mathias Brochhausen".
+:agent17 a prov:Agent; foaf:name "Mauricio Almeida".
+:agent18 a prov:Agent; foaf:name "Melanie Courtot".
+:agent19 a prov:Agent; foaf:name "Pierre Grenon".
+:agent20 a prov:Agent; foaf:name "Randall Dipert".
+:agent21 a prov:Agent; foaf:name "Robert Rovetto".
+:agent22 a prov:Agent; foaf:name "Ron Rudnicki".
+:agent23 a prov:Agent; foaf:name "Stefan Schulz".
+:agent24 a prov:Agent; foaf:name "Thomas Bittner".
+:agent25 a prov:Agent; foaf:name "Werner Ceusters".
+:agent26 a prov:Agent; foaf:name "Yongqun "Oliver" He".

@@ -1,0 +1,884 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"
+    }, {
+      "@id" : "_:genid5"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid17"
+    }, {
+      "@id" : "_:genid15"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#context"
+    }, {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000020"
+    }, {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000141"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"
+    }, {
+      "@id" : "_:genid27"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"
+    }, {
+      "@id" : "_:genid31"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#system"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"
+    }, {
+      "@id" : "_:genid35"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#component"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"
+    }, {
+      "@id" : "_:genid44"
+    }, {
+      "@id" : "_:genid39"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid40"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid45"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"
+    }, {
+      "@id" : "_:genid55"
+    }, {
+      "@id" : "_:genid53"
+    }, {
+      "@id" : "_:genid51"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid13"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"
+    }, {
+      "@id" : "_:genid64"
+    }, {
+      "@id" : "_:genid59"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:genid60"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element"
+    }, {
+      "@id" : "_:genid68"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid74"
+    }, {
+      "@id" : "_:genid72"
+    }, {
+      "@id" : "_:genid70"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid11"
+    }, {
+      "@id" : "_:genid9"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/controller"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"
+    }, {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.obolibrary.org/obo/IAO_0000232" : [ {
+    "@value" : "test"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "GENIAL! Basic Ontology"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Christoph Grimm"
+  }, {
+    "@value" : "Peter Neumann"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2021-01-26"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Frank Wawrzik"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "GENIAL! Basic Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GENIAL! Basic Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.2.0"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "mailto:wawrzik@cs.uni-kl.de"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@value" : "A microcontroller"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "according to ISO26262: non-system level element (3.41) that is logically or technically separable and is comprised of more than one hardware part (3.71) or one or more software units (3.159). \n\nA component is a part of a system (3.163)."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "The circumstances that form the setting for an event, statement or idea and in terms of which it can be fully understood, e.g. Market, legal  frame conditions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "context"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A gbo:property that is a boolean or arithmetic function / equation on properties. Used to be calculated with GENIAL constraint propagation. As string in LaTex syntax"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dependency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Links properties with dependencies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Continuant that is (according to ISO 26262) a system (3.163), components (3.21) (hardware or software), hardware parts (3.71), or software units (3.159)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000002"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "An object created, designed or engineered by humans"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "engineered object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000030"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A bfo:function that a component, hardware or software implements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000034"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "No ISO definition. Formal Definition derived from other definitions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#component"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "From definition of element:\nNote 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hardware"
+  }, {
+    "@value" : "hardware element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@value" : "A flip-flop of the ALU with its logic cone, a register."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "smallest portion of a hardware subpart (3.73) considered in safety (3.132) analysis"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@value" : "The CPU of a microcontroller, a resistor, flash array of a microcontroller."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "a piece of hardware that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hardware part"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@value" : "ALU of a CPU of a microcontroller, register bank of a CPU."
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "portion of a hardware part (3.71) that can be logically divided and represents second or greater level of hierarchical decomposition"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "models hierarchical de-composition/integration"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "links components to their properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#implements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#function"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#legal_boundary_conditions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "legal boundary condiitons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#context"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#market",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "market"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#context"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#material_object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "material object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000030"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "An element that is not on the system-level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#element"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "models hierarchical de-composition/integration"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000112" : [ {
+    "@value" : "drag coefficient"
+  }, {
+    "@value" : "power"
+  }, {
+    "@value" : "temperature"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A quality or characteristic of a hardware, software or function. A property has a boolean, integer, or real variable through the measure class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "links properties back to their components"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#social_object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "social object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000030"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "one or more softwareunits (3.159)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#component"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "From definition of element:\nNote 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "software"
+  }, {
+    "@value" : "software element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000031"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "a piece of software that is (according to ISO26262) an atomic level software component (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "software unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid57"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#system",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "according to ISO 26262: (continuant that is a) set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid66"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "An element that is on the system level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#element"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Not defined in ISO26262"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/controller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#component"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testclass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hasLowerBoundNumericalValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hasUpperBoundNumericalValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Not defined in ISO26262"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/measure"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Links measure with their unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/measure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/unit"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Links properties or quantities to their measure (concrete value)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/measure"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A bfo:quality that are amounts of quantities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "measure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A quantity is a (property that is quanitifiable and a) representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "is a quality that is any standard used for comparison in measurements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+  } ]
+} ]

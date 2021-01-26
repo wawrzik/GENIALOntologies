@@ -1,0 +1,1092 @@
+[ {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_accelerator_local_memory_bank_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_accelerator_local_memory_bank_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_accelerator_local_memory_bank_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_accelerator_local_memory_bank_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogic_funtional_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogicfu_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogic_funtional_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branch_functional_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branchfu_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branch_functional_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/cnn_accelerator_controller_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_controller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_control_register_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_control_register1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_control_register_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_control_register_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_accelerator_local_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_accelerator_local_memory_bank_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_control_register_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_control_register_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l1d_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l1d_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l1l_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l1l_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l2_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l2_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_memory_bank_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_memory_bank_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_register_file_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dct_matrix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/decode_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_decode_stage_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divfu_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divide_funtional_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divide_funtional_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogicfu_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branchfu_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divfu_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mulfu_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit_1"
+  } ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_execute_stage_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jumpfu_1"
+  } ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width_fetch_stage_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_fetch_stage_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fft_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fifo_buffer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/input_data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length_16000"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_buffer_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fifo_buffer" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width_fetch_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_issue_width_fetch_stage_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jump_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jumpfu_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jump_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l1d_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l1d_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l1d_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l1d_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l1d_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l1l_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l1l_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l1l_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l1l_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l1l_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l2_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/rr_cache" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l2_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l2_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l2_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l2_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_decode_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_decode_stage_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_execute_stage_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_execute_stage_0"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_execute_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_execute_stage_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_fetch_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_fetch_stage_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_logarithmic_memory_interconnect_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_logarithmic_memory_interconnect_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/logarithmic_memory_interconnect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectrogram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/main_memory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length_16000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_length_16000"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_width_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_accelerator_local_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_control_register_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l1d_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l1l_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l2_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_issue_width_fetch_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_decode_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_execute_stage_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_execute_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_fetch_stage_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_logarithmic_memory_interconnect_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_length_16000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "16000"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_width_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_fft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "32"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_number_of_memory_banks_memory_map_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_accelerator_local_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_control_register_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_control_register_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l1d_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l1l_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l2_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_ports_logarithmic_memory_interconnect_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "6"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_accelerator_local_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "128"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_control_register_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "32"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l1d_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "64"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l1l_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "64"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l2_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "128"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4096"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_win_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "32"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_accelerator_local_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_control_register_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l1d_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l1l_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l2_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "8"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_ports_logarithmic_memory_interconnect_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_x_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1001"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_frames",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontology-of-units-of-measure.org/resource/om-2/measure" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "17"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mel_weights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fft_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectrogram"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_2"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mulfu_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_funtional_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_funtional_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_fft"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linearity_result",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks_memory_map_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_number_of_memory_banks_memory_map_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers_register_file_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/logarithmic_memory_interconnect_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/main_memory_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_accelerator_local_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_accelerator_local_memory_bank_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_control_register1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_control_register_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l1d_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l1d_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l1l_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l1l_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l2_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l2_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_memory_bank_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_memory_bank_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports_logarithmic_memory_interconnect_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_ports_logarithmic_memory_interconnect_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_register_file_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers_register_file_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/rr_cache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_accelerator_local_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_accelerator_local_memory_bank_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_control_register_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_control_register_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l1d_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l1d_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l1l_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l1l_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l2_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l2_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_memory_bank_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_memory_bank_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/spectogram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stft_matrix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/decode_stage_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_0"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l1d_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l1l_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l2_cache_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/win_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_win_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/window_weights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/win_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_accelerator_local_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_accelerator_local_memory_bank_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_control_register_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_control_register_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l1d_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l1d_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l1l_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l1l_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l2_cache_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l2_cache_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_memory_bank_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_memory_bank_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports_logarithmic_memory_interconnect_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_ports_logarithmic_memory_interconnect_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_x_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_frames",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width" ],
+  "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_length"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Alexander Jung (University of Tübingen)"
+  }, {
+    "@value" : "Frank Wawrzik (TU Kaiserslautern)"
+  }, {
+    "@value" : "Konstantin Lübeck (University of Tübingen)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Knowledge base of hardware components and related parts."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/0.1.1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/cnn_accelerator_controller_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_controller" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/logarithmic_memory_interconnect_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/logarithmic_memory_interconnect" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_logarithmic_memory_interconnect_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports_logarithmic_memory_interconnect_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports_logarithmic_memory_interconnect_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/main_memory_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/main_memory" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_bank_0"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_bank_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_map_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_bank_0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_memory_bank_0"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_memory_bank_0"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_memory_bank_0"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_memory_bank_0"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_bank_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_memory_bank_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_memory_bank_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_memory_bank_1"
+  }, {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_memory_bank_1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_map_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map" ],
+  "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks_memory_map_1"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

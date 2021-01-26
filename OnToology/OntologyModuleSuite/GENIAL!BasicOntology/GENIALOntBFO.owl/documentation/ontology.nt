@@ -1,0 +1,548 @@
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://www.w3.org/2002/07/owl#versionIRI> <http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://purl.obolibrary.org/obo/IAO_0000232> "test" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://purl.org/dc/elements/1.1/description> "Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://purl.org/dc/elements/1.1/title> "GENIAL! Basic Ontology" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://purl.org/dc/terms/contributor> "Christoph Grimm" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://purl.org/dc/terms/contributor> "Peter Neumann" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://purl.org/dc/terms/created> "2021-01-26" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://purl.org/dc/terms/creator> "Frank Wawrzik" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://purl.org/dc/terms/title> "GENIAL! Basic Ontology" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://www.w3.org/2000/01/rdf-schema#label> "GENIAL! Basic Ontology" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.0" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt> <http://xmlns.com/foaf/0.1/mbox> "mailto:wawrzik@cs.uni-kl.de" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on> <http://purl.obolibrary.org/obo/IAO_0000115> "Links properties with dependencies." .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part> <http://www.w3.org/2002/07/owl#inverseOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part> <http://purl.obolibrary.org/obo/IAO_0000115> "models hierarchical de-composition/integration" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://www.w3.org/2002/07/owl#inverseOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://www.w3.org/2002/07/owl#inverseOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://purl.obolibrary.org/obo/IAO_0000115> "links components to their properties" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#implements
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> <http://www.w3.org/2002/07/owl#inverseOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpsagila.cs.uni-kl.de/GENIALOnt#element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> <http://www.w3.org/2000/01/rdf-schema#range> <http://cpsagila.cs.uni-kl.de/GENIALOnt#function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of> <http://purl.obolibrary.org/obo/IAO_0000115> "models hierarchical de-composition/integration" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of> <http://purl.obolibrary.org/obo/IAO_0000115> "links properties back to their components" .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/resource/om-2/unit> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://purl.obolibrary.org/obo/IAO_0000115> "Links measure with their unit" .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has unit" .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://purl.obolibrary.org/obo/IAO_0000115> "Links properties or quantities to their measure (concrete value)" .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hasLowerBoundNumericalValue
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hasLowerBoundNumericalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hasUpperBoundNumericalValue
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hasUpperBoundNumericalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#component
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#component> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid15 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#system> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#component> <http://purl.obolibrary.org/obo/IAO_0000112> "A microcontroller" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#component> <http://purl.obolibrary.org/obo/IAO_0000115> "according to ISO26262: non-system level element (3.41) that is logically or technically separable and is comprised of more than one hardware part (3.71) or one or more software units (3.159). \n\nA component is a part of a system (3.163)." .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#context
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#context> <http://purl.obolibrary.org/obo/IAO_0000115> "The circumstances that form the setting for an event, statement or idea and in terms of which it can be fully understood, e.g. Market, legal  frame conditions" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#context> <http://www.w3.org/2000/01/rdf-schema#label> "context" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency> <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:property that is a boolean or arithmetic function / equation on properties. Used to be calculated with GENIAL constraint propagation. As string in LaTex syntax" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency> <http://www.w3.org/2000/01/rdf-schema#label> "dependency" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#element
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000002> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#element> <http://www.w3.org/2002/07/owl#disjointWith> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#context> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000020> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.obolibrary.org/obo/BFO_0000141> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#element> <http://purl.obolibrary.org/obo/IAO_0000115> "Continuant that is (according to ISO 26262) a system (3.163), components (3.21) (hardware or software), hardware parts (3.71), or software units (3.159)" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object> <http://purl.obolibrary.org/obo/IAO_0000115> "An object created, designed or engineered by humans" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object> <http://www.w3.org/2000/01/rdf-schema#label> "engineered object" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#function
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000034> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#function> <http://purl.obolibrary.org/obo/IAO_0000115> "A bfo:function that a component, hardware or software implements" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid25 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onClass> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#component> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component> <http://purl.obolibrary.org/obo/IAO_0000115> "No ISO definition. Formal Definition derived from other definitions." .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> <http://www.w3.org/2000/01/rdf-schema#comment> "From definition of element:\nNote 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> <http://www.w3.org/2000/01/rdf-schema#label> "hardware" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> <http://www.w3.org/2000/01/rdf-schema#label> "hardware element" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly> .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart> <http://purl.obolibrary.org/obo/IAO_0000112> "A flip-flop of the ALU with its logic cone, a register." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart> <http://purl.obolibrary.org/obo/IAO_0000115> "smallest portion of a hardware subpart (3.73) considered in safety (3.132) analysis" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly> .
+_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#component> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> <http://purl.obolibrary.org/obo/IAO_0000112> "The CPU of a microcontroller, a resistor, flash array of a microcontroller." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> <http://purl.obolibrary.org/obo/IAO_0000115> "a piece of hardware that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> <http://www.w3.org/2000/01/rdf-schema#label> "hardware part" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid45 <http://www.w3.org/2002/07/owl#unionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly> .
+_:genid39 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid40 <http://www.w3.org/2002/07/owl#unionOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> <http://purl.obolibrary.org/obo/IAO_0000112> "ALU of a CPU of a microcontroller, register bank of a CPU." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> <http://purl.obolibrary.org/obo/IAO_0000115> "portion of a hardware part (3.71) that can be logically divided and represents second or greater level of hierarchical decomposition" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#legal_boundary_conditions
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#legal_boundary_conditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#legal_boundary_conditions> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#context> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#legal_boundary_conditions> <http://www.w3.org/2000/01/rdf-schema#label> "legal boundary condiitons" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#market
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#market> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#market> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#context> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#market> <http://www.w3.org/2000/01/rdf-schema#label> "market" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#material_object
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#material_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#material_object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#material_object> <http://www.w3.org/2000/01/rdf-schema#label> "material object" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element> <http://www.w3.org/2002/07/owl#disjointWith> <http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element> <http://purl.obolibrary.org/obo/IAO_0000115> "An element that is not on the system-level" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#property
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property> <http://purl.obolibrary.org/obo/IAO_0000112> "drag coefficient" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property> <http://purl.obolibrary.org/obo/IAO_0000112> "power" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property> <http://purl.obolibrary.org/obo/IAO_0000112> "temperature" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property> <http://purl.obolibrary.org/obo/IAO_0000115> "A quality or characteristic of a hardware, software or function. A property has a boolean, integer, or real variable through the measure class." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#property> <http://www.w3.org/2000/01/rdf-schema#label> "property" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#social_object
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#social_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#social_object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000030> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#social_object> <http://www.w3.org/2000/01/rdf-schema#label> "social object" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid51 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onClass> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#component> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component> <http://purl.obolibrary.org/obo/IAO_0000115> "one or more softwareunits (3.159)" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000031> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> <http://www.w3.org/2000/01/rdf-schema#comment> "From definition of element:\nNote 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively." .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> <http://www.w3.org/2000/01/rdf-schema#label> "software" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> <http://www.w3.org/2000/01/rdf-schema#label> "software element" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid64 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid59 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid59 <http://www.w3.org/2002/07/owl#onClass> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid60 <http://www.w3.org/2002/07/owl#unionOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> <http://purl.obolibrary.org/obo/IAO_0000115> "a piece of software that is (according to ISO26262) an atomic level software component (3.157) of the software architecture (3.1) that can be subjected to stand-alone testing (3.169)" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit> <http://www.w3.org/2000/01/rdf-schema#label> "software unit" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#system
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#system> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of> .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#system> <http://purl.obolibrary.org/obo/IAO_0000115> "according to ISO 26262: (continuant that is a) set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#element> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element> <http://purl.obolibrary.org/obo/IAO_0000115> "An element that is on the system level" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "Not defined in ISO26262" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/controller
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#component> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Not defined in ISO26262" .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testclass
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testclass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/measure
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> <http://purl.obolibrary.org/obo/IAO_0000115> "A bfo:quality that are amounts of quantities" .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> <http://www.w3.org/2000/01/rdf-schema#label> "measure" .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/quantity
+<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#property> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> <http://purl.obolibrary.org/obo/IAO_0000115> "A quantity is a (property that is quanitifiable and a) representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length." .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/unit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000019> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> <http://purl.obolibrary.org/obo/IAO_0000115> "is a quality that is any standard used for comparison in measurements" .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> <http://www.w3.org/2000/01/rdf-schema#label> "unit" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid76 <http://www.w3.org/2002/07/owl#members> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
