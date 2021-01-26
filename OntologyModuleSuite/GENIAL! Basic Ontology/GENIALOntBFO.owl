@@ -21,7 +21,7 @@
         <terms:creator>Frank Wawrzik</terms:creator>
         <terms:title>GENIAL! Basic Ontology</terms:title>
         <rdfs:label>GENIAL! Basic Ontology</rdfs:label>
-        <owl:versionInfo>0.1.1</owl:versionInfo>
+        <owl:versionInfo>0.2.0</owl:versionInfo>
         <foaf:mbox>mailto:wawrzik@cs.uni-kl.de</foaf:mbox>
     </owl:Ontology>
     
