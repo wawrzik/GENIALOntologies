@@ -13,8 +13,7 @@
     <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt">
         <owl:versionIRI rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
-        <obo:IAO_0000232>test</obo:IAO_0000232>
-        <dc:description>Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL</dc:description>
+        <dc:description>Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL!. It supports the modelling of microlectronic components like sensors, acutators, processors and software along the automotive value chain.</dc:description>
         <dc:title>GENIAL! Basic Ontology</dc:title>
         <terms:contributor>Christoph Grimm</terms:contributor>
         <terms:contributor>Peter Neumann</terms:contributor>
@@ -661,12 +660,6 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component"/>
         <rdfs:comment>Not defined in ISO26262</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testclass -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testclass"/>
     
 
 
