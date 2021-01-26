@@ -1,0 +1,182 @@
+{
+  "@context" : {
+    "usedOn" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedOn",
+      "@type" : "@id"
+    },
+    "improvesValueOf" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improvesValueOf",
+      "@type" : "@id"
+    },
+    "made" : {
+      "@id" : "http://xmlns.com/foaf/0.1/made",
+      "@type" : "@id"
+    },
+    "deprecates" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#deprecates",
+      "@type" : "@id"
+    },
+    "hasUsage" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasUsage",
+      "@type" : "@id"
+    },
+    "expectedMarketEntry" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#expectedMarketEntry",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "usedWith" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedWith",
+      "@type" : "@id"
+    },
+    "developedBy" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#developedBy",
+      "@type" : "@id"
+    },
+    "maker" : {
+      "@id" : "http://xmlns.com/foaf/0.1/maker",
+      "@type" : "@id"
+    },
+    "hasImprovement" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasImprovement",
+      "@type" : "@id"
+    },
+    "hasSymptom" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasSymptom",
+      "@type" : "@id"
+    },
+    "hasDeveloped" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDeveloped",
+      "@type" : "@id"
+    },
+    "usedBy" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#usedBy",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "manifests" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#manifests",
+      "@type" : "@id"
+    },
+    "liberates" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#liberates",
+      "@type" : "@id"
+    },
+    "isDeveloping" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeveloping",
+      "@type" : "@id"
+    },
+    "Disruption" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Disruption"
+    },
+    "embodiedBy" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#embodiedBy",
+      "@type" : "@id"
+    },
+    "Innovator" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovator"
+    },
+    "affects" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#affects",
+      "@type" : "@id"
+    },
+    "hasBenefit" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasBenefit",
+      "@type" : "@id"
+    },
+    "causesDisruption" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#causesDisruption",
+      "@type" : "@id"
+    },
+    "buildsOn" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#buildsOn",
+      "@type" : "@id"
+    },
+    "Benefit" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Benefit"
+    },
+    "Need" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Need"
+    },
+    "Symptom" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Symptom"
+    },
+    "isLiberatedBy" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isLiberatedBy",
+      "@type" : "@id"
+    },
+    "Problem" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Problem"
+    },
+    "hasDevelopmentStage" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#hasDevelopmentStage",
+      "@type" : "@id"
+    },
+    "improves" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improves",
+      "@type" : "@id"
+    },
+    "embodies" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#embodies",
+      "@type" : "@id"
+    },
+    "solves" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#solves",
+      "@type" : "@id"
+    },
+    "improvesEfficiencyOf" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improvesEfficiencyOf",
+      "@type" : "@id"
+    },
+    "Innovation" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Innovation"
+    },
+    "Usage" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Usage"
+    },
+    "isDeprecatedBy" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#isDeprecatedBy",
+      "@type" : "@id"
+    },
+    "improvesEffectivenessOf" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improvesEffectivenessOf",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "fulfils" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#fulfils",
+      "@type" : "@id"
+    },
+    "Improvement" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Improvement"
+    },
+    "Embodiment" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#Embodiment"
+    },
+    "enables" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#enables",
+      "@type" : "@id"
+    },
+    "manifestedBy" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#manifestedBy",
+      "@type" : "@id"
+    },
+    "DevelopmentStage" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#DevelopmentStage"
+    },
+    "improvesQualityOf" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#improvesQualityOf",
+      "@type" : "@id"
+    },
+    "enabledBy" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/Roadmap/OntologyForInnovation#enabledBy",
+      "@type" : "@id"
+    }
+  }
+}

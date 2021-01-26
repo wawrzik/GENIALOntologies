@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#"
+     xml:base="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain">
+        <rdfs:comment>This ontology gives an outline on how to model EffectChains for GENIAL!</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind -->
+
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType -->
+
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#DesiredEffect -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#DesiredEffect">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Mechanical -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Mechanical">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Software -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Software">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#UndesiredEffect -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#UndesiredEffect">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Acoustic/Sound -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Acoustic/Sound">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Electrical/Electronic -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Electrical/Electronic">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#HV/Power -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#HV/Power">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Misuse(User) -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Misuse(User)">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Stuff/Material -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Stuff/Material">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Thermic/Optical -->
+
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Thermic/Optical">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,327 @@
+{
+  "@context" : {
+    "OnlineChatAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/OnlineChatAccount"
+    },
+    "holdsAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/holdsAccount",
+      "@type" : "@id"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "member" : {
+      "@id" : "http://xmlns.com/foaf/0.1/member",
+      "@type" : "@id"
+    },
+    "accountName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/accountName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "primaryTopic" : {
+      "@id" : "http://xmlns.com/foaf/0.1/primaryTopic",
+      "@type" : "@id"
+    },
+    "publications" : {
+      "@id" : "http://xmlns.com/foaf/0.1/publications",
+      "@type" : "@id"
+    },
+    "made" : {
+      "@id" : "http://xmlns.com/foaf/0.1/made",
+      "@type" : "@id"
+    },
+    "img" : {
+      "@id" : "http://xmlns.com/foaf/0.1/img",
+      "@type" : "@id"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "myersBriggs" : {
+      "@id" : "http://xmlns.com/foaf/0.1/myersBriggs",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "age" : {
+      "@id" : "http://xmlns.com/foaf/0.1/age",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "depiction" : {
+      "@id" : "http://xmlns.com/foaf/0.1/depiction",
+      "@type" : "@id"
+    },
+    "aimChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/aimChatID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "maker" : {
+      "@id" : "http://xmlns.com/foaf/0.1/maker",
+      "@type" : "@id"
+    },
+    "birthday" : {
+      "@id" : "http://xmlns.com/foaf/0.1/birthday",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "isPrimaryTopicOf" : {
+      "@id" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "schoolHomepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/schoolHomepage",
+      "@type" : "@id"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "focus" : {
+      "@id" : "http://xmlns.com/foaf/0.1/focus",
+      "@type" : "@id"
+    },
+    "familyName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/familyName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "lastName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/lastName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "OnlineGamingAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/OnlineGamingAccount"
+    },
+    "gender" : {
+      "@id" : "http://xmlns.com/foaf/0.1/gender",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage",
+      "@type" : "@id"
+    },
+    "yahooChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/yahooChatID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Person" : {
+      "@id" : "http://schema.org/Person"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near",
+      "@type" : "@id"
+    },
+    "jabberID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/jabberID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "mbox_sha1sum" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox_sha1sum",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "thumbnail" : {
+      "@id" : "http://xmlns.com/foaf/0.1/thumbnail",
+      "@type" : "@id"
+    },
+    "tipjar" : {
+      "@id" : "http://xmlns.com/foaf/0.1/tipjar",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "ImageObject" : {
+      "@id" : "http://schema.org/ImageObject"
+    },
+    "givenName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/givenName"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "geekcode" : {
+      "@id" : "http://xmlns.com/foaf/0.1/geekcode",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "topic_interest" : {
+      "@id" : "http://xmlns.com/foaf/0.1/topic_interest",
+      "@type" : "@id"
+    },
+    "fundedBy" : {
+      "@id" : "http://xmlns.com/foaf/0.1/fundedBy",
+      "@type" : "@id"
+    },
+    "surname" : {
+      "@id" : "http://xmlns.com/foaf/0.1/surname",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "membershipClass" : {
+      "@id" : "http://xmlns.com/foaf/0.1/membershipClass"
+    },
+    "weblog" : {
+      "@id" : "http://xmlns.com/foaf/0.1/weblog",
+      "@type" : "@id"
+    },
+    "CreativeWork" : {
+      "@id" : "http://schema.org/CreativeWork"
+    },
+    "sha1" : {
+      "@id" : "http://xmlns.com/foaf/0.1/sha1"
+    },
+    "skypeID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/skypeID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "nick" : {
+      "@id" : "http://xmlns.com/foaf/0.1/nick"
+    },
+    "status" : {
+      "@id" : "http://xmlns.com/foaf/0.1/status",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "firstName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/firstName",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "currentProject" : {
+      "@id" : "http://xmlns.com/foaf/0.1/currentProject",
+      "@type" : "@id"
+    },
+    "dnaChecksum" : {
+      "@id" : "http://xmlns.com/foaf/0.1/dnaChecksum",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "OnlineAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/OnlineAccount"
+    },
+    "depicts" : {
+      "@id" : "http://xmlns.com/foaf/0.1/depicts",
+      "@type" : "@id"
+    },
+    "OnlineEcommerceAccount" : {
+      "@id" : "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount"
+    },
+    "account" : {
+      "@id" : "http://xmlns.com/foaf/0.1/account",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "knows" : {
+      "@id" : "http://xmlns.com/foaf/0.1/knows",
+      "@type" : "@id"
+    },
+    "Project" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Project"
+    },
+    "title" : {
+      "@id" : "http://xmlns.com/foaf/0.1/title"
+    },
+    "phone" : {
+      "@id" : "http://xmlns.com/foaf/0.1/phone",
+      "@type" : "@id"
+    },
+    "src_assurance" : {
+      "@id" : "http://xmlns.com/wot/0.1/src_assurance"
+    },
+    "pastProject" : {
+      "@id" : "http://xmlns.com/foaf/0.1/pastProject",
+      "@type" : "@id"
+    },
+    "assurance" : {
+      "@id" : "http://xmlns.com/wot/0.1/assurance"
+    },
+    "interest" : {
+      "@id" : "http://xmlns.com/foaf/0.1/interest",
+      "@type" : "@id"
+    },
+    "logo" : {
+      "@id" : "http://xmlns.com/foaf/0.1/logo",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "plan" : {
+      "@id" : "http://xmlns.com/foaf/0.1/plan",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "accountServiceHomepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/accountServiceHomepage",
+      "@type" : "@id"
+    },
+    "workInfoHomepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/workInfoHomepage",
+      "@type" : "@id"
+    },
+    "icqChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/icqChatID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "openid" : {
+      "@id" : "http://xmlns.com/foaf/0.1/openid",
+      "@type" : "@id"
+    },
+    "SpatialThing" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "theme" : {
+      "@id" : "http://xmlns.com/foaf/0.1/theme",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Image" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Image"
+    },
+    "givenname" : {
+      "@id" : "http://xmlns.com/foaf/0.1/givenname"
+    },
+    "Document" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Document"
+    },
+    "family_name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/family_name",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "page" : {
+      "@id" : "http://xmlns.com/foaf/0.1/page",
+      "@type" : "@id"
+    },
+    "Group" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Group"
+    },
+    "LabelProperty" : {
+      "@id" : "http://xmlns.com/foaf/0.1/LabelProperty"
+    },
+    "msnChatID" : {
+      "@id" : "http://xmlns.com/foaf/0.1/msnChatID",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "workplaceHomepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/workplaceHomepage",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "PersonalProfileDocument" : {
+      "@id" : "http://xmlns.com/foaf/0.1/PersonalProfileDocument"
+    },
+    "topic" : {
+      "@id" : "http://xmlns.com/foaf/0.1/topic",
+      "@type" : "@id"
+    }
+  }
+}

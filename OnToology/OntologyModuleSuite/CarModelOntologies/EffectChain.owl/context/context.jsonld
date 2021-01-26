@@ -1,0 +1,31 @@
+{
+  "@context" : {
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasEffectKind" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectKind",
+      "@type" : "@id"
+    },
+    "isConnectedTo" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#isConnectedTo",
+      "@type" : "@id"
+    },
+    "hasEffectType" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#hasEffectType",
+      "@type" : "@id"
+    },
+    "Interconnection" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Interconnection"
+    },
+    "EffectKind" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectKind"
+    },
+    "EffectType" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#EffectType"
+    },
+    "Component" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/CarModel/EffectChain#Component"
+    }
+  }
+}

@@ -1,0 +1,2677 @@
+{
+  "@context" : {
+    "TychoBroadbandMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TychoBroadbandMagnitude"
+    },
+    "SpeedUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpeedUnit"
+    },
+    "hasAggregateFunction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasAggregateFunction",
+      "@type" : "@id"
+    },
+    "ZenithDistance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ZenithDistance"
+    },
+    "NumberBotrytis" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBotrytis"
+    },
+    "ReddeningU-B" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ReddeningU-B"
+    },
+    "ElectricCurrent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricCurrent"
+    },
+    "Inductance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Inductance"
+    },
+    "StantonNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StantonNumber"
+    },
+    "CauseEndOfVaseLifeDryBuds" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeDryBuds"
+    },
+    "SpecificEnergyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificEnergyUnit"
+    },
+    "SupergalacticLatitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SupergalacticLatitude"
+    },
+    "VolumetricSerratiaMarcescensCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricSerratiaMarcescensCount"
+    },
+    "hasSIThermodynamicTemperatureDimensionExponent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasSIThermodynamicTemperatureDimensionExponent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "NumberBotrytis1" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBotrytis1"
+    },
+    "FahrenheitTemperatureUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit"
+    },
+    "SpecificStaphylococcusAureusCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificStaphylococcusAureusCount"
+    },
+    "BolometricMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BolometricMagnitude"
+    },
+    "DynamicViscosity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DynamicViscosity"
+    },
+    "NumberColor" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberColor"
+    },
+    "NumberBudStadium" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBudStadium"
+    },
+    "ReynoldsNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ReynoldsNumber"
+    },
+    "LuminousEnergyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LuminousEnergyUnit"
+    },
+    "Breadth" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Breadth"
+    },
+    "BetaWideMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BetaWideMagnitude"
+    },
+    "NumberVascularBrowning" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberVascularBrowning"
+    },
+    "NumberBudStadium1" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBudStadium1"
+    },
+    "AmountOfSubstanceFractionFlow" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfSubstanceFractionFlow"
+    },
+    "BMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BMagnitude"
+    },
+    "ElectricalConductanceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricalConductanceUnit"
+    },
+    "FatMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FatMassFraction"
+    },
+    "NumberPulpBrowning1" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberPulpBrowning1"
+    },
+    "alternativeSymbol" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/alternativeSymbol"
+    },
+    "PrefixedMetrePrefixedGram" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMetrePrefixedGram"
+    },
+    "DarkNoise" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DarkNoise"
+    },
+    "SpecificVolumeUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificVolumeUnit"
+    },
+    "Unit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+    },
+    "EclipticLatitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/EclipticLatitude"
+    },
+    "GrashofNumberForMassTransfer" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GrashofNumberForMassTransfer"
+    },
+    "GalacticCylindricalPolarAngleCoordinate" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GalacticCylindricalPolarAngleCoordinate"
+    },
+    "SugarMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SugarMassFraction"
+    },
+    "StressTensor" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StressTensor"
+    },
+    "StickStone" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StickStone"
+    },
+    "Extinction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Extinction"
+    },
+    "LocustBeanGumMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LocustBeanGumMassFraction"
+    },
+    "PrefixedMolePerMetre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMolePerMetre"
+    },
+    "EnergyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/EnergyUnit"
+    },
+    "Permittivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Permittivity"
+    },
+    "SpecificSerratiaMarcescensCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificSerratiaMarcescensCount"
+    },
+    "PrefixedCoulomb" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedCoulomb"
+    },
+    "SquarePrefixedMetre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SquarePrefixedMetre"
+    },
+    "RMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RMagnitude"
+    },
+    "FourierNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FourierNumberUnit"
+    },
+    "PersonalDoseEquivalent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PersonalDoseEquivalent"
+    },
+    "CubicPrefixedMetre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CubicPrefixedMetre"
+    },
+    "CurvatureConstant" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CurvatureConstant"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "MolarMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolarMass"
+    },
+    "ThermalConductivityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermalConductivityUnit"
+    },
+    "NumberExternalBrowning" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberExternalBrowning"
+    },
+    "degree" : {
+      "@id" : "http://purl.org/ontology/bibo/degree"
+    },
+    "CelsiusTemperatureUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit"
+    },
+    "pageStart" : {
+      "@id" : "http://purl.org/ontology/bibo/pageStart"
+    },
+    "NumberBotrytis4" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBotrytis4"
+    },
+    "MolarVolumeUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolarVolumeUnit"
+    },
+    "MagnetomotiveForce" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagnetomotiveForce"
+    },
+    "NumberDensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberDensityUnit"
+    },
+    "hasSILengthDimensionExponent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasSILengthDimensionExponent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "MolalityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolalityUnit"
+    },
+    "PrefixedByte" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedByte"
+    },
+    "CatalyticActivityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CatalyticActivityUnit"
+    },
+    "RelativeHumidityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RelativeHumidityUnit"
+    },
+    "Enthalpy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Enthalpy"
+    },
+    "SolidAngle" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SolidAngle"
+    },
+    "NumberFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberFlowers"
+    },
+    "ElectricPotential" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricPotential"
+    },
+    "AverageSpeed" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AverageSpeed"
+    },
+    "RankineTemperatureScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RankineTemperatureScale"
+    },
+    "VasePlusWaterMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VasePlusWaterMass"
+    },
+    "ColorAreaFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ColorAreaFraction"
+    },
+    "NumberExternalBrowning2" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberExternalBrowning2"
+    },
+    "ColumnNumberDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ColumnNumberDensity"
+    },
+    "Period" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Period"
+    },
+    "GasConstant" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GasConstant"
+    },
+    "Reluctance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Reluctance"
+    },
+    "hiddenLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#hiddenLabel"
+    },
+    "RatioUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RatioUnit"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "NumberVascularBrowning4" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberVascularBrowning4"
+    },
+    "AreaUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AreaUnit"
+    },
+    "PrefixedCalorie-Mean" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedCalorie-Mean"
+    },
+    "AngularMomentum" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AngularMomentum"
+    },
+    "Momentum" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Momentum"
+    },
+    "PowerDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PowerDensity"
+    },
+    "HubbleConstant" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HubbleConstant"
+    },
+    "hasQuantity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasQuantity",
+      "@type" : "@id"
+    },
+    "yMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/yMagnitude"
+    },
+    "CowlingNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CowlingNumber"
+    },
+    "PrefixedMole" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMole"
+    },
+    "NumberManualFirmness4" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness4"
+    },
+    "ShearRate" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ShearRate"
+    },
+    "LuminosityFunction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LuminosityFunction"
+    },
+    "DetectiveQuantumEfficiency" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DetectiveQuantumEfficiency"
+    },
+    "PrefixedMetrePerSecond-TimeSquared" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMetrePerSecond-TimeSquared"
+    },
+    "ColourTemperature" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ColourTemperature"
+    },
+    "WeberNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WeberNumberUnit"
+    },
+    "Coverage" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Coverage"
+    },
+    "Temperature_scale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature_scale"
+    },
+    "ElectricalConductivityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricalConductivityUnit"
+    },
+    "MolarHeatCapacityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolarHeatCapacityUnit"
+    },
+    "ShearRateUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ShearRateUnit"
+    },
+    "PrefixedWatt" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedWatt"
+    },
+    "NumberBlue-DiscoloredFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBlue-DiscoloredFlowers"
+    },
+    "NumberAbscisedLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberAbscisedLeaves"
+    },
+    "Radius-Angle" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Radius-Angle"
+    },
+    "Thickness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Thickness"
+    },
+    "pageEnd" : {
+      "@id" : "http://purl.org/ontology/bibo/pageEnd"
+    },
+    "MomentOfInertia" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MomentOfInertia"
+    },
+    "SpecificAmountOfMoney" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificAmountOfMoney"
+    },
+    "NumberPulpBrowning2" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberPulpBrowning2"
+    },
+    "PrefixedBit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedBit"
+    },
+    "NeckRingMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NeckRingMass"
+    },
+    "LaTeXSymbol" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LaTeXSymbol"
+    },
+    "UnitDivision" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/UnitDivision"
+    },
+    "PrefixedSievert" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedSievert"
+    },
+    "Prefix" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Prefix"
+    },
+    "PrefixedGram" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGram"
+    },
+    "InformationCapacityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/InformationCapacityUnit"
+    },
+    "CollisionFrequency" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CollisionFrequency"
+    },
+    "TweenMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TweenMassFraction"
+    },
+    "ThermodynamicTemperatureScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermodynamicTemperatureScale"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "DirectionalDoseEquivalent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DirectionalDoseEquivalent"
+    },
+    "ElectricChargeUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricChargeUnit"
+    },
+    "MolarEntropyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolarEntropyUnit"
+    },
+    "CauseEndOfVaseLifeMalformedFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeMalformedFlowers"
+    },
+    "CauseEndOfVaseLifeYellowLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeYellowLeaves"
+    },
+    "RatioScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RatioScale"
+    },
+    "ElectricFluxDensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricFluxDensityUnit"
+    },
+    "CurvatureConstantUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CurvatureConstantUnit"
+    },
+    "Volume" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Volume"
+    },
+    "alternativeLabel" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/alternativeLabel"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "AbsorbedDoseUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AbsorbedDoseUnit"
+    },
+    "UnitMultiplication" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/UnitMultiplication"
+    },
+    "Diameter" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Diameter"
+    },
+    "Aberration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Aberration"
+    },
+    "VolumetricEscherichiaColiCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricEscherichiaColiCount"
+    },
+    "StrawMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StrawMass"
+    },
+    "Azimuth" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Azimuth"
+    },
+    "DynamicRange" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DynamicRange"
+    },
+    "PrefixedKatal" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedKatal"
+    },
+    "BolometricCorrection" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BolometricCorrection"
+    },
+    "AbsorbedDoseRateUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AbsorbedDoseRateUnit"
+    },
+    "AmountOfSubstanceFlow" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfSubstanceFlow"
+    },
+    "DiurnalAberration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DiurnalAberration"
+    },
+    "FourierNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FourierNumber"
+    },
+    "hasSIMassDimensionExponent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasSIMassDimensionExponent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "LuminousEfficacy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LuminousEfficacy"
+    },
+    "PrefixedKelvin" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedKelvin"
+    },
+    "Amphiphilicity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Amphiphilicity"
+    },
+    "yRange" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/yRange"
+    },
+    "Declination" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Declination"
+    },
+    "ShearStrain" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ShearStrain"
+    },
+    "StantonNumberForMassTransfer" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StantonNumberForMassTransfer"
+    },
+    "DynamicModulus" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DynamicModulus"
+    },
+    "hasNumerator" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumerator",
+      "@type" : "@id"
+    },
+    "Circumference" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Circumference"
+    },
+    "Hydrophobicity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Hydrophobicity"
+    },
+    "illustration" : {
+      "@id" : "http://www.wurvoc.org/vocabularies/WV/illustration"
+    },
+    "CapacitanceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CapacitanceUnit"
+    },
+    "FroudeNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FroudeNumberUnit"
+    },
+    "Altitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Altitude"
+    },
+    "Angle" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Angle"
+    },
+    "StellarAberration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StellarAberration"
+    },
+    "LightTime" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LightTime"
+    },
+    "hasOff-Set" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasOff-Set",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ThermalDiffusivityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermalDiffusivityUnit"
+    },
+    "MolarVolume" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolarVolume"
+    },
+    "SymbolRate" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SymbolRate"
+    },
+    "NumberManualFirmness3.5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness3.5"
+    },
+    "ManualFirmness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ManualFirmness"
+    },
+    "VolumetricHeatCapacity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricHeatCapacity"
+    },
+    "ElectricField" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricField"
+    },
+    "ThermalResistanceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermalResistanceUnit"
+    },
+    "ScaleHeight" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ScaleHeight"
+    },
+    "PressureUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PressureUnit"
+    },
+    "Half-Life" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Half-Life"
+    },
+    "UMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/UMagnitude"
+    },
+    "HartmannNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HartmannNumberUnit"
+    },
+    "NumberBotrytis3" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBotrytis3"
+    },
+    "MetrePerPrefixedSecond-TimeSquared" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MetrePerPrefixedSecond-TimeSquared"
+    },
+    "ExtinctionAtWavelength" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ExtinctionAtWavelength"
+    },
+    "SchmidtNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SchmidtNumberUnit"
+    },
+    "AreaFractionUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFractionUnit"
+    },
+    "GrashofNumberForMassTransferUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GrashofNumberForMassTransferUnit"
+    },
+    "hasValue" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue",
+      "@type" : "@id"
+    },
+    "StemEndRot" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StemEndRot"
+    },
+    "PecletNumberForMassTransfer" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PecletNumberForMassTransfer"
+    },
+    "Number" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Number"
+    },
+    "Speed" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Speed"
+    },
+    "QualityMarkLeaf" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/QualityMarkLeaf"
+    },
+    "NumberExternalBrowning5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberExternalBrowning5"
+    },
+    "SolidAngleUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SolidAngleUnit"
+    },
+    "hasTerm2" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasTerm2",
+      "@type" : "@id"
+    },
+    "NumberExternalBrowning1" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberExternalBrowning1"
+    },
+    "ActivityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ActivityUnit"
+    },
+    "Hydrophilicity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Hydrophilicity"
+    },
+    "NumberColor4" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberColor4"
+    },
+    "HeatCapacity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HeatCapacity"
+    },
+    "NumberBotrytis0" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBotrytis0"
+    },
+    "ReddeningB-V" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ReddeningB-V"
+    },
+    "reproducedIn" : {
+      "@id" : "http://purl.org/ontology/bibo/reproducedIn"
+    },
+    "PrefixedRadian" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedRadian"
+    },
+    "ElectricDipoleMoment" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricDipoleMoment"
+    },
+    "GuarGumMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GuarGumMassFraction"
+    },
+    "ThermalConductivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermalConductivity"
+    },
+    "NumberVascularBrowning2" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberVascularBrowning2"
+    },
+    "PrefixedMolePerPrefixedLitre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMolePerPrefixedLitre"
+    },
+    "FixedPoint" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FixedPoint"
+    },
+    "unofficialAbbreviation" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/unofficialAbbreviation"
+    },
+    "MagnetomotiveForceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagnetomotiveForceUnit"
+    },
+    "Thrust" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Thrust"
+    },
+    "TimeUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TimeUnit"
+    },
+    "RadiantEnergy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RadiantEnergy"
+    },
+    "Permeability-EarthScience" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Permeability-EarthScience"
+    },
+    "PhotographicMagnitudeAtMinimumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PhotographicMagnitudeAtMinimumBrightness"
+    },
+    "ExposureToXAndGammaRays" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ExposureToXAndGammaRays"
+    },
+    "issuer" : {
+      "@id" : "http://purl.org/ontology/bibo/issuer"
+    },
+    "ExternalBrowning" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ExternalBrowning"
+    },
+    "NormalAlbedo" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NormalAlbedo"
+    },
+    "NumberPulpBrowning4" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberPulpBrowning4"
+    },
+    "ExposureToXAndGammaRaysUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ExposureToXAndGammaRaysUnit"
+    },
+    "DensityParameterForBaryonicMatter" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DensityParameterForBaryonicMatter"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "HartmannNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HartmannNumber"
+    },
+    "ReaumurScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ReaumurScale"
+    },
+    "PrefixedGramPerPrefixedLitre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGramPerPrefixedLitre"
+    },
+    "ResonanceEnergy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ResonanceEnergy"
+    },
+    "PlanetaryAberration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PlanetaryAberration"
+    },
+    "BrightnessTemperature" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BrightnessTemperature"
+    },
+    "QualityMarkTotal" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/QualityMarkTotal"
+    },
+    "SpecificYeastAndFungiCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificYeastAndFungiCount"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/elements/1.1/isPartOf"
+    },
+    "PrefixedNewton" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedNewton"
+    },
+    "LactoseMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LactoseMassFraction"
+    },
+    "PermeabilityOfFreeSpace" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PermeabilityOfFreeSpace"
+    },
+    "SpecificViableCountUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificViableCountUnit"
+    },
+    "SingularUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SingularUnit"
+    },
+    "Cut-OffWavelength" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Cut-OffWavelength"
+    },
+    "VolumetricEnterococcusCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricEnterococcusCount"
+    },
+    "SIPrefix" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SIPrefix"
+    },
+    "Dimension" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Dimension"
+    },
+    "uri" : {
+      "@id" : "http://purl.org/ontology/bibo/uri"
+    },
+    "BudStadiumDay0" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BudStadiumDay0"
+    },
+    "MachNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MachNumber"
+    },
+    "PrefixedMetrePerPrefixedSecond-Time" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMetrePerPrefixedSecond-Time"
+    },
+    "PrefixedDegreeCelsius" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedDegreeCelsius"
+    },
+    "PotassiumSorbateMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PotassiumSorbateMassFraction"
+    },
+    "Irradiance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Irradiance"
+    },
+    "NusseltNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NusseltNumber"
+    },
+    "Detectivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Detectivity"
+    },
+    "HeatFluxDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HeatFluxDensity"
+    },
+    "uMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/uMagnitude"
+    },
+    "ScaleLength" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ScaleLength"
+    },
+    "VMagnitudeAtMaximumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VMagnitudeAtMaximumBrightness"
+    },
+    "DetectivityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DetectivityUnit"
+    },
+    "hasScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasScale",
+      "@type" : "@id"
+    },
+    "xRange" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/xRange"
+    },
+    "MagneticFieldUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticFieldUnit"
+    },
+    "PrefixedOhm" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedOhm"
+    },
+    "ApplicationArea" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ApplicationArea"
+    },
+    "ShearModulus" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ShearModulus"
+    },
+    "QualityMark" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/QualityMark"
+    },
+    "FahrenheitScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitScale"
+    },
+    "CompoundUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CompoundUnit"
+    },
+    "NumberDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberDensity"
+    },
+    "SpecificCatalyticActivityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificCatalyticActivityUnit"
+    },
+    "Activity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Activity"
+    },
+    "Length" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Length"
+    },
+    "FahrenheitTemperatureScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureScale"
+    },
+    "PrefixedMetre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMetre"
+    },
+    "Permeance-Electromagnetic" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Permeance-Electromagnetic"
+    },
+    "Chapter" : {
+      "@id" : "http://purl.org/ontology/bibo/Chapter"
+    },
+    "AcousticFirmness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AcousticFirmness"
+    },
+    "PrandtlNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrandtlNumber"
+    },
+    "PowerDensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PowerDensityUnit"
+    },
+    "CriticalDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CriticalDensity"
+    },
+    "MassFractionUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MassFractionUnit"
+    },
+    "CatalyticActivityConcentrationUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CatalyticActivityConcentrationUnit"
+    },
+    "CompressiveStress" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CompressiveStress"
+    },
+    "HubbleConstantUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HubbleConstantUnit"
+    },
+    "DisodiumEthyleneDiamineTetreAcetateMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DisodiumEthyleneDiamineTetreAcetateMassFraction"
+    },
+    "SpecificAmountOfMoneyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificAmountOfMoneyUnit"
+    },
+    "SpecificEnergy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificEnergy"
+    },
+    "CauseEndOfVaseLifeAbscisedLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeAbscisedLeaves"
+    },
+    "PrefixedUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnit"
+    },
+    "ApparentDistanceModulus" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ApparentDistanceModulus"
+    },
+    "SupergalacticLongitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SupergalacticLongitude"
+    },
+    "Scale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Scale"
+    },
+    "HourAngle" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HourAngle"
+    },
+    "Temperature" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Temperature"
+    },
+    "NumberMalformedBuds" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberMalformedBuds"
+    },
+    "NumberAbscisedFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberAbscisedFlowers"
+    },
+    "PhotographicMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PhotographicMagnitude"
+    },
+    "CauseEndOfVaseLifeRottenFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeRottenFlowers"
+    },
+    "RelativeHumidity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RelativeHumidity"
+    },
+    "EulerNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/EulerNumber"
+    },
+    "StrainTensor" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StrainTensor"
+    },
+    "TemperatureRate" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TemperatureRate"
+    },
+    "CelsiusScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusScale"
+    },
+    "CartonMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CartonMass"
+    },
+    "ElectricFluxDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricFluxDensity"
+    },
+    "HeatTransferCoefficientUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HeatTransferCoefficientUnit"
+    },
+    "CelsiusTemperature" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperature"
+    },
+    "ExposureUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ExposureUnit"
+    },
+    "QuantumEfficiencyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/QuantumEfficiencyUnit"
+    },
+    "NumberBudStadium3" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBudStadium3"
+    },
+    "WheyProteinMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WheyProteinMassFraction"
+    },
+    "NumberColor5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberColor5"
+    },
+    "NumberManualFirmness3" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness3"
+    },
+    "CauseEndOfVaseLifeRottenLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeRottenLeaves"
+    },
+    "NumberPulpBrowning" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberPulpBrowning"
+    },
+    "AmountOfMoney" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfMoney"
+    },
+    "PowerUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PowerUnit"
+    },
+    "SpecificVolume" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificVolume"
+    },
+    "AngularAccelerationUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AngularAccelerationUnit"
+    },
+    "VolumeStrain" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeStrain"
+    },
+    "VolumetricEnterobacteriaceaeCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricEnterobacteriaceaeCount"
+    },
+    "VisualAlbedo" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VisualAlbedo"
+    },
+    "Measure" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Measure"
+    },
+    "StarchVA40MassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StarchVA40MassFraction"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near"
+    },
+    "NumberManualFirmness0" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness0"
+    },
+    "UnitExponentiation" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/UnitExponentiation"
+    },
+    "PrefixedElectronvolt" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedElectronvolt"
+    },
+    "MomentOfForceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MomentOfForceUnit"
+    },
+    "hasDerivedQuantity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasDerivedQuantity",
+      "@type" : "@id"
+    },
+    "PrefixedPoise" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedPoise"
+    },
+    "SpecificEscherichiaColiCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificEscherichiaColiCount"
+    },
+    "AreaDensityRate" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AreaDensityRate"
+    },
+    "DensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DensityUnit"
+    },
+    "PhotographicMagnitudeAtMaximumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PhotographicMagnitudeAtMaximumBrightness"
+    },
+    "EpochAtMaximumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/EpochAtMaximumBrightness"
+    },
+    "KnudsenNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/KnudsenNumber"
+    },
+    "ElectricChargeDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricChargeDensity"
+    },
+    "FirstCowlingNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FirstCowlingNumber"
+    },
+    "TrueDistanceModulus" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TrueDistanceModulus"
+    },
+    "SpecificEnterobacteriaceaeCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificEnterobacteriaceaeCount"
+    },
+    "BinaryPrefix" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BinaryPrefix"
+    },
+    "SpecificHeatCapacity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificHeatCapacity"
+    },
+    "NumberVascularBrowning3" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberVascularBrowning3"
+    },
+    "Wavenumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Wavenumber"
+    },
+    "Date" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Date"
+    },
+    "CauseEndOfVaseLifeDryLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeDryLeaves"
+    },
+    "ScaleFactor" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ScaleFactor"
+    },
+    "FirstCowlingNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FirstCowlingNumberUnit"
+    },
+    "AmountOfSubstanceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfSubstanceUnit"
+    },
+    "WeberNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WeberNumber"
+    },
+    "CauseEndOfVaseLifeDryFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeDryFlowers"
+    },
+    "LuminousEfficacyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LuminousEfficacyUnit"
+    },
+    "hasExponent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasExponent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "GelatinMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GelatinMassFraction"
+    },
+    "MagneticFlux" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticFlux"
+    },
+    "StantonNumberForMassTransferUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StantonNumberForMassTransferUnit"
+    },
+    "StemEndRotAreaFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StemEndRotAreaFraction"
+    },
+    "FourierNumberForMassTransferUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FourierNumberForMassTransferUnit"
+    },
+    "NumberNonturgidLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberNonturgidLeaves"
+    },
+    "Co-RotationRadius" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Co-RotationRadius"
+    },
+    "CowlingNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CowlingNumberUnit"
+    },
+    "VolumetricCorynebacteriumBovisCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricCorynebacteriumBovisCount"
+    },
+    "QuantityOfDimensionOne" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/QuantityOfDimensionOne"
+    },
+    "PrefixedSteradian" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedSteradian"
+    },
+    "ShearStorageModulus" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ShearStorageModulus"
+    },
+    "NumberManualFirmness0.5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness0.5"
+    },
+    "Book" : {
+      "@id" : "http://purl.org/ontology/bibo/Book"
+    },
+    "LengthUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LengthUnit"
+    },
+    "PrefixedMetrePerSecond-Time" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMetrePerSecond-Time"
+    },
+    "PrefixedSecond-Time" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedSecond-Time"
+    },
+    "MolarEnergy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolarEnergy"
+    },
+    "NumberDryFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberDryFlowers"
+    },
+    "ResponsivityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ResponsivityUnit"
+    },
+    "DoseEquivalent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DoseEquivalent"
+    },
+    "LuminousFlux" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LuminousFlux"
+    },
+    "SpecificAmylaseActivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificAmylaseActivity"
+    },
+    "PrefixedLux" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedLux"
+    },
+    "CauseEndOfVaseLifeWiltedFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeWiltedFlowers"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "VasePlusWaterPlusFlowerMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VasePlusWaterPlusFlowerMass"
+    },
+    "EggMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/EggMassFraction"
+    },
+    "StrainUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StrainUnit"
+    },
+    "AngularVelocity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AngularVelocity"
+    },
+    "BetaNarrowMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BetaNarrowMagnitude"
+    },
+    "VolumetricFlowRate" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricFlowRate"
+    },
+    "Energy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Energy"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "FlowpackMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FlowpackMass"
+    },
+    "Fluidity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Fluidity"
+    },
+    "AmountOfSubstanceConcentrationUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfSubstanceConcentrationUnit"
+    },
+    "Torque" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Torque"
+    },
+    "Width" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Width"
+    },
+    "BudStadium" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BudStadium"
+    },
+    "SpecificKlebsiellaCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificKlebsiellaCount"
+    },
+    "unofficialLabel" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/unofficialLabel"
+    },
+    "AnnualAberration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AnnualAberration"
+    },
+    "AceticAcidMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AceticAcidMassFraction"
+    },
+    "DryBodyMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DryBodyMass"
+    },
+    "ContactAngle" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ContactAngle"
+    },
+    "Article" : {
+      "@id" : "http://purl.org/ontology/bibo/Article"
+    },
+    "SymbolRateUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SymbolRateUnit"
+    },
+    "hasPhenomenon" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasPhenomenon",
+      "@type" : "@id"
+    },
+    "bMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/bMagnitude"
+    },
+    "PrefixedWeber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedWeber"
+    },
+    "hasPoint" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasPoint",
+      "@type" : "@id"
+    },
+    "EclipticLongitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/EclipticLongitude"
+    },
+    "VolumetricColiformBacterieCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricColiformBacterieCount"
+    },
+    "Kerma" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Kerma"
+    },
+    "Metallicity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Metallicity"
+    },
+    "AtomicMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AtomicMass"
+    },
+    "HeatTransferCoefficient" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HeatTransferCoefficient"
+    },
+    "IntrinsicColourIndex" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/IntrinsicColourIndex"
+    },
+    "NumberAbscisedBuds" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberAbscisedBuds"
+    },
+    "ModulusOfElasticity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ModulusOfElasticity"
+    },
+    "CauseEndOfVaseLifeNonturgidFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeNonturgidFlowers"
+    },
+    "SpecificEnergyImparted" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificEnergyImparted"
+    },
+    "Mass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Mass"
+    },
+    "ReaumurTemperature" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ReaumurTemperature"
+    },
+    "CelsiusTemperatureScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureScale"
+    },
+    "VolumetricYeastAndFungiCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricYeastAndFungiCount"
+    },
+    "ThermalInsulanceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermalInsulanceUnit"
+    },
+    "Magnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Magnitude"
+    },
+    "Lipophilicity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Lipophilicity"
+    },
+    "PrefixedBecquerel" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedBecquerel"
+    },
+    "ThuanAndGunnMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThuanAndGunnMagnitude"
+    },
+    "Epoch" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Epoch"
+    },
+    "FluidityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FluidityUnit"
+    },
+    "Strain" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Strain"
+    },
+    "BondAlbedo" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BondAlbedo"
+    },
+    "Weight" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Weight"
+    },
+    "StrouhalNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StrouhalNumberUnit"
+    },
+    "PrandtlNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrandtlNumberUnit"
+    },
+    "ColdGasMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ColdGasMassFraction"
+    },
+    "ReaumurTemperatureScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ReaumurTemperatureScale"
+    },
+    "PrefixedStokes" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedStokes"
+    },
+    "Capacitance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Capacitance"
+    },
+    "Firmness-Penetrometer-Method1" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Firmness-Penetrometer-Method1"
+    },
+    "LinearStrain" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LinearStrain"
+    },
+    "BudStadiumDay4" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BudStadiumDay4"
+    },
+    "SpecificViableCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificViableCount"
+    },
+    "usesQuantity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/usesQuantity",
+      "@type" : "@id"
+    },
+    "SpecificHeatCapacityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificHeatCapacityUnit"
+    },
+    "CauseEndOfVaseLifeBlueFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeBlueFlowers"
+    },
+    "StroemgrenMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StroemgrenMagnitude"
+    },
+    "PrefixedMolair" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMolair"
+    },
+    "AmountOfSubstanceFractionUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfSubstanceFractionUnit"
+    },
+    "MolarEnergyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolarEnergyUnit"
+    },
+    "SurfaceTensionUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SurfaceTensionUnit"
+    },
+    "ModeratedStarchMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ModeratedStarchMassFraction"
+    },
+    "MolarMassUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolarMassUnit"
+    },
+    "Work" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Work"
+    },
+    "NumberBotrytis2" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBotrytis2"
+    },
+    "Reddening" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Reddening"
+    },
+    "DecelerationParameterUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DecelerationParameterUnit"
+    },
+    "PeakWavelength" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PeakWavelength"
+    },
+    "xyDistanceTravelled" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/xyDistanceTravelled"
+    },
+    "DecelerationParameter" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DecelerationParameter"
+    },
+    "DrainageSpeed" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DrainageSpeed"
+    },
+    "Permeance-MaterialsScience" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Permeance-MaterialsScience"
+    },
+    "PrefixedMolePerPrefixedMetre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMolePerPrefixedMetre"
+    },
+    "AberrationInLatitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AberrationInLatitude"
+    },
+    "LuminousIntensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LuminousIntensity"
+    },
+    "AngularMomentumUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AngularMomentumUnit"
+    },
+    "PrefixedTonne" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedTonne"
+    },
+    "Acceleration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Acceleration"
+    },
+    "KelvinScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/KelvinScale"
+    },
+    "LimitingMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LimitingMagnitude"
+    },
+    "VolumetricHeatCapacityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricHeatCapacityUnit"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "hasNumericalValue" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"
+    },
+    "Pressure" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure"
+    },
+    "PrefixedVolt" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedVolt"
+    },
+    "RadiantIntensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RadiantIntensity"
+    },
+    "Quantity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Quantity"
+    },
+    "PecletNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PecletNumber"
+    },
+    "HeatCapacityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HeatCapacityUnit"
+    },
+    "NumberLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberLeaves"
+    },
+    "RadiantIntensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RadiantIntensityUnit"
+    },
+    "ElectromotiveForce" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectromotiveForce"
+    },
+    "SaltMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SaltMassFraction"
+    },
+    "SpecificColiformBacterieCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificColiformBacterieCount"
+    },
+    "Exposure" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Exposure"
+    },
+    "Distance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Distance"
+    },
+    "hasSITimeDimensionExponent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasSITimeDimensionExponent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "NusseltNumberForMassTransfer" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NusseltNumberForMassTransfer"
+    },
+    "DensityParameterForMatter" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DensityParameterForMatter"
+    },
+    "GasConstantUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GasConstantUnit"
+    },
+    "PotentialDifference" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PotentialDifference"
+    },
+    "Radiance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Radiance"
+    },
+    "hasPrefix" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasPrefix",
+      "@type" : "@id"
+    },
+    "KinematicViscosity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/KinematicViscosity"
+    },
+    "PrefixedSecond-TimeSquared" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedSecond-TimeSquared"
+    },
+    "Amplitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Amplitude"
+    },
+    "Admittance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Admittance"
+    },
+    "IonizationTemperature" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/IonizationTemperature"
+    },
+    "subject" : {
+      "@id" : "http://purl.org/dc/elements/1.1/subject"
+    },
+    "Standard" : {
+      "@id" : "http://purl.org/ontology/bibo/Standard"
+    },
+    "LossModulus" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LossModulus"
+    },
+    "CauseEndOfVaseLifeWiltedLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeWiltedLeaves"
+    },
+    "VMagnitudeAtMinimumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VMagnitudeAtMinimumBrightness"
+    },
+    "NusseltNumberForMassTransferUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NusseltNumberForMassTransferUnit"
+    },
+    "DensityParameterForVacuum" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DensityParameterForVacuum"
+    },
+    "Seq" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+    },
+    "hasBaseUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasBaseUnit",
+      "@type" : "@id"
+    },
+    "MolePerPrefixedMetre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolePerPrefixedMetre"
+    },
+    "InformationCapacity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/InformationCapacity"
+    },
+    "TotalNumberFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TotalNumberFlowers"
+    },
+    "Duration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Duration"
+    },
+    "LuminousFluxUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LuminousFluxUnit"
+    },
+    "hasFactor" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "MagneticFluxUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticFluxUnit"
+    },
+    "NumberBudStadium4" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBudStadium4"
+    },
+    "gMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/gMagnitude"
+    },
+    "ExtinctionInV" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ExtinctionInV"
+    },
+    "BookSection" : {
+      "@id" : "http://purl.org/ontology/bibo/BookSection"
+    },
+    "symbol" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/symbol"
+    },
+    "SaltStrength" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SaltStrength"
+    },
+    "RedMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RedMagnitude"
+    },
+    "WheyProteinAggregateMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WheyProteinAggregateMassFraction"
+    },
+    "PrefixedLumen" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedLumen"
+    },
+    "NormalStress" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NormalStress"
+    },
+    "SpecificStreptococcusAgalactiaeCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificStreptococcusAgalactiaeCount"
+    },
+    "GalacticLongitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GalacticLongitude"
+    },
+    "NumberWiltedFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberWiltedFlowers"
+    },
+    "LuminousIntensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LuminousIntensityUnit"
+    },
+    "NumberWiltedLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberWiltedLeaves"
+    },
+    "Permeance-MaterialsScienceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Permeance-MaterialsScienceUnit"
+    },
+    "ExtinctionInU" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ExtinctionInU"
+    },
+    "IntegratedMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/IntegratedMagnitude"
+    },
+    "GravitationalAcceleration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GravitationalAcceleration"
+    },
+    "Point" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Point"
+    },
+    "EnergyDensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/EnergyDensityUnit"
+    },
+    "authorList" : {
+      "@id" : "http://purl.org/ontology/bibo/authorList"
+    },
+    "zRange" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/zRange"
+    },
+    "NumberManualFirmness2" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness2"
+    },
+    "AccelerationUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AccelerationUnit"
+    },
+    "MassUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MassUnit"
+    },
+    "SpecificCost" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificCost"
+    },
+    "NumberDryLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberDryLeaves"
+    },
+    "ThermalInsulance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermalInsulance"
+    },
+    "ElectricPotentialUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricPotentialUnit"
+    },
+    "VolumetricListeriaMonocytogenesCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricListeriaMonocytogenesCount"
+    },
+    "PrefixedGray" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGray"
+    },
+    "Percentage" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage"
+    },
+    "longcomment" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/longcomment"
+    },
+    "_1040NanometreLockwoodMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/_1040NanometreLockwoodMagnitude"
+    },
+    "AbsorbedDoseRate" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AbsorbedDoseRate"
+    },
+    "NumberColor3" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberColor3"
+    },
+    "AngularDisplacement" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AngularDisplacement"
+    },
+    "PecletNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PecletNumberUnit"
+    },
+    "PulpBrowning" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PulpBrowning"
+    },
+    "CauseEndOfVaseLifeMalformedBuds" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeMalformedBuds"
+    },
+    "ProteinMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ProteinMassFraction"
+    },
+    "FahrenheitTemperature" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperature"
+    },
+    "hasBase" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasBase",
+      "@type" : "@id"
+    },
+    "hasDerivedUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasDerivedUnit",
+      "@type" : "@id"
+    },
+    "ElasticityTensor" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElasticityTensor"
+    },
+    "PrefixedMetrePerPrefixedSecond-TimeSquared" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMetrePerPrefixedSecond-TimeSquared"
+    },
+    "LuminousEnergy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LuminousEnergy"
+    },
+    "ElectricCharge" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricCharge"
+    },
+    "PrefixedFarad" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedFarad"
+    },
+    "Wavelength" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Wavelength"
+    },
+    "PhotographicAmplitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PhotographicAmplitude"
+    },
+    "ShearLossModulus" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ShearLossModulus"
+    },
+    "Permeance-ElectromagneticUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Permeance-ElectromagneticUnit"
+    },
+    "reference" : {
+      "@id" : "http://www.wurvoc.org/bibliography/om-2/reference",
+      "@type" : "@id"
+    },
+    "NusseltNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NusseltNumberUnit"
+    },
+    "ElectricalResistivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricalResistivity"
+    },
+    "SpecificListeriaMonocytogenesCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificListeriaMonocytogenesCount"
+    },
+    "NumberManualFirmness1.5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness1.5"
+    },
+    "StressUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StressUnit"
+    },
+    "ThermalResistance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermalResistance"
+    },
+    "SecularAberration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SecularAberration"
+    },
+    "AreaFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction"
+    },
+    "ElectricalConductivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricalConductivity"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Density" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Density"
+    },
+    "PrefixedLitre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedLitre"
+    },
+    "MomentumUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MomentumUnit"
+    },
+    "AmountOfMoneyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfMoneyUnit"
+    },
+    "AbsorbedDose" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AbsorbedDose"
+    },
+    "AmountOfSubstanceConcentration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfSubstanceConcentration"
+    },
+    "AreaDensityRateUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AreaDensityRateUnit"
+    },
+    "Molality" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Molality"
+    },
+    "NumberBuds" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBuds"
+    },
+    "VascularBrowning" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VascularBrowning"
+    },
+    "KineticEnergy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/KineticEnergy"
+    },
+    "VolumetricStaphylococcusAureusCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricStaphylococcusAureusCount"
+    },
+    "RayleighNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RayleighNumberUnit"
+    },
+    "alternativeLaTeXSymbol" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/alternativeLaTeXSymbol"
+    },
+    "edition" : {
+      "@id" : "http://purl.org/ontology/bibo/edition"
+    },
+    "NumberExternalBrowning4" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberExternalBrowning4"
+    },
+    "DryMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DryMass"
+    },
+    "NormalStrain" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NormalStrain"
+    },
+    "Height" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Height"
+    },
+    "MomentOfInertiaUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MomentOfInertiaUnit"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "WheyProteinBeadsMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WheyProteinBeadsMassFraction"
+    },
+    "RadiantFlux" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RadiantFlux"
+    },
+    "DoseEquivalentUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DoseEquivalentUnit"
+    },
+    "RankineTemperature" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RankineTemperature"
+    },
+    "SurfaceTension" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SurfaceTension"
+    },
+    "InitialMassFunction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/InitialMassFunction"
+    },
+    "SpecificEntropy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificEntropy"
+    },
+    "AngleUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AngleUnit"
+    },
+    "hasBaseQuantity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasBaseQuantity",
+      "@type" : "@id"
+    },
+    "PermeabilityOfFreeSpaceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PermeabilityOfFreeSpaceUnit"
+    },
+    "SpecificCorynebacteriumBovisCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificCorynebacteriumBovisCount"
+    },
+    "PrefixedUnifiedAtomicMassUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedUnifiedAtomicMassUnit"
+    },
+    "VolumetricStreptococcusUberisCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricStreptococcusUberisCount"
+    },
+    "MachNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MachNumberUnit"
+    },
+    "AlfvenNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AlfvenNumberUnit"
+    },
+    "hasSIAmountOfSubstanceDimensionExponent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasSIAmountOfSubstanceDimensionExponent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasDenominator" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasDenominator",
+      "@type" : "@id"
+    },
+    "DensityParameter" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DensityParameter"
+    },
+    "Heat" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Heat"
+    },
+    "QuantityOfDimensionOneUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/QuantityOfDimensionOneUnit"
+    },
+    "CatalyticActivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CatalyticActivity"
+    },
+    "DensityParameterUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DensityParameterUnit"
+    },
+    "PrefixedGramPerLitre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGramPerLitre"
+    },
+    "PrefixedAmpere" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedAmpere"
+    },
+    "NoiseEquivalentPower" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NoiseEquivalentPower"
+    },
+    "Acidity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Acidity"
+    },
+    "Frequency" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Frequency"
+    },
+    "DistanceModulus" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DistanceModulus"
+    },
+    "StorageModulus" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StorageModulus"
+    },
+    "LewisNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LewisNumber"
+    },
+    "TotalNumberBuds" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TotalNumberBuds"
+    },
+    "NumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberUnit"
+    },
+    "MetrePerPrefixedSecond-Time" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MetrePerPrefixedSecond-Time"
+    },
+    "Thesis" : {
+      "@id" : "http://purl.org/ontology/bibo/Thesis"
+    },
+    "AngularAcceleration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AngularAcceleration"
+    },
+    "VAmplitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VAmplitude"
+    },
+    "VolumeUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeUnit"
+    },
+    "Ellipticity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Ellipticity"
+    },
+    "ElectricFieldUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricFieldUnit"
+    },
+    "NumberDryBuds" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberDryBuds"
+    },
+    "NumberManualFirmness2.5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness2.5"
+    },
+    "MagneticReynoldsNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticReynoldsNumber"
+    },
+    "CauseEndOfVaseLifeAbscisedBuds" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeAbscisedBuds"
+    },
+    "WhiteLightMagnitudeAtMinimumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WhiteLightMagnitudeAtMinimumBrightness"
+    },
+    "volume" : {
+      "@id" : "http://purl.org/ontology/bibo/volume"
+    },
+    "FontSize" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FontSize"
+    },
+    "Displacement" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Displacement"
+    },
+    "GeometricalAlbedo" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GeometricalAlbedo"
+    },
+    "hasUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit",
+      "@type" : "@id"
+    },
+    "PrefixedCandela" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedCandela"
+    },
+    "Albedo" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Albedo"
+    },
+    "DynamicRangeUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DynamicRangeUnit"
+    },
+    "Diameter-Angle" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Diameter-Angle"
+    },
+    "TotalDistanceTravelled" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TotalDistanceTravelled"
+    },
+    "hasSILuminousIntensityDimensionExponent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasSILuminousIntensityDimensionExponent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "CosmologicalConstant" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CosmologicalConstant"
+    },
+    "BodyLabelMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BodyLabelMass"
+    },
+    "hasTerm1" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasTerm1",
+      "@type" : "@id"
+    },
+    "NumberBudStadium5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBudStadium5"
+    },
+    "LaTeXCommand" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LaTeXCommand"
+    },
+    "Cost" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Cost"
+    },
+    "JeansMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/JeansMass"
+    },
+    "CurrentDensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CurrentDensityUnit"
+    },
+    "ActionUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ActionUnit"
+    },
+    "GalacticLatitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GalacticLatitude"
+    },
+    "logo" : {
+      "@id" : "http://www.wurvoc.org/vocabularies/WV/logo"
+    },
+    "MassFlowUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MassFlowUnit"
+    },
+    "ReaumurTemperatureUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ReaumurTemperatureUnit"
+    },
+    "NumberExternalBrowning3" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberExternalBrowning3"
+    },
+    "TemperatureUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TemperatureUnit"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "LuminanceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LuminanceUnit"
+    },
+    "MagneticReynoldsNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticReynoldsNumberUnit"
+    },
+    "SpecificCatalyticActivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificCatalyticActivity"
+    },
+    "ThermodynamicTemperature" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermodynamicTemperature"
+    },
+    "CurrentDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CurrentDensity"
+    },
+    "StarchMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StarchMassFraction"
+    },
+    "DynamicViscosityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DynamicViscosityUnit"
+    },
+    "SystemOfUnits" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SystemOfUnits"
+    },
+    "PrefixedMolePerLitre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedMolePerLitre"
+    },
+    "Ratio" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Ratio"
+    },
+    "KinematicViscosityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/KinematicViscosityUnit"
+    },
+    "VolumeFractionUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeFractionUnit"
+    },
+    "ApparentMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ApparentMagnitude"
+    },
+    "AberrationInLongitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AberrationInLongitude"
+    },
+    "shortTitle" : {
+      "@id" : "http://purl.org/ontology/bibo/shortTitle"
+    },
+    "SoyBeanMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SoyBeanMassFraction"
+    },
+    "PotentialEnergy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PotentialEnergy"
+    },
+    "TotalDensityParameter" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TotalDensityParameter"
+    },
+    "WettingAngle" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WettingAngle"
+    },
+    "IMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/IMagnitude"
+    },
+    "Illuminance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Illuminance"
+    },
+    "hasContext" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasContext",
+      "@type" : "@id"
+    },
+    "BudStadiumDay7" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BudStadiumDay7"
+    },
+    "ColourIndex" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ColourIndex"
+    },
+    "VolumetricStreptococcusAgalactiaeCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricStreptococcusAgalactiaeCount"
+    },
+    "MassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MassFraction"
+    },
+    "KnudsenNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/KnudsenNumberUnit"
+    },
+    "NumberRottenFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberRottenFlowers"
+    },
+    "FrequencyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FrequencyUnit"
+    },
+    "FourierNumberForMassTransfer" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FourierNumberForMassTransfer"
+    },
+    "Total3DStartEndDistance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Total3DStartEndDistance"
+    },
+    "EulerNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/EulerNumberUnit"
+    },
+    "HeatFlowRate" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HeatFlowRate"
+    },
+    "SpecificStreptococcusUberisCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificStreptococcusUberisCount"
+    },
+    "PrefixedHenry" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedHenry"
+    },
+    "NumberManualFirmness4.5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness4.5"
+    },
+    "MomentOfForce" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MomentOfForce"
+    },
+    "FixedZeroPoint" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FixedZeroPoint"
+    },
+    "TimeConstant" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TimeConstant"
+    },
+    "hasSIElectricCurrentDimensionExponent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasSIElectricCurrentDimensionExponent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "MagnitudeAtMaximumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagnitudeAtMaximumBrightness"
+    },
+    "VolumetricFlowRateUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricFlowRateUnit"
+    },
+    "abbreviation" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/abbreviation"
+    },
+    "MolarEntropy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolarEntropy"
+    },
+    "SpecificStreptococcusDysgalactiaeCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificStreptococcusDysgalactiaeCount"
+    },
+    "AngularSize" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AngularSize"
+    },
+    "Function" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Function"
+    },
+    "AmountOfSubstance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfSubstance"
+    },
+    "VaseLife" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VaseLife"
+    },
+    "InternalEnergy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/InternalEnergy"
+    },
+    "OrganDoseEquivalent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/OrganDoseEquivalent"
+    },
+    "TotalNumberLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TotalNumberLeaves"
+    },
+    "ExtinctionAtWaveband" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ExtinctionAtWaveband"
+    },
+    "AreaDensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AreaDensityUnit"
+    },
+    "ShearStress" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ShearStress"
+    },
+    "NumberColor1" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberColor1"
+    },
+    "Permeability-EarthScienceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Permeability-EarthScienceUnit"
+    },
+    "AlfvenNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AlfvenNumber"
+    },
+    "ElectricalResistivityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricalResistivityUnit"
+    },
+    "SpecificEntropyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificEntropyUnit"
+    },
+    "XanthanMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/XanthanMassFraction"
+    },
+    "WhiteLightMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WhiteLightMagnitude"
+    },
+    "CauseEndOfVaseLifeNonturgidLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeNonturgidLeaves"
+    },
+    "PeriodOfVariability" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PeriodOfVariability"
+    },
+    "QualityMarkFlower" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/QualityMarkFlower"
+    },
+    "chapter" : {
+      "@id" : "http://purl.org/ontology/bibo/chapter"
+    },
+    "MagnitudeAtMinimumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagnitudeAtMinimumBrightness"
+    },
+    "vMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/vMagnitude"
+    },
+    "AngularSpeedUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AngularSpeedUnit"
+    },
+    "ReynoldsNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ReynoldsNumberUnit"
+    },
+    "IlluminanceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/IlluminanceUnit"
+    },
+    "FroudeNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FroudeNumber"
+    },
+    "QuantumEfficiency" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/QuantumEfficiency"
+    },
+    "Eccentricity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Eccentricity"
+    },
+    "WhiteLightMagnitudeAtMaximumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WhiteLightMagnitudeAtMaximumBrightness"
+    },
+    "ElectricalResistanceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricalResistanceUnit"
+    },
+    "NormalisedDetectivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NormalisedDetectivity"
+    },
+    "ElectricCurrentUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricCurrentUnit"
+    },
+    "GrashofNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GrashofNumber"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "AmountOfSubstanceFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfSubstanceFraction"
+    },
+    "PrefixedSiemens" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedSiemens"
+    },
+    "Friction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Friction"
+    },
+    "ExtinctionInB" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ExtinctionInB"
+    },
+    "AbsoluteMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AbsoluteMagnitude"
+    },
+    "TorqueUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TorqueUnit"
+    },
+    "CauseEndOfVaseLifeAbscisedFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeAbscisedFlowers"
+    },
+    "UnitMultiple" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/UnitMultiple"
+    },
+    "CapMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CapMass"
+    },
+    "hasDimension" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasDimension",
+      "@type" : "@id"
+    },
+    "SpecificSalmonellaCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificSalmonellaCount"
+    },
+    "usesUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/usesUnit",
+      "@type" : "@id"
+    },
+    "ForceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ForceUnit"
+    },
+    "PrefixedHertz" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedHertz"
+    },
+    "VMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VMagnitude"
+    },
+    "NumberManualFirmness1" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness1"
+    },
+    "MolePerPrefixedLitre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolePerPrefixedLitre"
+    },
+    "Depth" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Depth"
+    },
+    "Overrun" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Overrun"
+    },
+    "RankineTemperatureUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RankineTemperatureUnit"
+    },
+    "SchmidtNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SchmidtNumber"
+    },
+    "NumberColor2" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberColor2"
+    },
+    "RayleighNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RayleighNumber"
+    },
+    "DensityParameterForRadiation" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DensityParameterForRadiation"
+    },
+    "Radius" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Radius"
+    },
+    "PrefixedTesla" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedTesla"
+    },
+    "ApparentDiameter" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ApparentDiameter"
+    },
+    "MagnitudeUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagnitudeUnit"
+    },
+    "Impulse" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Impulse"
+    },
+    "SpecificEnterococcusCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificEnterococcusCount"
+    },
+    "NumberBudStadium2" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberBudStadium2"
+    },
+    "NumberManualFirmness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness"
+    },
+    "ElectricalConductance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricalConductance"
+    },
+    "BMagnitudeAtMinimumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BMagnitudeAtMinimumBrightness"
+    },
+    "StrouhalNumber" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StrouhalNumber"
+    },
+    "MagneticField" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticField"
+    },
+    "NumberPulpBrowning3" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberPulpBrowning3"
+    },
+    "SpecificProteaseActivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificProteaseActivity"
+    },
+    "Velocity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Velocity"
+    },
+    "PermittivityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PermittivityUnit"
+    },
+    "DryMatterMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/DryMatterMassFraction"
+    },
+    "StarchVA85MassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StarchVA85MassFraction"
+    },
+    "StantonNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/StantonNumberUnit"
+    },
+    "EntropyUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/EntropyUnit"
+    },
+    "AbsoluteBolometricMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AbsoluteBolometricMagnitude"
+    },
+    "Action" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Action"
+    },
+    "MassFlow" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MassFlow"
+    },
+    "VolumetricCorynebacteriumCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricCorynebacteriumCount"
+    },
+    "RightAscension" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RightAscension"
+    },
+    "MustardPowderMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MustardPowderMassFraction"
+    },
+    "CousinsMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CousinsMagnitude"
+    },
+    "PrefixedPascal" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedPascal"
+    },
+    "HubbleConstantAtPresentEpoch" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/HubbleConstantAtPresentEpoch"
+    },
+    "ReluctanceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ReluctanceUnit"
+    },
+    "Area" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Area"
+    },
+    "SpecificCorynebacteriumCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpecificCorynebacteriumCount"
+    },
+    "Journal" : {
+      "@id" : "http://purl.org/ontology/bibo/Journal"
+    },
+    "ElectricChargeDensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricChargeDensityUnit"
+    },
+    "FontSizeUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FontSizeUnit"
+    },
+    "NumberVascularBrowning1" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberVascularBrowning1"
+    },
+    "LabelMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LabelMass"
+    },
+    "NumberVascularBrowning5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberVascularBrowning5"
+    },
+    "LewisNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/LewisNumberUnit"
+    },
+    "IntervalScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/IntervalScale"
+    },
+    "BodyMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BodyMass"
+    },
+    "PrefixedJoule" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedJoule"
+    },
+    "MolarHeatCapacity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MolarHeatCapacity"
+    },
+    "Power" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Power"
+    },
+    "NumberPulpBrowning5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberPulpBrowning5"
+    },
+    "GrashofNumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GrashofNumberUnit"
+    },
+    "VolumeFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumeFraction"
+    },
+    "Luminance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Luminance"
+    },
+    "VolumetricKlebsiellaCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricKlebsiellaCount"
+    },
+    "NumberMalformedFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberMalformedFlowers"
+    },
+    "NumberNonturgidFlowers" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberNonturgidFlowers"
+    },
+    "JohnsonMagnitude" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/JohnsonMagnitude"
+    },
+    "BMagnitudeAtMaximumBrightness" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BMagnitudeAtMaximumBrightness"
+    },
+    "ColumnNumberDensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ColumnNumberDensityUnit"
+    },
+    "SpectralResponse" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpectralResponse"
+    },
+    "VolumetricViableCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricViableCount"
+    },
+    "InductanceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/InductanceUnit"
+    },
+    "WavenumberUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WavenumberUnit"
+    },
+    "PercentageUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PercentageUnit"
+    },
+    "NumberRottenLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberRottenLeaves"
+    },
+    "Stress" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Stress"
+    },
+    "RankineScale" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RankineScale"
+    },
+    "isbn10" : {
+      "@id" : "http://purl.org/ontology/bibo/isbn10"
+    },
+    "MagneticFluxDensityUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticFluxDensityUnit"
+    },
+    "NumberManualFirmness5" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberManualFirmness5"
+    },
+    "ThermodynamicTemperatureUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermodynamicTemperatureUnit"
+    },
+    "VolumetricSalmonellaCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricSalmonellaCount"
+    },
+    "Time" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Time"
+    },
+    "TopMass" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TopMass"
+    },
+    "Force" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Force"
+    },
+    "GramPerPrefixedLitre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/GramPerPrefixedLitre"
+    },
+    "PecletNumberForMassTransferUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PecletNumberForMassTransferUnit"
+    },
+    "Firmness-Penetrometer-Method2" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Firmness-Penetrometer-Method2"
+    },
+    "VolumetricStreptococcusDysgalactiaeCount" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricStreptococcusDysgalactiaeCount"
+    },
+    "CauseEndOfVaseLifeBotrytis" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CauseEndOfVaseLifeBotrytis"
+    },
+    "ElectricDipoleMomentUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricDipoleMomentUnit"
+    },
+    "Responsivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Responsivity"
+    },
+    "ElectricalResistance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectricalResistance"
+    },
+    "ElectronTemperature" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ElectronTemperature"
+    },
+    "PrefixedAre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedAre"
+    },
+    "AmountOfSubstanceFlowUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmountOfSubstanceFlowUnit"
+    },
+    "WaterMassFraction" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/WaterMassFraction"
+    },
+    "AngularSpeed" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AngularSpeed"
+    },
+    "ThermalDiffusivity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ThermalDiffusivity"
+    },
+    "commonlyHasUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/commonlyHasUnit",
+      "@type" : "@id"
+    },
+    "EnergyDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/EnergyDensity"
+    },
+    "VolumetricViableCountUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/VolumetricViableCountUnit"
+    },
+    "CatalyticActivityConcentration" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CatalyticActivityConcentration"
+    },
+    "MagneticFluxDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/MagneticFluxDensity"
+    },
+    "BulkModulus" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/BulkModulus"
+    },
+    "NumberYellowLeaves" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/NumberYellowLeaves"
+    },
+    "xy2DStartEndDistance" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/xy2DStartEndDistance"
+    },
+    "RadianceUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/RadianceUnit"
+    },
+    "Entropy" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Entropy"
+    },
+    "AmbientDoseEquivalent" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AmbientDoseEquivalent"
+    },
+    "isbn13" : {
+      "@id" : "http://purl.org/ontology/bibo/isbn13"
+    },
+    "TemperatureRateUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/TemperatureRateUnit"
+    },
+    "AreaDensity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/AreaDensity"
+    }
+  }
+}

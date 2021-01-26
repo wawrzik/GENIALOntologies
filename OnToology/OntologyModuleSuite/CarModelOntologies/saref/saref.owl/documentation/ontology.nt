@@ -1,0 +1,1516 @@
+<https://w3id.org/saref> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/saref> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/time> .
+<https://w3id.org/saref> <http://purl.org/dc/terms/contributor> <http://purl.org/net/mpoveda> .
+<https://w3id.org/saref> <http://purl.org/dc/terms/contributor> <http://www.garcia-castro.com/foaf.rdf#me> .
+<https://w3id.org/saref> <http://purl.org/dc/terms/created> "2015-02-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/saref> <http://purl.org/dc/terms/creator> <https://www.linkedin.com/in/lauradaniele> .
+<https://w3id.org/saref> <http://purl.org/dc/terms/description> "The Smart Appliances REFerence (SAREF) ontology is a shared model of consensus that facilitates the matching of existing assets (standards/protocols/datamodels/etc.) in the smart appliances domain. The SAREF ontology provides building blocks that allow separation and recombination of different parts of the ontology depending on specific needs. The starting point of SAREF is the concept of device (e.g., a switch). Devices are tangible objects designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs the start and stop function. The SAREF ontology offers a lists of basic functions that can be eventually combined in order to have more complex functions in a single device. For example, a switch offers an actuating function of type 'switching on/off'. Each function has some associated commands, which can also be picked up as building blocks from a list. For example, the 'switching on/off' is associated with the commands 'switch on', 'switch off' and 'toggle'. Depending on the function(s) it accomplishes, a device can be found in some corresponding states that are also listed as building blocks. When connected to a network, a device offers a service, which  is a representation of a function to a network that makes the function discoverable, registerable and remotely controllable by other devices in the network. A service can represent one or more functions. A service is offered by a device that wants (a certain set of) its function(s) to be discoverable, registerable, remotely controllable by other devices in the network. A service must specify the device that is offering the service and the function(s) to be represented. A device in the SAREF ontology is also characterized by a profile that can be used to optimize some property, such as Energy, in a home or office that are part of a building." .
+<https://w3id.org/saref> <http://purl.org/dc/terms/issued> "2015-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/saref> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<https://w3id.org/saref> <http://purl.org/dc/terms/modified> "2018-05-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/saref> <http://purl.org/dc/terms/publisher> <https://www.tno.nl> .
+<https://w3id.org/saref> <http://purl.org/dc/terms/source> <http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/02.01.01_60/ts_103264v020101p.pdf> .
+<https://w3id.org/saref> <http://purl.org/dc/terms/title> "SAREF: the Smart Appliances REFerence ontology" .
+<https://w3id.org/saref> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about changes compared to version 1.1.1: (1)The classes and properties related to how to represent devices in building spaces (such as the saref:BuildingSpace class,  saref:BuildingObject class and saref:isLocatedIn property) have been removed from SAREF and incorporated  into the SAREF4BLDG extension related to buildings (https://w3id.org/def/saref4bldg), including the reuse of the W3C® WGS84 geo positioning vocabulary; (2)The saref:DeviceCategory and saref:FunctionCategory classes have been removed. Instead, the hierarchy of device categories has been implemented directly as subclasses of the saref:Device class; (3)The information specific for energy efficiency has been moved to the SAREF4ENER extension (https://w3id.org/saref4ener). For example, the saref:Profile class has been redefined to accommodate only the properties that are general enough for any type of profile, not only for energy and power. Details on how to specifically model a power profile can be found in the SAREF4ENER extension (https://w3id.org/saref4ener); (4) The subclasses of the saref:Energy class  have been removed (i.e., Average Energy, Maximum Energy, Minimum Energy, Total Energy, HVAC Energy, Hot Water Energy and Lighting Energy); (5)The saref:Property class has been split into two classes (saref:Property and saref:Measurement), as it is done in the SAREF4ENVI extension (https://w3id.org/def/saref4envi), in order to properly accommodate the distinction between the concept of property (an observable quality of something) and the concept of measurement (a concrete value observed for a property); (6)Too restrictive cardinality restrictions have been revised, sometimes making them optional rather than mandatory (better to make properties mandatory in the extensions that specialize SAREF for a specific purpose, rather than restricting SAREF, whose purpose is more general). For example, definitions of units of measurement using an enumeration (owl:oneOf) were too restrictive because they did not allow using other units than those enumerated. Therefore, the individuals of each class are still there, but the owl:oneOf enumeration has been removed; (7)The saref:UnitOfMeasure subclassesre use individuals from the OM ontology for unit of measures (http://www.wurvoc.org/vocabularies/om-1.6/), but this is not the only solution. It has been clarified in the comments that the OM ontology is an example, but other ontologies can be used; (8)The global restrictions (rdfs:domain and rdfs:range) in object properties have been completely removed not to hinder interoperability. Object properties are now only restricted locally in the classes; (9)The subclasses of saref:Task have been transormed in individuals; (10)The saref:hasTask property has been removed from the saref:Profile class to resolve an ambiguity with the saref:Task class." .
+<https://w3id.org/saref> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about changes compared to version 2.1.1: Small version bump to ensure that the turtle-version and the owl-version are up to date." .
+<https://w3id.org/saref> <http://www.w3.org/2002/07/owl#versionInfo> "2.1.2" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/saref#accomplishes
+<https://w3id.org/saref#accomplishes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#accomplishes> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/saref#isAccomplishedBy> .
+<https://w3id.org/saref#accomplishes> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a certain entity (e.g., a device) and the task it accomplishes" .
+<https://w3id.org/saref#accomplishes> <http://www.w3.org/2000/01/rdf-schema#label> "accomplishes" .
+# 
+# https://w3id.org/saref#actsUpon
+<https://w3id.org/saref#actsUpon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#actsUpon> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a command and a state" .
+<https://w3id.org/saref#actsUpon> <http://www.w3.org/2000/01/rdf-schema#label> "acts upon" .
+# 
+# https://w3id.org/saref#consistsOf
+<https://w3id.org/saref#consistsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#consistsOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship indicating a composite entity that consists of other entities (e.g., a temperature/humidity sensor that consists of a temperature sensor and a humidity sensor)" .
+<https://w3id.org/saref#consistsOf> <http://www.w3.org/2000/01/rdf-schema#label> "consists of" .
+# 
+# https://w3id.org/saref#controlsProperty
+<https://w3id.org/saref#controlsProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#controlsProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the Property that can be controlled by a certain Device"@en .
+<https://w3id.org/saref#controlsProperty> <http://www.w3.org/2000/01/rdf-schema#label> "controls property"@en .
+# 
+# https://w3id.org/saref#hasCommand
+<https://w3id.org/saref#hasCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasCommand> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/saref#isCommandOf> .
+<https://w3id.org/saref#hasCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between an entity (such as a function) and a command" .
+<https://w3id.org/saref#hasCommand> <http://www.w3.org/2000/01/rdf-schema#label> "has command" .
+# 
+# https://w3id.org/saref#hasFunction
+<https://w3id.org/saref#hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the type of function of a device" .
+<https://w3id.org/saref#hasFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has function" .
+# 
+# https://w3id.org/saref#hasMeterReading
+<https://w3id.org/saref#hasMeterReading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasMeterReading> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a metering function and the measurement of the reading" .
+<https://w3id.org/saref#hasMeterReading> <http://www.w3.org/2000/01/rdf-schema#label> "has meter reading" .
+# 
+# https://w3id.org/saref#hasMeterReadingType
+<https://w3id.org/saref#hasMeterReadingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasMeterReadingType> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the reading type of a measurement (e.g., Water, Gas, Pressure , Energy , Power, etc.)" .
+<https://w3id.org/saref#hasMeterReadingType> <http://www.w3.org/2000/01/rdf-schema#label> "has meter reading type" .
+# 
+# https://w3id.org/saref#hasPrice
+<https://w3id.org/saref#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationships indentifying the price associated to an entity" .
+<https://w3id.org/saref#hasPrice> <http://www.w3.org/2000/01/rdf-schema#label> "has price" .
+# 
+# https://w3id.org/saref#hasProfile
+<https://w3id.org/saref#hasProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship associating a profile to a certain entity (e.g., a device)" .
+<https://w3id.org/saref#hasProfile> <http://www.w3.org/2000/01/rdf-schema#label> "has profile" .
+# 
+# https://w3id.org/saref#hasSensingRange
+<https://w3id.org/saref#hasSensingRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasSensingRange> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a sensing function and a measurement identifying the range of a sensor detection" .
+<https://w3id.org/saref#hasSensingRange> <http://www.w3.org/2000/01/rdf-schema#label> "has sensing range " .
+# 
+# https://w3id.org/saref#hasSensorType
+<https://w3id.org/saref#hasSensorType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasSensorType> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the sensing type of a sensor detection (i.e., Temperature, Occupancy, Humidity, Motion , Smoke, Pressure, etc.) " .
+<https://w3id.org/saref#hasSensorType> <http://www.w3.org/2000/01/rdf-schema#label> "has sensor type" .
+# 
+# https://w3id.org/saref#hasState
+<https://w3id.org/saref#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasState> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the type of state of a device" .
+<https://w3id.org/saref#hasState> <http://www.w3.org/2000/01/rdf-schema#label> "has state" .
+# 
+# https://w3id.org/saref#hasThresholdMeasurement
+<https://w3id.org/saref#hasThresholdMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasThresholdMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship associated with an event function to notify that a certain threshold measurement has been exceeded" .
+<https://w3id.org/saref#hasThresholdMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "has threshold measurement" .
+# 
+# https://w3id.org/saref#hasTime
+<https://w3id.org/saref#hasTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasTime> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship to associate time information to an entity" .
+<https://w3id.org/saref#hasTime> <http://www.w3.org/2000/01/rdf-schema#label> "has time" .
+# 
+# https://w3id.org/saref#hasTypicalConsumption
+<https://w3id.org/saref#hasTypicalConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#hasTypicalConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the typical (energy or power) consumption of a device" .
+<https://w3id.org/saref#hasTypicalConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "has typical consumption" .
+# 
+# https://w3id.org/saref#isAbout
+<https://w3id.org/saref#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isAbout> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying what an entity, such as a Profile, is about"@en .
+<https://w3id.org/saref#isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "isAbout"@en .
+# 
+# https://w3id.org/saref#isAccomplishedBy
+<https://w3id.org/saref#isAccomplishedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isAccomplishedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship indentifying the task accomplished by a certain entity (e.g., a device)" .
+<https://w3id.org/saref#isAccomplishedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is accomplished by" .
+# 
+# https://w3id.org/saref#isCommandOf
+<https://w3id.org/saref#isCommandOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isCommandOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a command and a function." .
+<https://w3id.org/saref#isCommandOf> <http://www.w3.org/2000/01/rdf-schema#label> "is command of" .
+# 
+# https://w3id.org/saref#isControlledByDevice
+<https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the devices that can control a certain property"@en .
+<https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#label> "is controlled by device" .
+# 
+# https://w3id.org/saref#isMeasuredByDevice
+<https://w3id.org/saref#isMeasuredByDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isMeasuredByDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the devices that can measure a certain property"@en .
+<https://w3id.org/saref#isMeasuredByDevice> <http://www.w3.org/2000/01/rdf-schema#label> "is measured by device" .
+# 
+# https://w3id.org/saref#isMeasuredIn
+<https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the unit of measure used for a certain entity." .
+<https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "is measured in" .
+# 
+# https://w3id.org/saref#isOfferedBy
+<https://w3id.org/saref#isOfferedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isOfferedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/saref#offers> .
+<https://w3id.org/saref#isOfferedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a service and a device that offers the service" .
+<https://w3id.org/saref#isOfferedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is offered by" .
+# 
+# https://w3id.org/saref#isUsedFor
+<https://w3id.org/saref#isUsedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isUsedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the purpose for which a device is used for (e.g., controlling a Commodity)" .
+<https://w3id.org/saref#isUsedFor> <http://www.w3.org/2000/01/rdf-schema#label> "is used for" .
+# 
+# https://w3id.org/saref#makesMeasurement
+<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates."@en .
+<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "makes measurement"@en .
+# 
+# https://w3id.org/saref#measuresProperty
+<https://w3id.org/saref#measuresProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the Property that can be measured by a certain Device"@en .
+<https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#label> "measures property"@en .
+# 
+# https://w3id.org/saref#offers
+<https://w3id.org/saref#offers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#offers> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a device and a service" .
+<https://w3id.org/saref#offers> <http://www.w3.org/2000/01/rdf-schema#label> "offers" .
+# 
+# https://w3id.org/saref#relatesToMeasurement
+<https://w3id.org/saref#relatesToMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a property and the measurements it relates to" .
+<https://w3id.org/saref#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "relates to measurement"@en .
+# 
+# https://w3id.org/saref#relatesToProperty
+<https://w3id.org/saref#relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a measurement and the property it relates to" .
+<https://w3id.org/saref#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#label> "relates to property"@en .
+# 
+# https://w3id.org/saref#represents
+<https://w3id.org/saref#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#represents> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a service and a function." .
+<https://w3id.org/saref#represents> <http://www.w3.org/2000/01/rdf-schema#label> "represents" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/saref#hasDescription
+<https://w3id.org/saref#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/saref#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship providing a description of an entity (e.g., device)" .
+<https://w3id.org/saref#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description" .
+# 
+# https://w3id.org/saref#hasManufacturer
+<https://w3id.org/saref#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/saref#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the manufacturer of an entity (e.g., device)" .
+<https://w3id.org/saref#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer" .
+# 
+# https://w3id.org/saref#hasModel
+<https://w3id.org/saref#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the model of an entity (e.g., device)" .
+<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#label> "has model" .
+# 
+# https://w3id.org/saref#hasName
+<https://w3id.org/saref#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/saref#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship providing the name of an entity (e.g., device)" .
+<https://w3id.org/saref#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
+# 
+# https://w3id.org/saref#hasTimestamp
+<https://w3id.org/saref#hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship stating the timestamp of an entity (e.g. a measurement)."@en .
+<https://w3id.org/saref#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "has timestamp"@en .
+# 
+# https://w3id.org/saref#hasValue
+<https://w3id.org/saref#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship defining the value of a certain property, e.g., energy or power" .
+<https://w3id.org/saref#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2006/time#TemporalUnit
+<http://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#UnitOfMeasure> .
+<http://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure for time" .
+# 
+# https://w3id.org/saref#ActuatingFunction
+<https://w3id.org/saref#ActuatingFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#ActuatingFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Function> .
+<https://w3id.org/saref#ActuatingFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "A function that allows to transmit data to actuators, such as level settings (e.g., temperature) or binary switching (e.g., open/close, on/off)" .
+<https://w3id.org/saref#ActuatingFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Actuating function" .
+# 
+# https://w3id.org/saref#Actuator
+<https://w3id.org/saref#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#FunctionRelated> .
+<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFunction> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#ActuatingFunction> .
+<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "A device responsible for moving or controlling a mechanism or system by performing an actuating function" .
+<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator" .
+# 
+# https://w3id.org/saref#Appliance
+<https://w3id.org/saref#Appliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Appliance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#FunctionRelated> .
+<https://w3id.org/saref#Appliance> <http://www.w3.org/2000/01/rdf-schema#comment> "An electrical/mechanical machine that accomplish some household functions, such as cleaning or cooking" .
+<https://w3id.org/saref#Appliance> <http://www.w3.org/2000/01/rdf-schema#label> "Appliance" .
+# 
+# https://w3id.org/saref#BuildingRelated
+<https://w3id.org/saref#BuildingRelated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#BuildingRelated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#BuildingRelated> <http://www.w3.org/2000/01/rdf-schema#comment> "A category that includes devices as described by building related data models, such as IFC and FIEMSER " .
+<https://w3id.org/saref#BuildingRelated> <http://www.w3.org/2000/01/rdf-schema#label> "Building related" .
+# 
+# https://w3id.org/saref#CloseCommand
+<https://w3id.org/saref#CloseCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#CloseCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#CloseCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#actsUpon> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#OpenCloseState> .
+<https://w3id.org/saref#CloseCommand> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/saref#OpenCommand> .
+<https://w3id.org/saref#CloseCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#CloseCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Close command" .
+# 
+# https://w3id.org/saref#CloseState
+<https://w3id.org/saref#CloseState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#CloseState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#OpenCloseState> .
+<https://w3id.org/saref#CloseState> <http://www.w3.org/2000/01/rdf-schema#comment> "The state of a device that is CLOSE" .
+<https://w3id.org/saref#CloseState> <http://www.w3.org/2000/01/rdf-schema#label> "Close state" .
+# 
+# https://w3id.org/saref#Coal
+<https://w3id.org/saref#Coal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Coal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Commodity> .
+<https://w3id.org/saref#Coal> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of commodity" .
+<https://w3id.org/saref#Coal> <http://www.w3.org/2000/01/rdf-schema#label> "Coal" .
+# 
+# https://w3id.org/saref#Command
+<https://w3id.org/saref#Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#actsUpon> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#State> .
+<https://w3id.org/saref#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isCommandOf> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Function> .
+<https://w3id.org/saref#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasDescription> .
+_:genid5 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/saref#Command> <http://www.w3.org/2000/01/rdf-schema#comment> "A directive that a device must support to perform a certain function. A command may act upon a state, but does not necessarily act upon a state. For example, the ON command acts upon the ON/OFF state, but the GET command does not act upon any state, it simply gives a directive to retrieve a certain value. We propose here a list of commands that are relevant for the purpose of SAREF, but this list can be extended." .
+<https://w3id.org/saref#Command> <http://www.w3.org/2000/01/rdf-schema#label> "Command" .
+# 
+# https://w3id.org/saref#Commodity
+<https://w3id.org/saref#Commodity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Commodity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#Commodity> <http://www.w3.org/2000/01/rdf-schema#comment> "A marketable item for which there is demand, but which is supplied without qualitative differentiation across a market. SAREF refers to energy commodities such as electricity, gas, coal and oil. " .
+<https://w3id.org/saref#Commodity> <http://www.w3.org/2000/01/rdf-schema#label> "Commodity" .
+# 
+# https://w3id.org/saref#Currency
+<https://w3id.org/saref#Currency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Currency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#Currency> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure for price" .
+<https://w3id.org/saref#Currency> <http://www.w3.org/2000/01/rdf-schema#label> "Currency" .
+# 
+# https://w3id.org/saref#Device
+<https://w3id.org/saref#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#consistsOf> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#controlsProperty> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasProfile> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Profile> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasState> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#State> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasTypicalConsumption> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#Energy> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#Power> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isUsedFor> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Commodity> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#makesMeasurement> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#measuresProperty> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#offers> .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Service> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid19 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFunction> .
+_:genid20 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Function> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasDescription> .
+_:genid21 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasManufacturer> .
+_:genid22 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasModel> .
+_:genid23 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended." .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+# 
+# https://w3id.org/saref#DoorSwitch
+<https://w3id.org/saref#DoorSwitch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Switch> .
+<https://w3id.org/saref#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#consistsOf> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Switch> .
+<https://w3id.org/saref#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFunction> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#OpenCloseFunction> .
+<https://w3id.org/saref#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasState> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#OpenCloseState> .
+<https://w3id.org/saref#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid27 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#Safety> .
+<https://w3id.org/saref#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#comment> "A device of category saref:Actuator that consists of a switch, accomplishes the task saref:Safety, performs the saref:OpenCloseFunction, is used for controlling a door, and can be found in the state saref:OpenCloseState." .
+<https://w3id.org/saref#DoorSwitch> <http://www.w3.org/2000/01/rdf-schema#label> "Door switch" .
+# 
+# https://w3id.org/saref#Electricity
+<https://w3id.org/saref#Electricity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Electricity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Commodity> .
+<https://w3id.org/saref#Electricity> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of commodity" .
+<https://w3id.org/saref#Electricity> <http://www.w3.org/2000/01/rdf-schema#label> "Electricity" .
+# 
+# https://w3id.org/saref#Energy
+<https://w3id.org/saref#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Energy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Energy> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value measured in an energy unit (such as Kilowatt_Hour or Watt_hour). Furter specializations of the saref:Energy class can be found in the SAREF4ENER extension, where classes such as EnergyMax, EnergyMin and EnergyExpected are defined. " .
+<https://w3id.org/saref#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy" .
+# 
+# https://w3id.org/saref#EnergyMeter
+<https://w3id.org/saref#EnergyMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Meter> .
+<https://w3id.org/saref#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#consistsOf> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Meter> .
+<https://w3id.org/saref#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#measuresProperty> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Energy> .
+<https://w3id.org/saref#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid30 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#EnergyEfficiency> .
+<https://w3id.org/saref#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid31 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#MeterReading> .
+<https://w3id.org/saref#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "An energy meter is a device of category saref:Meter that consists of a meter, accomplishes the tasks saref:MeterReading and saref:EnergyEfficiency, performs the saref:MeteringFunction and is used for the purpose of measuring the saref:Energy property" .
+<https://w3id.org/saref#EnergyMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Energy meter" .
+# 
+# https://w3id.org/saref#EnergyRelated
+<https://w3id.org/saref#EnergyRelated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#EnergyRelated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#EnergyRelated> <http://www.w3.org/2000/01/rdf-schema#comment> "A category that considers devices based on energy consumption information and profiles to optimize energy efficiency." .
+<https://w3id.org/saref#EnergyRelated> <http://www.w3.org/2000/01/rdf-schema#label> "Energy related" .
+# 
+# https://w3id.org/saref#EnergyUnit
+<https://w3id.org/saref#EnergyUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#EnergyUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#EnergyUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure for energy" .
+<https://w3id.org/saref#EnergyUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Energy unit" .
+# 
+# https://w3id.org/saref#EventFunction
+<https://w3id.org/saref#EventFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#EventFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Function> .
+<https://w3id.org/saref#EventFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasCommand> .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#NotifyCommand> .
+<https://w3id.org/saref#EventFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasThresholdMeasurement> .
+_:genid33 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#EventFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "A function that allows to notify another device that a certain threshold value has been exceeded." .
+<https://w3id.org/saref#EventFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Event function" .
+# 
+# https://w3id.org/saref#Function
+<https://w3id.org/saref#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasCommand> .
+_:genid34 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#Function> <http://www.w3.org/2000/01/rdf-schema#comment> "The functionality necessary to accomplish the task for which a Device is designed. A device can be designed to perform more than one function. Functions can be structured in categories (subclasses) that reflect different points of view, for example, considering the specific application area for which a function can be used (e.g., light, temperature, motion, heat, power, etc.), or the capability that a function can support (e.g., receive, reply, notify, etc.), and so forth. " .
+<https://w3id.org/saref#Function> <http://www.w3.org/2000/01/rdf-schema#label> "Function" .
+# 
+# https://w3id.org/saref#FunctionRelated
+<https://w3id.org/saref#FunctionRelated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#FunctionRelated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#FunctionRelated> <http://www.w3.org/2000/01/rdf-schema#comment> "A category that considers devices, sensors and their specification in terms of functions, states and services" .
+<https://w3id.org/saref#FunctionRelated> <http://www.w3.org/2000/01/rdf-schema#label> "Function related" .
+# 
+# https://w3id.org/saref#Gas
+<https://w3id.org/saref#Gas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Gas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Commodity> .
+<https://w3id.org/saref#Gas> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of commodity" .
+<https://w3id.org/saref#Gas> <http://www.w3.org/2000/01/rdf-schema#label> "Gas" .
+# 
+# https://w3id.org/saref#Generator
+<https://w3id.org/saref#Generator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Generator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#EnergyRelated> .
+<https://w3id.org/saref#Generator> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of energy-related device that generates energy" .
+<https://w3id.org/saref#Generator> <http://www.w3.org/2000/01/rdf-schema#label> "Generator" .
+# 
+# https://w3id.org/saref#GetCommand
+<https://w3id.org/saref#GetCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#GetCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#GetCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#GetCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Get command" .
+# 
+# https://w3id.org/saref#GetCurrentMeterValueCommand
+<https://w3id.org/saref#GetCurrentMeterValueCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#GetCurrentMeterValueCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#GetCommand> .
+<https://w3id.org/saref#GetCurrentMeterValueCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of get command" .
+<https://w3id.org/saref#GetCurrentMeterValueCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Get current meter value command" .
+# 
+# https://w3id.org/saref#GetMeterDataCommand
+<https://w3id.org/saref#GetMeterDataCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#GetMeterDataCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#GetCommand> .
+<https://w3id.org/saref#GetMeterDataCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of get command" .
+<https://w3id.org/saref#GetMeterDataCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Get meter data command" .
+# 
+# https://w3id.org/saref#GetMeterHistoryCommand
+<https://w3id.org/saref#GetMeterHistoryCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#GetMeterHistoryCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#GetCommand> .
+<https://w3id.org/saref#GetMeterHistoryCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of get command" .
+<https://w3id.org/saref#GetMeterHistoryCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Get meter history command" .
+# 
+# https://w3id.org/saref#GetSensingDataCommand
+<https://w3id.org/saref#GetSensingDataCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#GetSensingDataCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#GetCommand> .
+<https://w3id.org/saref#GetSensingDataCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of get command" .
+<https://w3id.org/saref#GetSensingDataCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Get sensing data command" .
+# 
+# https://w3id.org/saref#HVAC
+<https://w3id.org/saref#HVAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#HVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#FunctionRelated> .
+<https://w3id.org/saref#HVAC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid35 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#Comfort> .
+<https://w3id.org/saref#HVAC> <http://www.w3.org/2000/01/rdf-schema#comment> "Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort" .
+<https://w3id.org/saref#HVAC> <http://www.w3.org/2000/01/rdf-schema#label> "HVAC" .
+# 
+# https://w3id.org/saref#Humidity
+<https://w3id.org/saref#Humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Humidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Humidity> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value that is measured in a humidity unit" .
+<https://w3id.org/saref#Humidity> <http://www.w3.org/2000/01/rdf-schema#label> "Humidity" .
+# 
+# https://w3id.org/saref#IlluminanceUnit
+<https://w3id.org/saref#IlluminanceUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#IlluminanceUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#IlluminanceUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure for light" .
+<https://w3id.org/saref#IlluminanceUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Illuminance unit" .
+# 
+# https://w3id.org/saref#LevelControlFunction
+<https://w3id.org/saref#LevelControlFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#LevelControlFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#ActuatingFunction> .
+<https://w3id.org/saref#LevelControlFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasCommand> .
+_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid37 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#SetAbsoluteLevelCommand> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#SetRelativeLevelCommand> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#StepDownCommand> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#StepUpCommand> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/saref#LevelControlFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuating function that allows to do level adjustments of an actuator in a certain range (e.g., 0%-100%), such as dimming a light or set the speed of an electric motor. " .
+<https://w3id.org/saref#LevelControlFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Level control function" .
+# 
+# https://w3id.org/saref#Light
+<https://w3id.org/saref#Light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Light> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Light> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value that is measured in a illuminance unit (lux)" .
+<https://w3id.org/saref#Light> <http://www.w3.org/2000/01/rdf-schema#label> "Light" .
+# 
+# https://w3id.org/saref#LightSwitch
+<https://w3id.org/saref#LightSwitch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Switch> .
+<https://w3id.org/saref#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#consistsOf> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Switch> .
+<https://w3id.org/saref#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFunction> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#OnOffFunction> .
+<https://w3id.org/saref#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasState> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#OnOffState> .
+<https://w3id.org/saref#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#measuresProperty> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Light> .
+<https://w3id.org/saref#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#offers> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#SwitchOnService> .
+<https://w3id.org/saref#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid47 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#Lighting> .
+<https://w3id.org/saref#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#comment> "A device of category saref:Actuator that consists of a switch, accomplishes the task saref:Lighting, performs the saref:OnOffFunction, measures the property saref:Light, and can be found in the state saref:OnOffState. It can offer a switch on service." .
+<https://w3id.org/saref#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#label> "Light switch" .
+# 
+# https://w3id.org/saref#LightingDevice
+<https://w3id.org/saref#LightingDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#LightingDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#FunctionRelated> .
+<https://w3id.org/saref#LightingDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid48 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#Comfort> .
+<https://w3id.org/saref#LightingDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "A device used for illumination, irradiation, signaling, or projection" .
+<https://w3id.org/saref#LightingDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Lighting device" .
+# 
+# https://w3id.org/saref#Load
+<https://w3id.org/saref#Load> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Load> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#EnergyRelated> .
+<https://w3id.org/saref#Load> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of energy-related device that consumes energy" .
+<https://w3id.org/saref#Load> <http://www.w3.org/2000/01/rdf-schema#label> "Load" .
+# 
+# https://w3id.org/saref#Measurement
+<https://w3id.org/saref#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
+_:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToProperty> .
+_:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
+_:genid51 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToProperty> .
+_:genid52 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasTimestamp> .
+_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasValue> .
+_:genid54 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
+# 
+# https://w3id.org/saref#Meter
+<https://w3id.org/saref#Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#FunctionRelated> .
+<https://w3id.org/saref#Meter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFunction> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#MeteringFunction> .
+<https://w3id.org/saref#Meter> <http://www.w3.org/2000/01/rdf-schema#comment> "A device built to accurately detect and display a quantity in a form readable by a human being. Further, a device of category saref:Meter that performs a saref:MeteringFunction." .
+<https://w3id.org/saref#Meter> <http://www.w3.org/2000/01/rdf-schema#label> "Meter" .
+# 
+# https://w3id.org/saref#MeteringFunction
+<https://w3id.org/saref#MeteringFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Function> .
+<https://w3id.org/saref#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasCommand> .
+_:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid57 <http://www.w3.org/2002/07/owl#unionOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#GetCurrentMeterValueCommand> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#GetMeterDataCommand> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#GetMeterHistoryCommand> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/saref#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasMeterReading> .
+_:genid61 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasMeterReadingType> .
+_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid63 <http://www.w3.org/2002/07/owl#unionOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#Commodity> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#Property> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/saref#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "A function that allows to get data from a meter, such as current meter reading or instantaneous demand" .
+<https://w3id.org/saref#MeteringFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Metering function" .
+# 
+# https://w3id.org/saref#MicroRenewable
+<https://w3id.org/saref#MicroRenewable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#MicroRenewable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#FunctionRelated> .
+<https://w3id.org/saref#MicroRenewable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid66 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#EnergyEfficiency> .
+<https://w3id.org/saref#MicroRenewable> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that generates renewable energy from natural resources such as teh sun, wind and water" .
+<https://w3id.org/saref#MicroRenewable> <http://www.w3.org/2000/01/rdf-schema#label> "Micro renewable" .
+# 
+# https://w3id.org/saref#Motion
+<https://w3id.org/saref#Motion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Motion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Motion> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value that is measured in a unit of measure for motion" .
+<https://w3id.org/saref#Motion> <http://www.w3.org/2000/01/rdf-schema#label> "Motion" .
+# 
+# https://w3id.org/saref#MultiLevelState
+<https://w3id.org/saref#MultiLevelState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#MultiLevelState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#State> .
+<https://w3id.org/saref#MultiLevelState> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of state" .
+<https://w3id.org/saref#MultiLevelState> <http://www.w3.org/2000/01/rdf-schema#label> "Multi level state" .
+# 
+# https://w3id.org/saref#Multimedia
+<https://w3id.org/saref#Multimedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Multimedia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#FunctionRelated> .
+<https://w3id.org/saref#Multimedia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid67 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#Entertainment> .
+<https://w3id.org/saref#Multimedia> <http://www.w3.org/2000/01/rdf-schema#comment> "A device designed to display, store, record or play multimedia content such as audio, images, animation, video " .
+<https://w3id.org/saref#Multimedia> <http://www.w3.org/2000/01/rdf-schema#label> "Multimedia" .
+# 
+# https://w3id.org/saref#Network
+<https://w3id.org/saref#Network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Network> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#FunctionRelated> .
+<https://w3id.org/saref#Network> <http://www.w3.org/2000/01/rdf-schema#comment> "A device used to connect other devices in a network, such as hub, switch or router in a Local Area Network (LAN). " .
+<https://w3id.org/saref#Network> <http://www.w3.org/2000/01/rdf-schema#label> "Network" .
+# 
+# https://w3id.org/saref#NotifyCommand
+<https://w3id.org/saref#NotifyCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#NotifyCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#NotifyCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#NotifyCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Notify command" .
+# 
+# https://w3id.org/saref#Occupancy
+<https://w3id.org/saref#Occupancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Occupancy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Occupancy> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value (saref:hasValue property) that is measured in a unit of measure for occupancy" .
+<https://w3id.org/saref#Occupancy> <http://www.w3.org/2000/01/rdf-schema#label> "Occupancy" .
+# 
+# https://w3id.org/saref#OffCommand
+<https://w3id.org/saref#OffCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#OffCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#OffCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#actsUpon> .
+_:genid68 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#OnOffState> .
+<https://w3id.org/saref#OffCommand> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/saref#OnCommand> .
+<https://w3id.org/saref#OffCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#OffCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Off command" .
+# 
+# https://w3id.org/saref#OffState
+<https://w3id.org/saref#OffState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#OffState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#OnOffState> .
+<https://w3id.org/saref#OffState> <http://www.w3.org/2000/01/rdf-schema#comment> "The state of a device that is ON" .
+<https://w3id.org/saref#OffState> <http://www.w3.org/2000/01/rdf-schema#label> "Off state" .
+# 
+# https://w3id.org/saref#OnCommand
+<https://w3id.org/saref#OnCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#OnCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#OnCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#actsUpon> .
+_:genid69 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#OnOffState> .
+<https://w3id.org/saref#OnCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#OnCommand> <http://www.w3.org/2000/01/rdf-schema#label> "On command" .
+# 
+# https://w3id.org/saref#OnOffFunction
+<https://w3id.org/saref#OnOffFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#OnOffFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#ActuatingFunction> .
+<https://w3id.org/saref#OnOffFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasCommand> .
+_:genid70 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid71 <http://www.w3.org/2002/07/owl#unionOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#OffCommand> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#OnCommand> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#ToggleCommand> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/saref#OnOffFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuating function that allows to switch on and off an actuator" .
+<https://w3id.org/saref#OnOffFunction> <http://www.w3.org/2000/01/rdf-schema#label> "On off function" .
+# 
+# https://w3id.org/saref#OnOffState
+<https://w3id.org/saref#OnOffState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#OnOffState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#State> .
+<https://w3id.org/saref#OnOffState> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of state" .
+<https://w3id.org/saref#OnOffState> <http://www.w3.org/2000/01/rdf-schema#label> "On off state" .
+# 
+# https://w3id.org/saref#OnState
+<https://w3id.org/saref#OnState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#OnState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#OnOffState> .
+<https://w3id.org/saref#OnState> <http://www.w3.org/2000/01/rdf-schema#comment> "The state of a device that is OFF " .
+<https://w3id.org/saref#OnState> <http://www.w3.org/2000/01/rdf-schema#label> "On state" .
+# 
+# https://w3id.org/saref#OpenCloseFunction
+<https://w3id.org/saref#OpenCloseFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#OpenCloseFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#ActuatingFunction> .
+<https://w3id.org/saref#OpenCloseFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasCommand> .
+_:genid75 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid76 <http://www.w3.org/2002/07/owl#unionOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#CloseCommand> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#OpenCommand> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/saref#OpenCloseFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuating function that allows to open and close a device" .
+<https://w3id.org/saref#OpenCloseFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Open close function" .
+# 
+# https://w3id.org/saref#OpenCloseState
+<https://w3id.org/saref#OpenCloseState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#OpenCloseState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#State> .
+<https://w3id.org/saref#OpenCloseState> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of state" .
+<https://w3id.org/saref#OpenCloseState> <http://www.w3.org/2000/01/rdf-schema#label> "Open close state" .
+# 
+# https://w3id.org/saref#OpenCommand
+<https://w3id.org/saref#OpenCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#OpenCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#OpenCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#actsUpon> .
+_:genid79 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#OpenCloseState> .
+<https://w3id.org/saref#OpenCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#OpenCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Open command" .
+# 
+# https://w3id.org/saref#OpenState
+<https://w3id.org/saref#OpenState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#OpenState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#OpenCloseState> .
+<https://w3id.org/saref#OpenState> <http://www.w3.org/2000/01/rdf-schema#comment> "The state of a device that is OPEN " .
+<https://w3id.org/saref#OpenState> <http://www.w3.org/2000/01/rdf-schema#label> "Open state" .
+# 
+# https://w3id.org/saref#PauseCommand
+<https://w3id.org/saref#PauseCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#PauseCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#PauseCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#PauseCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Pause command" .
+# 
+# https://w3id.org/saref#Power
+<https://w3id.org/saref#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Power> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value that is measured in a power unit (such as watt or kilowatt).  Further specializations of the saref:Power class can be found in the SAREF4ENER extension, where classes such as PowerMax, PowerMin and PowerExpected are defined." .
+<https://w3id.org/saref#Power> <http://www.w3.org/2000/01/rdf-schema#label> "Power" .
+# 
+# https://w3id.org/saref#PowerUnit
+<https://w3id.org/saref#PowerUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#PowerUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#PowerUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure for power" .
+<https://w3id.org/saref#PowerUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Power unit" .
+# 
+# https://w3id.org/saref#Pressure
+<https://w3id.org/saref#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Pressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Pressure> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value that is measured in a pressure unit (bar or pascal)" .
+<https://w3id.org/saref#Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure" .
+# 
+# https://w3id.org/saref#PressureUnit
+<https://w3id.org/saref#PressureUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#PressureUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#PressureUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure for pressure" .
+<https://w3id.org/saref#PressureUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure unit" .
+# 
+# https://w3id.org/saref#Price
+<https://w3id.org/saref#Price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Price> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Price> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property crelated to some measurements that are characterized by a certain value that is measured using saref:Currency" .
+<https://w3id.org/saref#Price> <http://www.w3.org/2000/01/rdf-schema#label> "Price" .
+# 
+# https://w3id.org/saref#Profile
+<https://w3id.org/saref#Profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#consistsOf> .
+_:genid80 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Profile> .
+<https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasPrice> .
+_:genid81 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Price> .
+<https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasTime> .
+_:genid82 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Time> .
+<https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isAbout> .
+_:genid83 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid84 <http://www.w3.org/2002/07/owl#unionOf> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#Commodity> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#Property> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#comment> "A specification associated to a device to collect information about a certain Property (e.g., Energy) or Commodity (e.g.Water) for optimizing its usage in the home, office or building in which the device is located. This specification is about a certain Property or Commodity (saref:isAbout), can be calculated over a time span (saref:hasTime ) and can be associated to some costs (saref:hasPrice). An example is the Power Profile defined in the SAREF4ENER extension that can be associated to a device for optimizing the Energy efficiency in the home, office or building in which the device is located."@en .
+<https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#label> "Profile"@en .
+# 
+# https://w3id.org/saref#Property
+<https://w3id.org/saref#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isControlledByDevice> .
+_:genid87 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredByDevice> .
+_:genid88 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToMeasurement> .
+_:genid89 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "Anything that can be sensed, measured or controlled in households, common public buildings or offices. We propose here a list of properties that are relevant for the purpose of SAREF, but this list can be extended." .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property" .
+# 
+# https://w3id.org/saref#SensingFunction
+<https://w3id.org/saref#SensingFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Function> .
+<https://w3id.org/saref#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasSensingRange> .
+_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasCommand> .
+_:genid91 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#GetSensingDataCommand> .
+<https://w3id.org/saref#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasSensorType> .
+_:genid92 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "A function that allows to transmit data from sensors, such as measurement values (e.g., temperature) or sensing data (e.g., occupancy)" .
+<https://w3id.org/saref#SensingFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Sensing function" .
+# 
+# https://w3id.org/saref#Sensor
+<https://w3id.org/saref#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#FunctionRelated> .
+<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFunction> .
+_:genid93 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#SensingFunction> .
+<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. Further, a device of category saref:Sensor that performs a saref:SensingFunction." .
+<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor" .
+# 
+# https://w3id.org/saref#Service
+<https://w3id.org/saref#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isOfferedBy> .
+_:genid94 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid94 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#represents> .
+_:genid95 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid95 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Function> .
+<https://w3id.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#comment> "A service is a representation of a function to a network that makes the function discoverable, registerable, remotely controllable by other devices in the network. A service can represent one or more functions. A Service is offered by a device that wants (a certain set of) its function(s) to be discoverable, registerable, remotely controllable by other devices in the network. A Service must specify the device that is offering the service and the function(s) to be represented." .
+<https://w3id.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service" .
+# 
+# https://w3id.org/saref#SetAbsoluteLevelCommand
+<https://w3id.org/saref#SetAbsoluteLevelCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#SetAbsoluteLevelCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#SetLevelCommand> .
+<https://w3id.org/saref#SetAbsoluteLevelCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of set level command" .
+<https://w3id.org/saref#SetAbsoluteLevelCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Set absolute level command" .
+# 
+# https://w3id.org/saref#SetLevelCommand
+<https://w3id.org/saref#SetLevelCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#SetLevelCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#SetLevelCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#actsUpon> .
+_:genid96 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#MultiLevelState> .
+<https://w3id.org/saref#SetLevelCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#SetLevelCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Set level command" .
+# 
+# https://w3id.org/saref#SetRelativeLevelCommand
+<https://w3id.org/saref#SetRelativeLevelCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#SetRelativeLevelCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#SetLevelCommand> .
+<https://w3id.org/saref#SetRelativeLevelCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of set level command" .
+<https://w3id.org/saref#SetRelativeLevelCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Set relative level command" .
+# 
+# https://w3id.org/saref#Smoke
+<https://w3id.org/saref#Smoke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Smoke> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Smoke> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value that is measured in a unit of measure for smoke" .
+<https://w3id.org/saref#Smoke> <http://www.w3.org/2000/01/rdf-schema#label> "Smoke" .
+# 
+# https://w3id.org/saref#SmokeSensor
+<https://w3id.org/saref#SmokeSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
+<https://w3id.org/saref#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#consistsOf> .
+_:genid97 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Sensor> .
+<https://w3id.org/saref#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFunction> .
+_:genid98 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#EventFunction> .
+<https://w3id.org/saref#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFunction> .
+_:genid99 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#SensingFunction> .
+<https://w3id.org/saref#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#measuresProperty> .
+_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Smoke> .
+<https://w3id.org/saref#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid101 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#Safety> .
+<https://w3id.org/saref#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that consists of a sensor, has category saref:Sensor, performs the saref:SensingFunction and saref:EventFunction (which notifies that a certain threshold has been exceeded), and is used for the purpose of sensing a property of type saref:Smoke." .
+<https://w3id.org/saref#SmokeSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Smoke sensor" .
+# 
+# https://w3id.org/saref#StartCommand
+<https://w3id.org/saref#StartCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#StartCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#StartCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid102 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#actsUpon> .
+_:genid102 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#StartStopState> .
+<https://w3id.org/saref#StartCommand> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/saref#StopCommand> .
+<https://w3id.org/saref#StartCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#StartCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Start command" .
+# 
+# https://w3id.org/saref#StartState
+<https://w3id.org/saref#StartState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#StartState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#StartStopState> .
+<https://w3id.org/saref#StartState> <http://www.w3.org/2000/01/rdf-schema#comment> "The state of a device that is STARTED" .
+<https://w3id.org/saref#StartState> <http://www.w3.org/2000/01/rdf-schema#label> "Start state" .
+# 
+# https://w3id.org/saref#StartStopFunction
+<https://w3id.org/saref#StartStopFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#StartStopFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#ActuatingFunction> .
+<https://w3id.org/saref#StartStopFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasCommand> .
+_:genid103 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid104 <http://www.w3.org/2002/07/owl#unionOf> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#StartCommand> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/saref#StopCommand> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/saref#StartStopFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuating function that allows to start and stop a device" .
+<https://w3id.org/saref#StartStopFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Start stop function" .
+# 
+# https://w3id.org/saref#StartStopState
+<https://w3id.org/saref#StartStopState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#StartStopState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#State> .
+<https://w3id.org/saref#StartStopState> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of state" .
+<https://w3id.org/saref#StartStopState> <http://www.w3.org/2000/01/rdf-schema#label> "Start stop state" .
+# 
+# https://w3id.org/saref#State
+<https://w3id.org/saref#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#State> <http://www.w3.org/2000/01/rdf-schema#comment> "The state in which a device can be found, e.g, ON/OFF/STANDBY, or ONLINE/OFFLINE. We propose here a list of states that are relevant for the purpose of SAREF, but this list can be extended." .
+<https://w3id.org/saref#State> <http://www.w3.org/2000/01/rdf-schema#label> "State" .
+# 
+# https://w3id.org/saref#StepDownCommand
+<https://w3id.org/saref#StepDownCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#StepDownCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#StepDownCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#actsUpon> .
+_:genid107 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#MultiLevelState> .
+<https://w3id.org/saref#StepDownCommand> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/saref#StepUpCommand> .
+<https://w3id.org/saref#StepDownCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#StepDownCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Step down command" .
+# 
+# https://w3id.org/saref#StepUpCommand
+<https://w3id.org/saref#StepUpCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#StepUpCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#StepUpCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#actsUpon> .
+_:genid108 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#MultiLevelState> .
+<https://w3id.org/saref#StepUpCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#StepUpCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Step up command" .
+# 
+# https://w3id.org/saref#StopCommand
+<https://w3id.org/saref#StopCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#StopCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#StopCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#actsUpon> .
+_:genid109 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#StartStopState> .
+<https://w3id.org/saref#StopCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#StopCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Stop command" .
+# 
+# https://w3id.org/saref#StopState
+<https://w3id.org/saref#StopState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#StopState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#StartStopState> .
+<https://w3id.org/saref#StopState> <http://www.w3.org/2000/01/rdf-schema#comment> "The state of a device that is STOPPED" .
+<https://w3id.org/saref#StopState> <http://www.w3.org/2000/01/rdf-schema#label> "Stop state" .
+# 
+# https://w3id.org/saref#Storage
+<https://w3id.org/saref#Storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Storage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#EnergyRelated> .
+<https://w3id.org/saref#Storage> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of energy-related device that stores energy" .
+<https://w3id.org/saref#Storage> <http://www.w3.org/2000/01/rdf-schema#label> "Storage" .
+# 
+# https://w3id.org/saref#Switch
+<https://w3id.org/saref#Switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Actuator> .
+<https://w3id.org/saref#Switch> <http://www.w3.org/2000/01/rdf-schema#comment> "A device of category saref:Actuator that performs an actuating function of type saref:OnOffFunction or saref:OpenCloseFunction" .
+<https://w3id.org/saref#Switch> <http://www.w3.org/2000/01/rdf-schema#label> "Switch" .
+# 
+# https://w3id.org/saref#SwitchOnService
+<https://w3id.org/saref#SwitchOnService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#SwitchOnService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Service> .
+<https://w3id.org/saref#SwitchOnService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isOfferedBy> .
+_:genid110 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#LightSwitch> .
+<https://w3id.org/saref#SwitchOnService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid111 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#represents> .
+_:genid111 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#OnOffFunction> .
+<https://w3id.org/saref#SwitchOnService> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of service that represents an on/off function to the network" .
+<https://w3id.org/saref#SwitchOnService> <http://www.w3.org/2000/01/rdf-schema#label> "Switch on service" .
+# 
+# https://w3id.org/saref#Task
+<https://w3id.org/saref#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isAccomplishedBy> .
+_:genid112 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid112 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "The goal for which a device is designed (from a user perspective). For example, a washing machine is designed for the task of washing. We propose here a list of tasks that are relevant for the purpose of SAREF, but this list can be extended." .
+<https://w3id.org/saref#Task> <http://www.w3.org/2000/01/rdf-schema#label> "Task" .
+# 
+# https://w3id.org/saref#Temperature
+<https://w3id.org/saref#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)" .
+<https://w3id.org/saref#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature" .
+# 
+# https://w3id.org/saref#TemperatureSensor
+<https://w3id.org/saref#TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
+<https://w3id.org/saref#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid113 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#consistsOf> .
+_:genid113 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Sensor> .
+<https://w3id.org/saref#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFunction> .
+_:genid114 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#SensingFunction> .
+<https://w3id.org/saref#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#measuresProperty> .
+_:genid115 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Temperature> .
+<https://w3id.org/saref#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid116 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#Comfort> .
+<https://w3id.org/saref#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that consists of a sensor, has category saref:Sensor, performs the saref:SensingFunction and is used for the purpose of sensing a property of type saref:Temperature" .
+<https://w3id.org/saref#TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature sensor" .
+# 
+# https://w3id.org/saref#TemperatureUnit
+<https://w3id.org/saref#TemperatureUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#TemperatureUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#TemperatureUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure for temperature" .
+<https://w3id.org/saref#TemperatureUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature unit" .
+# 
+# https://w3id.org/saref#Time
+<https://w3id.org/saref#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#consistsOf> .
+_:genid117 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2006/time#TemporalEntity> .
+<https://w3id.org/saref#Time> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property that allows to specify the time concept in terms of instants or intervals according to the imported W3C Time ontology." .
+<https://w3id.org/saref#Time> <http://www.w3.org/2000/01/rdf-schema#label> "Time" .
+# 
+# https://w3id.org/saref#ToggleCommand
+<https://w3id.org/saref#ToggleCommand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#ToggleCommand> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Command> .
+<https://w3id.org/saref#ToggleCommand> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of command" .
+<https://w3id.org/saref#ToggleCommand> <http://www.w3.org/2000/01/rdf-schema#label> "Toggle command" .
+# 
+# https://w3id.org/saref#UnitOfMeasure
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure is a standard for measurement of a quantity, such as a Property. For example,  Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of SAREF, but this list can be extended, also using some other ontologies rather than the Ontology of units of Measure (OM)." .
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.wurvoc.org/vocabularies/om-1.6/Unit_of_measure> .
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Unit of measure" .
+# 
+# https://w3id.org/saref#WashingMachine
+<https://w3id.org/saref#WashingMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Appliance> .
+<https://w3id.org/saref#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Load> .
+<https://w3id.org/saref#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid118 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFunction> .
+_:genid118 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#StartStopFunction> .
+<https://w3id.org/saref#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasProfile> .
+_:genid119 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Profile> .
+<https://w3id.org/saref#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasState> .
+_:genid120 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#StartStopState> .
+<https://w3id.org/saref#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid121 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#accomplishes> .
+_:genid121 <http://www.w3.org/2002/07/owl#hasValue> <https://w3id.org/saref#Washing> .
+<https://w3id.org/saref#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#comment> "A device of category saref:Appliance and saref:Load that accomplishes the task saref:Washing, performs an actuating function of type saref:StartStopFunction, can be found in the state saref:StartStopState, and can have a saref:Profile that characterizes its energy consumption. " .
+<https://w3id.org/saref#WashingMachine> <http://www.w3.org/2000/01/rdf-schema#label> "Washing machine" .
+# 
+# https://w3id.org/saref#Water
+<https://w3id.org/saref#Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Water> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Commodity> .
+<https://w3id.org/saref#Water> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of commodity" .
+<https://w3id.org/saref#Water> <http://www.w3.org/2000/01/rdf-schema#label> "Water" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/United_States_dollar
+<http://www.wurvoc.org/vocabularies/om-1.8/United_States_dollar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/United_States_dollar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Currency> .
+<http://www.wurvoc.org/vocabularies/om-1.8/United_States_dollar> <http://www.w3.org/2000/01/rdf-schema#label> "United States dollar"@en .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/bar
+<http://www.wurvoc.org/vocabularies/om-1.8/bar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/bar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#PressureUnit> .
+<http://www.wurvoc.org/vocabularies/om-1.8/bar> <http://www.w3.org/2000/01/rdf-schema#comment> "The bar is a unit of pressure defined as 100 000 pascal."@en .
+<http://www.wurvoc.org/vocabularies/om-1.8/bar> <http://www.w3.org/2000/01/rdf-schema#label> "bar" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/degree_Celsius
+<http://www.wurvoc.org/vocabularies/om-1.8/degree_Celsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/degree_Celsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#TemperatureUnit> .
+<http://www.wurvoc.org/vocabularies/om-1.8/degree_Celsius> <http://www.w3.org/2000/01/rdf-schema#comment> "The degree Celsius is a unit of temperature defined as 1 kelvin."@en .
+<http://www.wurvoc.org/vocabularies/om-1.8/degree_Celsius> <http://www.w3.org/2000/01/rdf-schema#label> "degree Celsius" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/degree_Fahrenheit
+<http://www.wurvoc.org/vocabularies/om-1.8/degree_Fahrenheit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/degree_Fahrenheit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#TemperatureUnit> .
+<http://www.wurvoc.org/vocabularies/om-1.8/degree_Fahrenheit> <http://www.w3.org/2000/01/rdf-schema#comment> "The degree Fahrenheit is a unit of temperature defined as 5.555556e-1 kelvin."@en .
+<http://www.wurvoc.org/vocabularies/om-1.8/degree_Fahrenheit> <http://www.w3.org/2000/01/rdf-schema#label> "degree Fahrenheit" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/euro
+<http://www.wurvoc.org/vocabularies/om-1.8/euro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/euro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Currency> .
+<http://www.wurvoc.org/vocabularies/om-1.8/euro> <http://www.w3.org/2000/01/rdf-schema#label> "euro"@en .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/kelvin
+<http://www.wurvoc.org/vocabularies/om-1.8/kelvin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/kelvin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#TemperatureUnit> .
+<http://www.wurvoc.org/vocabularies/om-1.8/kelvin> <http://www.w3.org/2000/01/rdf-schema#comment> "The kelvin is a unit of temperature defined as 1/273.16 of the thermodynamic temperature of the triple point of water."@en .
+<http://www.wurvoc.org/vocabularies/om-1.8/kelvin> <http://www.w3.org/2000/01/rdf-schema#label> "kelvin" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/kilowatt
+<http://www.wurvoc.org/vocabularies/om-1.8/kilowatt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/kilowatt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#PowerUnit> .
+<http://www.wurvoc.org/vocabularies/om-1.8/kilowatt> <http://www.w3.org/2000/01/rdf-schema#label> "kilowatt" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/kilowatt_hour
+<http://www.wurvoc.org/vocabularies/om-1.8/kilowatt_hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/kilowatt_hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#EnergyUnit> .
+<http://www.wurvoc.org/vocabularies/om-1.8/kilowatt_hour> <http://www.w3.org/2000/01/rdf-schema#comment> "The kilowatt hour is a unit of energy equal to 1,000 watt-hours, or 3.6 megajoules." .
+<http://www.wurvoc.org/vocabularies/om-1.8/kilowatt_hour> <http://www.w3.org/2000/01/rdf-schema#label> "kilowatt hour" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/lux
+<http://www.wurvoc.org/vocabularies/om-1.8/lux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/lux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#IlluminanceUnit> .
+<http://www.wurvoc.org/vocabularies/om-1.8/lux> <http://www.w3.org/2000/01/rdf-schema#comment> "The lux is a unit of illuminance defined as lumen divided by square metre = candela times steradian divided by square metre."@en .
+<http://www.wurvoc.org/vocabularies/om-1.8/lux> <http://www.w3.org/2000/01/rdf-schema#label> "lux" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/pascal
+<http://www.wurvoc.org/vocabularies/om-1.8/pascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/pascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#PressureUnit> .
+<http://www.wurvoc.org/vocabularies/om-1.8/pascal> <http://www.w3.org/2000/01/rdf-schema#comment> "The pascal is a unit of pressure and stress defined as newton divided by square metre = joule divided by cubic metre = kilogram divided by metre second squared."@en .
+<http://www.wurvoc.org/vocabularies/om-1.8/pascal> <http://www.w3.org/2000/01/rdf-schema#label> "pascal" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/pound_sterling
+<http://www.wurvoc.org/vocabularies/om-1.8/pound_sterling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/pound_sterling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Currency> .
+<http://www.wurvoc.org/vocabularies/om-1.8/pound_sterling> <http://www.w3.org/2000/01/rdf-schema#label> "Great Britain pound sterling" .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/watt
+<http://www.wurvoc.org/vocabularies/om-1.8/watt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.wurvoc.org/vocabularies/om-1.8/watt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#PowerUnit> .
+<http://www.wurvoc.org/vocabularies/om-1.8/watt> <http://www.w3.org/2000/01/rdf-schema#comment> "The watt is a unit of power defined as joule divided by second = newton times metre divided by second = volt times ampere = kilogram times square metre divided by second to the power 3."@en .
+<http://www.wurvoc.org/vocabularies/om-1.8/watt> <http://www.w3.org/2000/01/rdf-schema#label> "watt" .
+# 
+# https://w3id.org/saref#Cleaning
+<https://w3id.org/saref#Cleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Cleaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#Cleaning> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of task for which a device is designed" .
+<https://w3id.org/saref#Cleaning> <http://www.w3.org/2000/01/rdf-schema#label> "Cleaning" .
+# 
+# https://w3id.org/saref#Close
+<https://w3id.org/saref#Close> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Close> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#CloseCommand> .
+<https://w3id.org/saref#Close> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#CloseState> .
+<https://w3id.org/saref#Close> <http://www.w3.org/2000/01/rdf-schema#comment> "The value CLOSE. It is used to instantiate different classes such as the CloseCommand class and CloseState class, for example. " .
+<https://w3id.org/saref#Close> <http://www.w3.org/2000/01/rdf-schema#label> "Close" .
+# 
+# https://w3id.org/saref#Comfort
+<https://w3id.org/saref#Comfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Comfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#Comfort> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of task for which a device is designed" .
+<https://w3id.org/saref#Comfort> <http://www.w3.org/2000/01/rdf-schema#label> "Comfort" .
+# 
+# https://w3id.org/saref#Drying
+<https://w3id.org/saref#Drying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Drying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#Drying> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of task for which a device is designed" .
+<https://w3id.org/saref#Drying> <http://www.w3.org/2000/01/rdf-schema#label> "Drying" .
+# 
+# https://w3id.org/saref#EnergyEfficiency
+<https://w3id.org/saref#EnergyEfficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#EnergyEfficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#EnergyEfficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of task for which a device is designed" .
+<https://w3id.org/saref#EnergyEfficiency> <http://www.w3.org/2000/01/rdf-schema#label> "EnergyEfficiency" .
+# 
+# https://w3id.org/saref#Entertainment
+<https://w3id.org/saref#Entertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Entertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#Entertainment> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of task for which a device is designed" .
+<https://w3id.org/saref#Entertainment> <http://www.w3.org/2000/01/rdf-schema#label> "Entertainment" .
+# 
+# https://w3id.org/saref#GetCurrentMeterValue
+<https://w3id.org/saref#GetCurrentMeterValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#GetCurrentMeterValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#GetCurrentMeterValueCommand> .
+<https://w3id.org/saref#GetCurrentMeterValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The command GET CURRENT METER VALUE. It is used to instantiate the GetCurrentMeterValueCommand class. " .
+<https://w3id.org/saref#GetCurrentMeterValue> <http://www.w3.org/2000/01/rdf-schema#label> "Get current meter value" .
+# 
+# https://w3id.org/saref#GetMeterData
+<https://w3id.org/saref#GetMeterData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#GetMeterData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#GetMeterDataCommand> .
+<https://w3id.org/saref#GetMeterData> <http://www.w3.org/2000/01/rdf-schema#comment> "The command GET METER DATA. It is used to instantiate the GetMeterDataCommand class. " .
+<https://w3id.org/saref#GetMeterData> <http://www.w3.org/2000/01/rdf-schema#label> "Get meter data" .
+# 
+# https://w3id.org/saref#GetMeterHistory
+<https://w3id.org/saref#GetMeterHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#GetMeterHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#GetMeterHistoryCommand> .
+<https://w3id.org/saref#GetMeterHistory> <http://www.w3.org/2000/01/rdf-schema#comment> "The command GET METER HISTORY. It is used to instantiate the GetMeterHistoryCommand class. " .
+<https://w3id.org/saref#GetMeterHistory> <http://www.w3.org/2000/01/rdf-schema#label> "Get meter history" .
+# 
+# https://w3id.org/saref#GetSensingData
+<https://w3id.org/saref#GetSensingData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#GetSensingData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#GetSensingDataCommand> .
+<https://w3id.org/saref#GetSensingData> <http://www.w3.org/2000/01/rdf-schema#comment> "The command GET SENSING DATA. It is used to instantiate the GetSensingDataCommand class. " .
+<https://w3id.org/saref#GetSensingData> <http://www.w3.org/2000/01/rdf-schema#label> "Get sensing data" .
+# 
+# https://w3id.org/saref#Lighting
+<https://w3id.org/saref#Lighting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Lighting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#Lighting> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of task for which a device is designed" .
+<https://w3id.org/saref#Lighting> <http://www.w3.org/2000/01/rdf-schema#label> "Lighting" .
+# 
+# https://w3id.org/saref#MeterReading
+<https://w3id.org/saref#MeterReading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#MeterReading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#MeterReading> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of task for which a device is designed" .
+<https://w3id.org/saref#MeterReading> <http://www.w3.org/2000/01/rdf-schema#label> "Meter reading" .
+# 
+# https://w3id.org/saref#Notify
+<https://w3id.org/saref#Notify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Notify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#NotifyCommand> .
+<https://w3id.org/saref#Notify> <http://www.w3.org/2000/01/rdf-schema#comment> "The value NOTIFY. It is used to instantiate the NotifyCommand." .
+<https://w3id.org/saref#Notify> <http://www.w3.org/2000/01/rdf-schema#label> "Notify" .
+# 
+# https://w3id.org/saref#Off
+<https://w3id.org/saref#Off> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Off> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#OffCommand> .
+<https://w3id.org/saref#Off> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#OffState> .
+<https://w3id.org/saref#Off> <http://www.w3.org/2000/01/rdf-schema#comment> "The value OFF. It is used to instantiate different classes such as the OffCommand class and OffState class. " .
+<https://w3id.org/saref#Off> <http://www.w3.org/2000/01/rdf-schema#label> "Off " .
+# 
+# https://w3id.org/saref#On
+<https://w3id.org/saref#On> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#On> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#OnCommand> .
+<https://w3id.org/saref#On> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#OnState> .
+<https://w3id.org/saref#On> <http://www.w3.org/2000/01/rdf-schema#comment> "The value ON. It is used to instantiate different classes such as the OnCommand class and OnState class. " .
+<https://w3id.org/saref#On> <http://www.w3.org/2000/01/rdf-schema#label> "On" .
+# 
+# https://w3id.org/saref#Open
+<https://w3id.org/saref#Open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#OpenCommand> .
+<https://w3id.org/saref#Open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#OpenState> .
+<https://w3id.org/saref#Open> <http://www.w3.org/2000/01/rdf-schema#comment> "The value OPEN. It is used to instantiate different classes such as the OpenCommand class and OpenState class. " .
+<https://w3id.org/saref#Open> <http://www.w3.org/2000/01/rdf-schema#label> "Open" .
+# 
+# https://w3id.org/saref#Pause
+<https://w3id.org/saref#Pause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Pause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#PauseCommand> .
+<https://w3id.org/saref#Pause> <http://www.w3.org/2000/01/rdf-schema#comment> "The value PAUSE. It is used to instantiate classes such as the PauseCommand class." .
+<https://w3id.org/saref#Pause> <http://www.w3.org/2000/01/rdf-schema#label> "Pause" .
+# 
+# https://w3id.org/saref#Safety
+<https://w3id.org/saref#Safety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Safety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#Safety> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of task for which a device is designed" .
+<https://w3id.org/saref#Safety> <http://www.w3.org/2000/01/rdf-schema#label> "Safety" .
+# 
+# https://w3id.org/saref#SetAbsoluteLevel
+<https://w3id.org/saref#SetAbsoluteLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#SetAbsoluteLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#SetAbsoluteLevelCommand> .
+<https://w3id.org/saref#SetAbsoluteLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The value SET ABSOLUTE LEVEL. It is used to instantiate classes such as the SetAbsoluteLevelCommand class. " .
+<https://w3id.org/saref#SetAbsoluteLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Set absolute level" .
+# 
+# https://w3id.org/saref#SetRelativeLevel
+<https://w3id.org/saref#SetRelativeLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#SetRelativeLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#SetRelativeLevelCommand> .
+<https://w3id.org/saref#SetRelativeLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The value SET RELATIVE LEVEL. It is used to instantiate classes such as the SetRelativeLevelCommand class. " .
+<https://w3id.org/saref#SetRelativeLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Set relative level" .
+# 
+# https://w3id.org/saref#Start
+<https://w3id.org/saref#Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#StartCommand> .
+<https://w3id.org/saref#Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#StartState> .
+<https://w3id.org/saref#Start> <http://www.w3.org/2000/01/rdf-schema#comment> "The value START. It is used to instantiate different classes such as the StartCommand class and StartState class. " .
+<https://w3id.org/saref#Start> <http://www.w3.org/2000/01/rdf-schema#label> "Start" .
+# 
+# https://w3id.org/saref#StepDown
+<https://w3id.org/saref#StepDown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#StepDown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#StepDownCommand> .
+<https://w3id.org/saref#StepDown> <http://www.w3.org/2000/01/rdf-schema#comment> "The value STEP DOWN. It is used to instantiate the StepDownCommand class. " .
+<https://w3id.org/saref#StepDown> <http://www.w3.org/2000/01/rdf-schema#label> "Step down" .
+# 
+# https://w3id.org/saref#StepUp
+<https://w3id.org/saref#StepUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#StepUp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#StepUpCommand> .
+<https://w3id.org/saref#StepUp> <http://www.w3.org/2000/01/rdf-schema#comment> "The value STEP UP. It is used to instantiate the StepUpCommand class. " .
+<https://w3id.org/saref#StepUp> <http://www.w3.org/2000/01/rdf-schema#label> "Step up" .
+# 
+# https://w3id.org/saref#Stop
+<https://w3id.org/saref#Stop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Stop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#StopCommand> .
+<https://w3id.org/saref#Stop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#StopState> .
+<https://w3id.org/saref#Stop> <http://www.w3.org/2000/01/rdf-schema#comment> "The value STOP. It is used to instantiate different classes such as the StopCommand class and StopState class. " .
+<https://w3id.org/saref#Stop> <http://www.w3.org/2000/01/rdf-schema#label> "Stop" .
+# 
+# https://w3id.org/saref#Toggle
+<https://w3id.org/saref#Toggle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Toggle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#ToggleCommand> .
+<https://w3id.org/saref#Toggle> <http://www.w3.org/2000/01/rdf-schema#comment> "The value TOGGLE. It is used to instantiate the the ToggleCommand class" .
+<https://w3id.org/saref#Toggle> <http://www.w3.org/2000/01/rdf-schema#label> "Toggle" .
+# 
+# https://w3id.org/saref#Washing
+<https://w3id.org/saref#Washing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#Washing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#Washing> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of task for which a device is designed" .
+<https://w3id.org/saref#Washing> <http://www.w3.org/2000/01/rdf-schema#label> "Washing" .
+# 
+# https://w3id.org/saref#WellBeing
+<https://w3id.org/saref#WellBeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#WellBeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Task> .
+<https://w3id.org/saref#WellBeing> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of task for which a device is designed" .
+<https://w3id.org/saref#WellBeing> <http://www.w3.org/2000/01/rdf-schema#label> "WellBeing" .
+# 
+# https://w3id.org/saref#watt_hour
+<https://w3id.org/saref#watt_hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/saref#watt_hour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#EnergyUnit> .
+<https://w3id.org/saref#watt_hour> <http://www.w3.org/2000/01/rdf-schema#comment> "The Watt Hor is a unit of energy equivalent to one watt (1 W) of power expended for one hour (1 h) of time. An energy expenditure of 1 Wh represents 3600 joules " .
+<https://w3id.org/saref#watt_hour> <http://www.w3.org/2000/01/rdf-schema#label> "watt hour" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

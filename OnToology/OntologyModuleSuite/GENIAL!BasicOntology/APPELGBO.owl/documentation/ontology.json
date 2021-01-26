@@ -1,0 +1,40 @@
+[ {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/APPEL/component"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/APPEL/component"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/APPEL/component"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/APPEL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/APPEL/component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "something which is logically and technically separate and intuitively understood for anything that can fit the description of a component (including anything hardware or software)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#element"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

@@ -1,0 +1,1073 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#InputDataPoint"
+    }, {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation"
+    }, {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OutputDataPoint"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Command"
+    }, {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#float"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "xs:NCName"
+    }, {
+      "@value" : "xs:anySimpleType"
+    }, {
+      "@value" : "xs:anyType"
+    }, {
+      "@value" : "xs:anyURI"
+    }, {
+      "@value" : "xs:base64Binary"
+    }, {
+      "@value" : "xs:boolean"
+    }, {
+      "@value" : "xs:dateTime"
+    }, {
+      "@value" : "xs:decimal"
+    }, {
+      "@value" : "xs:double"
+    }, {
+      "@value" : "xs:duration"
+    }, {
+      "@value" : "xs:float"
+    }, {
+      "@value" : "xs:hexBinary"
+    }, {
+      "@value" : "xs:integer"
+    }, {
+      "@value" : "xs:language"
+    }, {
+      "@value" : "xs:nonNegativeInteger"
+    }, {
+      "@value" : "xs:normalizedString"
+    }, {
+      "@value" : "xs:positiveInteger"
+    }, {
+      "@value" : "xs:string"
+    }, {
+      "@value" : "xs:token"
+    }, {
+      "@value" : "xs:unsignedInt"
+    }, {
+      "@value" : "xs:unsignedLong"
+    }, {
+      "@value" : "xs:unsignedShort"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation"
+    }, {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Command"
+    }, {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation"
+    }, {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OperationInput"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasInput"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#InputDataPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasInputDataPoint"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OperationOutput"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOutput"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OutputDataPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOutputDataPoint"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Service"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasService"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Function"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasFunction"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Command"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#exposesCommand"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OperationInput"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasInput"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OperationOutput"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOutput"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#exposesFunction"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Function"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#InputDataPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasInputDataPoint"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOperation"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OutputDataPoint"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOutputDataPoint"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasSubStructure"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#ThingProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasThingProperty"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Aspect"
+    }, {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+    } ]
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This file contains the Base Ontology of oneM2M as specified in TS-0012\n\n=========================================\nCopyright Notification\n\nThe oneM2M Partners authorize you to copy this document, provided that you retain all copyright and other proprietary notices contained in the original materials on any copies of the materials and that you comply strictly with these terms.\nThis copyright permission does not constitute an endorsement of the products or services, nor does it encompass the granting of any patent rights. \nThe oneM2M Partners assume no responsibility for errors or omissions in this document.\n\n(c) 2016, oneM2M Partners Type 1 (ARIB, ATIS, CCSA, ETSI, TIA, TSDSI, TTA, TTC). All rights reserved.\n\nNotice of Disclaimer and Limitation of Liability\n\nThe information provided in this document is directed solely to professionals who have the appropriate degree of experience to understand and interpret its contents in accordance with generally accepted engineering or other professional standards and applicable regulations.\nNo recommendation as to products or vendors is made or should be implied.\n\nNO REPRESENTATION OR WARRANTY IS MADE THAT THE INFORMATION IS TECHNICALLY ACCURATE OR SUFFICIENT OR CONFORMS TO ANY STATUTE,GOVERNMENTAL RULE OR EGULATION, AND FURTHER, NO REPRESENTATION OR WARRANTY IS MADE OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR AGAINST INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS.\nNO oneM2M PARTNER TYPE 1 SHALL BE LIABLE, BEYOND THE AMOUNT OF ANY SUM RECEIVED IN PAYMENT BY THAT PARTNER FOR THIS DOCUMENT, WITH RESPECT TO ANY CLAIM, AND IN NO EVENT SHALL oneM2M BE LIABLE FOR LOST PROFITS OR OTHER INCIDENTAL OR ON SEQUENTIAL DAMAGES.\noneM2M EXPRESSLY ADVISES ANY AND ALL USE OF OR RELIANCE UPON THIS INFORMATION PROVIDED IN THIS DOCUMENT IS AT THE RISK OF THE USER.\n========================================="
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/3_6_0/base_ontology.owl"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#AreaNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An AreaNetwork (Class: AreaNetwork) is a Network that provides data transport services between an Interworked Device and the oneM2M System. Different area Networks can use heterogeneous network technologies that may or may not support IP access."
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Aspect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Aspect (Class: Aspect) describes the real-world aspect that a functionality relates to. Aspect is also used to describe the quality or kind OperationInput- or OperationOutput variables. \nThe Aspect could be a (physical or non-physical) entity or it could be a quality"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Command (Class: Command) represents an action that can be performed to support the Functionality. A Command is the human understandable name of that action that is invoked in a device or is reported by the device. An Operation exposes a Command to the network. OperationInput and OperationOutput of the related Operation can parameterize the command.\ne.g. the Functionality \"dimming-functionality\" of a light switch that remotely controls a light could have a Command \"setLightIntensity\", with a parameter that has values 0 - 100 %.\n - Also InputDataPoints and OutputDataPoints expose Commands to the network. When a Device communicates in a RESTful way then changing (UPDATEing) an InputDataPoint triggers an action in the Device once the Device has read out the data from the InputDataPoint.\n - Similarly, when a Device sets the data of an OutputDataPoint then it provides state information about the Device.\nNote: In RESTful systems the names of Input- and OutputDataPoints are usually chosen in such a way that they express the Command, i.e. the human-understandable meaning (e.g. a binary InputDataPoint of a lightswitch could have a name \"Set_Light_Status\"). In such a case the Command coincides with the DataPoint."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid55"
+  }, {
+    "@id" : "_:genid56"
+  }, {
+    "@id" : "_:genid57"
+  }, {
+    "@id" : "_:genid58"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#ControllingFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A ControllingFunctionality (Class: ControllingFunctionality) represents a functionality  that has impacts on the real world, but does not gather data. In general a ControllingFunctionality has Commands (and/or Operations of its related Services) that receives Input data\nE.g. a thermostat would have \"temperature-adjustment\" as a ControllingFunctionality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Function"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Device (Class: Device) is a object designed to accomplish a particular task. A Device contains some logic and is producer and/or consumer of data that are exchanged via its Services with other oneM2M entities (Devices, Things) in the network. A Device may be a physical or non-physical entity.\nIn the context of oneM2M a Device is always assumed to be capable of communicating electronically via a network.\n - In order to accomplish its task, the device performs one or more functionalities \n - These functionalities are exposed in the network as Services of the Device.\n - A Device can be composed of several (sub-) Devices \n - Each Device (including sub-Devices) needs to be individually addressable in the network."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Thing"
+  }, {
+    "@id" : "_:genid59"
+  }, {
+    "@id" : "_:genid60"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Functionality (Class: Functionality) represents the functionality necessary to accomplish the task for which a Device is designed. A device can be designed to perform more than one functionality.\nThe functionality exhibits the – human understandable – meaning what the device \"does\". \nA Functionality refers to (e.g. observes or influences) some real-world aspect(s), that can be modelled as a Class: Aspect.\nE.g. considering a \"light switch\" then a related Functionality could be \"Controlling_ON_OFF\" or \"Controlling Brightness\". These functionalities would refer to an Aspect \"light-control\".\n\nA Functionality of a Device can be influenced / observed by a human user through the Commands that this Functionality has and that are offered to the user"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#GET_InputDataPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "GET_InputDataPoint (Class: GET_InputDataPoint) is an Operation that may be offered by a Device to trigger the device to retrieve the data of an InputDataPoint \n(e.g. outside of the schedule when the device normally retrieves data from that DataPoint)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#InputDataPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "InputDataPoint (Class: InputDataPoint) is a Variable of a Service that is accessed by a RESTful Device in its environment and that the Device reads out autonomously (e.g. at periodic times).\nTo enable a third party to instruct the device to retrieve (out of schedule) the current value of a InputputDataPoint devices often also offer a GET_InputDataPoint Operation to trigger the device to retrieve the data from the InputDataPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#InterworkedDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An InterworkedDevice (Class: InterworkedDevice) is a Device – e.g. in an Area Network – that does not support oneM2M interfaces and can only be accessed from the oneM2M System by communicating with a \"proxied\" (virtual) device that has been created by an Interworking Proxy Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Device"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#MeasuringFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A MeasuringFunctionality (Class: MeasuringFunctionality) represents a functionality that has no impacts on the real world, but only gathers data. In general a MeasuringFunctionality has Commands (and/or Operations of its related Services)  that generate Output data\nE.g. a temperature sensor would have \"temperature-sensing\" as a MeasuringFunctionality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Function"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#MetaData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "MetaData (Class: MetaData) contain data (like units, precision-ranges …) about a Variable or about an Aspect. \nE.g. the indoor temperature could have meta data: \"Degrees Celsius\""
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Operation (Class: Operation)  is the means of a Service to communicate in a procedure-type manner over the network (i.e. transmit data to/from other devices). It is the –machine interpretable- exposure of a –human understandable- Command to a network.\nAn Operation is transient. I.e. an Operation can be invoked, possibly produces output and is finished.\n - A non-oneM2M Device or a oneM2M entity (e.g. an AE) can invoke an Operation of the Device (oneM2M Device or InterworkedDevice) and that invocation can trigger some action in the Device. If an Operation has input data it may receive input data from \n - InputDataPoints (persistent resources) and/or\n - OperationInput (transient resources, that are deleted when the Operation finished)\nand potentially produce output data into\n - OutputDataPoints (persistent resources) and/or\n - OperationOutput (transient resources, that are deleted when the Operation finished)\nAn Operation correlates the output data of the Operation to the input data that were used at Operation invokation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid61"
+  }, {
+    "@id" : "_:genid62"
+  }, {
+    "@id" : "_:genid63"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OperationInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "OperationInput (Class: OperationInput) describes an input of an Operation of a Service. OperationInput also describes the input of an Command."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OperationOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "OperationOutput (Class: OperationOutput) describes an output of an Operation. OperationOutput also describes the output of a Command. \n - An Operation/Command may have multiple OperationInputs and/or OperationOutputs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OutputDataPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "OutputDataPoint (Class: OutputDataPoint) is a Variable of a Service that is set by a RESTful Device in its environment and that the Device updates autonomously (e.g. at periodic times). To enable a third party to instruct the device to update (out of schedule) the current value of a OutputputDataPoint devices often also offer a SET_OutputDataPoint Operation to trigger the device to update the data of the OutputDataPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SET_OutputDataPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SET_OutputDataPoint (Class: SET_OutputDataPoint) is an Operation that may be offered by a Device to trigger the device to update the data of an OutputDataPoint \n(e.g. outside of the schedule when the device normally updates that DataPoint)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Service (Class: Service) is a electronic representation of a Functionality in a network. The Service exposes the Functionality to the network and makes it discoverable, registerable and remotely controllable in the network. \nA Service is offered by a device that wants (a certain set of) its Functionalities to be discoverable, registerable, remotely controllable by other devices in the network. \nA Service can expose one or more Functionalities and a Functionality can be exposed by one or more Services.\nThe (names of) Input- and Output DataPoints and Operations are only unique within  a Service. The Service to which they belong differentiates how they are addressed in the Device (e.g. via a port specific to the Service).\nNOTE: While a Functionality  describes the – human understandable – meaning of a Service of the device the Service is used to describe how such functionality is represented in a communication network and can be accessed by electronic means. The Service and its Operations is therefore dependent on the technology of the network, hard- and software of the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid64"
+  }, {
+    "@id" : "_:genid65"
+  }, {
+    "@id" : "_:genid66"
+  }, {
+    "@id" : "_:genid67"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SimpleTypeVariable (Class: SimpleTypeVariable) is a sub-class of class:Variable that only consists of Variables of simple xml types like xsd:integer, xsd:string…, potentially including lists and restrictions\n\nThe simple datatypes and –restrictions contained in 'https://www.w3.org/TR/xmlschema11-2' shall be referred to using the prefix: xs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  }, {
+    "@id" : "_:genid68"
+  }, {
+    "@id" : "_:genid69"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#StructuredTypeVariable"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#StructuredTypeVariable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Structured type variables are variables that are not SimpleType Variables"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  }, {
+    "@id" : "_:genid70"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Thing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Thing in oneM2M  (Class: Thing) is an entity that can be identified in the oneM2M System. \nA Thing that is not a Device is not able to conmmunicate electronically with its environment. However, the sub-class of Thing that is able to interact electronically is called a \"Device\".\nA Thing may have ThingProperties (Object Property: hasThingProperty). A Thing can have relations to other things (Object Property: hasThingRelation).\nSince a Thing that is not a Device is not able to conmmunicate electronically it cannot influence the value of its ThingProperties or being influenced by it. Similarly a Thing cannot document its - real-world - relationships (via hasThingRelation) to other Things.\n\nE.g. A room that is modelled in oneM2M would be a Thing that could have a room-temperature as a ThingProperty and could have a relationship \"isAdjacentTo\" to another room"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid71"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#ThingProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Variable that quantifies a property of a Thing. A ThingProperty can e.g. be observed or influenced by devices, or it constitutes static data about a Thing.\nE.g. the indoor temperature of the room could be a ThingProperty of a Thing \"room\".\nA ThingProperty of a Thing can concern a certain Aspect, e.g. the indoor temperature concerns the Aspect \"Temperature\" that could be measured by a temperature sensor.\nA ThingProperty of a Thing can have meta data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Variable (Class: Variable) constitutes a super class to the following classes: ThingProperty, OperationInput, OperationOutput, OperationState, InputDataPoint, OutputDataPoint, SimpleTypeVariable. Its members are entities that store some data (e.g. integers, text, or structured data) that can change over time. \nThese data of the Variable usually describe some real-world Aspects (e.g. a temperature) and can have MetaData (e.g. units, precision..)"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+    }, {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#StructuredTypeVariable"
+    } ]
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#VariableConversion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A VariableConversion (Class: VariableConversion) represents a conversion rule from the value range of one Variable into the value range of another Variable. The plain text specification of that rule is contained in the annotation property rdfs:comment"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#consistsOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Device can consist of (i.e. be composed) of several (sub-) Devices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Device"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#convertsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The conversion rule (the VariableConversion in the domain of Object Property: hasConversion) converts the value range of a given Variable (see 6.2.22 Object Property: hasConversion) into the value range of another Variable (the Variable in the range of Object Property: convertsTo)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#VariableConversion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#describes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Variable describes an Aspect (a quality or kind)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Aspect"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#exposesCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A –machine interpretable- Operation or an Input/OutputDataPoint of a Service exposes a –human understandable- Command to a network"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Command"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#exposesFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Service exposes a Functionality to the network and makes it discoverable, registerable and remotely controllable in the network"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Function"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasCommand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Functionality of a Device can be influenced / observed by a human user through the Commands that this Functionality has and that are offered to the user"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Command"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasConversion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Variable (in the domain of Object Property: hasConversion) can have a conversion rule (the VariableConversion in the range of Object Property: hasConversion) to convert the value range of the Variable into the value range of another Variable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#VariableConversion"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property specifies the restrictions on the data type of the SimpleTypeVariable.\nThe Data Property \"hasDataRestriction\" shall always be sub-classed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_length",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property specifies the exact number of characters or list items allowed of the SimpleTypeVariable. Must be equal to or greater than zero.\nit applies to: \n-\txs:string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_maxExclusive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property specifies the  upper bounds for numeric values (the value must be less than this value) allowed for the SimpleTypeVariable. \nIt applies to: \n-\txs:integer \n-\txs:float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_maxInclusive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property specifies the  upper bounds for numeric values (the value must be less than or equal to this value) allowed for the SimpleTypeVariable. \nIt applies to: \n-\txs:integer \n-\txs:float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_maxLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property specifies the maximum number of characters or list items allowed of the SimpleTypeVariable. Must be equal to or greater than zero.\nit applies to: \n-\txs:string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_minExclusive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property specifies the lower bounds for numeric values (the value must be greater than  this value) allowed for the SimpleTypeVariable. \nIt applies to: \n-\txs:integer \n-\txs:float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid20"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_minInclusive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property specifies the lower bounds for numeric values (the value must be greater than or equal to this value) allowed for the SimpleTypeVariable. \nIt applies to: \n-\txs:integer \n-\txs:float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid23"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_minLength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property specifies the minimum number of characters or list items allowed of the SimpleTypeVariable. Must be equal to or greater than zero.\nit applies to: \n-\txs:string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_pattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property specifies the restrictions of the SimpleTypeVariable to a subset of strings containing the exact sequence of characters that are acceptable\nit applies to: \n-\txs:string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property specifies the data type  of the SimpleTypeVariable as text string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "In order to accomplish its task, a Device performs one or more Functionalities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Function"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Operation of a Service of the Device or a Command of a Functionality of the Device can have transient OperationInput data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OperationInput"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasInputDataPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Service or an Operation of a Service of the Device can have InputDataPoints. Communicating entities write data into InputDataPoints and the Device retrieves the data at times according to an internal schedule.\n - An InputDataPoint is a persistent resource"
+  }, {
+    "@value" : "Note:\nIf an InputDataPoint is mandatory for a Service or Operation then \nthe cardinality of hasInputDataPoint must be - min 1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#InputDataPoint"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasMetaData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Value of a Thing can have MetaData (like units, precision-ranges)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#MetaData"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Service communicates by means of Operations over the network to transmit data to/from other devices"
+  }, {
+    "@value" : "Note:\nIf an Operation is mandatory for a Service then \nthe cardinality of hasOperation must be - min 1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An Operation of a Service of the Device or a Command of a Functionality of the Device can have transient OperationOutput data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OperationOutput"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOutputDataPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Service or an Operation of a Service of the Device can have OutputDataPoints. The Device writes data into OutputDataPoints at times according to an internal schedule and the communicating entitis retrieves the data.\n - An OutputDataPoint is a persistent resource"
+  }, {
+    "@value" : "Note:\nIf an OutputDataPoint is mandatory for a Service or Operation then \nthe cardinality of hasOutputDataPoint must be - min 1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OutputDataPoint"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Functionalities of a Device are exposed in the network as Services of the Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Service"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasSubService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Service may be composed of smaller, independent (sub)Services, e.g. re-usable servicemodules"
+  }, {
+    "@value" : "Note:\nIf an Service constist of at least one sub-Service then \nthe cardinality of hasSubService must be - min 1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Service"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasSubStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A structured Variable can be composed of (sub-)Variables"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#StructuredTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasThingAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This data property contains a description of a Thing. \nNote: Data Property: hasThingAnnotation should be used in cases where the annotation data do not change very often and/or where they are usually not the subject of semantic operations  (e.g. semantic discovery). Otherwise Object Propety: hasThingPropery should be used\nE.g. a certain type of Device could have the model (as a numeric description) or the name of the manufacturer (as a textual annotation)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasThingProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Thing may have properties that can be described by Values"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#ThingProperty"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasThingRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Thing may have relations to itself or to other Things (e-g. a Thing \"Room\" could have a relation \"has_Door\" with a Thing \"Door\")"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Thing"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This data property contains the value of the Variable if that value is part of the semantic description and is not contained in a different resource (identified by the oneM2MTargetURI data property). Storing the value of a Variable in a semantic description (i.e. as part of the RDF description in the semanticDescriptor resource) is useful for values that are relatively static (e.g. the name of the manufacturer).\n - Data properties \"hasValue\" and \"oneM2MTargetURI\" are mutually exclusive. Only one of the two shall be instantiated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#isDataList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An InterworkedDevice constitutes a part of an AreaNetwork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#InterworkedDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#AreaNetwork"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#netTechnologyCommunicationProtocol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Identification of a communication protocol (e.g. ZigBee_1_0)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#AreaNetwork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#netTechnologyPhysicalStandard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Identification of the physical properties of a Area Network technology (e.g. IEEE_802_15_4_2003_2_4GHz)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#AreaNetwork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#netTechnologyProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Identification of a profile (e.g. ZigBee_HA) of a Area Network technology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#AreaNetwork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#oneM2MAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This Data Property contains the name of the attribute of the oneM2M resource of type <flexContainer> or the the child resource of the oneM2M resource of type <container>  that is referenced with the oneM2MTargetURI and  that stores the value of the SimpleTypeVariable\n - if the resource-type of the  oneM2M resource that is referenced with the oneM2MTargetURI is <container> then this Data Property shall contain the text string \"#latest\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#oneM2MMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This data property contains a oneM2M CRUD Method through which the oneM2M instantiation of the value of the Variable can be manipulated by the communicating entity.\n - It contains the string \"RETRIEVE\" for retrieving the variable when the oneM2M resource is of type <container> or <flexContainer>. This applies to sub-classes: OperationOutput, OutputDatapoint, ThingProperty and OperationState\n - It contains the string \"CREATE\" for updating the variable when the oneM2M resource is of type <container>. This applies to sub-classes: OperationInput, InputDatapoint, ThingProperty\n - It contains the string \"UPDATE\" for updationg the variable when the oneM2M resource is of type <flexContainer>. This applies to sub-classes: OperationInput, InputDatapoint, ThingProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid49"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#oneM2MTargetURI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "oneM2MTargetURI (range data type: rdfs: Literal)\nThis data property contains the URI of a oneM2M resource (<container> or <flexContainer>) through which the oneM2M instantiation of the value of the Variable can be manipulated by the communicating entity. It can contain an absolute address or an address relative to the <semanticDescriptor> resource that holds the RDF description of the Variable. \nThat address could be e.g. \n - The value of the parentID for the <container> or <flexContainer> of a Input- or OutputDataPoint which has child-resource of type <semanticDescriptor> that holds the RDF description of the DataPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid52"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#refersTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Functionality of a Device can refer to a certain Aspect (a quality or kind) that is measured or controlled by that Functionality. \ne.g. a temperature sensor would refer to the Aspect \"Temperature\" that it measures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Aspect"
+  } ]
+}, {
+  "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#resourceDescriptorLink",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The resourceDescriptorLink annotation property is used to refer to a semanticDescriptor resource that contains more information about its subject. Its subject may be any individual and the range shall be the data literal or URI reference that represents the address of the semanticDescriptor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+} ]

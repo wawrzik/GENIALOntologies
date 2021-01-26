@@ -1,0 +1,212 @@
+[ {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "First draft from ZVEI roadmap. In respect to AP6."
+  }, {
+    "@value" : "This ontology provides a taxonomy of sensors."
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/acceleration_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "acceleration sensor"
+  }, {
+    "@value" : "g-sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inertial_sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/density_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "density sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/finger_movement_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "finger movement sensor"
+  }, {
+    "@value" : "finger print sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inductive_sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/flow_speed_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "flow speed sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/gyro_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "angular rate sensor"
+  }, {
+    "@value" : "gyro sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inertial_sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/humidity_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "humidity sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/imager_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "imager sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/light_sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inductive_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "capacitive sensor"
+  }, {
+    "@value" : "inductive sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inertial_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inertial sensor"
+  }, {
+    "@value" : "motion sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/mems_sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/ir_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IR sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/light_sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/light_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "light sensor"
+  }, {
+    "@value" : "optical sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/membrane_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "membrane sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/mems_sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/mems_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MEMS sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/pressure_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "p-sensor"
+  }, {
+    "@value" : "pressure sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/membrane_sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/prox_switch_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "prox switch sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/inductive_sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/radar_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "radar sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/rf_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RF sensor"
+  }, {
+    "@value" : "chemical sensor"
+  }, {
+    "@value" : "microwave sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/temperature_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "temperature sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/ultrasonic_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ultrasonic sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/membrane_sensor"
+  } ]
+}, {
+  "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/μphone_sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "microphone sensor"
+  }, {
+    "@value" : "μPhone sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology/membrane_sensor"
+  } ]
+} ]

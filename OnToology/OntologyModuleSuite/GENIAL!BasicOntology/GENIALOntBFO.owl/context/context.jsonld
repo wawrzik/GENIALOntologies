@@ -1,0 +1,205 @@
+{
+  "@context" : {
+    "implements" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#implements",
+      "@type" : "@id"
+    },
+    "BFO_0000019" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000019"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "social_object" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#social_object"
+    },
+    "BFO_0000031" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000031"
+    },
+    "testclass" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testclass"
+    },
+    "part_of" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of",
+      "@type" : "@id"
+    },
+    "non-system_level_element" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"
+    },
+    "actuator" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator"
+    },
+    "hasValue" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue",
+      "@type" : "@id"
+    },
+    "BFO_0000020" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000020"
+    },
+    "BFO_0000141" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000141"
+    },
+    "hardware_element" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "IAO_0000112" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000112"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "component" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#component"
+    },
+    "measure" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/measure"
+    },
+    "sensor" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor"
+    },
+    "property_of" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of",
+      "@type" : "@id"
+    },
+    "material_object" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#material_object"
+    },
+    "hasUpperBoundNumericalValue" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hasUpperBoundNumericalValue"
+    },
+    "element" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#element"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "IAO_0000232" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000232"
+    },
+    "hardware_component" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component"
+    },
+    "system_level_element" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element"
+    },
+    "legal_boundary_conditions" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#legal_boundary_conditions"
+    },
+    "has_part_directly" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly",
+      "@type" : "@id"
+    },
+    "quantity" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"
+    },
+    "context" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#context"
+    },
+    "hardware_subpart" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"
+    },
+    "part_of_directly" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly",
+      "@type" : "@id"
+    },
+    "dependency" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"
+    },
+    "software_component" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"
+    },
+    "hasNumericalValue" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"
+    },
+    "property" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#property"
+    },
+    "BFO_0000002" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000002"
+    },
+    "software_element" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"
+    },
+    "function" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#function"
+    },
+    "depends_on" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on",
+      "@type" : "@id"
+    },
+    "has_property" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "hasUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit",
+      "@type" : "@id"
+    },
+    "unit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/unit"
+    },
+    "BFO_0000034" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000034"
+    },
+    "has_part" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part",
+      "@type" : "@id"
+    },
+    "system" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#system"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "engineered_object" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object"
+    },
+    "hardware_part" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "is_implemented_by" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by",
+      "@type" : "@id"
+    },
+    "controller" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/controller"
+    },
+    "market" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#market"
+    },
+    "software_unit" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "BFO_0000030" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000030"
+    },
+    "hardware_elementary_subpart" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart"
+    },
+    "comprised_of" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of",
+      "@type" : "@id"
+    },
+    "hasLowerBoundNumericalValue" : {
+      "@id" : "http://cpsagila.cs.uni-kl.de/GENIALOnt/hasLowerBoundNumericalValue"
+    },
+    "IAO_0000115" : {
+      "@id" : "http://purl.obolibrary.org/obo/IAO_0000115"
+    }
+  }
+}

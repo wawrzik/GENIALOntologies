@@ -1,0 +1,1093 @@
+@prefix : <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB> .
+
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB> rdf:type owl:Ontology ;
+                                                     owl:versionIRI <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/0.1.1> ;
+                                                     owl:imports <http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1> ,
+                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.1> ;
+                                                     <http://purl.org/dc/elements/1.1/contributor> "Alexander Jung (University of Tübingen)" ,
+                                                                                                   "Frank Wawrzik (TU Kaiserslautern)" ,
+                                                                                                   "Konstantin Lübeck (University of Tübingen)" ;
+                                                     rdfs:comment "Knowledge base of hardware components and related parts." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> rdf:type owl:AnnotationProperty .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogic_funtional_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogic_funtional_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branch_functional_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branch_functional_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_controller
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_controller> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divide_funtional_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divide_funtional_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fifo_buffer
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fifo_buffer> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jump_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jump_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/logarithmic_memory_interconnect
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/logarithmic_memory_interconnect> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/main_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/main_memory> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_funtional_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_funtional_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/rr_cache
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/rr_cache> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> rdf:type owl:Class .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports> rdf:type owl:Class .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/measure
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory> ;
+                                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_accelerator_local_memory_bank_1> ,
+                                                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_accelerator_local_memory_bank_1> ,
+                                                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_accelerator_local_memory_bank_1> ,
+                                                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_accelerator_local_memory_bank_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogicfu_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogicfu_1> rdf:type owl:NamedIndividual ,
+                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogic_funtional_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branchfu_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branchfu_1> rdf:type owl:NamedIndividual ,
+                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branch_functional_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_1> rdf:type owl:NamedIndividual ,
+                                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator> ;
+                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank_1> ,
+                                                                                                                               <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register_1> ,
+                                                                                                                               <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/cnn_accelerator_controller_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register_1> rdf:type owl:NamedIndividual ,
+                                                                              <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory> ;
+                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_control_register_1> ,
+                                                                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_control_register1> ,
+                                                                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_control_register_1> ,
+                                                                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_control_register_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_accelerator_local_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_accelerator_local_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> ;
+                                                                                             <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_accelerator_local_memory_bank_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_control_register_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_control_register_1> rdf:type owl:NamedIndividual ,
+                                                                                         <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> ;
+                                                                                <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_control_register_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l1d_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l1d_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> ;
+                                                                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l1d_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l1l_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l1l_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> ;
+                                                                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l1l_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l2_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l2_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> ;
+                                                                        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l2_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_memory_bank_0
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_memory_bank_0> rdf:type owl:NamedIndividual ,
+                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> ;
+                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_memory_bank_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_register_file_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_register_file_1> rdf:type owl:NamedIndividual ,
+                                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dct_matrix
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/dct_matrix> rdf:type owl:NamedIndividual ,
+                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> ;
+                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels> ,
+                                                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/decode_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/decode_stage_1> rdf:type owl:NamedIndividual ,
+                                                                          <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage> ;
+                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_decode_stage_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divfu_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divfu_1> rdf:type owl:NamedIndividual ,
+                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divide_funtional_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_0
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_0> rdf:type owl:NamedIndividual ,
+                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage> ;
+                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/addsublogicfu_1> ,
+                                                                                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branchfu_1> ,
+                                                                                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/divfu_1> ,
+                                                                                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mulfu_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_1> rdf:type owl:NamedIndividual ,
+                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage> ;
+                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit_1> ,
+                                                                                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit_1> ;
+                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_execute_stage_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit_1> rdf:type owl:NamedIndividual ,
+                                                                               <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit_1> rdf:type owl:NamedIndividual ,
+                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage_1> rdf:type owl:NamedIndividual ,
+                                                                         <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage> ;
+                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jumpfu_1> ;
+                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width_fetch_stage_1> ,
+                                                                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_fetch_stage_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fft_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fft_1> rdf:type owl:NamedIndividual ,
+                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fast_fourier_transform> ;
+                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window_1> rdf:type owl:NamedIndividual ,
+                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window> ;
+                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft> ,
+                                                                                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit_1> rdf:type owl:NamedIndividual ,
+                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/input_data
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/input_data> rdf:type owl:NamedIndividual ,
+                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> ;
+                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length_16000> ,
+                                                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_buffer_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_buffer_1> rdf:type owl:NamedIndividual ,
+                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fifo_buffer> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width_fetch_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width_fetch_stage_1> rdf:type owl:NamedIndividual ,
+                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/issue_width> ;
+                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_issue_width_fetch_stage_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jumpfu_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jumpfu_1> rdf:type owl:NamedIndividual ,
+                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/jump_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l1d_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l1d_cache_1> rdf:type owl:NamedIndividual ,
+                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache> ;
+                                                              <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l1d_cache_1> ,
+                                                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l1d_cache_1> ,
+                                                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l1d_cache_1> ,
+                                                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l1d_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l1l_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l1l_cache_1> rdf:type owl:NamedIndividual ,
+                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/lru_cache> ;
+                                                              <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l1l_cache_1> ,
+                                                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l1l_cache_1> ,
+                                                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l1l_cache_1> ,
+                                                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l1l_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l2_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l2_cache_1> rdf:type owl:NamedIndividual ,
+                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/rr_cache> ;
+                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_l2_cache_1> ,
+                                                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l2_cache_1> ,
+                                                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l2_cache_1> ,
+                                                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l2_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_decode_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_decode_stage_1> rdf:type owl:NamedIndividual ,
+                                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> ;
+                                                                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_decode_stage_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_execute_stage_0
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_execute_stage_0> rdf:type owl:NamedIndividual ,
+                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> ;
+                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_execute_stage_0> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_execute_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_execute_stage_1> rdf:type owl:NamedIndividual ,
+                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> ;
+                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_execute_stage_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_fetch_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_fetch_stage_1> rdf:type owl:NamedIndividual ,
+                                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> ;
+                                                                        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_fetch_stage_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_logarithmic_memory_interconnect_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_logarithmic_memory_interconnect_1> rdf:type owl:NamedIndividual ,
+                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency> ;
+                                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_logarithmic_memory_interconnect_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit_1> rdf:type owl:NamedIndividual ,
+                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectrogram
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectrogram> rdf:type owl:NamedIndividual ,
+                                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectogram> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_1> rdf:type owl:NamedIndividual ,
+                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_2
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_2> rdf:type owl:NamedIndividual ,
+                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_matrix> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length_16000
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length_16000> rdf:type owl:NamedIndividual ,
+                                                                               <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length> ;
+                                                                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_length_16000> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width_1> rdf:type owl:NamedIndividual ,
+                                                                          <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width> ;
+                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_width_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_accelerator_local_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_accelerator_local_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                                              <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 4 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_control_register_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_control_register_1> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l1d_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l1d_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 4 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l1l_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l1l_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 4 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l2_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_l2_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 4 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_data_width_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 4 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_issue_width_fetch_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_issue_width_fetch_stage_1> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_decode_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_decode_stage_1> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_execute_stage_0
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_execute_stage_0> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                  <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_execute_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_execute_stage_1> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                  <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_fetch_stage_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_fetch_stage_1> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_logarithmic_memory_interconnect_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_latency_logarithmic_memory_interconnect_1> rdf:type owl:NamedIndividual ,
+                                                                                                             <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_length_16000
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_length_16000> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                              <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 16000 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_width_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_matrix_width_1> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_fft
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_fft> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 32 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 10 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_number_of_memory_banks_memory_map_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_number_of_memory_banks_memory_map_1> rdf:type owl:NamedIndividual ,
+                                                                                                       <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                              <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 3 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_accelerator_local_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_accelerator_local_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                                                <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_control_register_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_control_register_1> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 ;
+                                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_control_register_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l1d_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l1d_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l1l_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l1l_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l2_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l2_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                  <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 2 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 2 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_ports_logarithmic_memory_interconnect_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_ports_logarithmic_memory_interconnect_1> rdf:type owl:NamedIndividual ,
+                                                                                                                <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 6 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_accelerator_local_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_accelerator_local_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                                        <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                               <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 128 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_control_register_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_control_register_1> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                  <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 32 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l1d_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l1d_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 64 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l1l_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l1l_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 64 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l2_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l2_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 128 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                             <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 4096 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_win_length
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_win_length> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 32 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_accelerator_local_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_accelerator_local_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                                        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_control_register_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_control_register_1> rdf:type owl:NamedIndividual ,
+                                                                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l1d_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l1d_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 2 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l1l_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l1l_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 2 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l2_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l2_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 3 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 8 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_ports_logarithmic_memory_interconnect_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_ports_logarithmic_memory_interconnect_1> rdf:type owl:NamedIndividual ,
+                                                                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                                                        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 3 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_x_length
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_x_length> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 1001 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_frames
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_frames> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_length
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_length> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
+                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> 17 .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mel_weights
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mel_weights> rdf:type owl:NamedIndividual ,
+                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> ;
+                                                              <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels> ,
+                                                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc> rdf:type owl:NamedIndividual ,
+                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> ;
+                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels> ,
+                                                                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation_1> rdf:type owl:NamedIndividual ,
+                                                                              <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation> ;
+                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fft_1> ,
+                                                                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/framing_and_window_1> ,
+                                                                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/magnitude_spectrogram> ,
+                                                                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_1> ,
+                                                                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matmul_2> ,
+                                                                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mulfu_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mulfu_1> rdf:type owl:NamedIndividual ,
+                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multiply_funtional_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft> rdf:type owl:NamedIndividual ,
+                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width> ;
+                                                        <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_fft> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels> rdf:type owl:NamedIndividual ,
+                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width> ;
+                                                         <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels_length
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels_length> rdf:type owl:NamedIndividual ,
+                                                                         <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length> ;
+                                                                <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_n_mels> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform> rdf:type owl:NamedIndividual ,
+                                                                                owl:Class ,
+                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linearity_result
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linearity_result> rdf:type owl:NamedIndividual ,
+                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> ;
+                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_mels> ,
+                                                                                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks_memory_map_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks_memory_map_1> rdf:type owl:NamedIndividual ,
+                                                                                               <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks> ;
+                                                                                      <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_number_of_memory_banks_memory_map_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers_register_file_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers_register_file_1> rdf:type owl:NamedIndividual ,
+                                                                                               <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller_1> rdf:type owl:NamedIndividual ,
+                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller> ;
+                                                                          <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_1> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation_1> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core_1> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/logarithmic_memory_interconnect_1> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/main_memory_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc_1> rdf:type owl:NamedIndividual ,
+                                                                            <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_soc> ;
+                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pulpissimo_controller_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_accelerator_local_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_accelerator_local_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> ;
+                                                                                               <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_accelerator_local_memory_bank_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_control_register1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_control_register1> rdf:type owl:NamedIndividual ,
+                                                                                          <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> ;
+                                                                                 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_control_register_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l1d_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l1d_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> ;
+                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l1d_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l1l_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l1l_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> ;
+                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l1l_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l2_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_l2_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> ;
+                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_l2_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_memory_bank_0
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_memory_bank_0> rdf:type owl:NamedIndividual ,
+                                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency> ;
+                                                                             <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_latency_memory_bank_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports_logarithmic_memory_interconnect_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports_logarithmic_memory_interconnect_1> rdf:type owl:NamedIndividual ,
+                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports> ;
+                                                                                               <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_read_ports_logarithmic_memory_interconnect_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file_1> rdf:type owl:NamedIndividual ,
+                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file> ;
+                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_register_file_1> ,
+                                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers_register_file_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_accelerator_local_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_accelerator_local_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                                <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> ;
+                                                                                       <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_accelerator_local_memory_bank_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_control_register_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_control_register_1> rdf:type owl:NamedIndividual ,
+                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> ;
+                                                                          <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_control_register_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l1d_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l1d_cache_1> rdf:type owl:NamedIndividual ,
+                                                                            <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> ;
+                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l1d_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l1l_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l1l_cache_1> rdf:type owl:NamedIndividual ,
+                                                                            <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> ;
+                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l1l_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l2_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_l2_cache_1> rdf:type owl:NamedIndividual ,
+                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> ;
+                                                                  <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_l2_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_memory_bank_0
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_memory_bank_0> rdf:type owl:NamedIndividual ,
+                                                                              <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                              <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size> ;
+                                                                     <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_size_memory_bank_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/spectogram
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/spectogram> rdf:type owl:NamedIndividual ,
+                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> ;
+                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length> ,
+                                                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stft_matrix
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stft_matrix> rdf:type owl:NamedIndividual ,
+                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> ;
+                                                              <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft> ,
+                                                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit_1> rdf:type owl:NamedIndividual ,
+                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core_1> rdf:type owl:NamedIndividual ,
+                                                                                   <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tuerix_processor_core> ;
+                                                                          <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/decode_stage_1> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_0> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/execute_stage_1> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/fetch_stage_1> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l1d_cache_1> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l1l_cache_1> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/l2_cache_1> ,
+                                                                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/register_file_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit_1> rdf:type owl:NamedIndividual ,
+                                                                              <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/win_length
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/win_length> rdf:type owl:NamedIndividual ,
+                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length> ;
+                                                             <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_win_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/window_weights
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/window_weights> rdf:type owl:NamedIndividual ,
+                                                                          <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> ;
+                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width_1> ,
+                                                                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/win_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_accelerator_local_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_accelerator_local_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                                         <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> ;
+                                                                                                <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_accelerator_local_memory_bank_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_control_register_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_control_register_1> rdf:type owl:NamedIndividual ,
+                                                                                            <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> ;
+                                                                                   <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_control_register_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l1d_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l1d_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> ;
+                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l1d_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l1l_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l1l_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                     <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> ;
+                                                                            <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l1l_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l2_cache_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_l2_cache_1> rdf:type owl:NamedIndividual ,
+                                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> ;
+                                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_l2_cache_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_memory_bank_0
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_memory_bank_0> rdf:type owl:NamedIndividual ,
+                                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                                       <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency> ;
+                                                                              <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_latency_memory_bank_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports_logarithmic_memory_interconnect_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports_logarithmic_memory_interconnect_1> rdf:type owl:NamedIndividual ,
+                                                                                                         <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports> ;
+                                                                                                <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_write_ports_logarithmic_memory_interconnect_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length> rdf:type owl:NamedIndividual ,
+                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_length> ;
+                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_x_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_frames
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_frames> rdf:type owl:NamedIndividual ,
+                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix> ;
+                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/n_fft> ,
+                                                                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/x_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_length
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/y_length> rdf:type owl:NamedIndividual ,
+                                                                    <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/matrix_width> ;
+                                                           <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_y_length> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/cnn_accelerator_controller_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/cnn_accelerator_controller_1> rdf:type owl:NamedIndividual ,
+                                                                                          <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_controller> ;
+                                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_load_unit_1> ,
+                                                                                                                                            <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/feature_store_unit_1> ,
+                                                                                                                                            <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gemm_unit_1> ,
+                                                                                                                                            <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/weight_load_unit_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/logarithmic_memory_interconnect_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/logarithmic_memory_interconnect_1> rdf:type owl:NamedIndividual ,
+                                                                                               <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/logarithmic_memory_interconnect> ;
+                                                                                      <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency_logarithmic_memory_interconnect_1> ,
+                                                                                                                                            <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_ports_logarithmic_memory_interconnect_1> ,
+                                                                                                                                            <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_ports_logarithmic_memory_interconnect_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/main_memory_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/main_memory_1> rdf:type owl:NamedIndividual ,
+                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/main_memory> ;
+                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_bank_0> ,
+                                                                                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_bank_1> ,
+                                                                                                                             <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_map_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_bank_0
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_bank_0> rdf:type owl:NamedIndividual ,
+                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory> ;
+                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_memory_bank_0> ,
+                                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_memory_bank_0> ,
+                                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_memory_bank_0> ,
+                                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_memory_bank_0> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_bank_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_bank_1> rdf:type owl:NamedIndividual ,
+                                                                           <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/static_latency_memory> ;
+                                                                  <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/data_width_memory_bank_1> ,
+                                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/read_latency_memory_bank_1> ,
+                                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/size_memory_bank_1> ,
+                                                                                                                        <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/write_latency_memory_bank_1> .
+
+
+###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_map_1
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/memory_map_1> rdf:type owl:NamedIndividual ,
+                                                                          <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/memory_map> ;
+                                                                 <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks_memory_map_1> .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

@@ -1,0 +1,234 @@
+{
+  "@context" : {
+    "ControllingFunction" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#ControllingFunction"
+    },
+    "StructuredTypeVariable" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#StructuredTypeVariable"
+    },
+    "hasMetaData" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasMetaData",
+      "@type" : "@id"
+    },
+    "hasSubService" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasSubService",
+      "@type" : "@id"
+    },
+    "describes" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#describes",
+      "@type" : "@id"
+    },
+    "refersTo" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#refersTo",
+      "@type" : "@id"
+    },
+    "hasDataRestriction_minInclusive" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_minInclusive"
+    },
+    "oneM2MTargetURI" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#oneM2MTargetURI",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Thing" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Thing"
+    },
+    "hasOutput" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOutput",
+      "@type" : "@id"
+    },
+    "VariableConversion" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#VariableConversion"
+    },
+    "hasValue" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasValue",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasDataRestriction_maxInclusive" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_maxInclusive"
+    },
+    "oneM2MAttribute" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#oneM2MAttribute",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+    },
+    "convertsTo" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#convertsTo",
+      "@type" : "@id"
+    },
+    "MetaData" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#MetaData"
+    },
+    "hasOutputDataPoint" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOutputDataPoint",
+      "@type" : "@id"
+    },
+    "isPartOf" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#isPartOf",
+      "@type" : "@id"
+    },
+    "ThingProperty" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#ThingProperty"
+    },
+    "Operation" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Operation"
+    },
+    "hasCommand" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasCommand",
+      "@type" : "@id"
+    },
+    "OperationOutput" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OperationOutput"
+    },
+    "netTechnologyProfile" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#netTechnologyProfile",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+    },
+    "hasInputDataPoint" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasInputDataPoint",
+      "@type" : "@id"
+    },
+    "InputDataPoint" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#InputDataPoint"
+    },
+    "exposesFunction" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#exposesFunction",
+      "@type" : "@id"
+    },
+    "hasOperation" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasOperation",
+      "@type" : "@id"
+    },
+    "hasDataRestriction" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+    },
+    "hasThingAnnotation" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasThingAnnotation",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasService" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasService",
+      "@type" : "@id"
+    },
+    "hasSubStructure" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasSubStructure",
+      "@type" : "@id"
+    },
+    "GET_InputDataPoint" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#GET_InputDataPoint"
+    },
+    "hasInput" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasInput",
+      "@type" : "@id"
+    },
+    "OperationInput" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OperationInput"
+    },
+    "isDataList" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#isDataList",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasDataRestriction_minExclusive" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_minExclusive"
+    },
+    "oneM2MMethod" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#oneM2MMethod",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+    },
+    "hasDataRestriction_pattern" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_pattern",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Aspect" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Aspect"
+    },
+    "hasDataRestriction_minLength" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_minLength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "AreaNetwork" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#AreaNetwork"
+    },
+    "hasFunction" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasFunction",
+      "@type" : "@id"
+    },
+    "Command" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Command"
+    },
+    "hasDataRestriction_maxExclusive" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_maxExclusive"
+    },
+    "consistsOf" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#consistsOf",
+      "@type" : "@id"
+    },
+    "Variable" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Variable"
+    },
+    "hasDataType" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataType"
+    },
+    "InterworkedDevice" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#InterworkedDevice"
+    },
+    "hasThingRelation" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasThingRelation",
+      "@type" : "@id"
+    },
+    "hasDataRestriction_length" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_length",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasDataRestriction_maxLength" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasDataRestriction_maxLength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "Function" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Function"
+    },
+    "MeasuringFunction" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#MeasuringFunction"
+    },
+    "exposesCommand" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#exposesCommand",
+      "@type" : "@id"
+    },
+    "netTechnologyPhysicalStandard" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#netTechnologyPhysicalStandard",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Service"
+    },
+    "SimpleTypeVariable" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SimpleTypeVariable"
+    },
+    "hasConversion" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasConversion",
+      "@type" : "@id"
+    },
+    "resourceDescriptorLink" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#resourceDescriptorLink"
+    },
+    "Device" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#Device"
+    },
+    "SET_OutputDataPoint" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#SET_OutputDataPoint"
+    },
+    "OutputDataPoint" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#OutputDataPoint"
+    },
+    "hasThingProperty" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#hasThingProperty",
+      "@type" : "@id"
+    },
+    "netTechnologyCommunicationProtocol" : {
+      "@id" : "https://git.onem2m.org/MAS/BaseOntology/raw/master/base_ontology.owl#netTechnologyCommunicationProtocol",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+    }
+  }
+}
