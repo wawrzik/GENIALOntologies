@@ -664,6 +664,12 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testclass -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testclass"/>
+    
+
+
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/measure -->
 
     <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/measure">
