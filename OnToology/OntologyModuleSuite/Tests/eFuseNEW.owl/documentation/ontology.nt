@@ -1,0 +1,341 @@
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse> <http://www.w3.org/2002/07/owl#imports> <http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse> <http://purl.org/dc/elements/1.1/contributor> "Frank Wawrzik (TU Kaiserslautern)" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse> <http://purl.org/dc/elements/1.1/contributor> "Manfred Fuisting (Hella GmbH)" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#qualifiedCardinality
+<http://www.w3.org/2002/07/owl#qualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#implements
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#function
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart
+<http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/BTS50015
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/BTS50015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/BTS50015> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/BTS50015> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/drainsoruce_voltage_monitoring
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/drainsoruce_voltage_monitoring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/drainsoruce_voltage_monitoring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/monitoring_function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/eFuse
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/eFuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/eFuse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/inductivity
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/inductivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/inductivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/integrated_gate_driver
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/integrated_gate_driver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/integrated_gate_driver> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/monitoring_function
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/monitoring_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/monitoring_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_current
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_current> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_current> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/current> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_duration
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/peak_duration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/reverse_protection
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/reverse_protection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/reverse_protection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/protection_function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sensing_function
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sensing_function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sensing_function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/BTS50015> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/drainsoruce_voltage_monitoring> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/over_temperature_protection> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#implements> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/reverse_protection> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability_sol4_smart_power_switch> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid12 <http://www.w3.org/2002/07/owl#hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_hb> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid13 <http://www.w3.org/2002/07/owl#hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_lb> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length_sol4_smart_power_switch> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current_sol4_smart_power_switch> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol4_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property> .
+_:genid16 <http://www.w3.org/2002/07/owl#hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width_sol4_smart_power_switch> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol5_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol5_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sol5_smart_power_switch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/smart_power_switch> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/temperature_gradient_sensing
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/temperature_gradient_sensing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/temperature_gradient_sensing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/sensing_function> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> .
+# 
+# http://org.semanticweb.owlapi/error#Error1
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/measure
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/quantity
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/unit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/A
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability_sol4_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/availability_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_hb
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_hb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_hb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_hb> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_lb
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_lb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_lb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/big_capacitive_load_sol4_smart_power_switch_lb> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width_sol4_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cold_crank_pulse_width> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length_sol4_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/length_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current_sol4_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/max_charging_current_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_max_charging_current_sol4_smart_power_switch> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "2014-01-00T00:00:00" .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_availability_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://www.w3.org/2001/XMLSchema#DateTime> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "9.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_hb> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_big_capacitive_load_sol4_smart_power_switch_lb> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/mF> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_cold_crank_pulse_width_sol4_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_cold_crank_pulse_width_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_cold_crank_pulse_width_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_cold_crank_pulse_width_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_cold_crank_pulse_width_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/ms> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "1.76"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_length_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_max_charging_current_sol4_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_max_charging_current_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_max_charging_current_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "150"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_max_charging_current_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/A> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> "2.65"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/cm> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/ms
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/ms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/ms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/unit> .
+# 
+# http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width_sol4_smart_power_switch
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width_sol4_smart_power_switch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width> .
+<http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/width_sol4_smart_power_switch> <http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue> <http://cpsagila.cs.uni-kl.de/GENIALOnt/eFuse/measure_width_sol4_smart_power_swith> .
+# 
+# http://www.w3.org/2001/XMLSchema#DateTime
+<http://www.w3.org/2001/XMLSchema#DateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

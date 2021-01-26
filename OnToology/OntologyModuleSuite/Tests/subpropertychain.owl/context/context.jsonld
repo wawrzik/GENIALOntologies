@@ -1,0 +1,12 @@
+{
+  "@context" : {
+    "isPartOf" : {
+      "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/isPartOf",
+      "@type" : "@id"
+    },
+    "isEmployedAt" : {
+      "@id" : "http://www.semanticweb.org/frank/ontologies/2020/5/untitled-ontology-78/isEmployedAt",
+      "@type" : "@id"
+    }
+  }
+}

@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#"
+     xml:base="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation">
+        <rdfs:comment>This ontology addresses the HW-SW Allocation Problem</rdfs:comment>
+        <rdfs:comment>To be refined with UniTübingen</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#distributedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#distributedTo"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#runsOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#runsOn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#interface -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#interface">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory_access_time -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory_access_time">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#performance -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#performance">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#processor -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#processor">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#real_hardware -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#real_hardware">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
+        <owl:disjointWith rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#schedule -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#schedule"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#software_function -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#software_function">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#runsOn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#virtual_hardware">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#interface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#memory_access_time"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#hasRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#performance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#distributedTo"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/CarModel/HW-SW-Allocation#real_hardware"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#function -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element"/>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#property -->
+
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#property"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

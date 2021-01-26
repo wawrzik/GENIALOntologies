@@ -1,0 +1,269 @@
+[ {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#AmbientTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Automobile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Reduces" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Losses"
+  }, {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Weight"
+  } ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#AutonomousDriving"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#AutonomousDriving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasFailure" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OperationFailure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#BreakingCapacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CO2LegislationandReduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PrivateTransportation"
+  }, {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PublicTransportation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ClimateChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CO2LegislationandReduction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ControlledPowerDown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CrossSectionWiring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SpaceAccessibility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CurrentRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DiagnosisandControllingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Invokes" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#IntelligentPowerDistribution"
+  }, {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PowerDown"
+  }, {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SuppressingDefectivePath"
+  }, {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SwitchingOfftheLoadPath"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DischargeintheSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DiagnosisandControllingSystem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ElectroMobility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ClimateChange"
+  }, {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FaultResponseandRecovery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#InrushCurrentControl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#IntelligentPowerDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#InterruptingRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Invokes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Losses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Relay"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OperationFailure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PossibilityofFailure" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DischargeintheSystem"
+  }, {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#RecognizeFaultintheSystem"
+  }, {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#RedundantPowerSupply"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OvercurrentProtection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OvertemperatureProtection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OvervoltageProtection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PossibilityofFailure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PowerDown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PrivateTransportation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Transportation" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Automobile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PublicTransportation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Transportation" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Automobile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#RecognizeFaultintheSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DiagnosisandControllingSystem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Reduces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#RedundantPowerSupply",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DiagnosisandControllingSystem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Relay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Rerating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ReverseCurrentProtection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ShortCircuitProtection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SpaceAccessibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SuppressingDefectivePath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SurgeProtection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SwitchingOfftheLoadPath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Transportation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Weight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Reduces" : [ {
+    "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CrossSectionWiring"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasApplication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasFailure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ]
+} ]

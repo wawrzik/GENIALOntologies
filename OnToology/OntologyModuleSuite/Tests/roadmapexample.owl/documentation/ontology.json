@@ -1,0 +1,1742 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/deprecates"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rt"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/roadmap_time"
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/emobility"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/feasible_innovation"
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "If airplane is a design and has ttm > ttm BFR AND has purpose long time travel, then dont do it (the design)"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid118"
+    }, {
+      "@id" : "_:genid116"
+    }, {
+      "@id" : "_:genid114"
+    }, {
+      "@id" : "_:genid112"
+    }, {
+      "@id" : "_:genid110"
+    }, {
+      "@id" : "_:genid108"
+    }, {
+      "@id" : "_:genid106"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid120"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#ttm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "http://www.w3.org/2001/XMLSchema#maxExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "16"
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#ttm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2028"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#ttm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market"
+  } ]
+}, {
+  "@id" : "_:genid114",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#disr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/airplane"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/deprecates"
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#disr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Disruption"
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/airplane"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/design"
+  } ]
+}, {
+  "@id" : "_:genid120",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/airplane"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dont_do_it"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_age_range"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/age_range"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_country"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/country"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_dependency"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_prognosis"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/prognosis"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_target_audience"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_consequence"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Consequence"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/liberates"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/noisy_dug"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Elon Musk about 9:40 in this video:\nhttps://www.youtube.com/watch?v=zIwLWfaAg-8\n\nOver a certain distance theres no noise. Even military cant detect it."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/tunnels"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/too_costly"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid29"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_age"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid33"
+    }, {
+      "@id" : "_:genid31"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_time"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "http://www.w3.org/2001/XMLSchema#maxExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "16"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_age_range"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/age_range"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_country"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/country"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_dependency"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_prognosis"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/prognosis"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_target_audience"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "That is per liter in Euro in the U.S. (3$ per gallon in semi truck presentation)"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/diesel_price"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.80"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_age"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/deprecates"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/liberates"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "That is according to a Tesla presentation on the semi truck in the us.\nIt said the price from electric is about half that of the diesel in comparison."
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/electric_charging_price"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.40"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "That is kWh per mile for tesla semi truck"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/fuel_savings"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.75"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "That is in $ for a whole lifetime of the tesla semi truck"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/fuel_savings"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "200.000"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Our analysis indicates that the price of a complete automotive lithium-ion battery pack could fall from $500 to $600 per kilowatt hour (kWh) today to about $200 per kWh by 2020 and to about $160 per kWh by 2025.\n\nSource:\nhttps://www.mckinsey.com/business-functions/sustainability/our-insights/battery-technology-charges-ahead\n\nSeems to be mostly influenced by numbers of evs, the gigafactory etc"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/lithium_ion_battery1"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/price_lithium_ion_batter_per_kilowatt"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_dependency"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Expected time when Germany will ban the internal combustion engine \n\nSource:\nhttps://www.focus.de/auto/elektroauto/verbrenner-verbote-weltweit-2025-bis-2050-focus-online-zeigt-wann-welches-land-benziner-und-diesel-verbietet_id_9632138.html"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_denial1"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2050"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "That is 25 cents savings per mile total operation cost (1.51 to 1.26) from a conventional truck to the tesla semi truck"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/total_operation_cost"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.25"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SQWRLTest"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid51"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid53"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/e-mobility_barriers"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#count"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "If the battery energy density gets over 400, then the electric airplane becomes feasible"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid63"
+    }, {
+      "@id" : "_:genid61"
+    }, {
+      "@id" : "_:genid57"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid65"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#bednm"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "400"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#bed"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#bednm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#bed"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/battery_energy_density"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/electric_airplane"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/feasible_innovation"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "If a barrier is solved by an innovation at roadmap time it becomes a solved barrier"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid86"
+    }, {
+      "@id" : "_:genid84"
+    }, {
+      "@id" : "_:genid82"
+    }, {
+      "@id" : "_:genid80"
+    }, {
+      "@id" : "_:genid78"
+    }, {
+      "@id" : "_:genid76"
+    }, {
+      "@id" : "_:genid74"
+    }, {
+      "@id" : "_:genid72"
+    }, {
+      "@id" : "_:genid68"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid88"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rmpt"
+    }, {
+      "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#slvtime"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/2001/XMLSchema#minExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "18"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/roadmap_time"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rmpt"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solvtime"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#slvtime"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_age"
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solv"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solvtime"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_time"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solv"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solv"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solving"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solved_barriers"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "If roadmap time > ttm for e-mobility barriers, then emobility becomes a feasible innovation"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid101"
+    }, {
+      "@id" : "_:genid99"
+    }, {
+      "@id" : "_:genid97"
+    }, {
+      "@id" : "_:genid95"
+    }, {
+      "@id" : "_:genid91"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid103"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid13"
+    }, {
+      "@id" : "_:genid11"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#dprt"
+    }, {
+      "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barrttm"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barrttm"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_ttm"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/e-mobility_barriers"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rt"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#dprt"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value"
+  } ]
+}, {
+  "@id" : "http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#count",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barr",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barriers_fulfilled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#explanation" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#barrttm",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#bed",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#bednm",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#charging_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/e-mobility_barriers" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#disr",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#dprt",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#explanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#hasPet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#has_law",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#inno",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#law_does_not_yet_admit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#explanation" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rmpt",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#rt",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#slvtime",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solv",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#solvtime",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#ttm",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Consequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Disruption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Improvement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/L4_autonomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/autonomy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/L5_autonomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Problem" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24#has_law" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/law_for_autonomous_driving"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/autonomy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/LIDAR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/sensor" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/acceleration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/admittance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Consequence"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/admittance1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/admittance" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_time" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_admittance1"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/is_admittance_of" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/L5_autonomy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/adolescents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/adults",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/affordability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/age_range",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/age_range1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/age_range", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/hasLowerBound" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "40"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/hasUpperBound" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "50"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/airplane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/design", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/recommended_action", "_:genid26" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market_airplane"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_purpose" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/long_distance_travel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/autonomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/battery_energy_density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/battery_energy_density" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_dependency" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency_battery_energy_density"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "300"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/big_falcon_rocket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/big_falcon_rocket", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/technology", "_:genid27" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/causesDisruption" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/disruption_BFO"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market_BFO"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/bus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/transportation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/camera",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/sensor" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/carbon_footprint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/causesDisruption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/charge_infrastructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/e-mobility_barriers" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_ttm" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2022"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/child1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/children", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience", "_:genid28" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "12"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/children",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/co2_savings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/computer_vision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/implementedBy" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/camera"
+  }, {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/deep_learning"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/L5_autonomy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/cost_concerns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/e-mobility_barriers" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_ttm" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2026"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/deep_learning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/demographic_development",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/demographic_development1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/demographic_development", "_:genid34", "_:genid35", "_:genid36", "_:genid37", "_:genid38" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_age_range" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/age_range1"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_country" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/germany"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_dependency" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency_demographic_development"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_prognosis" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/prognosis_demographic_development1"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_target_audience" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/denial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Consequence"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/denial1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/denial" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_time" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_denial1"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/is_denial_of" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/internal_combustion_engine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency_battery_energy_density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a =x+b*c\nincreses 5% every year->~6 years to electric airplane"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency_demographic_development",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency_demographic_development_prognosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency_moores_law",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/deprecates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/design",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/diesel_price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/gasoline_price" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.80"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/disruption_BFO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Disruption", "_:genid40", "_:genid41" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/deprecates" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/airplane"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/liberates" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/travel_waiting_time_for_long_distances"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/disruption_electric_airplane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Disruption" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/deprecates" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/airplane"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dont_do_it",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dontdoit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/recommended_action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/e-mobility_barriers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/electric_airplane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_ttm" : [ {
+    "@value" : "?"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/electric_charging_price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/electricity_rate" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.40"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/electricity_rate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/price"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/emobility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/ev_range_anxiety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/e-mobility_barriers" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_ttm" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2025"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/feasible_innovation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/filling_station_density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/flying_car_barriers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Elon Musk about 6:10 in this video:\nhttps://www.youtube.com/watch?v=zIwLWfaAg-8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/flying_car_companyx",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves_very_noisy"
+  }, {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/very_noisy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/fuel_savings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.75"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "200.000"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/fueling_price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/price"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/gasoline_price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "read from daily price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/price"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/germany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/country" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/hardware_part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/hasImprovement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/hasLowerBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/hasUpperBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_age_range",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_consequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_dependency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasNumericalValue"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_prognosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has property"
+  }, {
+    "@value" : "hasProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_target_audience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_ttm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/implementedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/improvements_semi-truck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Improvement" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/improvesEfficiencyOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/acceleration"
+  }, {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/co2_savings"
+  }, {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/fuel_savings"
+  }, {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/maintenance_savings"
+  }, {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/total_operation_cost"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/improvesQualityOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/interior_of_cockpit"
+  }, {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/window"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "I got them from this presentation:\n\nhttps://www.youtube.com/watch?v=GMyRSJVQMOw"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/improvesEfficiencyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/improvesQualityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/interior_of_cockpit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/internal_combustion_engine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/technology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/is_admittance_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/is_denial_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/law_for_autonomous_driving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/legislation" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_consequence" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/admittance1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/law_for_banning_internal_combustion_engine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/legislation" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_consequence" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/denial1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/legislation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/liberates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/lithium_ion_battery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/hardware_part"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/lithium_ion_battery1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/hardware_part", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/lithium_ion_battery" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_property" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/price_lithium_ion_batter_per_kilowatt"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/long_distance_travel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/purpose" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/maintenance_savings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/moores_law",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_dependency" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency_moores_law"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/noisy_dug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/old",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/price_lithium_ion_batter_per_kilowatt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/price", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/prognosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/prognosis_battery_energy_density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/prognosis" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/prognosis_demographic_development1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/prognosis", "_:genid46" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2050"
+  } ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_dependency" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/dependency_demographic_development_prognosis"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/prognosis_diesel_price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/prognosis" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/radar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/sensor" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/recommended_action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/roadmap_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/roadmap_time" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2024"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/shared_autonomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/transportation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solved_barriers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solves_very_noisy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solving" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_time" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_solves_very_noisy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/takethis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/recommended_action"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/target_audience" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4500000"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/technology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/tesla_semi-truck",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/Innovation" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/hasImprovement" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/improvements_semi-truck"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/test",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_admittance1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2021"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_denial1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2050"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_solves_very_noisy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2021"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TTM"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market_BFO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2028"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Another assessment by Elon Musk:\n2 first cargo ships by 2022\nhttps://www.youtube.com/watch?v=jmc7aUVKCMA\nabout min 3:00"
+  }, {
+    "@value" : "This assessment is made more conservatively by the spaceX CEo, saying 2022 is more 'Elon Time'"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market_airplane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/time_to_market" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2030"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/too_costly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/solved_barriers", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/tunnel_barriers" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/total_operation_cost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property" ],
+  "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/has_numerical_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.25"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/transportation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/travel_waiting_time_for_long_distances",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/property" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/tunnel_barriers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/tunnels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "price is not an issue anymore.\nElon somewhere explains in this video why not. It can be brought down 10-20 times the regular cost.\nhttps://www.youtube.com/watch?v=zIwLWfaAg-8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/transportation"
+  }, {
+    "@id" : "_:genid21"
+  }, {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/very_high_generated_wind_force",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/flying_car_barriers" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/very_noisy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/barriers", "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/flying_car_barriers" ]
+}, {
+  "@id" : "http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-24/window",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+} ]
