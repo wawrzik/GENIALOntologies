@@ -1,0 +1,38 @@
+{
+  "@context" : {
+    "hasInfluence" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence",
+      "@type" : "@id"
+    },
+    "hasApplication" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasApplication",
+      "@type" : "@id"
+    },
+    "hasFailure" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasFailure",
+      "@type" : "@id"
+    },
+    "Invokes" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Invokes",
+      "@type" : "@id"
+    },
+    "Uses" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses",
+      "@type" : "@id"
+    },
+    "PossibilityofFailure" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PossibilityofFailure",
+      "@type" : "@id"
+    },
+    "Reduces" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Reduces",
+      "@type" : "@id"
+    },
+    "FeaturesofeFuse" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"
+    },
+    "Transportation" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Transportation"
+    }
+  }
+}

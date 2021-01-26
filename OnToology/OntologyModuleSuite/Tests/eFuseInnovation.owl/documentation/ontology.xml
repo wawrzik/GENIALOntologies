@@ -1,0 +1,1100 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#"
+     xml:base="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-28="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#buildsOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#buildsOn">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#buildsOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#deprecates -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#deprecates">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#deprecates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enables"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enables -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enables">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DevelopmentStage"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeprecatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeprecatedBy">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeprecatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isLiberatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isLiberatedBy">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isLiberatedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#liberates -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#liberates">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#liberates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedBy">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedOn">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedWith">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#expectedMarketEntry -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#expectedMarketEntry"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DevelopmentStage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DevelopmentStage">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Effectiveness -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Effectiveness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AccessTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AccessTime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Antifuse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+        <buildsOn rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse"/>
+        <fulfils rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#NonVolatileMemory"/>
+        <improvesEffectivenessOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingTemperature"/>
+        <improvesEffectivenessOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingVoltage"/>
+        <improvesQualityOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AccessTime"/>
+        <improvesQualityOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DurabilityOfMemory"/>
+        <improvesQualityOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammableUpdate"/>
+        <improvesQualityOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammingTime"/>
+        <solves rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CurrentLeakage"/>
+        <solves rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Scalability"/>
+        <solves rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Security"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Automobile -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Automobile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AutonomousDriving -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AutonomousDriving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ClimateChange -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ClimateChange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CompanyX -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CompanyX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CorruptionOfInformation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CorruptionOfInformation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CurrentLeakage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CurrentLeakage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#CorruptionOfInformation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Development1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Development1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DevelopmentStage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DiagnosingTheFailure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DiagnosingTheFailure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DurabilityOfMemory -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DurabilityOfMemory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efuse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"/>
+        <affects rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Scalability"/>
+        <affects rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usability"/>
+        <causesDisruption rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedMemory"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#AutonomousDriving"/>
+        <hasBenefit rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ClimateChange"/>
+        <improvesEfficiencyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DiagnosingTheFailure"/>
+        <improvesEfficiencyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReducingCost"/>
+        <improvesEfficiencyOf rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReductionOfCarbonDioxide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectricalDevices -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectricalDevices">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment"/>
+        <usedOn rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Automobile"/>
+        <usedOn rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#IoTDevices"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectronMigration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ElectronMigration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ExpansionOfFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ExpansionOfFuse -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ExpansionOfFuse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#FirmwareUpdate -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#FirmwareUpdate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#IoTDevices -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#IoTDevices">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LegislationOnCO2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LegislationOnCO2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedMemory -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedMemory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedNumberOfReads -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#LimitedNumberOfReads">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#NonVolatileMemory -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#NonVolatileMemory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingTemperature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Effectiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingVoltage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperatingVoltage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Effectiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperationFailure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#OperationFailure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammableUpdate -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammableUpdate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammingTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ProgrammingTime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReducingCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReducingCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReductionOfCarbonDioxide -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ReductionOfCarbonDioxide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Scalability -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Scalability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Security -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usability -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#WasteGeneration -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#WasteGeneration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#ExpansionOfFuse"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

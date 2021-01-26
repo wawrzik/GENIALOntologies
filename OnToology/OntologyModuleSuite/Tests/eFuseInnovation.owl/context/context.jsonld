@@ -1,0 +1,180 @@
+{
+  "@context" : {
+    "usedOn" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedOn",
+      "@type" : "@id"
+    },
+    "improvesValueOf" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesValueOf",
+      "@type" : "@id"
+    },
+    "deprecates" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#deprecates",
+      "@type" : "@id"
+    },
+    "hasUsage" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasUsage",
+      "@type" : "@id"
+    },
+    "expectedMarketEntry" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#expectedMarketEntry"
+    },
+    "usedWith" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedWith",
+      "@type" : "@id"
+    },
+    "developedBy" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#developedBy",
+      "@type" : "@id"
+    },
+    "hasImprovement" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasImprovement",
+      "@type" : "@id"
+    },
+    "hasSymptom" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasSymptom",
+      "@type" : "@id"
+    },
+    "hasDeveloped" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDeveloped",
+      "@type" : "@id"
+    },
+    "usedBy" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#usedBy",
+      "@type" : "@id"
+    },
+    "manifests" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifests",
+      "@type" : "@id"
+    },
+    "liberates" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#liberates",
+      "@type" : "@id"
+    },
+    "isDeveloping" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeveloping",
+      "@type" : "@id"
+    },
+    "Disruption" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Disruption"
+    },
+    "embodiedBy" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodiedBy",
+      "@type" : "@id"
+    },
+    "Innovator" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovator"
+    },
+    "Performance" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Performance"
+    },
+    "affects" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#affects",
+      "@type" : "@id"
+    },
+    "hasBenefit" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasBenefit",
+      "@type" : "@id"
+    },
+    "causesDisruption" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#causesDisruption",
+      "@type" : "@id"
+    },
+    "buildsOn" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#buildsOn",
+      "@type" : "@id"
+    },
+    "Quality" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Quality"
+    },
+    "Benefit" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Benefit"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Effectiveness" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Effectiveness"
+    },
+    "Need" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Need"
+    },
+    "Symptom" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Symptom"
+    },
+    "isLiberatedBy" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isLiberatedBy",
+      "@type" : "@id"
+    },
+    "Problem" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Problem"
+    },
+    "hasDevelopmentStage" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#hasDevelopmentStage",
+      "@type" : "@id"
+    },
+    "improves" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improves",
+      "@type" : "@id"
+    },
+    "Efficiency" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Efficiency"
+    },
+    "embodies" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#embodies",
+      "@type" : "@id"
+    },
+    "solves" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#solves",
+      "@type" : "@id"
+    },
+    "improvesEfficiencyOf" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEfficiencyOf",
+      "@type" : "@id"
+    },
+    "Innovation" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Innovation"
+    },
+    "Usage" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Usage"
+    },
+    "isDeprecatedBy" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#isDeprecatedBy",
+      "@type" : "@id"
+    },
+    "improvesEffectivenessOf" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesEffectivenessOf",
+      "@type" : "@id"
+    },
+    "fulfils" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#fulfils",
+      "@type" : "@id"
+    },
+    "Improvement" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Improvement"
+    },
+    "Embodiment" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#Embodiment"
+    },
+    "enables" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enables",
+      "@type" : "@id"
+    },
+    "manifestedBy" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#manifestedBy",
+      "@type" : "@id"
+    },
+    "DevelopmentStage" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#DevelopmentStage"
+    },
+    "improvesQualityOf" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#improvesQualityOf",
+      "@type" : "@id"
+    },
+    "enabledBy" : {
+      "@id" : "http://www.semanticweb.org/vishnu/ontologies/2019/11/untitled-ontology-28#enabledBy",
+      "@type" : "@id"
+    }
+  }
+}

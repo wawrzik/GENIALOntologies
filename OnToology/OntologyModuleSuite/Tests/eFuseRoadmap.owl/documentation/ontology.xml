@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-13="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Invokes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Invokes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PossibilityofFailure -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PossibilityofFailure">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Reduces -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Reduces">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Uses">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasApplication -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasApplication">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasFailure -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasFailure">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#hasInfluence">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Transportation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Transportation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#AmbientTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#AmbientTemperature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Automobile -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Automobile">
+        <Reduces rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Losses"/>
+        <Reduces rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Weight"/>
+        <Uses rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#AutonomousDriving"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#AutonomousDriving -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#AutonomousDriving">
+        <hasFailure rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OperationFailure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#BreakingCapacity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#BreakingCapacity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CO2LegislationandReduction -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CO2LegislationandReduction">
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PrivateTransportation"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PublicTransportation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ClimateChange -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ClimateChange">
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CO2LegislationandReduction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ControlledPowerDown -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ControlledPowerDown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CrossSectionWiring -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CrossSectionWiring">
+        <Uses rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SpaceAccessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CurrentRating -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CurrentRating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DiagnosisandControllingSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DiagnosisandControllingSystem">
+        <Invokes rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#IntelligentPowerDistribution"/>
+        <Invokes rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PowerDown"/>
+        <Invokes rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SuppressingDefectivePath"/>
+        <Invokes rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SwitchingOfftheLoadPath"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DischargeintheSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DischargeintheSystem">
+        <Uses rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DiagnosisandControllingSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ElectroMobility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ElectroMobility">
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ClimateChange"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FaultResponseandRecovery -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FaultResponseandRecovery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#InrushCurrentControl -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#InrushCurrentControl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#IntelligentPowerDistribution -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#IntelligentPowerDistribution">
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#InterruptingRate -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#InterruptingRate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Losses -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Losses">
+        <Uses rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Relay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OperationFailure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OperationFailure">
+        <PossibilityofFailure rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DischargeintheSystem"/>
+        <PossibilityofFailure rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#RecognizeFaultintheSystem"/>
+        <PossibilityofFailure rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#RedundantPowerSupply"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OvercurrentProtection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OvercurrentProtection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OvertemperatureProtection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OvertemperatureProtection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OvervoltageProtection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#OvervoltageProtection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PowerDown -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PowerDown">
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PrivateTransportation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PrivateTransportation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Transportation"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Automobile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PublicTransportation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#PublicTransportation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Transportation"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Automobile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#RecognizeFaultintheSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#RecognizeFaultintheSystem">
+        <Uses rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DiagnosisandControllingSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#RedundantPowerSupply -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#RedundantPowerSupply">
+        <Uses rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#DiagnosisandControllingSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Relay -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Relay">
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Rerating -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Rerating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ReverseCurrentProtection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ReverseCurrentProtection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ShortCircuitProtection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#ShortCircuitProtection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SpaceAccessibility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SpaceAccessibility">
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SuppressingDefectivePath -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SuppressingDefectivePath">
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SurgeProtection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SurgeProtection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#FeaturesofeFuse"/>
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SwitchingOfftheLoadPath -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#SwitchingOfftheLoadPath">
+        <hasInfluence rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#TheFuseandCableModel">
+        <Uses rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Weight -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#Weight">
+        <Reduces rdf:resource="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#CrossSectionWiring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishnu/ontologies/2019/8/untitled-ontology-13#eFuse"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+
