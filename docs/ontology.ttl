@@ -1,24 +1,24 @@
-@prefix : <http://cpsagila.cs.uni-kl.de/GENIALOnt#> .
+@prefix : <https://w3id.org/def/gbo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://cpsagila.cs.uni-kl.de/GENIALOnt> .
+@base <https://w3id.org/def/gbo> .
 
-<http://cpsagila.cs.uni-kl.de/GENIALOnt> rdf:type owl:Ontology ;
-                                          owl:versionIRI <http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1> ;
-                                          owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> ;
-                                          <http://purl.org/dc/elements/1.1/description> "Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL!. The basic vocabulary supports modelling of microelectronic components like processors, sensors, actuators and software along the automotive value chain." ;
-                                          <http://purl.org/dc/elements/1.1/title> "GENIAL! Basic Ontology" ;
-                                          <http://purl.org/dc/terms/contributor> "Christoph Grimm" ,
-                                                                                 "Peter Neumann" ;
-                                          <http://purl.org/dc/terms/created> "2021-01-26" ;
-                                          <http://purl.org/dc/terms/creator> "Frank Wawrzik" ;
-                                          <http://purl.org/dc/terms/title> "GENIAL! Basic Ontology" ;
-                                          rdfs:label "GENIAL! Basic Ontology" ;
-                                          owl:versionInfo "0.2.0" ;
-                                          <http://xmlns.com/foaf/0.1/mbox> "mailto:wawrzik@cs.uni-kl.de" .
+<https://w3id.org/def/gbo> rdf:type owl:Ontology ;
+                            owl:versionIRI <https://w3id.org/def/gbo/0.1.1> ;
+                            owl:imports <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> ;
+                            <http://purl.org/dc/elements/1.1/description> "Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL!. It supports the modelling of microlectronic components like sensors, acutators, processors and software along the automotive value chain." ;
+                            <http://purl.org/dc/elements/1.1/title> "GENIAL! Basic Ontology" ;
+                            <http://purl.org/dc/terms/contributor> "Christoph Grimm" ,
+                                                                   "Peter Neumann" ;
+                            <http://purl.org/dc/terms/created> "2021-01-26" ;
+                            <http://purl.org/dc/terms/creator> "Frank Wawrzik" ;
+                            <http://purl.org/dc/terms/title> "GENIAL! Basic Ontology" ;
+                            rdfs:label "GENIAL! Basic Ontology" ;
+                            owl:versionInfo "0.2.0" ;
+                            <http://xmlns.com/foaf/0.1/mbox> "mailto:wawrzik@cs.uni-kl.de"@cs.uni-kl.de .
 
 #################################################################
 #    Annotation properties
@@ -52,66 +52,6 @@
 #    Object Properties
 #################################################################
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#comprised_of
-:comprised_of rdf:type owl:ObjectProperty ;
-              owl:equivalentProperty :has_part_directly .
-
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#depends_on
-:depends_on rdf:type owl:ObjectProperty ,
-                     owl:SymmetricProperty ;
-            rdfs:domain :property ;
-            rdfs:range :dependency ;
-            <http://purl.obolibrary.org/obo/IAO_0000115> "Links properties with dependencies." .
-
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part
-:has_part rdf:type owl:ObjectProperty ;
-          owl:inverseOf :part_of ;
-          rdf:type owl:TransitiveProperty ;
-          <http://purl.obolibrary.org/obo/IAO_0000115> "models hierarchical de-composition/integration" .
-
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly
-:has_part_directly rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf :has_part ;
-                   owl:inverseOf :part_of_directly .
-
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property
-:has_property rdf:type owl:ObjectProperty ;
-              owl:inverseOf :property_of ;
-              rdfs:range :property ;
-              <http://purl.obolibrary.org/obo/IAO_0000115> "links components to their properties" .
-
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#implements
-:implements rdf:type owl:ObjectProperty ;
-            owl:inverseOf :is_implemented_by ;
-            rdfs:domain :element ;
-            rdfs:range :function .
-
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#is_implemented_by
-:is_implemented_by rdf:type owl:ObjectProperty .
-
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of
-:part_of rdf:type owl:ObjectProperty ,
-                  owl:TransitiveProperty ;
-         <http://purl.obolibrary.org/obo/IAO_0000115> "models hierarchical de-composition/integration" .
-
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#part_of_directly
-:part_of_directly rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf :part_of .
-
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#property_of
-:property_of rdf:type owl:ObjectProperty ;
-             <http://purl.obolibrary.org/obo/IAO_0000115> "links properties back to their components" .
-
-
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit
 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit> rdf:type owl:ObjectProperty ;
                                                                     rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> ;
@@ -128,28 +68,117 @@
                                                                      rdfs:label "has value" .
 
 
+###  https://w3id.org/def/gbo#comprised_of
+:comprised_of rdf:type owl:ObjectProperty ;
+              owl:equivalentProperty :has_part_directly .
+
+
+###  https://w3id.org/def/gbo#depends_on
+:depends_on rdf:type owl:ObjectProperty ,
+                     owl:SymmetricProperty ;
+            rdfs:domain :property ;
+            rdfs:range :dependency ;
+            <http://purl.obolibrary.org/obo/IAO_0000115> "Links properties with dependencies." .
+
+
+###  https://w3id.org/def/gbo#executes
+:executes rdf:type owl:ObjectProperty ;
+          owl:inverseOf :is_executed_by .
+
+
+###  https://w3id.org/def/gbo#has_part
+:has_part rdf:type owl:ObjectProperty ;
+          owl:inverseOf :part_of ;
+          rdf:type owl:TransitiveProperty ;
+          <http://purl.obolibrary.org/obo/IAO_0000115> "models hierarchical de-composition/integration" .
+
+
+###  https://w3id.org/def/gbo#has_part_directly
+:has_part_directly rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :has_part ;
+                   owl:inverseOf :part_of_directly .
+
+
+###  https://w3id.org/def/gbo#has_property
+:has_property rdf:type owl:ObjectProperty ;
+              owl:inverseOf :property_of ;
+              rdfs:range :property ;
+              <http://purl.obolibrary.org/obo/IAO_0000115> "links components to their properties" .
+
+
+###  https://w3id.org/def/gbo#implements
+:implements rdf:type owl:ObjectProperty ;
+            owl:inverseOf :is_implemented_by ;
+            rdfs:domain :element ;
+            rdfs:range :function .
+
+
+###  https://w3id.org/def/gbo#is_executed_by
+:is_executed_by rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/gbo#is_implemented_by
+:is_implemented_by rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/gbo#part_of
+:part_of rdf:type owl:ObjectProperty ,
+                  owl:TransitiveProperty ;
+         <http://purl.obolibrary.org/obo/IAO_0000115> "models hierarchical de-composition/integration" .
+
+
+###  https://w3id.org/def/gbo#part_of_directly
+:part_of_directly rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :part_of .
+
+
+###  https://w3id.org/def/gbo#property_of
+:property_of rdf:type owl:ObjectProperty ;
+             <http://purl.obolibrary.org/obo/IAO_0000115> "links properties back to their components" .
+
+
 #################################################################
 #    Data properties
 #################################################################
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hasLowerBoundNumericalValue
-<http://cpsagila.cs.uni-kl.de/GENIALOnt/hasLowerBoundNumericalValue> rdf:type owl:DatatypeProperty .
-
-
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt/hasUpperBoundNumericalValue
-<http://cpsagila.cs.uni-kl.de/GENIALOnt/hasUpperBoundNumericalValue> rdf:type owl:DatatypeProperty .
-
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue
 <http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue> rdf:type owl:DatatypeProperty ;
                                                                               rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/measure> .
 
 
+###  https://w3id.org/def/gbo/hasLowerBoundNumericalValue
+<https://w3id.org/def/gbo/hasLowerBoundNumericalValue> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/def/gbo/hasUpperBoundNumericalValue
+<https://w3id.org/def/gbo/hasUpperBoundNumericalValue> rdf:type owl:DatatypeProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#component
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/measure
+<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "A bfo:quality that are amounts of quantities" ;
+                                                                    rdfs:label "measure" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/quantity
+<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :property ;
+                                                                     <http://purl.obolibrary.org/obo/IAO_0000115> "A quantity is a (property that is quanitifiable and a) representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length." .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/unit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "is a quality that is any standard used for comparison in measurements" ;
+                                                                 rdfs:label "unit" .
+
+
+###  https://w3id.org/def/gbo#component
 :component rdf:type owl:Class ;
            owl:equivalentClass [ owl:intersectionOf ( :non-system_level_element
                                                       [ rdf:type owl:Class ;
@@ -191,45 +220,45 @@
 A component is a part of a system (3.163).""" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#context
+###  https://w3id.org/def/gbo#context
 :context rdf:type owl:Class ;
          <http://purl.obolibrary.org/obo/IAO_0000115> "The circumstances that form the setting for an event, statement or idea and in terms of which it can be fully understood, e.g. Market, legal  frame conditions" ;
          rdfs:label "context" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency
+###  https://w3id.org/def/gbo#dependency
 :dependency rdf:type owl:Class ;
             rdfs:subClassOf :property ;
             <http://purl.obolibrary.org/obo/IAO_0000115> "A gbo:property that is a boolean or arithmetic function / equation on properties. Used to be calculated with GENIAL constraint propagation. As string in LaTex syntax" ;
             rdfs:label "dependency" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#element
+###  https://w3id.org/def/gbo#element
 :element rdf:type owl:Class ;
          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000002> ;
          owl:disjointWith [ rdf:type owl:Class ;
-                            owl:unionOf ( :context
-                                          <http://purl.obolibrary.org/obo/BFO_0000020>
+                            owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000020>
                                           <http://purl.obolibrary.org/obo/BFO_0000141>
+                                          :context
                                         )
                           ] ;
          <http://purl.obolibrary.org/obo/IAO_0000115> "Continuant that is (according to ISO 26262) a system (3.163), components (3.21) (hardware or software), hardware parts (3.71), or software units (3.159)" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object
+###  https://w3id.org/def/gbo#engineered_object
 :engineered_object rdf:type owl:Class ;
                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
                    <http://purl.obolibrary.org/obo/IAO_0000115> "An object created, designed or engineered by humans" ;
                    rdfs:label "engineered object" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#function
+###  https://w3id.org/def/gbo#function
 :function rdf:type owl:Class ;
           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
           <http://purl.obolibrary.org/obo/IAO_0000115> "A bfo:function that a component, hardware or software implements" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component
+###  https://w3id.org/def/gbo#hardware_component
 :hardware_component rdf:type owl:Class ;
                     owl:equivalentClass [ owl:intersectionOf ( :hardware_element
                                                                [ rdf:type owl:Restriction ;
@@ -249,7 +278,7 @@ A component is a part of a system (3.163).""" .
                     <http://purl.obolibrary.org/obo/IAO_0000115> "No ISO definition. Formal Definition derived from other definitions." .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element
+###  https://w3id.org/def/gbo#hardware_element
 :hardware_element rdf:type owl:Class ;
                   rdfs:subClassOf :engineered_object ,
                                   :non-system_level_element ;
@@ -260,7 +289,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                              "hardware element" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart
+###  https://w3id.org/def/gbo#hardware_elementary_subpart
 :hardware_elementary_subpart rdf:type owl:Class ;
                              owl:equivalentClass [ owl:intersectionOf ( :hardware_element
                                                                         [ rdf:type owl:Restriction ;
@@ -274,7 +303,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                              <http://purl.obolibrary.org/obo/IAO_0000115> "smallest portion of a hardware subpart (3.73) considered in safety (3.132) analysis" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part
+###  https://w3id.org/def/gbo#hardware_part
 :hardware_part rdf:type owl:Class ;
                owl:equivalentClass [ owl:intersectionOf ( :hardware_element
                                                           [ rdf:type owl:Restriction ;
@@ -289,7 +318,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                rdfs:label "hardware part" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart
+###  https://w3id.org/def/gbo#hardware_subpart
 :hardware_subpart rdf:type owl:Class ;
                   owl:equivalentClass [ owl:intersectionOf ( :hardware_element
                                                              [ rdf:type owl:Restriction ;
@@ -315,32 +344,32 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                   <http://purl.obolibrary.org/obo/IAO_0000115> "portion of a hardware part (3.71) that can be logically divided and represents second or greater level of hierarchical decomposition" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#legal_boundary_conditions
+###  https://w3id.org/def/gbo#legal_boundary_conditions
 :legal_boundary_conditions rdf:type owl:Class ;
                            rdfs:subClassOf :context ;
                            rdfs:label "legal boundary condiitons" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#market
+###  https://w3id.org/def/gbo#market
 :market rdf:type owl:Class ;
         rdfs:subClassOf :context ;
         rdfs:label "market" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#material_object
+###  https://w3id.org/def/gbo#material_object
 :material_object rdf:type owl:Class ;
                  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
                  rdfs:label "material object" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element
+###  https://w3id.org/def/gbo#non-system_level_element
 :non-system_level_element rdf:type owl:Class ;
                           rdfs:subClassOf :element ;
                           owl:disjointWith :system_level_element ;
                           <http://purl.obolibrary.org/obo/IAO_0000115> "An element that is not on the system-level" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#property
+###  https://w3id.org/def/gbo#property
 :property rdf:type owl:Class ;
           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
           <http://purl.obolibrary.org/obo/IAO_0000112> "drag coefficient" ,
@@ -350,13 +379,13 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
           rdfs:label "property" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#social_object
+###  https://w3id.org/def/gbo#social_object
 :social_object rdf:type owl:Class ;
                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
                rdfs:label "social object" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component
+###  https://w3id.org/def/gbo#software_component
 :software_component rdf:type owl:Class ;
                     owl:equivalentClass [ owl:intersectionOf ( :software_element
                                                                [ rdf:type owl:Restriction ;
@@ -379,17 +408,17 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                     <http://purl.obolibrary.org/obo/IAO_0000115> "one or more softwareunits (3.159)" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element
+###  https://w3id.org/def/gbo#software_element
 :software_element rdf:type owl:Class ;
-                  rdfs:subClassOf :non-system_level_element ,
-                                  <http://purl.obolibrary.org/obo/BFO_0000031> ;
+                  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                  :non-system_level_element ;
                   rdfs:comment """From definition of element:
 Note 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively.""" ;
                   rdfs:label "software" ,
                              "software element" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#software_unit
+###  https://w3id.org/def/gbo#software_unit
 :software_unit rdf:type owl:Class ;
                owl:equivalentClass [ owl:intersectionOf ( :software_element
                                                           [ rdf:type owl:Restriction ;
@@ -412,20 +441,20 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                rdfs:label "software unit" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#system
+###  https://w3id.org/def/gbo#system
 :system rdf:type owl:Class ;
         owl:equivalentClass [ owl:intersectionOf ( :system_level_element
                                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                             owl:onProperty :comprised_of ;
-                                                                            owl:someValuesFrom <http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator>
+                                                                            owl:someValuesFrom <https://w3id.org/def/gbo/actuator>
                                                                           ]
                                                                           [ rdf:type owl:Restriction ;
                                                                             owl:onProperty :comprised_of ;
-                                                                            owl:someValuesFrom <http://cpsagila.cs.uni-kl.de/GENIALOnt/controller>
+                                                                            owl:someValuesFrom <https://w3id.org/def/gbo/controller>
                                                                           ]
                                                                           [ rdf:type owl:Restriction ;
                                                                             owl:onProperty :comprised_of ;
-                                                                            owl:someValuesFrom <http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor>
+                                                                            owl:someValuesFrom <https://w3id.org/def/gbo/sensor>
                                                                           ]
                                                                         ) ;
                                                      rdf:type owl:Class
@@ -436,47 +465,27 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         <http://purl.obolibrary.org/obo/IAO_0000115> "according to ISO 26262: (continuant that is a) set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element
+###  https://w3id.org/def/gbo#system_level_element
 :system_level_element rdf:type owl:Class ;
                       rdfs:subClassOf :element ;
                       <http://purl.obolibrary.org/obo/IAO_0000115> "An element that is on the system level" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator
-<http://cpsagila.cs.uni-kl.de/GENIALOnt/actuator> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :hardware_component ;
-                                                  rdfs:comment "Not defined in ISO26262" .
+###  https://w3id.org/def/gbo/actuator
+<https://w3id.org/def/gbo/actuator> rdf:type owl:Class ;
+                                    rdfs:subClassOf :hardware_component ;
+                                    rdfs:comment "Not defined in ISO26262" .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt/controller
-<http://cpsagila.cs.uni-kl.de/GENIALOnt/controller> rdf:type owl:Class ;
-                                                    rdfs:subClassOf :component .
+###  https://w3id.org/def/gbo/controller
+<https://w3id.org/def/gbo/controller> rdf:type owl:Class ;
+                                      rdfs:subClassOf :component .
 
 
-###  http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor
-<http://cpsagila.cs.uni-kl.de/GENIALOnt/sensor> rdf:type owl:Class ;
-                                                rdfs:subClassOf :hardware_component ;
-                                                rdfs:comment "Not defined in ISO26262" .
-
-
-###  http://www.ontology-of-units-of-measure.org/resource/om-2/measure
-<http://www.ontology-of-units-of-measure.org/resource/om-2/measure> rdf:type owl:Class ;
-                                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
-                                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "A bfo:quality that are amounts of quantities" ;
-                                                                    rdfs:label "measure" .
-
-
-###  http://www.ontology-of-units-of-measure.org/resource/om-2/quantity
-<http://www.ontology-of-units-of-measure.org/resource/om-2/quantity> rdf:type owl:Class ;
-                                                                     rdfs:subClassOf :property ;
-                                                                     <http://purl.obolibrary.org/obo/IAO_0000115> "A quantity is a (property that is quanitifiable and a) representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, a molecule, or a food product). Quantities are classified according to similarity in their (implicit) metrological aspect, e.g. the length of my table and the length of my chair are both classified as length." .
-
-
-###  http://www.ontology-of-units-of-measure.org/resource/om-2/unit
-<http://www.ontology-of-units-of-measure.org/resource/om-2/unit> rdf:type owl:Class ;
-                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
-                                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "is a quality that is any standard used for comparison in measurements" ;
-                                                                 rdfs:label "unit" .
+###  https://w3id.org/def/gbo/sensor
+<https://w3id.org/def/gbo/sensor> rdf:type owl:Class ;
+                                  rdfs:subClassOf :hardware_component ;
+                                  rdfs:comment "Not defined in ISO26262" .
 
 
 #################################################################
@@ -492,4 +501,4 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
 ] .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 5.1.14.2020-04-18T20:17:57Z) https://github.com/owlcs/owlapi/
