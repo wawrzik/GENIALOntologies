@@ -8,7 +8,8 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware">
         <owl:versionIRI rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.1"/>
         <owl:imports rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"/>
@@ -16,6 +17,26 @@
 Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributor>
         <rdfs:comment>Domain ontology of general hardware terms and their functions and properties.</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#executes -->
+
+    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#executes">
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"/>
+    </rdf:Description>
     
 
 
@@ -167,6 +188,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/air -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/air">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/channel"/>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/all_flash_array">
@@ -231,6 +260,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/channel"/>
         <obo:IAO_0000115>Buses serve as the interface between PC components. The CPU, Northbridge and Southbridge are the main components attached to the system bus. There&apos;s two types of buses-internal and external</obo:IAO_0000115>
         <obo:IAO_0000119>https://sites.google.com/site/dfwarn/system-bus</obo:IAO_0000119>
     </owl:Class>
@@ -283,10 +313,30 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/channel -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/channel">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"/>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#executes"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mfcc_computation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#implements"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/compute_deep_neural_network"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -295,6 +345,35 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/cnn_accelerator_controller">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/pipeline_stage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/communication_unit -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/communication_unit">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/channel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/port"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>means to establish information exchange between elements</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/compute_deep_neural_network -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/compute_deep_neural_network">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
     </owl:Class>
     
 
@@ -570,7 +649,47 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter_width -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter_width">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:intersectionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -609,7 +728,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_software"/>
         <rdfs:label>functional block</rdfs:label>
     </owl:Class>
     
@@ -649,9 +768,9 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_software -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware">
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_software">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -702,6 +821,22 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/input_channel -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/input_channel">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/input_port -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/input_port">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/port"/>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_set -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/instruction_set">
@@ -746,7 +881,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardwareorsoftware"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_software"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1123,6 +1258,14 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/non_linear_transform">
@@ -1141,6 +1284,54 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_at_the_beginning_of_an_input_channel -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_at_the_beginning_of_an_input_channel">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_input_channels -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_input_channels">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:intersectionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks">
@@ -1149,10 +1340,66 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_output_channels -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_output_channels">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:intersectionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_registers">
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_zero_padded_values -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_zero_padded_values">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/output_port -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/output_port">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/port"/>
     </owl:Class>
     
 
@@ -1170,6 +1417,25 @@ The computation of those features consists of several steps: 1. Framing and wind
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/p_controller">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/functional_block"/>
         <rdfs:label>P-controller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/padding -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/padding">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1224,6 +1490,14 @@ The computation of those features consists of several steps: 1. Framing and wind
                 <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/latency"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/port -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/port">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/io_parts"/>
     </owl:Class>
     
 
@@ -1461,6 +1735,46 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stride -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stride">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:intersectionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/subtractor -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/subtractor">
@@ -1576,6 +1890,55 @@ In brief, voltage = pressure, and it is measured in volts (V). The term recogniz
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/width">
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/width_of_input_channel -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/width_of_input_channel">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">127</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:intersectionOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/wire -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/wire">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/channel"/>
     </owl:Class>
     
 
