@@ -679,6 +679,12 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/controller">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
