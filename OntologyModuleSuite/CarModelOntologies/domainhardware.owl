@@ -217,6 +217,30 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_filter_width -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_filter_width">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_filter_width_at_the_end_of_input_channel -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_filter_width_at_the_end_of_input_channel">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_whole_filter_times -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_whole_filter_times">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/asynchronous_bus -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/asynchronous_bus">
@@ -317,6 +341,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/channel">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#non-system_level_element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV-EXT_layer -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV-EXT_layer">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
     </owl:Class>
     
 
@@ -458,16 +490,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/current -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/current">
-        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
-        <obo:IAO_0000115>Yet current is a physical quantity that can be measured and expressed numerically. The current in a circuit can be determined if the quantity of charge Q passing through a cross section of a wire in a time t can be measured. The current is simply the ratio of the quantity of charge and time.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://www.physicsclassroom.com/class/circuits/Lesson-2/Electric-Current</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit">
@@ -543,6 +565,16 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
         <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
         <rdfs:label>DRAM</rdfs:label>
         <rdfs:label>dynamic random access memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electrical_current -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electrical_current">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+        <obo:IAO_0000115>Yet current is a physical quantity that can be measured and expressed numerically. The current in a circuit can be determined if the quantity of charge Q passing through a cross section of a wire in a time t can be measured. The current is simply the ratio of the quantity of charge and time.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.physicsclassroom.com/class/circuits/Lesson-2/Electric-Current</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -650,6 +682,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/hardware_software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter_applications -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter_applications">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
     </owl:Class>
     
 
@@ -1021,7 +1061,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/current"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electrical_current"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1287,6 +1327,22 @@ The computation of those features consists of several steps: 1. Framing and wind
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_at_the_beginning_of_an_input_channel -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_at_the_beginning_of_an_input_channel">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_replaced_by_zero -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_replaced_by_zero">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_filter_applications_at_the_end_of_input_channel -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_filter_applications_at_the_end_of_input_channel">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/neural_net_quantity"/>
     </owl:Class>
     

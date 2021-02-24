@@ -56,10 +56,50 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_filter_width_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_filter_width_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_filter_width"/>
+        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_applied_filter_width_1"/>
+        <hardware:hasAPPELFormula>Fw</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_filter_width_at_the_end_of_input_channel_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_filter_width_at_the_end_of_input_channel_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_filter_width_at_the_end_of_input_channel"/>
+        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_applied_filter_width_at_the_end_of_input_channel_1"/>
+        <hardware:hasAPPELFormula>Cwe</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_whole_filter_times_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_whole_filter_times_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/applied_whole_filter_times"/>
+        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_applied_whole_filter_times_1"/>
+        <hardware:hasAPPELFormula>aw</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branchfu_1 -->
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branchfu_1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/branch_functional_unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV-EXT_layer_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV-EXT_layer_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV-EXT_layer"/>
+        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_clock_cycles_to_process_one_CONV-EXT_layer_1"/>
+        <hardware:hasAPPELFormula>t_l</hardware:hasAPPELFormula>
     </owl:NamedIndividual>
     
 
@@ -88,10 +128,56 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_applied_filter_width_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_applied_filter_width_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"/>
+        <hardware:hasAPPELFormula>a_w * s + F - s</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_applied_filter_width_at_the_end_of_input_channel_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_applied_filter_width_at_the_end_of_input_channel_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"/>
+        <hardware:hasAPPELFormula>Fw - C_w - C_wb</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_applied_whole_filter_times_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_applied_whole_filter_times_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"/>
+        <hardware:hasAPPELFormula>floor((C_w_hat - F)/s + 1)</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_clock_cycles_to_process_one_CONV-EXT_layer_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_clock_cycles_to_process_one_CONV-EXT_layer_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"/>
+        <hardware:hasAPPELFormula>1 + ceil(C/8) * ceil(K/8)* (a_w*F - MAC_notb - MAC_note)</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_filter_applications_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_filter_applications_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"/>
+        <hardware:hasAPPELFormula>ITE(p, floor((C_wb - 1)/s + 1), 0)</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_input_channel1 -->
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_input_channel1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"/>
+        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_number_of_filter_applications_at_the_end_of_input_channel_1"/>
         <hardware:hasAPPELFormula>ITE(p, C_w + 2*floor(F/2), C_w)</hardware:hasAPPELFormula>
     </owl:NamedIndividual>
     
@@ -103,6 +189,24 @@
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"/>
         <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_number_of_MAC_operations_at_the_beginning_of_an_input_channel_1"/>
         <hardware:hasAPPELFormula>sum_i(0, a_pb - 1, floor(F/2) - s * i)</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_number_of_MAC_operations_replaced_by_zero_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_number_of_MAC_operations_replaced_by_zero_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"/>
+        <hardware:hasAPPELFormula>sum_i(0, a_pe-1, floor(F/2)-s*i-(C_wb-C_we))</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_number_of_filter_applications_at_the_end_of_input_channel_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_number_of_filter_applications_at_the_end_of_input_channel_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"/>
+        <hardware:hasAPPELFormula>ITE(p, floor((C_we - 1)/s) + 1, 0)</hardware:hasAPPELFormula>
     </owl:NamedIndividual>
     
 
@@ -272,6 +376,16 @@
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter_applications_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter_applications_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter_applications"/>
+        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_filter_applications_1"/>
+        <hardware:hasAPPELFormula>apb</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter_width_1 -->
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter_width_1">
@@ -304,6 +418,7 @@
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/input_channel1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/input_channel"/>
         <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_input_channel1"/>
+        <hardware:hasAPPELFormula>Cw_hat</hardware:hasAPPELFormula>
     </owl:NamedIndividual>
     
 
@@ -934,6 +1049,36 @@
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_at_the_beginning_of_an_input_channel_1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_at_the_beginning_of_an_input_channel"/>
+        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_number_of_MAC_operations_at_the_beginning_of_an_input_channel_1"/>
+        <hardware:hasAPPELFormula>MAC_notb</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_replaced_by_zero_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_replaced_by_zero_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_MAC_operations_replaced_by_zero"/>
+        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_number_of_MAC_operations_replaced_by_zero_1"/>
+        <hardware:hasAPPELFormula>MAC_note</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_filter_applications_at_the_end_of_input_channel_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_filter_applications_at_the_end_of_input_channel_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_filter_applications_at_the_end_of_input_channel"/>
+        <hardware:hasAPPELFormula>ape</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_input_channels_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_input_channels_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_input_channels"/>
+        <hardware:hasAPPELFormula>C</hardware:hasAPPELFormula>
     </owl:NamedIndividual>
     
 
@@ -943,6 +1088,15 @@
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks_memory_map_1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_memory_banks"/>
         <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_number_of_memory_banks_memory_map_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_output_channels_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_output_channels_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_output_channels"/>
+        <hardware:hasAPPELFormula>K</hardware:hasAPPELFormula>
     </owl:NamedIndividual>
     
 
@@ -959,6 +1113,8 @@
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_zero_padded_values_1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/number_of_zero_padded_values"/>
+        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_number_of_zero_padded_values_1"/>
+        <hardware:hasAPPELFormula>C_wb</hardware:hasAPPELFormula>
     </owl:NamedIndividual>
     
 
@@ -1161,6 +1317,15 @@
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit_1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/store_unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stride_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stride_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stride"/>
+        <hardware:hasAPPELFormula>ns</hardware:hasAPPELFormula>
     </owl:NamedIndividual>
     
 
