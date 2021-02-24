@@ -9,7 +9,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:hardware="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/">
     <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware">
         <owl:versionIRI rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.1"/>
         <owl:imports rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"/>
@@ -34,7 +35,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#executes -->
 
     <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#executes">
-        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
         <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"/>
     </rdf:Description>
     
@@ -1563,14 +1563,6 @@ The computation of those features consists of several steps: 1. Framing and wind
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/power_bus">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bus"/>
         <rdfs:label>power bus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
     </owl:Class>
     
 
