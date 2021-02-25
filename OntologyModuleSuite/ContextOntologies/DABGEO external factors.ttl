@@ -1,0 +1,69 @@
+@prefix :        <EnvironmentalFactors/> .
+@prefix externalfactors:  <http://www.purl.org/oema/externalfactors/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix ns:      <http://creativecommons.org/ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms:   <http://purl.org/dc/terms/> .
+@prefix swrlx:   <http://www.w3.org/2003/11/swrlx#> .
+@prefix owl2:    <http://www.w3.org/2006/12/owl2#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix WeatherOntology:  <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+
+externalfactors:ExternalFactor
+      a       owl:Class .
+
+ns:license
+      a       owl:AnnotationProperty .
+
+time:Instant
+      a       owl:Class .
+
+externalfactors:EnvironmentalFactor
+      a       owl:Class ;
+      rdfs:comment "This class represents environmental factors, which refer to the principal air pollutants in the urban area (e.g. total suspended particulate matter, sul-phur dioxide, nitrogen dioxide, carbon monoxide, ozone, lead, etc.)."@en ;
+      rdfs:label "EnvironmentalFactor"@en ;
+      rdfs:subClassOf externalfactors:ExternalFactor ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass
+                        [ a       owl:Class ;
+                          owl:unionOf (time:Instant time:Interval)
+                        ] ;
+                owl:onProperty WeatherOntology:hasObservationTime ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] .
+
+<http://www.purl.org/dabgeo/common-domain/environmentalfactors>
+      a       owl:Ontology ;
+      rdfs:comment """The 'Environmental Factors' ontology module represents different environmental factors that affect energy performance such as air pollutants or weahter related environmental factors, i.e., luminity. 
+This ontology module reuses the knowledge of the 'External Factors' ontology module, as well as the 'Time' external ontology.
+
+Information about changes compared to version 1.1
+*********************************************************
+We have changed the names of ontology layers and documented missing classes."""@en ;
+      ns:license "https://creativecommons.org/licenses/by-nc/4.0/" ;
+      dc:creator "Javier Cuenca <mailto:jcuenca@mondragon.edu>"@en ;
+      dc:title "Environmental Factors ontology"@en ;
+      terms:issued "2018-02-09"@en ;
+      terms:modified "2019-02-22"@en ;
+      owl:imports <http://www.w3.org/2006/time#2016> , <http://www.purl.org/dabgeo/common-domain/externalfactors> ;
+      owl:versionInfo "2.0"@en .
+
+WeatherOntology:hasObservationTime
+      a       owl:ObjectProperty ;
+      rdfs:comment "This property relates an energy parameter with the period of time when it is measured." ;
+      rdfs:label "hasObservationTime"@en ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (time:Instant time:Interval)
+              ] .
+
+time:Interval
+      a       owl:Class .

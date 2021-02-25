@@ -1,0 +1,283 @@
+@prefix :        <PopulatedPlaces/> .
+@prefix schema:  <http://schema.org/> .
+@prefix SUMO:    <http://www.ontologyportal.org/SUMO.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix ns:      <http://creativecommons.org/ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix SEMANCO:  <http://semanco02.hs-albsig.de/repository/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms:   <http://purl.org/dc/terms/> .
+@prefix swrlx:   <http://www.w3.org/2003/11/swrlx#> .
+@prefix owl2:    <http://www.w3.org/2006/12/owl2#> .
+@prefix ontology:  <http://dbpedia.org/ontology/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+
+ontology:HistoricalSettlement
+      a       owl:Class ;
+      rdfs:comment "A place which used to be a city or town or village."@en ;
+      rdfs:label "HistoricalSettlement"@en ;
+      rdfs:subClassOf ontology:Settlement .
+
+ontology:Settlement
+      a       owl:Class ;
+      rdfs:comment "In geography, statistics and archaeology, a settlement is a community in which people live."@en ;
+      rdfs:label "Settlement"@en ;
+      rdfs:subClassOf ontology:PopulatedPlace .
+
+ontology:Atoll
+      a       owl:Class ;
+      rdfs:comment "An atoll sometimes called a coral atoll, is a ring-shaped coral reef including a coral rim that encircles a lagoon partially or completely."@en ;
+      rdfs:label "Atoll"@en ;
+      rdfs:subClassOf ontology:Island .
+
+<http://www.purl.org/dabgeo/domain-task/smart_grid_scenario/building_district_city/populatedplaces>
+      a       owl:Ontology ;
+      rdfs:comment """The 'Populated Places' ontology module represents populated places such as countries or cities.
+The knowledge of this ontology module is mainly reused by building/district/city energy management applications.
+
+Information about changes compared to version 1.1
+*********************************************************
+We have changed the names of ontology layers and documented missing classes."""@en ;
+      ns:license "https://creativecommons.org/licenses/by-nc/4.0/" ;
+      dc:creator "Javier Cuenca <mailto:jcuenca@mondragon.edu>"@en ;
+      dc:title "Populated Places ontology"@en ;
+      terms:issued "2018-02-09"@en ;
+      terms:modified "2019-02-22"@en ;
+      owl:versionInfo "2.0"@en .
+
+ontology:City
+      a       owl:Class ;
+      rdfs:comment "A relatively large and permanent settlement, particularly a large urban settlement"@en ;
+      rdfs:label "City"@en ;
+      rdfs:subClassOf ontology:Settlement .
+
+SUMO:Neighbourhood
+      a       owl:Class ;
+      rdfs:comment "A neighbourhood is a geographically localised community within a larger city, town, suburb or rural area."@en ;
+      rdfs:label "Neighbourhood"@en ;
+      rdfs:subClassOf ontology:Settlement .
+
+ontology:NaturalRegion
+      a       owl:Class ;
+      rdfs:comment "A natural region is a basic geographic unit. Usually it is a region which is distinguished by its common natural features of geography, geology, and climate."@en ;
+      rdfs:label "NaturalRegion"@en ;
+      rdfs:subClassOf ontology:Region .
+
+<http://www.purl.org/oema/externalfactors/Country>
+      a       owl:Class ;
+      rdfs:comment "A country is a region that is identified as a distinct national entity in political geography."@en ;
+      rdfs:label "Country"@en ;
+      rdfs:subClassOf ontology:AdministrativeRegion .
+
+ontology:Region
+      a       owl:Class ;
+      rdfs:comment "In geography, regions are areas that are broadly divided by physical characteristics (physical geography), human impact characteristics (human geography), and the interaction of humanity and the environment (environmental geography)."@en ;
+      rdfs:label "Region"@en ;
+      rdfs:subClassOf ontology:PopulatedPlace .
+
+ontology:SubMunicipality
+      a       owl:Class ;
+      rdfs:comment "An administrative body governing a territorial unity on the lowest level, administering part of a municipality"@en ;
+      rdfs:label "SubMunicipality"@en ;
+      rdfs:subClassOf ontology:GovernmentalAdministrativeRegion .
+
+dc:title
+      a       owl:AnnotationProperty .
+
+ontology:Prefecture
+      a       owl:Class ;
+      rdfs:comment "A prefecture is an administrative jurisdiction or subdivision in any of various countries and within some international church structures, and in antiquity a Roman district governed by an appointed prefect."@en ;
+      rdfs:label "Prefecture"@en ;
+      rdfs:subClassOf ontology:GovernmentalAdministrativeRegion .
+
+ontology:AdministrativeRegion
+      a       owl:Class ;
+      rdfs:comment "A PopulatedPlace under the jurisdiction of an administrative body. This body may administer either a whole region or one or more adjacent Settlements (town administration)"@en ;
+      rdfs:label "AdministrativeRegion"@en ;
+      rdfs:subClassOf ontology:Region .
+
+ontology:Regency
+      a       owl:Class ;
+      rdfs:comment "The office, jurisdiction, or control of a regent or body of regents exercising the ruling power during the minority, absence, or disability of a sovereign."@en ;
+      rdfs:label "Regency"@en ;
+      rdfs:subClassOf ontology:GovernmentalAdministrativeRegion .
+
+dc:creator
+      a       owl:AnnotationProperty .
+
+ontology:District
+      a       owl:Class ;
+      rdfs:comment "A district is a type of administrative division that, in some countries, is managed by local government."@en ;
+      rdfs:label "District"@en ;
+      rdfs:subClassOf ontology:GovernmentalAdministrativeRegion .
+
+ontology:Place
+      a       owl:Class ;
+      rdfs:comment "Immobile things or locations."@en ;
+      rdfs:label "Place"@en ;
+      rdfs:subClassOf owl:Thing .
+
+ontology:Deanery
+      a       owl:Class ;
+      rdfs:comment "The intermediate level of a clerical administrative body between parish and diocese"@en ;
+      rdfs:label "Deanery"@en ;
+      rdfs:subClassOf ontology:ClericalAdministrativeRegion .
+
+ontology:Town
+      a       owl:Class ;
+      rdfs:comment "A settlement ranging from a few hundred to several thousand (occasionally hundreds of thousands). The precise meaning varies between countries and is not always a matter of legal definition. Usually, a town is thought of as larger than a village but smaller than a city, though there are exceptions to this rule."@en ;
+      rdfs:label "Town"@en ;
+      rdfs:subClassOf ontology:Settlement .
+
+ontology:MicroRegion
+      a       owl:Class ;
+      rdfs:comment "A microregion is a - mainy statistical - region in Brazil, at an administrative level between a meso-region and a community"@en ;
+      rdfs:label "MicroRegion"@en ;
+      rdfs:subClassOf ontology:GovernmentalAdministrativeRegion .
+
+ontology:Arrondissement
+      a       owl:Class ;
+      rdfs:comment "An administrative (France) or lawcourts (Netherlands) body governing a territorial unity on the intermediate level, between local and national level"@en ;
+      rdfs:label "Arrondissement"@en ;
+      rdfs:subClassOf ontology:GovernmentalAdministrativeRegion .
+
+ontology:State
+      a       owl:Class ;
+      rdfs:comment "A nation or territory considered as an organized political community under one government."@en ;
+      rdfs:label "State"@en ;
+      rdfs:subClassOf ontology:PopulatedPlace .
+
+ontology:Island
+      a       owl:Class ;
+      rdfs:comment "An island or isle is any piece of sub-continental land that is surrounded by water."@en ;
+      rdfs:label "Island"@en ;
+      rdfs:subClassOf ontology:PopulatedPlace .
+
+ontology:Continent
+      a       owl:Class ;
+      rdfs:comment "A continent is one of several very large landmasses of the world. Generally identified by convention rather than any strict criteria, up to seven regions are commonly regarded as continents. Ordered from largest in area to smallest, they are: Asia, Africa, North America, South America, Antarctica, Europe, and Australia."@en ;
+      rdfs:label "Continent"@en ;
+      rdfs:subClassOf ontology:PopulatedPlace .
+
+ontology:Parish
+      a       owl:Class ;
+      rdfs:comment "The smallest unit of a clerical administrative body"@en ;
+      rdfs:label "Parish"@en ;
+      rdfs:subClassOf ontology:ClericalAdministrativeRegion .
+
+owl:Thing
+      a       owl:Class .
+
+ontology:PopulatedPlace
+      a       owl:Class ;
+      rdfs:comment "As defined by the United States Geological Survey, a populated place is a place or area with clustered or scattered buildings and a permanent human population (city, settlement, town, or village) referenced with geographic coordinates (http://en.wikipedia.org/wiki/Populated_place)."@en ;
+      rdfs:label "PopulatedPlace"@en ;
+      rdfs:subClassOf ontology:Place .
+
+ontology:GovernmentalAdministrativeRegion
+      a       owl:Class ;
+      rdfs:comment "An administrative body governing some territorial unity, in this case a governmental administrative body"@en ;
+      rdfs:label "GovernmentalAdministrativeRegion"@en ;
+      rdfs:subClassOf ontology:AdministrativeRegion .
+
+ns:license
+      a       owl:AnnotationProperty .
+
+ontology:CapitalOfRegion
+      a       owl:Class ;
+      rdfs:comment "Seat of a first order administration division."@en ;
+      rdfs:label "CapitalOfRegion"@en ;
+      rdfs:subClassOf ontology:City .
+
+ontology:GatedCommunity
+      a       owl:Class ;
+      rdfs:comment "In its modern form, a gated community (or walled community) is a form of residential community or housing estate containing strictly controlled entrances for pedestrians, bicycles, and automobiles, and often characterized by a closed perimeter of walls and fences."@en ;
+      rdfs:label "GatedCommunity"@en ;
+      rdfs:subClassOf ontology:Settlement .
+
+<http://www.purl.org/oema/externalfactors/Municipality>
+      a       owl:Class ;
+      rdfs:comment "An administrative body governing a territorial unity on the lower level, administering one or a few more settlements"@en ;
+      rdfs:label "Municipality"@en ;
+      rdfs:subClassOf ontology:GovernmentalAdministrativeRegion .
+
+terms:modified
+      a       owl:AnnotationProperty .
+
+<http://www.purl.org/oema/infrastructure/District>
+      a       owl:Class ;
+      rdfs:comment "District, borough, area or neighbourhood in a city or town"@en ;
+      rdfs:label "CityDistrict"@en ;
+      rdfs:subClassOf ontology:Settlement .
+
+ontology:DistrictWaterBoard
+      a       owl:Class ;
+      rdfs:comment "Conservancy, governmental agency dedicated to surface water management"@en ;
+      rdfs:label "DistrictWaterBoard"@en ;
+      rdfs:subClassOf ontology:GovernmentalAdministrativeRegion .
+
+terms:issued
+      a       owl:AnnotationProperty .
+
+<http://www.purl.org/oema/externalfactors/Territory>
+      a       owl:Class ;
+      rdfs:comment "A territory may refer to a country subdivision, a non-sovereign geographic region."@en ;
+      rdfs:label "Territory"@en ;
+      rdfs:subClassOf ontology:PopulatedPlace .
+
+ontology:Diocese
+      a       owl:Class ;
+      rdfs:comment "District or see under the supervision of a bishop."@en ;
+      rdfs:label "Diocese"@en ;
+      rdfs:subClassOf ontology:ClericalAdministrativeRegion .
+
+ontology:Department
+      a       owl:Class ;
+      rdfs:comment "A geographical and administrative division within a country"@en ;
+      rdfs:label "Department"@en ;
+      rdfs:subClassOf ontology:GovernmentalAdministrativeRegion .
+
+ontology:Village
+      a       owl:Class ;
+      rdfs:comment "A clustered human settlement or community, usually smaller a town"@en ;
+      rdfs:label "Village"@en ;
+      rdfs:subClassOf ontology:Settlement .
+
+ontology:Agglomeration
+      a       owl:Class ;
+      rdfs:comment "A large, densely and contiguously populated area consisting of a city and its suburbs an urban agglomeration." ;
+      rdfs:label "Agglomeration"@en ;
+      rdfs:subClassOf ontology:PopulatedPlace .
+
+ontology:Locality
+      a       owl:Class ;
+      rdfs:comment "In geography, statistics and archaeology, a settlement, locality or populated place is a community in which people live."@en ;
+      rdfs:label "Locality"@en ;
+      rdfs:subClassOf ontology:PopulatedPlace .
+
+ontology:Province
+      a       owl:Class ;
+      rdfs:comment "An administrative body governing a territorial unity on the intermediate level, between local and national level"@en ;
+      rdfs:label "Province"@en ;
+      rdfs:subClassOf ontology:GovernmentalAdministrativeRegion .
+
+ontology:ClericalAdministrativeRegion
+      a       owl:Class ;
+      rdfs:comment "An administrative body governing some territorial unity, in this case a clerical administrative body"@en ;
+      rdfs:label "ClericalAdministrativeRegion"@en ;
+      rdfs:subClassOf ontology:AdministrativeRegion .
+
+ontology:Street
+      a       owl:Class ;
+      rdfs:comment "A Street is different from a Road in as far as the infrastructure aspect is much less important here. A Street is a social and architectural ensemble much more than the connection between two geographic points."@en ;
+      rdfs:label "Street"@en ;
+      rdfs:subClassOf ontology:PopulatedPlace .
+
+ontology:HistoricalRegion
+      a       owl:Class ;
+      rdfs:comment "A place which used to be a region."@en ;
+      rdfs:label "HistoricalRegion"@en ;
+      rdfs:subClassOf ontology:Region .

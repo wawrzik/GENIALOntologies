@@ -1,0 +1,1647 @@
+@prefix :        <Weather/> .
+@prefix CoDAMoS:  <http://lpis.csd.auth.gr/ontologies/CoDAMoS/CoDAMoS.owl#> .
+@prefix externalfactors:  <http://www.purl.org/oema/externalfactors/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix ns:      <http://creativecommons.org/ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix EnergyResourceOntology:  <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#> .
+@prefix SEMANCO:  <http://semanco02.hs-albsig.de/repository/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#> .
+@prefix units:   <http://www.purl.org/oema/units/> .
+@prefix water:   <http://vocab.deri.ie/water#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms:   <http://purl.org/dc/terms/> .
+@prefix swrlx:   <http://www.w3.org/2003/11/swrlx#> .
+@prefix owl2:    <http://www.w3.org/2006/12/owl2#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix WeatherOntology:  <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#> .
+@prefix prosg:   <http://www.purl.org/net/v3/prosg#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+
+WeatherOntology:WholeGale
+      a       owl:Class ;
+      rdfs:label "WholeGale" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "24.4"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "28.4"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:MostlyCloudy
+      a       owl:Class ;
+      rdfs:label "MostlyCloudy"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:CloudCover [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasCloudCoverValue ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive 5
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasCloudCoverValue ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxExclusive 8
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:PartlyCloud
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+externalfactors:RainfallTotal
+      a       owl:Class ;
+      rdfs:label "RainfallTotal"@en ;
+      rdfs:subClassOf WeatherOntology:Precipitation .
+
+WeatherOntology:Hurricane
+      a       owl:Class ;
+      rdfs:label "Hurricane" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "32.6"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:FairWeatherState
+      a       owl:Class ;
+      rdfs:label "FairWeatherState"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:WeatherState [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom WeatherOntology:NoPrecipitation
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom
+                                    [ a       owl:Class ;
+                                      owl:unionOf (WeatherOntology:LightWind WeatherOntology:NoWind)
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom
+                                    [ a       owl:Class ;
+                                      owl:unionOf (WeatherOntology:NoCloudCover WeatherOntology:PartlyCloudy)
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:hasIntensity
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Intensity value of precipitation." ;
+      rdfs:domain WeatherOntology:Precipitation ;
+      rdfs:label "hasIntensity"@en ;
+      rdfs:range xsd:float .
+
+WeatherOntology:FreshBreeze
+      a       owl:Class ;
+      rdfs:label "FreshBreeze" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "7.9"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "10.7"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:Sleet
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+WeatherOntology:CoolingWeatherState
+      a       owl:Class ;
+      rdfs:label "CoolingWeatherState"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:WeatherState [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom WeatherOntology:BelowRoomTemperature
+                          ])
+              ] .
+
+owl:Thing
+      a       owl:Class .
+
+WeatherOntology:LowSolarIrradiance
+      a       owl:Class ;
+      rdfs:label "LowSolarIrradiance"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:SolarIrradiance [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "50.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ] [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "250.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:MoistHumidity
+      a       owl:Class ;
+      rdfs:label "MoistHumidity"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Humidity [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "60.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:hasDirection
+      a       owl:DatatypeProperty , owl:FunctionalProperty ;
+      rdfs:comment "The direction of the wind." ;
+      rdfs:domain externalfactors:Wind ;
+      rdfs:label "hasDirection"@en ;
+      rdfs:range
+              [ a       rdfs:Datatype ;
+                owl:onDatatype xsd:float ;
+                owl:withRestrictions
+                        ([ xsd:maxExclusive "360.0"^^xsd:float
+                          ])
+              ] .
+
+WeatherOntology:LightBreeze
+      a       owl:Class ;
+      rdfs:label "LightBreeze" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "1.5"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "3.4"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (WeatherOntology:DryHumidity WeatherOntology:MoistHumidity WeatherOntology:OptimumHumidity) .
+
+WeatherOntology:ModeratePrecipitation
+      a       owl:Class ;
+      rdfs:label "ModeratePrecipitation"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:Precipitation [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "1.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty WeatherOntology:hasIntensity
+                          ] [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "4.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty WeatherOntology:hasIntensity
+                          ])
+              ] .
+
+WeatherOntology:ExtremeHeat
+      a       owl:Class ;
+      rdfs:label "ExtremeHeat"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Temperature [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minInclusive "37.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:WeatherCondition
+      a       owl:Class ;
+      rdfs:comment "One-word description of the observed weather condition" ;
+      rdfs:label "WeatherCondition" ;
+      rdfs:subClassOf externalfactors:ExternalFactor ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (WeatherOntology:Cloud WeatherOntology:Fog WeatherOntology:Hail WeatherOntology:LightCloud WeatherOntology:LightRainSun WeatherOntology:PartlyCloud WeatherOntology:Rain WeatherOntology:Sleet WeatherOntology:Snow WeatherOntology:Sun WeatherOntology:Thunder)
+              ] .
+
+externalfactors:ExternalFactor
+      a       owl:Class .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (WeatherOntology:HighSolarIrradiance WeatherOntology:LowSolarIrradiance WeatherOntology:ModerateSolarIrradiance WeatherOntology:NeglectibleSolarIrradiance) .
+
+WeatherOntology:Cloud
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+<http://www.purl.org/dabgeo/common-domain/weather>
+      a       owl:Ontology ;
+      rdfs:comment """The 'Weather' ontology module represents different weather phenomenon such as humidity or temperature.
+This ontology module reuses the knowledge of the 'External Factors' ontology module.
+
+Information about changes compared to version 1.1
+*********************************************************
+We have changed the names of ontology layers and documented missing classes."""@en ;
+      ns:license "https://creativecommons.org/licenses/by-nc/4.0/" ;
+      dc:creator "Javier Cuenca <mailto:jcuenca@mondragon.edu>"@en ;
+      dc:title "Weather ontology"@en ;
+      terms:issued "2018-02-09"@en ;
+      terms:modified "2019-02-22"@en ;
+      owl:imports <http://www.purl.org/oema/units> , <http://www.w3.org/2006/time#2016> , <http://www.purl.org/dabgeo/common-domain/externalfactors> ;
+      owl:versionInfo "2.0"@en .
+
+WeatherOntology:hasWeatherCondition
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:comment "relation of weather states and a one-word description for the observed weather situation"@en ;
+      rdfs:domain WeatherOntology:WeatherState ;
+      rdfs:label "hasWeatherCondition"@en ;
+      rdfs:range WeatherOntology:WeatherCondition .
+
+WeatherOntology:RainyWeatherState
+      a       owl:Class ;
+      rdfs:label "RainyWeatherState"@en ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:hasValue WeatherOntology:Rain ;
+                owl:onProperty WeatherOntology:hasWeatherCondition
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:WeatherState [ a       owl:Class ;
+                            owl:complementOf
+                                    [ a       owl:Restriction ;
+                                      owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                      owl:someValuesFrom WeatherOntology:NoPrecipitation
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom WeatherOntology:AboveZeroTemperature
+                          ])
+              ] .
+
+<http://www.purl.org/oema/enaeq/hasValue>
+      a       owl:DatatypeProperty , owl:FunctionalProperty ;
+      rdfs:comment "The value of a parameter." ;
+      rdfs:label "hasValue" .
+
+WeatherOntology:Snow
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+units:HumidityUnit
+      a       owl:Class .
+
+WeatherOntology:StrongBreeze
+      a       owl:Class ;
+      rdfs:label "StrongBreeze" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "10.7"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "13.8"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:AirPollution
+      a       owl:Class ;
+      rdfs:comment "This class represents air pollution represented as European Air Quality Index value. The index value is based on 3 pollutants of major concern in Europe: PM10, NO2, O3 and will be able to take into account to 3 additional pollutants (CO, PM2.5 and SO2) where data are also available."@en ;
+      rdfs:label "AirPollution"@en ;
+      rdfs:subClassOf WeatherOntology:WeatherPhenomenon ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                owl:someValuesFrom xsd:nonNegativeInteger
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty units:unitOfMeasure ;
+                owl:someValuesFrom units:UnitOfMeasure
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:unionOf (WeatherOntology:HighAirPollution WeatherOntology:LowAirPollution WeatherOntology:MediumAirPollution WeatherOntology:VeryHighAirPollution WeatherOntology:VeryLowAirPollution)
+              ] .
+
+WeatherOntology:Rain
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+WeatherOntology:DryHumidity
+      a       owl:Class ;
+      rdfs:label "DryHumidity"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Humidity [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "25.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:CloudCover
+      a       owl:Class ;
+      rdfs:comment "This class represents the clound cover in the unit \"Okta\""@en ;
+      rdfs:label "CloudCover"@en ;
+      rdfs:subClassOf WeatherOntology:WeatherPhenomenon ;
+      rdfs:subClassOf
+              [ a       owl:Class ;
+                owl:intersectionOf ([ a       owl:Restriction ;
+                            owl:onDataRange
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxExclusive 10
+                                                ])
+                                    ] ;
+                            owl:onProperty WeatherOntology:hasCloudCoverValue ;
+                            owl:qualifiedCardinality
+                                    "1"^^xsd:nonNegativeInteger
+                          ] [ a       owl:Restriction ;
+                            owl:maxQualifiedCardinality
+                                    "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:nonNegativeInteger ;
+                            owl:onProperty WeatherOntology:hasCloudAltitude
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:unionOf (WeatherOntology:MostlyCloudy WeatherOntology:NoCloudCover WeatherOntology:Overcast WeatherOntology:PartlyCloudy WeatherOntology:UnknownCloudCover)
+              ] .
+
+externalfactors:SolarDeclination
+      a       owl:Class ;
+      rdfs:comment "This class represents the position of the sun in the sky. The position of the sun in the sky is a function of both the time and the geographic location of observation on Earth's surface."@en ;
+      rdfs:label "SolarDeclination"@en ;
+      rdfs:subClassOf WeatherOntology:WeatherPhenomenon .
+
+WeatherOntology:GentleBreeze
+      a       owl:Class ;
+      rdfs:label "GentleBreeze" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "3.4"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "5.4"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (WeatherOntology:HighAirPollution WeatherOntology:LowAirPollution WeatherOntology:MediumAirPollution WeatherOntology:VeryHighAirPollution WeatherOntology:VeryLowAirPollution) .
+
+WeatherOntology:Storm
+      a       owl:Class ;
+      rdfs:label "Storm" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "24.4"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:FreshGale
+      a       owl:Class ;
+      rdfs:label "FreshGale" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "17.1"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "20.7"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:Hail
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+WeatherOntology:hasCloudCoverValue
+      a       owl:DatatypeProperty , owl:FunctionalProperty ;
+      rdfs:comment "The value of a cloud cover weather phenomenon." ;
+      rdfs:domain WeatherOntology:CloudCover ;
+      rdfs:label "hasCloudCoverValue"@en ;
+      rdfs:range
+              [ a       rdfs:Datatype ;
+                owl:onDatatype xsd:nonNegativeInteger ;
+                owl:withRestrictions
+                        ([ xsd:maxExclusive 10
+                          ])
+              ] .
+
+WeatherOntology:ExtremeFrost
+      a       owl:Class ;
+      rdfs:label "ExtremeFrost"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Temperature [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxExclusive "-25.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:belongsToWeatherState
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:comment "Relation between weather states and the phenomena that are observed or forecasted (inverse of 'hasWeatherPhenomenon' property)." ;
+      rdfs:label "hasWeatherPhenomenon" ;
+      owl:inverseOf WeatherOntology:hasWeatherPhenomenon .
+
+WeatherOntology:SevereWeatherState
+      a       owl:Class ;
+      rdfs:label "SevereWeatherState"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:WeatherState [ a       owl:Class ;
+                            owl:unionOf ([ a       owl:Class ;
+                                        owl:intersectionOf ([ a       owl:Restriction ;
+                                                    owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                                    owl:someValuesFrom WeatherOntology:HeavyPrecipitation
+                                                  ] [ a       owl:Restriction ;
+                                                    owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                                    owl:someValuesFrom WeatherOntology:StrongWind
+                                                  ])
+                                      ] [ a       owl:Restriction ;
+                                        owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                        owl:someValuesFrom WeatherOntology:ExtremeFrost
+                                      ] [ a       owl:Restriction ;
+                                        owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                        owl:someValuesFrom WeatherOntology:ExtremeHeat
+                                      ] [ a       owl:Restriction ;
+                                        owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                        owl:someValuesFrom WeatherOntology:HeavyPrecipitation
+                                      ] [ a       owl:Restriction ;
+                                        owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                        owl:someValuesFrom WeatherOntology:Storm
+                                      ])
+                          ])
+              ] .
+
+externalfactors:Temperature
+      a       owl:Class ;
+      rdfs:comment "This class represents exterior temperature."@en ;
+      rdfs:label "Temperature"@en ;
+      rdfs:subClassOf WeatherOntology:WeatherPhenomenon ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty units:unitOfMeasure ;
+                owl:someValuesFrom units:TemperatureUnit
+              ] .
+
+WeatherOntology:ModerateGale
+      a       owl:Class ;
+      rdfs:label "ModerateGale" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "13.8"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "17.1"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:AboveRoomTemperature
+      a       owl:Class ;
+      rdfs:label "AboveRoomTemperature"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Temperature [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "25.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:Overcast
+      a       owl:Class ;
+      rdfs:label "Overcast"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:CloudCover [ a       owl:Restriction ;
+                            owl:hasValue 8 ;
+                            owl:onProperty WeatherOntology:hasCloudCoverValue
+                          ])
+              ] .
+
+WeatherOntology:OptimumHumidity
+      a       owl:Class ;
+      rdfs:label "OptimumHumidity"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Humidity [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "25.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ] [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "60.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:SolarIrradiance
+      a       owl:Class ;
+      rdfs:comment "This class represents solar irrradiation at a specific location in Watts per square meter (W/m²)"@en ;
+      rdfs:label "SolarIrradiance"@en ;
+      rdfs:subClassOf WeatherOntology:WeatherPhenomenon ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty units:unitOfMeasure ;
+                owl:someValuesFrom units:UnitOfMeasure
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onDataRange xsd:float ;
+                owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:unionOf (WeatherOntology:HighSolarIrradiance WeatherOntology:LowSolarIrradiance WeatherOntology:ModerateSolarIrradiance WeatherOntology:NeglectibleSolarIrradiance)
+              ] .
+
+WeatherOntology:Fog
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+WeatherOntology:HighAirPollution
+      a       owl:Class ;
+      rdfs:label "HighAirPollution"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:AirPollution [ a       owl:Restriction ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive 75
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive 100
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:WeatherState
+      a       owl:Class ;
+      rdfs:comment "This class represent weather states that describe the actual weather reported through information from the weather source."@en ;
+      rdfs:label "WeatherState" ;
+      rdfs:subClassOf externalfactors:ExternalFactor ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:maxQualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger ;
+                owl:onClass externalfactors:Humidity ;
+                owl:onProperty WeatherOntology:hasWeatherPhenomenon
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:maxQualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger ;
+                owl:onClass externalfactors:AtmosphericPressure ;
+                owl:onProperty WeatherOntology:hasWeatherPhenomenon
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:maxQualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger ;
+                owl:onClass externalfactors:Wind ;
+                owl:onProperty WeatherOntology:hasWeatherPhenomenon
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:maxQualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger ;
+                owl:onClass externalfactors:Temperature ;
+                owl:onProperty WeatherOntology:hasWeatherPhenomenon
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:maxQualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger ;
+                owl:onClass WeatherOntology:AirPollution ;
+                owl:onProperty WeatherOntology:hasWeatherPhenomenon
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:maxQualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger ;
+                owl:onClass WeatherOntology:DewPointTemperature ;
+                owl:onProperty WeatherOntology:hasWeatherPhenomenon
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:maxQualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger ;
+                owl:onClass WeatherOntology:CloudCover ;
+                owl:onProperty WeatherOntology:hasWeatherPhenomenon
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:maxQualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger ;
+                owl:onClass WeatherOntology:SolarIrradiance ;
+                owl:onProperty WeatherOntology:hasWeatherPhenomenon
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:maxQualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger ;
+                owl:onClass WeatherOntology:Precipitation ;
+                owl:onProperty WeatherOntology:hasWeatherPhenomenon
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty WeatherOntology:hasWeatherCondition ;
+                owl:someValuesFrom WeatherOntology:WeatherCondition
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass
+                        [ a       owl:Class ;
+                          owl:unionOf (time:Instant time:Interval)
+                        ] ;
+                owl:onProperty WeatherOntology:hasObservationTime ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] .
+
+WeatherOntology:hasCloudAltitude
+      a       owl:DatatypeProperty , owl:FunctionalProperty ;
+      rdfs:comment "The cloud altituted of a cloud weather phenomenon." ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (WeatherOntology:CloudCover WeatherOntology:WeatherState)
+              ] ;
+      rdfs:label "hasCloudAltitude" ;
+      rdfs:range xsd:int .
+
+WeatherOntology:LightAir
+      a       owl:Class ;
+      rdfs:label "LightAir" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "0.2"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "1.5"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:NeglectibleSolarIrradiance
+      a       owl:Class ;
+      rdfs:label "NeglectibleSolarIrradiance"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:SolarIrradiance [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minInclusive "0.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ] [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "50.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:Precipitation
+      a       owl:Class ;
+      rdfs:comment "This class represents precipitation in millimetres"@en ;
+      rdfs:label "Precipitation"@en ;
+      rdfs:subClassOf WeatherOntology:WeatherPhenomenon ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onDataRange xsd:float ;
+                owl:onProperty WeatherOntology:hasIntensity ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:unionOf (WeatherOntology:HeavyPrecipitation WeatherOntology:LightPrecipitation WeatherOntology:ModeratePrecipitation WeatherOntology:NoPrecipitation)
+              ] .
+
+WeatherOntology:Sun
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+WeatherOntology:LowAirPollution
+      a       owl:Class ;
+      rdfs:label "LowAirPollution"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:AirPollution [ a       owl:Restriction ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive 25
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive 50
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+time:TemporalEntity
+      a       owl:Class .
+
+WeatherOntology:DewPointTemperature
+      a       owl:Class ;
+      rdfs:label "DewPointTemperature"@en ;
+      rdfs:subClassOf externalfactors:Temperature ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty units:unitOfMeasure ;
+                owl:someValuesFrom units:UnitOfMeasure
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onDataRange xsd:float ;
+                owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] .
+
+WeatherOntology:LightCloud
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+WeatherOntology:reportsWeatherForTimeInterval
+      a       owl:ObjectProperty ;
+      rdfs:comment "this property describes an interval that denotes the time in the future (offset) for which the weather is reported"@en ;
+      rdfs:label "reportsWeatherForTimeInterval"@en ;
+      rdfs:range time:Interval .
+
+WeatherOntology:BelowOrZeroTemperature
+      a       owl:Class ;
+      rdfs:label "BelowOrZeroTemperature"@en ;
+      rdfs:subClassOf externalfactors:Temperature ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Temperature [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "0.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+units:TemperatureUnit
+      a       owl:Class .
+
+externalfactors:AtmosphericPressure
+      a       owl:Class ;
+      rdfs:comment "This class represents atmospheric pressure in hectopascal (hPa)"@en ;
+      rdfs:label "AtmosphericPressure"@en ;
+      rdfs:subClassOf WeatherOntology:WeatherPhenomenon ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty units:unitOfMeasure ;
+                owl:someValuesFrom units:PressureUnit
+              ] .
+
+WeatherOntology:NoPrecipitation
+      a       owl:Class ;
+      rdfs:label "NoPrecipitation"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:Precipitation [ a       owl:Restriction ;
+                            owl:hasValue "0.0"^^xsd:float ;
+                            owl:onProperty WeatherOntology:hasIntensity
+                          ])
+              ] .
+
+WeatherOntology:LightPrecipitation
+      a       owl:Class ;
+      rdfs:label "LightPrecipitation"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:Precipitation [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "0.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty WeatherOntology:hasIntensity
+                          ] [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "1.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty WeatherOntology:hasIntensity
+                          ])
+              ] .
+
+WeatherOntology:ModerateBreeze
+      a       owl:Class ;
+      rdfs:label "ModerateBreeze" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "5.4"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "7.9"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:NoCloudCover
+      a       owl:Class ;
+      rdfs:label "NoCloudCover"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:CloudCover [ a       owl:Restriction ;
+                            owl:hasValue 0 ;
+                            owl:onProperty WeatherOntology:hasCloudCoverValue
+                          ])
+              ] .
+
+externalfactors:Humidity
+      a       owl:Class ;
+      rdfs:comment "This class represents the relative humidity of the air in percent."@en ;
+      rdfs:label "Humidity"@en ;
+      rdfs:subClassOf WeatherOntology:WeatherPhenomenon ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onProperty units:unitOfMeasure ;
+                owl:someValuesFrom units:HumidityUnit
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:unionOf (WeatherOntology:DryHumidity WeatherOntology:MoistHumidity WeatherOntology:OptimumHumidity)
+              ] .
+
+WeatherOntology:HeatingWeatherState
+      a       owl:Class ;
+      rdfs:label "HeatingWeatherState"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:WeatherState [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom WeatherOntology:AboveRoomTemperature
+                          ])
+              ] .
+
+WeatherOntology:VeryLowAirPollution
+      a       owl:Class ;
+      rdfs:label "VeryLowAirPollution"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:AirPollution [ a       owl:Restriction ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:minInclusive 0
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive 25
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (externalfactors:AtmosphericPressure externalfactors:Humidity externalfactors:Temperature externalfactors:Wind WeatherOntology:AirPollution WeatherOntology:CloudCover WeatherOntology:DewPointTemperature WeatherOntology:Precipitation WeatherOntology:SolarIrradiance) .
+
+WeatherOntology:HeavyPrecipitation
+      a       owl:Class ;
+      rdfs:label "HeavyPrecipitation"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:Precipitation [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "4.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty WeatherOntology:hasIntensity
+                          ])
+              ] .
+
+WeatherOntology:ViolentStorm
+      a       owl:Class ;
+      rdfs:label "ViolentStorm" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "28.4"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "32.6"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+owl:topObjectProperty
+      a       owl:ObjectProperty .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (WeatherOntology:MostlyCloudy WeatherOntology:NoCloudCover WeatherOntology:Overcast WeatherOntology:PartlyCloudy WeatherOntology:UnknownCloudCover) .
+
+WeatherOntology:BelowRoomTemperature
+      a       owl:Class ;
+      rdfs:label "BelowRoomTemperature"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Temperature [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxExclusive "20.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:UnknownCloudCover
+      a       owl:Class ;
+      rdfs:label "UnknownCloudCover"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:CloudCover [ a       owl:Restriction ;
+                            owl:hasValue 9 ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+units:VelocityUnit
+      a       owl:Class .
+
+WeatherOntology:hasSpeed
+      a       owl:DatatypeProperty , owl:FunctionalProperty ;
+      rdfs:comment "The speed of the wind." ;
+      rdfs:domain externalfactors:Wind ;
+      rdfs:label "hasSpeed"@en ;
+      rdfs:range xsd:float .
+
+WeatherOntology:SnowyWeatherState
+      a       owl:Class ;
+      rdfs:label "SnowyWeatherState"@en ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:hasValue WeatherOntology:Snow ;
+                owl:onProperty WeatherOntology:hasWeatherCondition
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:WeatherState [ a       owl:Class ;
+                            owl:intersectionOf ([ a       owl:Class ;
+                                        owl:complementOf
+                                                [ a       owl:Restriction ;
+                                                  owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                                  owl:someValuesFrom WeatherOntology:NoPrecipitation
+                                                ]
+                                      ] [ a       owl:Restriction ;
+                                        owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                        owl:someValuesFrom WeatherOntology:BelowOrZeroTemperature
+                                      ] [ a       owl:Restriction ;
+                                        owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                        owl:someValuesFrom WeatherOntology:Precipitation
+                                      ])
+                          ])
+              ] .
+
+WeatherOntology:HumidifyingWeatherState
+      a       owl:Class ;
+      rdfs:label "HumidifyingWeatherState"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:WeatherState [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom WeatherOntology:MoistHumidity
+                          ])
+              ] .
+
+WeatherOntology:HighSolarIrradiance
+      a       owl:Class ;
+      rdfs:label "HighSolarIrradiance"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:SolarIrradiance [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "500.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:MediumAirPollution
+      a       owl:Class ;
+      rdfs:label "MediumAirPollution"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:AirPollution [ a       owl:Restriction ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive 50
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive 75
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:SunnyWeatherState
+      a       owl:Class ;
+      rdfs:label "SunnyWeatherState"@en ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:hasValue WeatherOntology:Sun ;
+                owl:onProperty WeatherOntology:hasWeatherCondition
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:WeatherState [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom WeatherOntology:HighSolarIrradiance
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom WeatherOntology:NoCloudCover
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom WeatherOntology:NoPrecipitation
+                          ])
+              ] .
+
+WeatherOntology:AiringWeatherState
+      a       owl:Class ;
+      rdfs:label "AiringWeatherState"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:WeatherState [ a       owl:Class ;
+                            owl:complementOf
+                                    [ a       owl:Restriction ;
+                                      owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                                      owl:someValuesFrom WeatherOntology:AboveRoomTemperature
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom WeatherOntology:NoPrecipitation
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasWeatherPhenomenon ;
+                            owl:someValuesFrom
+                                    [ a       owl:Class ;
+                                      owl:unionOf (WeatherOntology:LightWind WeatherOntology:StrongWind)
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:LightRainSun
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (WeatherOntology:HeavyPrecipitation WeatherOntology:LightPrecipitation WeatherOntology:ModeratePrecipitation WeatherOntology:NoPrecipitation) .
+
+externalfactors:Wind
+      a       owl:Class ;
+      rdfs:comment "This class represents the wind speed in metres per second (m/s)."@en ;
+      rdfs:label "Wind"@en ;
+      rdfs:subClassOf WeatherOntology:WeatherPhenomenon ;
+      rdfs:subClassOf
+              [ a       owl:Class ;
+                owl:intersectionOf ([ a       owl:Restriction ;
+                            owl:onDataRange
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxExclusive "360.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty WeatherOntology:hasDirection ;
+                            owl:qualifiedCardinality
+                                    "1"^^xsd:nonNegativeInteger
+                          ] [ a       owl:Restriction ;
+                            owl:onDataRange xsd:float ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:qualifiedCardinality
+                                    "1"^^xsd:nonNegativeInteger
+                          ])
+              ] ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:unionOf (WeatherOntology:FreshBreeze WeatherOntology:FreshGale WeatherOntology:GentleBreeze WeatherOntology:Hurricane WeatherOntology:LightAir WeatherOntology:LightBreeze WeatherOntology:LightWind WeatherOntology:ModerateBreeze WeatherOntology:ModerateGale WeatherOntology:NoWind WeatherOntology:Storm WeatherOntology:StrongBreeze WeatherOntology:StrongGale WeatherOntology:StrongWind WeatherOntology:ViolentStorm WeatherOntology:WholeGale)
+              ] .
+
+units:UnitOfMeasure
+      a       owl:Class .
+
+units:PressureUnit
+      a       owl:Class .
+
+WeatherOntology:AboveZeroTemperature
+      a       owl:Class ;
+      rdfs:label "AboveZeroTemperature"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Temperature [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "0.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:Thunder
+      a       owl:NamedIndividual , WeatherOntology:WeatherCondition .
+
+WeatherOntology:NoWind
+      a       owl:Class ;
+      rdfs:label "NoWind" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minInclusive "0.0"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "0.2"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:ModerateSolarIrradiance
+      a       owl:Class ;
+      rdfs:label "ModerateSolarIrradiance"@en ;
+      rdfs:subClassOf WeatherOntology:SolarIrradiance ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:SolarIrradiance [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "250.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ] [ a       owl:Restriction ;
+                            owl:allValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "500.0"^^xsd:float
+                                                ])
+                                    ] ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue>
+                          ])
+              ] .
+
+WeatherOntology:PartlyCloudy
+      a       owl:Class ;
+      rdfs:label "PartlyCloudy"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:CloudCover [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasCloudCoverValue ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive 0
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasCloudCoverValue ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxExclusive 5
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:StrongWind
+      a       owl:Class ;
+      rdfs:label "StrongWind" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "10.7"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "24.4"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+[]    a       owl:AllDisjointClasses ;
+      owl:members (WeatherOntology:LightWind WeatherOntology:NoWind WeatherOntology:Storm WeatherOntology:StrongWind) .
+
+WeatherOntology:StrongGale
+      a       owl:Class ;
+      rdfs:label "StrongGale" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "20.7"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "24.4"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:LightWind
+      a       owl:Class ;
+      rdfs:label "LightWind" ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (externalfactors:Wind [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive "0.2"^^xsd:float
+                                                ])
+                                    ]
+                          ] [ a       owl:Restriction ;
+                            owl:onProperty WeatherOntology:hasSpeed ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:float ;
+                                      owl:withRestrictions
+                                              ([ xsd:maxInclusive "10.7"^^xsd:float
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:hasObservationTime
+      a       owl:ObjectProperty ;
+      rdfs:comment "Denotes the time a weather state has been observed or is forecasted for."@en ;
+      rdfs:label "hasObservationTime"@en ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (time:Instant time:Interval)
+              ] .
+
+time:Interval
+      a       owl:Class .
+
+units:unitOfMeasure
+      a       owl:ObjectProperty .
+
+time:Instant
+      a       owl:Class .
+
+WeatherOntology:NeutralWeatherState
+      a       owl:Class ;
+      rdfs:label "NeutralWeatherState"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:WeatherState [ a       owl:Class ;
+                            owl:complementOf
+                                    [ a       owl:Class ;
+                                      owl:unionOf (WeatherOntology:FairWeatherState WeatherOntology:SevereWeatherState)
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:VeryHighAirPollution
+      a       owl:Class ;
+      rdfs:label "VeryHighAirPollution"@en ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (WeatherOntology:AirPollution [ a       owl:Restriction ;
+                            owl:onProperty <http://www.purl.org/oema/enaeq/hasValue> ;
+                            owl:someValuesFrom
+                                    [ a       rdfs:Datatype ;
+                                      owl:onDatatype xsd:nonNegativeInteger ;
+                                      owl:withRestrictions
+                                              ([ xsd:minExclusive 100
+                                                ])
+                                    ]
+                          ])
+              ] .
+
+WeatherOntology:WeatherPhenomenon
+      a       owl:Class ;
+      rdfs:label "This class represents different weather phenomena that may influence the current and forecasted weather state."@en , "WeatherPhenomenon" ;
+      rdfs:subClassOf externalfactors:ExternalFactor ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:onClass
+                        [ a       owl:Class ;
+                          owl:unionOf (time:Instant time:Interval)
+                        ] ;
+                owl:onProperty WeatherOntology:hasObservationTime ;
+                owl:qualifiedCardinality
+                        "1"^^xsd:nonNegativeInteger
+              ] .
+
+WeatherOntology:hasWeatherPhenomenon
+      a       owl:InverseFunctionalProperty , owl:ObjectProperty ;
+      rdfs:comment "Relation between weather states and the phenomena that are observed or forecasted"@en ;
+      rdfs:domain WeatherOntology:WeatherState ;
+      rdfs:label "hasWeatherPhenomenon"@en ;
+      rdfs:range WeatherOntology:WeatherPhenomenon .
