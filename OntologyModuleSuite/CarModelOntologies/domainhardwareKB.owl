@@ -36,9 +36,9 @@
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV-EXT_layer -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV_EXT_layer -->
 
-    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV-EXT_layer">
+    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV_EXT_layer">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"/>
@@ -132,11 +132,11 @@
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV-EXT_layer_1 -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV_EXT_layer_1 -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV-EXT_layer_1">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV-EXT_layer"/>
-        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_clock_cycles_to_process_one_CONV-EXT_layer_1"/>
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV_EXT_layer_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/clock_cycles_to_process_one_CONV_EXT_layer"/>
+        <GENIALOnt:depends_on rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_clock_cycles_to_process_one_CONV_EXT_layer_1"/>
         <hardware:hasAPPELFormula>t_l</hardware:hasAPPELFormula>
     </owl:NamedIndividual>
     
@@ -150,6 +150,7 @@
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/accelerator_local_memory_bank_1"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/control_register_1"/>
         <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB/cnn_accelerator_controller_1"/>
+        <GENIALOnt:implements rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testfunction"/>
     </owl:NamedIndividual>
     
 
@@ -193,9 +194,9 @@
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_clock_cycles_to_process_one_CONV-EXT_layer_1 -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_clock_cycles_to_process_one_CONV_EXT_layer_1 -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_clock_cycles_to_process_one_CONV-EXT_layer_1">
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/d_clock_cycles_to_process_one_CONV_EXT_layer_1">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#dependency"/>
         <hardware:hasAPPELFormula>1 + ceil(C/8) * ceil(K/8)* (a_w*F - MAC_notb - MAC_note)</hardware:hasAPPELFormula>
     </owl:NamedIndividual>
@@ -1431,6 +1432,14 @@
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/stride"/>
         <om-2:hasValue rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/measure_stride_1"/>
         <hardware:hasAPPELFormula>ns</hardware:hasAPPELFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testfunction -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/testfunction">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
     </owl:NamedIndividual>
     
 

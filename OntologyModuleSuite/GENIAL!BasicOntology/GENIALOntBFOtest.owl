@@ -273,7 +273,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#non_system_level_element"/>
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#nonsystem_level_element"/>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <owl:Class>
@@ -404,7 +404,7 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object"/>
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#non_system_level_element"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#nonsystem_level_element"/>
         <owl:disjointWith rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"/>
         <rdfs:comment>From definition of element:
 Note 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively.</rdfs:comment>
@@ -520,9 +520,9 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#non_system_level_element -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#nonsystem_level_element -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#non_system_level_element">
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#nonsystem_level_element">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#element"/>
         <owl:disjointWith rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#system_level_element"/>
         <obo:IAO_0000115>An element that is not on the system-level</obo:IAO_0000115>
@@ -584,7 +584,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#non_system_level_element"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#nonsystem_level_element"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <rdfs:comment>From definition of element:
 Note 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively.</rdfs:comment>
@@ -736,6 +736,69 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         <obo:IAO_0000115>is a quality that is any standard used for comparison in measurements</obo:IAO_0000115>
         <rdfs:label>unit</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mycomponent -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mycomponent">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#component"/>
+        <has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myproperty"/>
+        <implements rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myfunction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myfunction -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myfunction">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#function"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myprocessor -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myprocessor">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
+        <executes rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mysoftware"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myproperty -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myproperty">
+        <rdf:type rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mysoftware -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mysoftware">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_component"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mysystem -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mysystem">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#system"/>
+        <has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mycomponent"/>
+    </owl:NamedIndividual>
     
 
 
