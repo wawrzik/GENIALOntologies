@@ -10,7 +10,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:hardware="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/">
+     xmlns:hardware="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/"
+     xmlns:GENIALOnt="http://cpsagila.cs.uni-kl.de/GENIALOnt#">
     <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware">
         <owl:versionIRI rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.1"/>
         <owl:imports rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"/>
@@ -48,14 +49,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component -->
-
-    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#component"/>
-    </rdf:Description>
     
 
 
@@ -387,7 +380,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/custom_purpose_unit">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_element"/>
     </owl:Class>
     
 
@@ -684,7 +677,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/general_purpose_unit -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/general_purpose_unit">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_element"/>
     </owl:Class>
     
 
@@ -1116,6 +1109,27 @@ The computation of those features consists of several steps: 1. Framing and wind
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microprocessor">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multi_core -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multi_core">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>(according to ISO 26262) hardware component (3.21) which includes two or more hardware processing elements (3.113) which can operate independently from each other</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1802,6 +1816,23 @@ In brief, voltage = pressure, and it is measured in volts (V). The term recogniz
 
     <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/load_weigths">
         <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/to_process"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mymulticore -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mymulticore">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/multi_core"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myprocessor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myprocessor -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myprocessor">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_element"/>
     </owl:NamedIndividual>
     
 

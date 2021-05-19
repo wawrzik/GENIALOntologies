@@ -23,7 +23,6 @@
         <terms:title>GENIAL! Basic Ontology</terms:title>
         <rdfs:label>GENIAL! Basic Ontology</rdfs:label>
         <owl:versionInfo>0.2.0</owl:versionInfo>
-        <foaf:mbox xml:lang="cs.uni-kl.de">mailto:wawrzik@cs.uni-kl.de</foaf:mbox>
     </owl:Ontology>
     
 
@@ -36,6 +35,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/atTime -->
+
+    <owl:AnnotationProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/atTime">
+        <obo:IAO_0000112>e.g. law_for_banning_combustion_engines bans combustion engine atTime 2030-10-26T21:32:52 (xsd:DateTime)</obo:IAO_0000112>
+        <rdfs:comment>used to annotate triples</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -115,7 +124,7 @@
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#executes">
         <owl:inverseOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#is_executed_by"/>
-        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
+        <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_element"/>
         <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"/>
     </owl:ObjectProperty>
     
@@ -164,7 +173,7 @@
 
     <owl:ObjectProperty rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#is_executed_by">
         <rdfs:domain rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"/>
-        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
+        <rdfs:range rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_element"/>
     </owl:ObjectProperty>
     
 
@@ -403,6 +412,16 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_element">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_component"/>
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_elementary_subpart"/>
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
+                    <rdf:Description rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_subpart"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object"/>
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#non_system_level_element"/>
         <owl:disjointWith rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#software_element"/>
@@ -652,7 +671,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>according to ISO 26262: (continuant that is a) set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another</obo:IAO_0000115>
+        <obo:IAO_0000115>according to ISO 26262: (system level element) set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -683,7 +702,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_element"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -699,11 +718,21 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mechanical_object -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_unit">
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mechanical_object">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object"/>
+        <rdfs:label>mechanical object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_element -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/processing_element">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#hardware_part"/>
-        <obo:IAO_0000115>A hardware part that processes something</obo:IAO_0000115>
+        <obo:IAO_0000115>(according to ISO26262) hardware part (3.71) providing a set of functions for data processing, normally consisting of a register set, an execution unit, and a control unit</obo:IAO_0000115>
+        <rdfs:label>processing element</rdfs:label>
         <rdfs:label>processing unit</rdfs:label>
         <rdfs:label>processor</rdfs:label>
     </owl:Class>
