@@ -166,7 +166,6 @@
     <owl:ObjectProperty rdf:about="http://w3id.org/gbo#implements">
         <owl:inverseOf rdf:resource="http://w3id.org/gbo#is_implemented_by"/>
         <rdfs:domain rdf:resource="http://w3id.org/gbo#element"/>
-        <rdfs:range rdf:resource="http://w3id.org/gbo#function"/>
     </owl:ObjectProperty>
     
 
@@ -733,6 +732,12 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
 
     <owl:Class rdf:about="http://w3id.org/gbo/CarModel/processing_element">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#executes"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo#software_element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>(according to ISO26262) hardware part (3.71) providing a set of functions for data processing, normally consisting of a register set, an execution unit, and a control unit</obo:IAO_0000115>
         <rdfs:label>processing element</rdfs:label>
         <rdfs:label>processing unit</rdfs:label>

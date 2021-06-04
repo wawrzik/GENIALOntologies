@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+<uri id="Imports Wizard Entry" name="http://w3id.org/gbo/0.2.1" uri="file:/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/GENIAL!BasicOntology/GENIALOntBFO.owl"/>
 <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1" uri="file:/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/GENIAL!BasicOntology/GENIALOntBFO.owl"/>
 <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.11" uri="domainhardware.owl"/>
 <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.1" uri="domainhardware.owl"/>
@@ -6,39 +7,39 @@
 <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1" uri="file:/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/GENIAL!%20Basic%20Ontology/GENIALOntBFO.owl"/>
 <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt" uri="file:/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/GENIAL!%20Basic%20Ontology/GENIALOntBFO.owl"/>
 <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel" uri="CarModel.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware" uri="domainhardware.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB" uri="domainhardwareKB.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/roles" uri="roles/roles.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology" uri="SensorTypesOntology.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo" uri="EMMO/emmo.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/emmo-inferred" uri="EMMO/emmo-inferred.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/holistic" uri="EMMO/middle/holistic.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/isq" uri="EMMO/middle/isq.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/manufacturing" uri="EMMO/middle/manufacturing.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/materials" uri="EMMO/middle/materials.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/math" uri="EMMO/middle/math.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/metrology" uri="EMMO/middle/metrology.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/metrology-leftovers" uri="EMMO/middle/todo/units-leftovers.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/models" uri="EMMO/middle/models.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/perceptual" uri="EMMO/middle/perceptual.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/physicalistic" uri="EMMO/middle/physicalistic.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/properties" uri="EMMO/middle/properties.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/property-unit-list" uri="EMMO/middle/todo/property-unit-list.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/reductionistic" uri="EMMO/middle/reductionistic.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/semiotics" uri="EMMO/middle/semiotics.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/middle/siunits" uri="EMMO/middle/siunits.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/top" uri="EMMO/top/top.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/top/annotations" uri="EMMO/top/annotations.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/top/mereotopology" uri="EMMO/top/mereotopology.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://emmo.info/emmo/top/physical" uri="EMMO/top/physical.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://www.meteck.org/files/ontologies/PW-BFO11216PM.owl" uri="part-wholerelationsKeet/PWbfo.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://www.ontology-of-units-of-measure.org/resource/om-2/" uri="om-2.0.rdf"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21" uri="eFuseSolutionSpace(function-solution).owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://www.semanticweb.org/frank/ontologies/2021/4/untitled-ontology-133" uri="testontology.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96" uri="EffectChain.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94" uri="HW-SW-Allocation.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://www.w3.org/2002/07/owl" uri="oneM2MBaseontology/base_ontology.owl"/>
-<uri id="Automatically generated entry, Timestamp=1621634209780" name="http://www.w3.org/ns/ssn/" uri="SSN/ssn.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel" uri="CarModel.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware" uri="domainhardware.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB" uri="domainhardwareKB.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/roles" uri="roles/roles.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology" uri="SensorTypesOntology.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo" uri="EMMO/emmo.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/emmo-inferred" uri="EMMO/emmo-inferred.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/holistic" uri="EMMO/middle/holistic.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/isq" uri="EMMO/middle/isq.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/manufacturing" uri="EMMO/middle/manufacturing.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/materials" uri="EMMO/middle/materials.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/math" uri="EMMO/middle/math.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/metrology" uri="EMMO/middle/metrology.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/metrology-leftovers" uri="EMMO/middle/todo/units-leftovers.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/models" uri="EMMO/middle/models.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/perceptual" uri="EMMO/middle/perceptual.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/physicalistic" uri="EMMO/middle/physicalistic.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/properties" uri="EMMO/middle/properties.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/property-unit-list" uri="EMMO/middle/todo/property-unit-list.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/reductionistic" uri="EMMO/middle/reductionistic.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/semiotics" uri="EMMO/middle/semiotics.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/middle/siunits" uri="EMMO/middle/siunits.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/top" uri="EMMO/top/top.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/top/annotations" uri="EMMO/top/annotations.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/top/mereotopology" uri="EMMO/top/mereotopology.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://emmo.info/emmo/top/physical" uri="EMMO/top/physical.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://www.meteck.org/files/ontologies/PW-BFO11216PM.owl" uri="part-wholerelationsKeet/PWbfo.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://www.ontology-of-units-of-measure.org/resource/om-2/" uri="om-2.0.rdf"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21" uri="eFuseSolutionSpace(function-solution).owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://www.semanticweb.org/frank/ontologies/2021/4/untitled-ontology-133" uri="testontology.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://www.semanticweb.org/wawrzik/ontologies/2019/10/untitled-ontology-96" uri="EffectChain.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://www.semanticweb.org/wawrzik/ontologies/2019/8/untitled-ontology-94" uri="HW-SW-Allocation.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://www.w3.org/2002/07/owl" uri="oneM2MBaseontology/base_ontology.owl"/>
+<uri id="Automatically generated entry, Timestamp=1622823099935" name="http://www.w3.org/ns/ssn/" uri="SSN/ssn.owl"/>
 </group>
 </catalog>
