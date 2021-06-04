@@ -692,8 +692,63 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
 
     <owl:Class rdf:about="http://w3id.org/gbo/actuator">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
-        <obo:IAO_0000115>An actuator is a hardware component responsible for moving or controlling a mechanism or system.</obo:IAO_0000115>
+        <obo:IAO_0000115>An actuator is a hardware component that implements some actuating function and is responsible for moving or controlling a mechanism or system.</obo:IAO_0000115>
         <rdfs:comment>Not defined in ISO26262</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/automatic_cruise_control -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/automatic_cruise_control">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/vehicle_function"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#is_implemented_by"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/camera"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#is_implemented_by"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/electronic_control_unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#is_implemented_by"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/lidar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#is_implemented_by"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/radar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#is_implemented_by"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gbo/electronic_control_unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#is_implemented_by"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gbo/sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>automatic cruise control</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/camera -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/camera">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/sensor"/>
     </owl:Class>
     
 
@@ -712,11 +767,85 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
     
 
 
+    <!-- http://w3id.org/gbo/electronic_control_unit -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/electronic_control_unit">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
+        <rdfs:label>ECU</rdfs:label>
+        <rdfs:label>electronic control unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/item -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/item">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://w3id.org/gbo#system"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part"/>
+                                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo#system"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://w3id.org/gbo#part_of"/>
+                                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo#system"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
+                        <owl:allValuesFrom rdf:resource="http://w3id.org/gbo/vehicle_function"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system_level_element"/>
+        <obo:IAO_0000115>system level element that is (accodring to ISO26262) system (3.163) or combination of systems (3.163), to which ISO 26262 is applied, that implements a function or part of a function at the vehicle level
+Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/lidar -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/lidar">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/radar -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/radar">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/sensor"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/sensor -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/sensor">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+        <obo:IAO_0000112>accelerometer</obo:IAO_0000112>
+        <obo:IAO_0000112>humidity sensor</obo:IAO_0000112>
+        <obo:IAO_0000112>radar</obo:IAO_0000112>
+        <obo:IAO_0000115>Hardware component that implements some sensing function</obo:IAO_0000115>
         <rdfs:comment>Not defined in ISO26262</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/vehicle_function -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/vehicle_function">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
+        <obo:IAO_0000112>An “automatic cruise control” is a vehicle function that can be implemented, using different ECUs and a variety of sensor technology (e.g. Radar, Lidar, Camera).</obo:IAO_0000112>
+        <obo:IAO_0000115>A gbo:function that is (according to ISO26262) behaviour of the vehicle, intended by the implementation of one or more items (3.84), that is observable by the customer</obo:IAO_0000115>
+        <rdfs:label>vehicle function</rdfs:label>
     </owl:Class>
     
 
