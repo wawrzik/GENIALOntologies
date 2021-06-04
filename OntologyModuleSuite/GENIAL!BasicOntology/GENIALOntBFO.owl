@@ -385,7 +385,7 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo#function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <obo:IAO_0000115>A bfo:function that a component, hardware or software implements</obo:IAO_0000115>
+        <obo:IAO_0000115>A bfo:function that an element (e.g. system, component, hardware or software) implements</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -561,10 +561,21 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
 
     <owl:Class rdf:about="http://w3id.org/gbo#property">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/unit"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112>drag coefficient</obo:IAO_0000112>
         <obo:IAO_0000112>power</obo:IAO_0000112>
         <obo:IAO_0000112>temperature</obo:IAO_0000112>
-        <obo:IAO_0000115>A quality or characteristic of a hardware, software or function. A property has a boolean, integer, or real variable through the measure class.</obo:IAO_0000115>
+        <obo:IAO_0000115>A quality or characteristic of an element, hardware, software or function. A property has a boolean, integer, or real variable through the measure class.</obo:IAO_0000115>
         <rdfs:label>property</rdfs:label>
     </owl:Class>
     
@@ -573,7 +584,15 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
     <!-- http://w3id.org/gbo#social_object -->
 
     <owl:Class rdf:about="http://w3id.org/gbo#social_object">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:label>social object</rdfs:label>
     </owl:Class>
     
