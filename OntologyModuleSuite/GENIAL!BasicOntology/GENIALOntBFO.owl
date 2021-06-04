@@ -672,7 +672,9 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>according to ISO 26262: (system level element) set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another</obo:IAO_0000115>
+        <obo:IAO_0000115>according to ISO 26262: (system level element) set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another.
+
+Note 1 to entry: The related sensor or actuator can be included in the system, or can be external to the system.</obo:IAO_0000115>
     </owl:Class>
     
 

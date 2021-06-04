@@ -87,14 +87,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electronic_filter"/>
-    </owl:Class>
-    
-
-
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_conversion -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_conversion">
@@ -121,6 +113,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
         </rdfs:subClassOf>
         <rdfs:label>ADC</rdfs:label>
         <rdfs:label>analog to digital converter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analogue_filter -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analogue_filter">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electronic_filter"/>
     </owl:Class>
     
 
@@ -157,14 +157,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/software_filter"/>
-    </owl:Class>
-    
-
-
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter_system -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter_system">
@@ -193,7 +185,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://w3id.org/gbo#executes"/>
-                        <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter"/>
+                        <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_software_filter"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
@@ -206,6 +198,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_signal_processor">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/custom_purpose_unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_software_filter -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_software_filter">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/software_filter"/>
     </owl:Class>
     
 
@@ -265,7 +265,9 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/passive_linear_electronic_analogue_filter -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/passive_linear_electronic_analogue_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_filter"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analogue_filter"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electronic_filter"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/linear_filter"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
