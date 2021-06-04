@@ -613,6 +613,12 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
     <owl:Class rdf:about="http://w3id.org/gbo#software_element">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#non_system_level_element"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#is_executed_by"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/CarModel/processing_element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>From definition of element:
 Note 1 to entry: When “software element” or “hardware element” is used, this phrase denotes an element of software only or an element of hardware only, respectively.</rdfs:comment>
         <rdfs:label>software</rdfs:label>
@@ -798,6 +804,16 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
     
 
 
+    <!-- http://w3id.org/gbo/embedded_software -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/embedded_software">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_element"/>
+        <obo:IAO_0000115>a software that is (according to ISO 26262) fully-integrated software to be executed on a processing element (3.113)</obo:IAO_0000115>
+        <rdfs:label>embedded software</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/item -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/item">
@@ -845,6 +861,14 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
         <obo:IAO_0000115>a quantity that is (according to ISO 26262) a cumulative time that an item (3.84) or element (3.41) is functioning, including degraded modes</obo:IAO_0000115>
         <rdfs:label>operating time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/processing -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/processing">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
     </owl:Class>
     
 
@@ -912,6 +936,12 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#executes"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/gbo#software_element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/processing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>(according to ISO26262) hardware part (3.71) providing a set of functions for data processing, normally consisting of a register set, an execution unit, and a control unit</obo:IAO_0000115>
