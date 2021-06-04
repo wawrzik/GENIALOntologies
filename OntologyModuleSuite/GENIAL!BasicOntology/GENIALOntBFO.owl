@@ -448,6 +448,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://w3id.org/gbo/actuating"/>
         <obo:IAO_0000112>A flip-flop of the ALU with its logic cone, a register.</obo:IAO_0000112>
         <obo:IAO_0000115>smallest portion of a hardware subpart (3.73) considered in safety (3.132) analysis</obo:IAO_0000115>
     </owl:Class>
@@ -688,10 +689,24 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
     
 
 
+    <!-- http://w3id.org/gbo/actuating -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/actuating">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/actuator -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/actuator">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/actuating"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An actuator is a hardware component that implements some actuating function and is responsible for moving or controlling a mechanism or system.</obo:IAO_0000115>
         <rdfs:comment>Not defined in ISO26262</rdfs:comment>
     </owl:Class>
@@ -826,10 +841,24 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
     
 
 
+    <!-- http://w3id.org/gbo/sensing -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/sensing">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/sensor -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/sensor">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/sensing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112>accelerometer</obo:IAO_0000112>
         <obo:IAO_0000112>humidity sensor</obo:IAO_0000112>
         <obo:IAO_0000112>radar</obo:IAO_0000112>
