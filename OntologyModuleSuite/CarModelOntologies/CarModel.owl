@@ -10,7 +10,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:hardware="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/">
+     xmlns:CarModel="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/"
+     xmlns:GENIALOnt="http://cpsagila.cs.uni-kl.de/GENIALOnt#">
     <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel">
         <owl:imports rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1"/>
     </owl:Ontology>
@@ -28,73 +29,88 @@
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/body -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/battery -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/body">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mechanical_object"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/battery">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/mechanical_object"/>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/car -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/car">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/vehicle"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/mechanical_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/car -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/car">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/vehicle"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/body"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/chassis"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/powertrain"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/powertrain"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/chassis -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/chassis">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mechanical_object"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/mechanical_object"/>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/combustion_engine -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/combustion_engine -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/combustion_engine">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/engine"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/combustion_engine">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/engine"/>
+        <owl:disjointWith rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_engine"/>
         <rdfs:label>combustion engine</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/coupler -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/coupler -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/coupler">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mechanical_object"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/coupler">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/mechanical_object"/>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electric_car -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electric_car -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electric_car">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/car"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electric_car">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/car"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part"/>
-                <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electrical_engine"/>
+                <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/battery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part"/>
+                <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_engine"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -103,7 +119,7 @@
                 <owl:allValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
-                        <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electrical_engine"/>
+                        <owl:allValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_engine"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
             </owl:Restriction>
@@ -113,111 +129,317 @@
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electrical_engine -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_engine -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electrical_engine">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/engine"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_engine">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/engine"/>
         <rdfs:label>electrical engine</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/engine -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/engine -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/engine">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mechanical_object"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/engine">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/mechanical_object"/>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flying_car -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/flying_car -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/flying_car">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/vehicle"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/flying_car">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/vehicle"/>
         <rdfs:label>flying car</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gear -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/gear -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gear">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mechanical_object"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/gear">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/mechanical_object"/>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/passenger_car -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/passenger_car -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/passenger_car">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/vehicle"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/passenger_car">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/car"/>
         <obo:IAO_0000115>vehicle designed and constructed primarily for the carriage of persons and their luggage, their goods, or both, having not more than a seating capacity of eight, in addition to the driver, and without space for standing passengers</obo:IAO_0000115>
         <rdfs:label>passenger car</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/powertrain -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/powertrain -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/powertrain">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mechanical_object"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/powertrain">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/mechanical_object"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/coupler"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/coupler"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/engine"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/engine"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/gear"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/gear"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tire"/>
+                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/tire"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tire"/>
+                <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/tire"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tire -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/tire">
-        <owl:equivalentClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/wheel"/>
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mechanical_object"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/vehicle -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/tire -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/vehicle">
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/tire">
+        <owl:equivalentClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/wheel"/>
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/mechanical_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/vehicle -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/vehicle">
         <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#engineered_object"/>
     </owl:Class>
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/wheel -->
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/wheel -->
 
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/wheel">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/mechanical_object"/>
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/wheel">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/mechanical_object"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_body_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body_2 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body_2">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_body_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_chassis_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis_2 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis_2">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_chassis_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/combustion_engine_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/combustion_engine_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/engine"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_combustion_engine_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/combustion_powertrain_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/combustion_powertrain_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/powertrain"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/combustion_engine_1"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_combustion_powertrain_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_car_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_car_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electric_car"/>
+        <GENIALOnt:has_part rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/battery_1"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body_1"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis_1"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_powertrain_1"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_electrical_car_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_engine_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_engine_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/engine"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_electrical_engine_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_powertrain_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_powertrain_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/powertrain"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/electrical_engine_1"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_electrical_powertrain_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/passenger_car_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/passenger_car_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/passenger_car"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/body_2"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/chassis_2"/>
+        <GENIALOnt:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/combustion_powertrain_1"/>
+        <GENIALOnt:has_property rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_passenger_car_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_combustion_engine_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_combustion_engine_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_combustion_powertrain_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_combustion_powertrain_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_electrical_car_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_electrical_car_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_electrical_engine_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_electrical_engine_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_electrical_powertrain_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_electrical_powertrain_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_passenger_car_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price_passenger_car_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/battery_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/battery_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_body_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_body_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_body_2 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_body_2">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_chassis_1 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_chassis_1">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_chassis_2 -->
+
+    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/price_chassis_2">
+        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/price"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
