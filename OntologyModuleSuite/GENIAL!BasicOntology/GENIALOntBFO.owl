@@ -24,7 +24,7 @@
         <terms:creator>Frank Wawrzik</terms:creator>
         <terms:title>GENIAL! Basic Ontology</terms:title>
         <rdfs:label>GENIAL! Basic Ontology</rdfs:label>
-        <owl:versionInfo>0.2.0</owl:versionInfo>
+        <owl:versionInfo>0.2.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -411,7 +411,11 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#component"/>
         <owl:disjointWith rdf:resource="http://w3id.org/gbo#software_component"/>
+        <obo:IAO_0000112>actuator</obo:IAO_0000112>
+        <obo:IAO_0000112>multi core</obo:IAO_0000112>
+        <obo:IAO_0000112>sensor</obo:IAO_0000112>
         <obo:IAO_0000115>No ISO definition. Formal Definition derived from other definitions.</obo:IAO_0000115>
+        <rdfs:label>hardware component</rdfs:label>
     </owl:Class>
     
 
@@ -457,6 +461,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         <owl:disjointWith rdf:resource="http://w3id.org/gbo/actuating"/>
         <obo:IAO_0000112>A flip-flop of the ALU with its logic cone, a register.</obo:IAO_0000112>
         <obo:IAO_0000115>smallest portion of a hardware subpart (3.73) considered in safety (3.132) analysis</obo:IAO_0000115>
+        <rdfs:label>hardware elementary subpart</rdfs:label>
     </owl:Class>
     
 
@@ -514,8 +519,10 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000112>ALU of a CPU of a microcontroller, register bank of a CPU.</obo:IAO_0000112>
+        <obo:IAO_0000112>ALU of a CPU of a microcontroller</obo:IAO_0000112>
+        <obo:IAO_0000112>register bank of a CPU</obo:IAO_0000112>
         <obo:IAO_0000115>portion of a hardware part (3.71) that can be logically divided and represents second or greater level of hierarchical decomposition</obo:IAO_0000115>
+        <rdfs:label>hardware subpart</rdfs:label>
     </owl:Class>
     
 
@@ -553,6 +560,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#element"/>
         <owl:disjointWith rdf:resource="http://w3id.org/gbo#system_level_element"/>
         <obo:IAO_0000115>An element that is not on the system-level</obo:IAO_0000115>
+        <rdfs:label>non system level element</rdfs:label>
     </owl:Class>
     
 
@@ -593,6 +601,9 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>organisation</obo:IAO_0000112>
+        <obo:IAO_0000112>person</obo:IAO_0000112>
+        <obo:IAO_0000115>an object or object aggregate that stands in a social role</obo:IAO_0000115>
         <rdfs:label>social object</rdfs:label>
     </owl:Class>
     
@@ -623,6 +634,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#component"/>
         <obo:IAO_0000115>one or more softwareunits (3.159)</obo:IAO_0000115>
+        <rdfs:label>software component</rdfs:label>
     </owl:Class>
     
 
@@ -704,7 +716,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>according to ISO 26262: (system level element) set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another.
+        <obo:IAO_0000115>system level element that is according to ISO 26262: set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another.
 
 Note 1 to entry: The related sensor or actuator can be included in the system, or can be external to the system.</obo:IAO_0000115>
     </owl:Class>
@@ -716,6 +728,7 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
     <owl:Class rdf:about="http://w3id.org/gbo#system_level_element">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#element"/>
         <obo:IAO_0000115>An element that is on the system level</obo:IAO_0000115>
+        <rdfs:label>system level element</rdfs:label>
     </owl:Class>
     
 
@@ -942,6 +955,8 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo/CarModel/mechanical_object">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#engineered_object"/>
+        <obo:IAO_0000112>vehicle</obo:IAO_0000112>
+        <obo:IAO_0000115>an engineered object that has mechanical characteristics either dominantly so or not.</obo:IAO_0000115>
         <rdfs:label>mechanical object</rdfs:label>
     </owl:Class>
     
