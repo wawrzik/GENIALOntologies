@@ -105,12 +105,12 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part"/>
+                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
                         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                         <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/person"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part"/>
+                        <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
                         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</owl:maxQualifiedCardinality>
                         <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/person"/>
                     </owl:Restriction>
@@ -137,7 +137,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part"/>
+                <owl:onProperty rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt#has_part_directly"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/wheel"/>
             </owl:Restriction>
@@ -261,7 +261,7 @@
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/machine -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/machine">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#engineered_object"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/CarModel/mechanical_object"/>
     </owl:Class>
     
 
