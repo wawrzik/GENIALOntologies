@@ -325,12 +325,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error2 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
-    
-
-
     <!-- http://w3id.org/gbo/actuator -->
 
     <rdf:Description rdf:about="http://w3id.org/gbo/actuator">
@@ -1380,12 +1374,18 @@ The computation of those features consists of several steps: 1. Framing and wind
     <!-- http://w3id.org/gbo/hardware/multi_core -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/multi_core">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/CarModel/processing_element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gbo/CarModel/processing_element"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>(according to ISO 26262) hardware component (3.21) which includes two or more hardware processing elements (3.113) which can operate independently from each other</obo:IAO_0000115>
