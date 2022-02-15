@@ -839,6 +839,16 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
     
 
 
+    <!-- http://w3id.org/gbo/functional_requirement -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/functional_requirement">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/requirement"/>
+        <obo:IAO_0000115>specifies something the system should do</obo:IAO_0000115>
+        <obo:IAO_0000119>https://reqtest.com/requirements-blog/functional-vs-non-functional-requirements/</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/item -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/item">
@@ -880,12 +890,32 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
     
 
 
+    <!-- http://w3id.org/gbo/nonfunctional_requirement -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/nonfunctional_requirement">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/requirement"/>
+        <obo:IAO_0000115>describes how the system works</obo:IAO_0000115>
+        <obo:IAO_0000119>https://reqtest.com/requirements-blog/functional-vs-non-functional-requirements/</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/operating_time -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/operating_time">
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
         <obo:IAO_0000115>a quantity that is (according to ISO 26262) a cumulative time that an item (3.84) or element (3.41) is functioning, including degraded modes</obo:IAO_0000115>
         <rdfs:label>operating time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/performance -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/performance">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#property"/>
+        <obo:IAO_0000115>a property on how well a person, machine, etc. does a piece of work or an activity</obo:IAO_0000115>
+        <obo:IAO_0000119>https://dictionary.cambridge.org/dictionary/english/performance</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -902,6 +932,16 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo/radar">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/requirement -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/requirement">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#property"/>
+        <obo:IAO_0000115>a property that is wanted or needed</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.merriam-webster.com/dictionary/requirement</obo:IAO_0000119>
     </owl:Class>
     
 

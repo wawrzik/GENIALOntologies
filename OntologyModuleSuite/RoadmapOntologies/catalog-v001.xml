@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+<uri id="User Entered Import Resolution" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1" uri="file:/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/GENIAL!BasicOntology/GENIALOntBFO.owl"/>
 <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt" uri="file:/Users/Frank/Downloads/Untitled.owl"/>
 <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/frank/ontologies/2020/0/untitled-ontology-21" uri="file:/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/Car%20Model%20Ontologies/eFuseSolutionSpace(function-solution).owl"/>
 <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt" uri="file:/Users/Frank/local/git/GENIALOntologies/OntologyModuleSuite/GENIAL!%20Basic%20Ontology/GENIALOntBFO.owl"/>
