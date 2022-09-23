@@ -9,22 +9,28 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:CarModel="http://cpsagila.cs.uni-kl.de/GENIALOnt/CarModel/"
      xmlns:hardware="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/"
      xmlns:CarModel1="http://w3id.org/gbo/CarModel/">
     <owl:Ontology rdf:about="http://w3id.org/gbo">
-        <owl:versionIRI rdf:resource="http://w3id.org/gbo/0.2.1"/>
+        <owl:versionIRI rdf:resource="http://w3id.org/gbo/0.2.3"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
         <dc:description>Basic Ontology with general vocabulary for serving as a ground to execute basic tasks of the tool AGILA and share common upper level for all classes in GENIAL!. It supports the modelling of microlectronic components like sensors, acutators, processors and software along the automotive value chain.</dc:description>
+        <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
         <dc:title>GENIAL! Basic Ontology</dc:title>
         <terms:contributor>Christoph Grimm</terms:contributor>
         <terms:contributor>Peter Neumann</terms:contributor>
         <terms:created>2021-01-26</terms:created>
         <terms:creator>Frank Wawrzik</terms:creator>
         <terms:title>GENIAL! Basic Ontology</terms:title>
+        <vann:preferredNamespacePrefix>gbo-bfo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://w3id.org/gbo</vann:preferredNamespaceUri>
         <rdfs:label>GENIAL! Basic Ontology</rdfs:label>
-        <owl:versionInfo>0.2.1</owl:versionInfo>
+        <owl:versionInfo>0.2.3</owl:versionInfo>
+        <foaf:homepage>https://cps.cs.uni-kl.de/mitarbeiter/frank-wawrzik-msc</foaf:homepage>
+        <foaf:mbox>mailto:wawrzik@cs.uni-kl.de</foaf:mbox>
     </owl:Ontology>
     
 
@@ -73,6 +79,18 @@
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
@@ -128,6 +146,7 @@
         <owl:inverseOf rdf:resource="http://w3id.org/gbo#is_executed_by"/>
         <rdfs:domain rdf:resource="http://w3id.org/gbo/CarModel/processing_element"/>
         <rdfs:range rdf:resource="http://w3id.org/gbo#software_element"/>
+        <rdfs:comment>Relates a processing unit to the software which runs on it</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -147,6 +166,7 @@
     <owl:ObjectProperty rdf:about="http://w3id.org/gbo#has_part_directly">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/gbo#has_part"/>
         <owl:inverseOf rdf:resource="http://w3id.org/gbo#part_of_directly"/>
+        <rdfs:comment>models hierarchical de-composition/integration of direct parts</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -155,8 +175,9 @@
 
     <owl:ObjectProperty rdf:about="http://w3id.org/gbo#has_property">
         <owl:inverseOf rdf:resource="http://w3id.org/gbo#property_of"/>
+        <rdfs:domain rdf:resource="http://w3id.org/gbo#element"/>
         <rdfs:range rdf:resource="http://w3id.org/gbo#property"/>
-        <obo:IAO_0000115>links components to their properties</obo:IAO_0000115>
+        <obo:IAO_0000115>links elements to their properties</obo:IAO_0000115>
     </owl:ObjectProperty>
     
 
@@ -166,6 +187,7 @@
     <owl:ObjectProperty rdf:about="http://w3id.org/gbo#implements">
         <owl:inverseOf rdf:resource="http://w3id.org/gbo#is_implemented_by"/>
         <rdfs:domain rdf:resource="http://w3id.org/gbo#element"/>
+        <rdfs:comment>Links elements their functions</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -175,6 +197,7 @@
     <owl:ObjectProperty rdf:about="http://w3id.org/gbo#is_executed_by">
         <rdfs:domain rdf:resource="http://w3id.org/gbo#software_element"/>
         <rdfs:range rdf:resource="http://w3id.org/gbo/CarModel/processing_element"/>
+        <rdfs:comment>Relates the software to the processing unit on which it runs</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -184,6 +207,7 @@
     <owl:ObjectProperty rdf:about="http://w3id.org/gbo#is_implemented_by">
         <rdfs:domain rdf:resource="http://w3id.org/gbo#function"/>
         <rdfs:range rdf:resource="http://w3id.org/gbo#element"/>
+        <rdfs:comment>Links functions to their elements</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -321,7 +345,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <obo:IAO_0000112>A microcontroller</obo:IAO_0000112>
-        <obo:IAO_0000115>according to ISO26262: non-system level element (3.41) that is logically or technically separable and is comprised of more than one hardware part (3.71) or one or more software units (3.159). 
+        <obo:IAO_0000115>According to ISO26262: non-system level element (3.41) that is logically or technically separable and is comprised of more than one hardware part (3.71) or one or more software units (3.159). 
 
 A component is a part of a system (3.163).</obo:IAO_0000115>
     </owl:Class>
@@ -341,7 +365,7 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo#dependency">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#property"/>
-        <obo:IAO_0000115>A gbo:property that is a boolean or arithmetic function / equation on properties. Used to be calculated with GENIAL constraint propagation. As string in LaTex syntax</obo:IAO_0000115>
+        <obo:IAO_0000115>A gbo:property that is a boolean or arithmetic function / equation on properties. Used to be calculated with GENIAL constraint propagation. As string in LaTex syntax.</obo:IAO_0000115>
         <rdfs:label>dependency</rdfs:label>
     </owl:Class>
     
@@ -351,12 +375,6 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo#element">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/operating_time"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -375,7 +393,7 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo#engineered_object">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <obo:IAO_0000115>An object created, designed or engineered by humans</obo:IAO_0000115>
+        <obo:IAO_0000115>An object created, designed or engineered by humans.</obo:IAO_0000115>
         <rdfs:label>engineered object</rdfs:label>
     </owl:Class>
     
@@ -385,7 +403,7 @@ A component is a part of a system (3.163).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo#function">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <obo:IAO_0000115>A bfo:function that an element (e.g. system, component, hardware or software) implements</obo:IAO_0000115>
+        <obo:IAO_0000115>A bfo:function that an element (e.g. system, component, hardware or software) implements.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -481,7 +499,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
             </owl:Class>
         </owl:equivalentClass>
         <obo:IAO_0000112>The CPU of a microcontroller, a resistor, flash array of a microcontroller.</obo:IAO_0000112>
-        <obo:IAO_0000115>a piece of hardware that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition</obo:IAO_0000115>
+        <obo:IAO_0000115>A piece of hardware that is (according to ISO 26262) a portion of a hardware component (3.21) at the first level of hierarchical decomposition.</obo:IAO_0000115>
         <rdfs:label>hardware part</rdfs:label>
     </owl:Class>
     
@@ -521,7 +539,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         </owl:equivalentClass>
         <obo:IAO_0000112>ALU of a CPU of a microcontroller</obo:IAO_0000112>
         <obo:IAO_0000112>register bank of a CPU</obo:IAO_0000112>
-        <obo:IAO_0000115>portion of a hardware part (3.71) that can be logically divided and represents second or greater level of hierarchical decomposition</obo:IAO_0000115>
+        <obo:IAO_0000115>Portion of a hardware part (3.71) that can be logically divided and represents second or greater level of hierarchical decomposition.</obo:IAO_0000115>
         <rdfs:label>hardware subpart</rdfs:label>
     </owl:Class>
     
@@ -569,21 +587,10 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
 
     <owl:Class rdf:about="http://w3id.org/gbo#property">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasValue"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"/>
-                        <owl:someValuesFrom rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/unit"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>drag coefficient</obo:IAO_0000112>
         <obo:IAO_0000112>power</obo:IAO_0000112>
         <obo:IAO_0000112>temperature</obo:IAO_0000112>
-        <obo:IAO_0000115>A quality or characteristic of an element, hardware, software or function. A property has a boolean, integer, or real variable through the measure class.</obo:IAO_0000115>
+        <obo:IAO_0000115>A quality or characteristic of an element, hardware, software or function. A property has a boolean, integer, or real variable through the measure class. Specifically properties can be unquantified and quantified. But quantified properties are quantities.</obo:IAO_0000115>
         <rdfs:label>property</rdfs:label>
     </owl:Class>
     
@@ -603,7 +610,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
         </rdfs:subClassOf>
         <obo:IAO_0000112>organisation</obo:IAO_0000112>
         <obo:IAO_0000112>person</obo:IAO_0000112>
-        <obo:IAO_0000115>an object or object aggregate that stands in a social role</obo:IAO_0000115>
+        <obo:IAO_0000115>An object or object aggregate that stands in a social role.</obo:IAO_0000115>
         <rdfs:label>social object</rdfs:label>
     </owl:Class>
     
@@ -709,7 +716,7 @@ Note 1 to entry: When “software element” or “hardware element” is used, 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>system level element that is according to ISO 26262: set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another.
+        <obo:IAO_0000115>System level element that is according to ISO 26262: set of components (3.21) or subsystems that relates at least a sensor, a controller and an actuator with one another.
 
 Note 1 to entry: The related sensor or actuator can be included in the system, or can be external to the system.</obo:IAO_0000115>
     </owl:Class>
@@ -720,6 +727,7 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
 
     <owl:Class rdf:about="http://w3id.org/gbo#system_level_element">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#element"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#engineered_object"/>
         <obo:IAO_0000115>An element that is on the system level</obo:IAO_0000115>
         <rdfs:label>system level element</rdfs:label>
     </owl:Class>
@@ -730,6 +738,7 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
 
     <owl:Class rdf:about="http://w3id.org/gbo/actuating">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
+        <obo:IAO_0000115>A gbo:function to change or control an object</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -738,6 +747,7 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
 
     <owl:Class rdf:about="http://w3id.org/gbo/actuator">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
@@ -792,6 +802,7 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
                 <owl:onClass rdf:resource="http://w3id.org/gbo/sensor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>An “automatic cruise control” is a vehicle function that can be implemented, using different ECUs and a variety of sensor technology (e.g. Radar, Lidar, Camera).</obo:IAO_0000115>
         <rdfs:label>automatic cruise control</rdfs:label>
     </owl:Class>
     
@@ -843,7 +854,7 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
 
     <owl:Class rdf:about="http://w3id.org/gbo/functional_requirement">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/requirement"/>
-        <obo:IAO_0000115>specifies something the system should do</obo:IAO_0000115>
+        <obo:IAO_0000115>A requirement that specifies something the system should do.</obo:IAO_0000115>
         <obo:IAO_0000119>https://reqtest.com/requirements-blog/functional-vs-non-functional-requirements/</obo:IAO_0000119>
     </owl:Class>
     
@@ -876,7 +887,8 @@ Note 1 to entry: The related sensor or actuator can be included in the system, o
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system_level_element"/>
-        <obo:IAO_0000115>system level element that is (accodring to ISO26262) system (3.163) or combination of systems (3.163), to which ISO 26262 is applied, that implements a function or part of a function at the vehicle level
+        <obo:IAO_0000115>System level element that is (according to ISO26262) system (3.163) or combination of systems (3.163), to which ISO 26262 is applied, that implements a function or part of a function at the vehicle level.
+
 Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
     </owl:Class>
     
@@ -890,11 +902,11 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
     
 
 
-    <!-- http://w3id.org/gbo/nonfunctional_requirement -->
+    <!-- http://w3id.org/gbo/non_functional_requirement -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/nonfunctional_requirement">
+    <owl:Class rdf:about="http://w3id.org/gbo/non_functional_requirement">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/requirement"/>
-        <obo:IAO_0000115>describes how the system works</obo:IAO_0000115>
+        <obo:IAO_0000115>A requirement that describes how the system works.</obo:IAO_0000115>
         <obo:IAO_0000119>https://reqtest.com/requirements-blog/functional-vs-non-functional-requirements/</obo:IAO_0000119>
     </owl:Class>
     
@@ -904,7 +916,20 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo/operating_time">
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
-        <obo:IAO_0000115>a quantity that is (according to ISO 26262) a cumulative time that an item (3.84) or element (3.41) is functioning, including degraded modes</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#property_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://w3id.org/gbo#element"/>
+                            <rdf:Description rdf:about="http://w3id.org/gbo/item"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A quantity that is (according to ISO 26262) a cumulative time that an item (3.84) or element (3.41) is functioning, including degraded modes.</obo:IAO_0000115>
         <rdfs:label>operating time</rdfs:label>
     </owl:Class>
     
@@ -914,7 +939,7 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo/performance">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#property"/>
-        <obo:IAO_0000115>a property on how well a person, machine, etc. does a piece of work or an activity</obo:IAO_0000115>
+        <obo:IAO_0000115>a gbo:property on how well a person, machine, etc. does a piece of work or an activity</obo:IAO_0000115>
         <obo:IAO_0000119>https://dictionary.cambridge.org/dictionary/english/performance</obo:IAO_0000119>
     </owl:Class>
     
@@ -924,6 +949,7 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo/processing">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
+        <obo:IAO_0000115>A gbo:function to calculate a set of instructions or software</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -940,7 +966,7 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo/requirement">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#property"/>
-        <obo:IAO_0000115>a property that is wanted or needed</obo:IAO_0000115>
+        <obo:IAO_0000115>A property that is wanted or needed.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.merriam-webster.com/dictionary/requirement</obo:IAO_0000119>
     </owl:Class>
     
@@ -950,6 +976,7 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo/sensing">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
+        <obo:IAO_0000115>A gbo:function to perceive an object</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -958,6 +985,7 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo/sensor">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
@@ -967,7 +995,7 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
         <obo:IAO_0000112>accelerometer</obo:IAO_0000112>
         <obo:IAO_0000112>humidity sensor</obo:IAO_0000112>
         <obo:IAO_0000112>radar</obo:IAO_0000112>
-        <obo:IAO_0000115>Hardware component that implements some sensing function</obo:IAO_0000115>
+        <obo:IAO_0000115>Hardware component that implements some sensing function.</obo:IAO_0000115>
         <rdfs:comment>Not defined in ISO26262</rdfs:comment>
     </owl:Class>
     
@@ -978,7 +1006,7 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
     <owl:Class rdf:about="http://w3id.org/gbo/vehicle_function">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
         <obo:IAO_0000112>An “automatic cruise control” is a vehicle function that can be implemented, using different ECUs and a variety of sensor technology (e.g. Radar, Lidar, Camera).</obo:IAO_0000112>
-        <obo:IAO_0000115>A gbo:function that is (according to ISO26262) behaviour of the vehicle, intended by the implementation of one or more items (3.84), that is observable by the customer</obo:IAO_0000115>
+        <obo:IAO_0000115>A gbo:function that is (according to ISO26262) behaviour of the vehicle, intended by the implementation of one or more items (3.84), that is observable by the customer.</obo:IAO_0000115>
         <rdfs:label>vehicle function</rdfs:label>
     </owl:Class>
     
@@ -989,7 +1017,7 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
     <owl:Class rdf:about="http://w3id.org/gbo/CarModel/mechanical_object">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#engineered_object"/>
         <obo:IAO_0000112>vehicle</obo:IAO_0000112>
-        <obo:IAO_0000115>an engineered object that has mechanical characteristics. They can be either dominant mechanical characteristics like in a vehicle or wheel or less dominant like in a battery.</obo:IAO_0000115>
+        <obo:IAO_0000115>An engineered object that has mechanical characteristics. They can be either dominant mechanical characteristics like in a vehicle or wheel or less dominant like in a battery.</obo:IAO_0000115>
         <rdfs:label>mechanical object</rdfs:label>
     </owl:Class>
     
@@ -999,12 +1027,6 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://w3id.org/gbo/CarModel/processing_element">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#executes"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo#software_element"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
@@ -1023,7 +1045,13 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/measure">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115>A bfo:quality that are amounts of quantities</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A bfo:quality that are amounts of quantities.</obo:IAO_0000115>
         <rdfs:label>measure</rdfs:label>
     </owl:Class>
     
@@ -1042,9 +1070,21 @@ Note 1 to entry: See vehicle function (3.178).</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/unit">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115>is a quality that is any standard used for comparison in measurements</obo:IAO_0000115>
+        <obo:IAO_0000115>A quality that is any standard used for comparison in measurements.</obo:IAO_0000115>
         <rdfs:label>unit</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Actuator -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Actuator"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
     
 
 

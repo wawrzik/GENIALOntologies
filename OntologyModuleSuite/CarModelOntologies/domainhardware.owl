@@ -71,6 +71,44 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#hard_disk -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#hard_disk">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#element"/>
+        <obo:IAO_0000112>microcontroller</obo:IAO_0000112>
+        <obo:IAO_0000112>processor</obo:IAO_0000112>
+        <obo:IAO_0000115>An integrated circuit or monolithic integrated circuit (also referred to as an IC, a chip, or a microchip) is a set of electronic circuits on one small flat piece (or &quot;chip&quot;) of semiconductor material, usually silicon.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Integrated_circuit</obo:IAO_0000119>
+        <rdfs:label>IC</rdfs:label>
+        <rdfs:label>integrated circuit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#keyboard -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#keyboard">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#printer -->
+
+    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#printer">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
+    </owl:Class>
+    
+
+
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/ASIC -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/ASIC">
@@ -98,6 +136,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_converter -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_converter">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -257,6 +296,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microcontroller -->
 
     <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microcontroller">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/controller"/>
     </owl:Class>
     
@@ -325,6 +365,12 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+    
+
+
     <!-- http://w3id.org/gbo/actuator -->
 
     <rdf:Description rdf:about="http://w3id.org/gbo/actuator">
@@ -372,6 +418,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
                 <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/measure_function"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/gbo/CarModel/processing_element -->
+
+    <rdf:Description rdf:about="http://w3id.org/gbo/CarModel/processing_element">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit"/>
     </rdf:Description>
     
 
@@ -1222,6 +1276,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://w3id.org/gbo/hardware/memory -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/memory">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1374,18 +1429,12 @@ The computation of those features consists of several steps: 1. Framing and wind
     <!-- http://w3id.org/gbo/hardware/multi_core -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/multi_core">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/CarModel/processing_element"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://w3id.org/gbo/CarModel/processing_element"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>(according to ISO 26262) hardware component (3.21) which includes two or more hardware processing elements (3.113) which can operate independently from each other</obo:IAO_0000115>
@@ -1886,6 +1935,7 @@ The computation of those features consists of several steps: 1. Framing and wind
     <!-- http://w3id.org/gbo/hardware/system_on_chip -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/system_on_chip">
+        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
     </owl:Class>
     
@@ -2125,10 +2175,13 @@ In brief, voltage = pressure, and it is measured in volts (V). The term recogniz
         <rdf:type rdf:resource="http://w3id.org/gbo/hardware/to_process"/>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
 </rdf:RDF>
 

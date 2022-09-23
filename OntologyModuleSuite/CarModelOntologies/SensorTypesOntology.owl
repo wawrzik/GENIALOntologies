@@ -9,6 +9,7 @@
     <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/sensortypesontology">
         <rdfs:comment>First draft from ZVEI roadmap. In respect to AP6.</rdfs:comment>
         <rdfs:comment>This ontology provides a taxonomy of sensors.</rdfs:comment>
+        <owl:versionInfo>0.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
