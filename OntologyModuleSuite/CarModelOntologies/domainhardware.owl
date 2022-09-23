@@ -10,13 +10,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:CarModel="http://w3id.org/gbo/CarModel/"
      xmlns:hardware="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/"
      xmlns:GENIALOnt="http://cpsagila.cs.uni-kl.de/GENIALOnt#">
-    <owl:Ontology rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware">
-        <owl:versionIRI rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/0.1.1"/>
-        <owl:imports rdf:resource="http://w3id.org/gbo/0.2.1"/>
+    <owl:Ontology rdf:about="http://w3id.org/gbo/hardware">
+        <owl:versionIRI rdf:resource="http://w3id.org/gbo/hardware/0.1.1"/>
+        <owl:imports rdf:resource="http://w3id.org/gbo/0.2.3"/>
         <dc:contributor>Frank Wawrzik, Christoph Grimm (both TU Kaiserslautern), 
 Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributor>
         <rdfs:comment>Domain ontology of general hardware terms and their functions and properties.</rdfs:comment>
@@ -71,306 +72,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#hard_disk -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#hard_disk">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#element"/>
-        <obo:IAO_0000112>microcontroller</obo:IAO_0000112>
-        <obo:IAO_0000112>processor</obo:IAO_0000112>
-        <obo:IAO_0000115>An integrated circuit or monolithic integrated circuit (also referred to as an IC, a chip, or a microchip) is a set of electronic circuits on one small flat piece (or &quot;chip&quot;) of semiconductor material, usually silicon.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Integrated_circuit</obo:IAO_0000119>
-        <rdfs:label>IC</rdfs:label>
-        <rdfs:label>integrated circuit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#keyboard -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#keyboard">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#printer -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#printer">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/ASIC -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/ASIC">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/custom_purpose_unit"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/FPGA -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/FPGA">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/custom_purpose_unit"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_conversion -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_conversion">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_converter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_converter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_conversion"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/sample_input_signal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>ADC</rdfs:label>
-        <rdfs:label>analog to digital converter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analogue_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analogue_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electronic_filter"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bessel_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/bessel_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/passive_linear_electronic_analogue_filter"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/butterworth_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/butterworth_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/passive_linear_electronic_analogue_filter"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/capacitor -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/capacitor">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/chebyshev_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/chebyshev_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/passive_linear_electronic_analogue_filter"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter_system -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter_system">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_converter"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/program_instructions"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/microprocessor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://w3id.org/gbo#executes"/>
-                        <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_software_filter"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_signal_processor -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_signal_processor">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/custom_purpose_unit"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_software_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_software_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/software_filter"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electronic_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electronic_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#component"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/signal_processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/transfer_function"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/inductor -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/inductor">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/linear_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/linear_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microcontroller -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/microcontroller">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/controller"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/passive_linear_electronic_analogue_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/passive_linear_electronic_analogue_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analogue_filter"/>
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/electronic_filter"/>
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/linear_filter"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/capacitor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/inductor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/program_instructions -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/program_instructions">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_component"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/sample_input_signal -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/sample_input_signal">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/signal_processing -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/signal_processing">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/software_filter -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/software_filter">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/filter"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_component"/>
-    </owl:Class>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/transfer_function -->
-
-    <owl:Class rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/transfer_function">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
-    </owl:Class>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
-    
-
-
     <!-- http://w3id.org/gbo/actuator -->
 
     <rdf:Description rdf:about="http://w3id.org/gbo/actuator">
@@ -390,13 +91,13 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/memory"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardwareprocessor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/processor"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/memory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -406,6 +107,176 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwareall_flash_array -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwareall_flash_array">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwareflash_array"/>
+        <obo:IAO_0000115>An all-flash array (AFA) is a storage infrastructure that contains only flash memory drives instead of spinning-disk drives. All-flash storage is also referred to as a Solid-State Array (SSA). AFAs and SSAs offer speed, performance and agility for your business applications.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.purestorage.com/resources/glossary/all-flash-array.html</obo:IAO_0000119>
+        <rdfs:label>afa</rdfs:label>
+        <rdfs:label>all flash array</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwarecomputer_architecture -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwarecomputer_architecture">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:label>computer architecture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwaredynamic_random_access_memory -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwaredynamic_random_access_memory">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarerandom_access_memory"/>
+        <obo:IAO_0000115>(pronounced DEE-RAM), is widely used as a computer’s main memory. Each DRAM memory cell is made up of a transistor and a capacitor within an integrated circuit, and a data bit is stored in the capacitor. Since transistors always leak a small amount, the capacitors will slowly discharge, causing information stored in it to drain; hence, DRAM has to be refreshed (given a new electronic charge) every few milliseconds to retain data.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
+        <rdfs:label>DRAM</rdfs:label>
+        <rdfs:label>dynamic random access memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwarefast_fourier_transform -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwarefast_fourier_transform">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_unit"/>
+        <obo:IAO_0000115>2. FFT: In this step the frequency spectrum of all the frames is computed using a fast-fourier transform computation.</obo:IAO_0000115>
+        <rdfs:label>fft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwareflash_array -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwareflash_array">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwareflash_memory"/>
+        <obo:IAO_0000115>Flash storage is a data storage technology based on high-speed, electrically programmable memory. The speed of flash storage is how got its name: It writes data and performs random I/O operations in a flash.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.netapp.com/us/info/what-is-flash-storage.aspx</obo:IAO_0000119>
+        <rdfs:label>flash array</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwareflash_memory -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwareflash_memory">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarenonvolatile_memory"/>
+        <obo:IAO_0000115>Flash memory, also known as flash storage, is a type of nonvolatile memory that erases data in units called blocks...</obo:IAO_0000115>
+        <obo:IAO_0000119>https://searchstorage.techtarget.com/definition/flash-memory</obo:IAO_0000119>
+        <rdfs:label>flash memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwareinstruction_set -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwareinstruction_set">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_element"/>
+        <obo:IAO_0000115>The complete set of all the instructions in machine code that can be recognized and executed by a central processing unit.
+‘A Script is an instruction set used to execute operations on a controller device.’</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.lexico.com/definition/instruction_set</obo:IAO_0000119>
+        <rdfs:label>instruction set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwareinternal_memory -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwareinternal_memory">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/memory"/>
+        <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
+        <rdfs:label>internal memory</rdfs:label>
+        <rdfs:label>main memory</rdfs:label>
+        <rdfs:label>primary memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwarememory_interconnect -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwarememory_interconnect">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/latency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>memory interconnect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwarenonvolatile_memory -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwarenonvolatile_memory">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwareinternal_memory"/>
+        <rdfs:label>nonvolatile memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwareprocessor -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwareprocessor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/general_purpose_unit"/>
+        <obo:IAO_0000115>the hardware within a computer that executes a program</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Processor</obo:IAO_0000119>
+        <rdfs:label>cpu</rdfs:label>
+        <rdfs:label>processor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwarerandom_access_memory -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwarerandom_access_memory">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarevolatile_memory"/>
+        <obo:IAO_0000115>RAM (pronounced ramm) is an acronym for random access memory, a type of computer memory that can be accessed randomly; that is, any byte of memory can be accessed without touching the preceding bytes. RAM is found in servers, PCs, tablets, smartphones and other devices, such as printers.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.webopedia.com/TERM/R/RAM.html</obo:IAO_0000119>
+        <rdfs:label>RAM</rdfs:label>
+        <rdfs:label>random accesss memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwareread_only_memory -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwareread_only_memory">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarenonvolatile_memory"/>
+        <obo:IAO_0000115>ROM stands for read-only memory. It is non-volatile, which means it can retain data even without power. It is used mainly to start or boot up a computer.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
+        <rdfs:label>ROM</rdfs:label>
+        <rdfs:label>read only memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwarestatic_random_access_memory -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwarestatic_random_access_memory">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarerandom_access_memory"/>
+        <obo:IAO_0000115>(pronounced ES-RAM) is made up of four to six transistors. It keeps data in the memory as long as power is supplied to the system unlike DRAM, which has to be refreshed periodically. As such, SRAM is faster but also more expensive, making DRAM the more prevalent memory in computer systems.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
+        <rdfs:label>SRAM</rdfs:label>
+        <rdfs:label>static random access memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardwarevolatile_memory -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardwarevolatile_memory">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwareinternal_memory"/>
+        <rdfs:label>volatile memory</rdfs:label>
+    </owl:Class>
     
 
 
@@ -425,15 +296,69 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://w3id.org/gbo/CarModel/processing_element -->
 
     <rdf:Description rdf:about="http://w3id.org/gbo/CarModel/processing_element">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware#integrated_circuit"/>
     </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware#hard_disk -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware#hard_disk">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware#integrated_circuit -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware#integrated_circuit">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#element"/>
+        <obo:IAO_0000112>microcontroller</obo:IAO_0000112>
+        <obo:IAO_0000112>processor</obo:IAO_0000112>
+        <obo:IAO_0000115>An integrated circuit or monolithic integrated circuit (also referred to as an IC, a chip, or a microchip) is a set of electronic circuits on one small flat piece (or &quot;chip&quot;) of semiconductor material, usually silicon.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Integrated_circuit</obo:IAO_0000119>
+        <rdfs:label>IC</rdfs:label>
+        <rdfs:label>integrated circuit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware#keyboard -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware#keyboard">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware#printer -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware#printer">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/ASIC -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/ASIC">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/custom_purpose_unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/FPGA -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/FPGA">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/custom_purpose_unit"/>
+    </owl:Class>
     
 
 
     <!-- http://w3id.org/gbo/hardware/MIPS_architecture -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/MIPS_architecture">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/computer_architecture"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarecomputer_architecture"/>
         <obo:IAO_0000115>MIPS (Microprocessor without Interlocked Pipelined Stages)[1] is a reduced instruction set computer (RISC) instruction set architecture (ISA)[2]:A-1[3]:19 developed by MIPS Computer Systems, now MIPS Technologies, based in the United States.</obo:IAO_0000115>
     </owl:Class>
     
@@ -458,7 +383,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://w3id.org/gbo/hardware/accelerator_local_memory_bank -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/accelerator_local_memory_bank">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/static_random_access_memory"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarestatic_random_access_memory"/>
     </owl:Class>
     
 
@@ -471,14 +396,41 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://w3id.org/gbo/hardware/all_flash_array -->
+    <!-- http://w3id.org/gbo/hardware/analog_to_digital_conversion -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/all_flash_array">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/flash_array"/>
-        <obo:IAO_0000115>An all-flash array (AFA) is a storage infrastructure that contains only flash memory drives instead of spinning-disk drives. All-flash storage is also referred to as a Solid-State Array (SSA). AFAs and SSAs offer speed, performance and agility for your business applications.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://www.purestorage.com/resources/glossary/all-flash-array.html</obo:IAO_0000119>
-        <rdfs:label>afa</rdfs:label>
-        <rdfs:label>all flash array</rdfs:label>
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/analog_to_digital_conversion">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/analog_to_digital_converter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/analog_to_digital_converter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware#integrated_circuit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/analog_to_digital_conversion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/sample_input_signal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ADC</rdfs:label>
+        <rdfs:label>analog to digital converter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/analogue_filter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/analogue_filter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/electronic_filter"/>
     </owl:Class>
     
 
@@ -529,6 +481,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://w3id.org/gbo/hardware/bessel_filter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/bessel_filter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/passive_linear_electronic_analogue_filter"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/hardware/branch_functional_unit -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/branch_functional_unit">
@@ -547,6 +507,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
                 <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/size"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/butterworth_filter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/butterworth_filter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/passive_linear_electronic_analogue_filter"/>
     </owl:Class>
     
 
@@ -597,6 +565,22 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://w3id.org/gbo/hardware/capacitor -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/capacitor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/chebyshev_filter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/chebyshev_filter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/passive_linear_electronic_analogue_filter"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/hardware/clock_cycles_to_process_one_CONV_EXT_layer -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/clock_cycles_to_process_one_CONV_EXT_layer">
@@ -635,15 +619,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://w3id.org/gbo/hardware/computer_architecture -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/computer_architecture">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-        <rdfs:label>computer architecture</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/gbo/hardware/control_characteristic -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/control_characteristic">
@@ -677,7 +652,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://w3id.org/gbo/hardware/control_register -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/control_register">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/static_random_access_memory"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarestatic_random_access_memory"/>
     </owl:Class>
     
 
@@ -770,10 +745,63 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://w3id.org/gbo/hardware/digital_filter_system -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/digital_filter_system">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/filter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/analog_to_digital_converter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/microprocessor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/program_instructions"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://w3id.org/gbo#executes"/>
+                        <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/digital_software_filter"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/hardware/digital_signal_processing_software -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/digital_signal_processing_software">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/digital_signal_processor -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/digital_signal_processor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/custom_purpose_unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/digital_software_filter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/digital_software_filter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/software_filter"/>
     </owl:Class>
     
 
@@ -786,24 +814,20 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://w3id.org/gbo/hardware/dynamic_random_access_memory -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/dynamic_random_access_memory">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/random_access_memory"/>
-        <obo:IAO_0000115>(pronounced DEE-RAM), is widely used as a computer’s main memory. Each DRAM memory cell is made up of a transistor and a capacitor within an integrated circuit, and a data bit is stored in the capacitor. Since transistors always leak a small amount, the capacitors will slowly discharge, causing information stored in it to drain; hence, DRAM has to be refreshed (given a new electronic charge) every few milliseconds to retain data.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
-        <rdfs:label>DRAM</rdfs:label>
-        <rdfs:label>dynamic random access memory</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/gbo/hardware/electrical_current -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/electrical_current">
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
         <obo:IAO_0000115>Yet current is a physical quantity that can be measured and expressed numerically. The current in a circuit can be determined if the quantity of charge Q passing through a cross section of a wire in a time t can be measured. The current is simply the ratio of the quantity of charge and time.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.physicsclassroom.com/class/circuits/Lesson-2/Electric-Current</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/electronic_filter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/electronic_filter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/filter"/>
     </owl:Class>
     
 
@@ -821,7 +845,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#is_implemented_by"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/processor"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardwareprocessor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>function which executes some piece of code or software</obo:IAO_0000115>
@@ -846,16 +870,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
                 <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/memory_access_unit"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gbo/hardware/fast_fourier_transform -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/fast_fourier_transform">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_unit"/>
-        <obo:IAO_0000115>2. FFT: In this step the frequency spectrum of all the frames is computed using a fast-fourier transform computation.</obo:IAO_0000115>
-        <rdfs:label>fft</rdfs:label>
     </owl:Class>
     
 
@@ -894,6 +908,26 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/fifo_buffer">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/buffer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/filter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/filter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/signal_processing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#implements"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/transfer_function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -942,28 +976,6 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gbo/hardware/flash_array -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/flash_array">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/flash_memory"/>
-        <obo:IAO_0000115>Flash storage is a data storage technology based on high-speed, electrically programmable memory. The speed of flash storage is how got its name: It writes data and performs random I/O operations in a flash.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://www.netapp.com/us/info/what-is-flash-storage.aspx</obo:IAO_0000119>
-        <rdfs:label>flash array</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gbo/hardware/flash_memory -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/flash_memory">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/nonvolatile_memory"/>
-        <obo:IAO_0000115>Flash memory, also known as flash storage, is a type of nonvolatile memory that erases data in units called blocks...</obo:IAO_0000115>
-        <obo:IAO_0000119>https://searchstorage.techtarget.com/definition/flash-memory</obo:IAO_0000119>
-        <rdfs:label>flash memory</rdfs:label>
     </owl:Class>
     
 
@@ -1027,6 +1039,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://w3id.org/gbo/hardware/inductor -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/inductor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/hardware/input_channel -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/input_channel">
@@ -1035,34 +1055,10 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
-    <!-- http://w3id.org/gbo/hardware/instruction_set -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/instruction_set">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_element"/>
-        <obo:IAO_0000115>The complete set of all the instructions in machine code that can be recognized and executed by a central processing unit.
-‘A Script is an instruction set used to execute operations on a controller device.’</obo:IAO_0000115>
-        <obo:IAO_0000119>https://www.lexico.com/definition/instruction_set</obo:IAO_0000119>
-        <rdfs:label>instruction set</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/gbo/hardware/interface -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/interface">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gbo/hardware/internal_memory -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/internal_memory">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/memory"/>
-        <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
-        <rdfs:label>internal memory</rdfs:label>
-        <rdfs:label>main memory</rdfs:label>
-        <rdfs:label>primary memory</rdfs:label>
     </owl:Class>
     
 
@@ -1113,6 +1109,14 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://w3id.org/gbo/hardware/linear_filter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/linear_filter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/filter"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/hardware/load_unit -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/load_unit">
@@ -1124,7 +1128,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://w3id.org/gbo/hardware/logarithmic_memory_interconnect -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/logarithmic_memory_interconnect">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/memory_interconnect"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarememory_interconnect"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#has_property"/>
@@ -1167,7 +1171,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://w3id.org/gbo/hardware/main_memory -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/main_memory">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/random_access_memory"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarerandom_access_memory"/>
     </owl:Class>
     
 
@@ -1276,8 +1280,8 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://w3id.org/gbo/hardware/memory -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/memory">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware#integrated_circuit"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#has_property"/>
@@ -1323,22 +1327,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     <!-- http://w3id.org/gbo/hardware/memory_bank -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/memory_bank">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/static_random_access_memory"/>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gbo/hardware/memory_interconnect -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/memory_interconnect">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_property"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/latency"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>memory interconnect</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarestatic_random_access_memory"/>
     </owl:Class>
     
 
@@ -1378,7 +1367,7 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/fast_fourier_transform"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardwarefast_fourier_transform"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1418,10 +1407,19 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
+    <!-- http://w3id.org/gbo/hardware/microcontroller -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/microcontroller">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/controller"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware#integrated_circuit"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/hardware/microprocessor -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/microprocessor">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/processor"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwareprocessor"/>
     </owl:Class>
     
 
@@ -1429,12 +1427,18 @@ The computation of those features consists of several steps: 1. Framing and wind
     <!-- http://w3id.org/gbo/hardware/multi_core -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/multi_core">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
                 <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/CarModel/processing_element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/gbo/CarModel/processing_element"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>(according to ISO 26262) hardware component (3.21) which includes two or more hardware processing elements (3.113) which can operate independently from each other</obo:IAO_0000115>
@@ -1472,16 +1476,6 @@ The computation of those features consists of several steps: 1. Framing and wind
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/non_linear_transform">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_unit"/>
-        <obo:IAO_0000115>5. Non-linear transform: In this step a non-linear function (logarithm) is applied to the Mel filtered data.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gbo/hardware/nonvolatile_memory -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/nonvolatile_memory">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/internal_memory"/>
-        <rdfs:label>nonvolatile memory</rdfs:label>
     </owl:Class>
     
 
@@ -1641,6 +1635,28 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
+    <!-- http://w3id.org/gbo/hardware/passive_linear_electronic_analogue_filter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/passive_linear_electronic_analogue_filter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/analogue_filter"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/electronic_filter"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/linear_filter"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/capacitor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/inductor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/hardware/performance -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/performance">
@@ -1686,14 +1702,10 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
-    <!-- http://w3id.org/gbo/hardware/processor -->
+    <!-- http://w3id.org/gbo/hardware/program_instructions -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/processor">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/general_purpose_unit"/>
-        <obo:IAO_0000115>the hardware within a computer that executes a program</obo:IAO_0000115>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Processor</obo:IAO_0000119>
-        <rdfs:label>cpu</rdfs:label>
-        <rdfs:label>processor</rdfs:label>
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/program_instructions">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_component"/>
     </owl:Class>
     
 
@@ -1701,7 +1713,7 @@ The computation of those features consists of several steps: 1. Framing and wind
     <!-- http://w3id.org/gbo/hardware/pulpissimo_architecure -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/pulpissimo_architecure">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/computer_architecture"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardwarecomputer_architecture"/>
     </owl:Class>
     
 
@@ -1752,34 +1764,10 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
-    <!-- http://w3id.org/gbo/hardware/random_access_memory -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/random_access_memory">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/volatile_memory"/>
-        <obo:IAO_0000115>RAM (pronounced ramm) is an acronym for random access memory, a type of computer memory that can be accessed randomly; that is, any byte of memory can be accessed without touching the preceding bytes. RAM is found in servers, PCs, tablets, smartphones and other devices, such as printers.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://www.webopedia.com/TERM/R/RAM.html</obo:IAO_0000119>
-        <rdfs:label>RAM</rdfs:label>
-        <rdfs:label>random accesss memory</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/gbo/hardware/read_latency -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/read_latency">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/latency"/>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gbo/hardware/read_only_memory -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/read_only_memory">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/nonvolatile_memory"/>
-        <obo:IAO_0000115>ROM stands for read-only memory. It is non-volatile, which means it can retain data even without power. It is used mainly to start or boot up a computer.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
-        <rdfs:label>ROM</rdfs:label>
-        <rdfs:label>read only memory</rdfs:label>
     </owl:Class>
     
 
@@ -1842,10 +1830,35 @@ The computation of those features consists of several steps: 1. Framing and wind
     
 
 
+    <!-- http://w3id.org/gbo/hardware/sample_input_signal -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/sample_input_signal">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/signal_processing -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/signal_processing">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/hardware/size -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/size">
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/software_filter -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/software_filter">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#software_component"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/filter"/>
     </owl:Class>
     
 
@@ -1868,18 +1881,6 @@ The computation of those features consists of several steps: 1. Framing and wind
                 <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/latency"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gbo/hardware/static_random_access_memory -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/static_random_access_memory">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/random_access_memory"/>
-        <obo:IAO_0000115>(pronounced ES-RAM) is made up of four to six transistors. It keeps data in the memory as long as power is supplied to the system unlike DRAM, which has to be refreshed periodically. As such, SRAM is faster but also more expensive, making DRAM the more prevalent memory in computer systems.</obo:IAO_0000115>
-        <obo:IAO_0000119>https://www.atpinc.com/blog/computer-memory-types-dram-ram-module</obo:IAO_0000119>
-        <rdfs:label>SRAM</rdfs:label>
-        <rdfs:label>static random access memory</rdfs:label>
     </owl:Class>
     
 
@@ -1935,8 +1936,8 @@ The computation of those features consists of several steps: 1. Framing and wind
     <!-- http://w3id.org/gbo/hardware/system_on_chip -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/system_on_chip">
-        <rdfs:subClassOf rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware#integrated_circuit"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware#integrated_circuit"/>
     </owl:Class>
     
 
@@ -1954,6 +1955,14 @@ The computation of those features consists of several steps: 1. Framing and wind
     <!-- http://w3id.org/gbo/hardware/to_process -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware/to_process">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware/transfer_function -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware/transfer_function">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#function"/>
     </owl:Class>
     
@@ -1977,15 +1986,6 @@ The computation of those features consists of several steps: 1. Framing and wind
                 <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/hardware/deep_neural_network_VAD"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://w3id.org/gbo/hardware/volatile_memory -->
-
-    <owl:Class rdf:about="http://w3id.org/gbo/hardware/volatile_memory">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/internal_memory"/>
-        <rdfs:label>volatile memory</rdfs:label>
     </owl:Class>
     
 
@@ -2097,19 +2097,10 @@ In brief, voltage = pressure, and it is measured in volts (V). The term recogniz
     
 
 
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/adc -->
+    <!-- http://w3id.org/gbo/hardware/adc -->
 
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/adc">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/analog_to_digital_converter"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myfilter -->
-
-    <owl:NamedIndividual rdf:about="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/myfilter">
-        <rdf:type rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/digital_filter_system"/>
-        <gbo:has_part_directly rdf:resource="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware/adc"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/gbo/hardware/adc">
+        <rdf:type rdf:resource="http://w3id.org/gbo/hardware/analog_to_digital_converter"/>
     </owl:NamedIndividual>
     
 
@@ -2146,6 +2137,15 @@ In brief, voltage = pressure, and it is measured in volts (V). The term recogniz
     
 
 
+    <!-- http://w3id.org/gbo/hardware/myfilter -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/gbo/hardware/myfilter">
+        <rdf:type rdf:resource="http://w3id.org/gbo/hardware/digital_filter_system"/>
+        <gbo:has_part_directly rdf:resource="http://w3id.org/gbo/hardware/adc"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/gbo/hardware/mymulticore -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/gbo/hardware/mymulticore">
@@ -2175,13 +2175,27 @@ In brief, voltage = pressure, and it is measured in volts (V). The term recogniz
         <rdf:type rdf:resource="http://w3id.org/gbo/hardware/to_process"/>
     </owl:NamedIndividual>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://w3id.org/gbo/hardwareKB/non_linear_transform">
+        <obo:IAO_0000115>5. Non-linear transform: In this step a non-linear function (logarithm) is applied to the Mel filtered data.</obo:IAO_0000115>
     </rdf:Description>
 </rdf:RDF>
 

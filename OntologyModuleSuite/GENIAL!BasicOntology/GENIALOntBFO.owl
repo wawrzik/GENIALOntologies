@@ -30,7 +30,7 @@
         <rdfs:label>GENIAL! Basic Ontology</rdfs:label>
         <owl:versionInfo>0.2.3</owl:versionInfo>
         <foaf:homepage>https://cps.cs.uni-kl.de/mitarbeiter/frank-wawrzik-msc</foaf:homepage>
-        <foaf:mbox>mailto:wawrzik@cs.uni-kl.de</foaf:mbox>
+        <foaf:mbox xml:lang="cs.uni-kl.de">mailto:wawrzik</foaf:mbox>
     </owl:Ontology>
     
 
