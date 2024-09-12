@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#"
+     xml:base="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:gbo="http://w3id.org/gbo#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:om-2="http://www.ontology-of-units-of-measure.org/resource/om-2/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:CarModel="http://w3id.org/gbo/CarModel/"
+     xmlns:untitled-ontology-32="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32">
+        <owl:imports rdf:resource="http://w3id.org/gbo/0.2.3"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/gbo#has_part -->
+
+    <rdf:Description rdf:about="http://w3id.org/gbo#has_part">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/gbo#has_part"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#is_connected_to_directly"/>
+        </owl:propertyChainAxiom>
+    </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/gbo#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/gbo#part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/gbo#property_of -->
+
+    <rdf:Description rdf:about="http://w3id.org/gbo#property_of">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/gbo#property_of"/>
+            <rdf:Description rdf:about="http://w3id.org/gbo#has_part_directly"/>
+        </owl:propertyChainAxiom>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#is_connected_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#is_connected_to"/>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#is_connected_to_directly -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#is_connected_to_directly">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#is_connected_to_directly"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#hasSalary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#hasSalary"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#BUS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#BUS">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#LIN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#LIN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#wire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#LVDS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#LVDS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#wire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#acceleration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#acceleration">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#automobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#automobile">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#central_controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#central_controller">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/controller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#cost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#cost">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#domain_architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#domain_architecture">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#central_controller"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller"/>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#domain_controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#domain_controller">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/controller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#environment_temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#environment_temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ethernet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ethernet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#BUS"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#wire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#front_camera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#front_camera">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#latency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#latency">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#long_range_radar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#long_range_radar">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/radar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#mass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#mass">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#property_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#mass2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#mass2">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#mid_range_radar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#mid_range_radar">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/radar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#rear_camera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#rear_camera">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#roof_camera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#roof_camera">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#temperature">
+        <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#tesla_model_x -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#tesla_model_x">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#automobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view_front -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view_front">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view_left -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view_left">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view_rear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view_rear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view_right -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view_right">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#top_view"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ultrasonic_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ultrasonic_sensor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ultrasonic_sensor_front -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ultrasonic_sensor_front">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ultrasonic_sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ultrasonic_sensor_rear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ultrasonic_sensor_rear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ultrasonic_sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#wire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#wire">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_architecture">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#central_controller"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#domain_controller"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/controller"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_property"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#mass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller_front -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller_front">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller_rear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller_rear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#2-zonal_architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#2-zonal_architecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_architecture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#wire_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#wire_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#ethernet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller_rear_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller_rear_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller_rear"/>
+        <is_connected_to_directly rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#wire_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#2-zonal_architecture1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#2-zonal_architecture1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#2-zonal_architecture"/>
+        <gbo:has_part_directly rdf:resource="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller_rear_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#central_controller"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#domain_controller"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/frank/ontologies/2023/6/untitled-ontology-32#zonal_controller"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

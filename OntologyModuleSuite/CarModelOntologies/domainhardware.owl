@@ -301,9 +301,25 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://w3id.org/gbo/hardware#OPE1275H_Single_Channel -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware#OPE1275H_Single_Channel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware#incremental_hollow_shaft_encoder"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/hardware#hard_disk -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware#hard_disk">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware#incremental_hollow_shaft_encoder -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware#incremental_hollow_shaft_encoder">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
     </owl:Class>
     
@@ -331,10 +347,34 @@ Konstantin Lübeck, Alexander Jung (both University of Tübingen)</dc:contributo
     
 
 
+    <!-- http://w3id.org/gbo/hardware#operational_amplifier -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware#operational_amplifier">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/gbo/hardware#printer -->
 
     <owl:Class rdf:about="http://w3id.org/gbo/hardware#printer">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware#supply_voltage -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware#supply_voltage">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/hardware/voltage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/gbo/hardware#transistor -->
+
+    <owl:Class rdf:about="http://w3id.org/gbo/hardware#transistor">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_part"/>
     </owl:Class>
     
 

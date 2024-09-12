@@ -123,9 +123,7 @@
 
     <!-- http://w3id.org/gbo#comprised_of -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gbo#comprised_of">
-        <owl:equivalentProperty rdf:resource="http://w3id.org/gbo#has_part_directly"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://w3id.org/gbo#comprised_of"/>
     
 
 
@@ -155,7 +153,6 @@
 
     <owl:ObjectProperty rdf:about="http://w3id.org/gbo#has_part">
         <owl:inverseOf rdf:resource="http://w3id.org/gbo#part_of"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>models hierarchical de-composition/integration</obo:IAO_0000115>
     </owl:ObjectProperty>
     
@@ -164,8 +161,6 @@
     <!-- http://w3id.org/gbo#has_part_directly -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/gbo#has_part_directly">
-        <rdfs:subPropertyOf rdf:resource="http://w3id.org/gbo#has_part"/>
-        <owl:inverseOf rdf:resource="http://w3id.org/gbo#part_of_directly"/>
         <rdfs:comment>models hierarchical de-composition/integration of direct parts</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -215,7 +210,6 @@
     <!-- http://w3id.org/gbo#part_of -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/gbo#part_of">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>models hierarchical de-composition/integration</obo:IAO_0000115>
     </owl:ObjectProperty>
     
@@ -284,9 +278,7 @@
 
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
-        <rdfs:domain rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/measure"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
     
 
 
