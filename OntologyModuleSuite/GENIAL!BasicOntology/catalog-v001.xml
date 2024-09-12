@@ -2,13 +2,14 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/0.1.1" uri="GENIALOntBFO.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1702835545568" name="duplicate:http://cpsagila.cs.uni-kl.de/GENIALOnt" uri="GENIALOntBFO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1702835545568" name="duplicate:http://cpsagila.cs.uni-kl.de/GENIALOnt" uri="GENIALOntBFOtest.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1702835545568" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/APPEL" uri="APPELGBO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1702835545568" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware" uri="BFO2/domainhardware.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1702835545568" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB" uri="BFO2/domainhardwareKB.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1702835545568" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO2/bfo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1702835545568" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO2/bfocopy.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1702835545568" name="shadowed:http://cpsagila.cs.uni-kl.de/GENIALOnt" uri="BFO2/GENIALOntBFO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1726143283350" name="duplicate:http://cpsagila.cs.uni-kl.de/GENIALOnt" uri="gbo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1726143283350" name="duplicate:http://cpsagila.cs.uni-kl.de/GENIALOnt" uri="GENIALOntBFO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1726143283350" name="duplicate:http://cpsagila.cs.uni-kl.de/GENIALOnt" uri="GENIALOntBFOtest.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1726143283350" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/APPEL" uri="APPELGBO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1726143283350" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardware" uri="BFO2/domainhardware.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1726143283350" name="http://cpsagila.cs.uni-kl.de/GENIALOnt/hardwareKB" uri="BFO2/domainhardwareKB.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1726143283350" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO2/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1726143283350" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="BFO2/bfocopy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1726143283350" name="shadowed:http://cpsagila.cs.uni-kl.de/GENIALOnt" uri="BFO2/GENIALOntBFO.owl"/>
     </group>
 </catalog>
