@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://w3id.org/gbo/0.2.4" uri="file:/C:/Users/Frank/Documents/git/GENIALOntologies/OntologyModuleSuite/GENIAL!BasicOntology/gbo.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1740397920031" name="http://www.semanticweb.org/frank/ontologies/2025/1/untitled-ontology-37" uri="smartgrid.owl"/>
+    </group>
+</catalog>
