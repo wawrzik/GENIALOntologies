@@ -13,11 +13,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://w3id.org/gbo/grid">
+    <owl:Ontology rdf:about="http://w3id.org/gbo/pgo">
         <owl:imports rdf:resource="http://w3id.org/gbo/0.2.4"/>
         <dc:description>Smart Grid Model built for correct reasoning.</dc:description>
-        <dc:title>Smart Grid Ontology</dc:title>
+        <dc:title>Smart Grid Ontology &quot;Prosumer Grid Ontology (PGO)&quot;</dc:title>
         <terms:creator>Frank Wawrzik</terms:creator>
+        <owl:versionInfo>1.0.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -50,17 +51,17 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#consumes -->
+    <!-- http://w3id.org/gbo/pgo#consumes -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gbo/grid#consumes">
+    <owl:ObjectProperty rdf:about="http://w3id.org/gbo/pgo#consumes">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/gbo#has_property"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/gbo/grid#produces -->
+    <!-- http://w3id.org/gbo/pgo#produces -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/gbo/grid#produces">
+    <owl:ObjectProperty rdf:about="http://w3id.org/gbo/pgo#produces">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/gbo#has_property"/>
     </owl:ObjectProperty>
     
@@ -85,14 +86,14 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#block_heating_station -->
+    <!-- http://w3id.org/gbo/pgo#block_heating_station -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#block_heating_station">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#producer"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#block_heating_station">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#producer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo/grid#produces"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#thermal_energy"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo/pgo#produces"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#thermal_energy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>block heating station</rdfs:label>
@@ -100,24 +101,24 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#coal_energy -->
+    <!-- http://w3id.org/gbo/pgo#coal_energy -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#coal_energy">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#energy"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#coal_energy">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#energy"/>
         <obo:IAO_0000115>electrical energy generated from the resource coal.</obo:IAO_0000115>
         <rdfs:label>coal energy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gbo/grid#coal_plant -->
+    <!-- http://w3id.org/gbo/pgo#coal_plant -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#coal_plant">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#producer"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#coal_plant">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#producer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo/grid#produces"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#coal_energy"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo/pgo#produces"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#coal_energy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A coal-fired power station or coal power plant is a thermal power station which burns coal to generate electricity.</obo:IAO_0000115>
@@ -126,14 +127,14 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#consumer -->
+    <!-- http://w3id.org/gbo/pgo#consumer -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#consumer">
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#consumer">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo/grid#consumes"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#energy"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo/pgo#consumes"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#energy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a person, company, system or device who acquires goods and services for his, hers own personal needs.</obo:IAO_0000115>
@@ -141,14 +142,14 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#electric_vehicle -->
+    <!-- http://w3id.org/gbo/pgo#electric_vehicle -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#electric_vehicle">
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#electric_vehicle">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.meteck.org/files/ontologies/PW.owl#properContains"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#vehicle_battery"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#vehicle_battery"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>electric car, battery-powered motor vehicle, originating in the late 1880s and used for private passenger, truck, and bus transportation.</obo:IAO_0000115>
@@ -158,9 +159,9 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#energy -->
+    <!-- http://w3id.org/gbo/pgo#energy -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#energy">
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#energy">
         <rdfs:subClassOf rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/quantity"/>
         <obo:IAO_0000115>Electrical energy is power from electricity, measured in joules, that makes machines work or produces heat.</obo:IAO_0000115>
         <rdfs:label>electrical energy</rdfs:label>
@@ -168,13 +169,13 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#energy_storage -->
+    <!-- http://w3id.org/gbo/pgo#energy_storage -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#energy_storage">
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#energy_storage">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.meteck.org/files/ontologies/PW.owl#properContains"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#energy_storage"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#energy_storage"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#element"/>
@@ -184,14 +185,14 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#fuel_cells -->
+    <!-- http://w3id.org/gbo/pgo#fuel_cells -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#fuel_cells">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#producer"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#fuel_cells">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#producer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo/grid#produces"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#hydrogen_energy"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo/pgo#produces"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#hydrogen_energy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>fuel cells</rdfs:label>
@@ -199,53 +200,53 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#gas_energy -->
+    <!-- http://w3id.org/gbo/pgo#gas_energy -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#gas_energy">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#energy"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#gas_energy">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#energy"/>
         <rdfs:label>electrical energy generated from the resource gas.</rdfs:label>
         <rdfs:label>gas energy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gbo/grid#household -->
+    <!-- http://w3id.org/gbo/pgo#household -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#household">
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#household">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <obo:IAO_0000115>A household consists of one or more persons who live in the same dwelling. It may be of a single family or another type of person group. The household is the basic unit of analysis in many social, microeconomic and government models, and is important to economics and inheritance.</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gbo/grid#hydrogen_energy -->
+    <!-- http://w3id.org/gbo/pgo#hydrogen_energy -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#hydrogen_energy">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#energy"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#hydrogen_energy">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#energy"/>
         <rdfs:label>electrical energy generated from the resource hydrogen.</rdfs:label>
         <rdfs:label>hydrogen energy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gbo/grid#nuclear_energy -->
+    <!-- http://w3id.org/gbo/pgo#nuclear_energy -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#nuclear_energy">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#energy"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#nuclear_energy">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#energy"/>
         <obo:IAO_0000115>electrical energy generated from the resource uranium.</obo:IAO_0000115>
         <rdfs:label>nuclear energy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gbo/grid#nuclear_plant -->
+    <!-- http://w3id.org/gbo/pgo#nuclear_plant -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#nuclear_plant">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#producer"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#nuclear_plant">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#producer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo/grid#produces"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#nuclear_energy"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo/pgo#produces"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#nuclear_energy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A nuclear power plant (NPP), also known as a nuclear power station (NPS), nuclear generating station (NGS) or atomic power station (APS) is a thermal power station in which the heat source is a nuclear reactor.</obo:IAO_0000115>
@@ -254,14 +255,14 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#photovoltaic_system -->
+    <!-- http://w3id.org/gbo/pgo#photovoltaic_system -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#photovoltaic_system">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#producer"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#photovoltaic_system">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#producer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo/grid#produces"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#solar_energy"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo/pgo#produces"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#solar_energy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A photovoltaic system, also called a PV system or solar power system, is an electric power system designed to supply usable solar power by means of photovoltaics. It consists of an arrangement of several components, including solar panels to absorb and convert sunlight into electricity, a solar inverter to convert the output from direct to alternating current, as well as mounting, cabling, and other electrical accessories to set up a working system.</obo:IAO_0000115>
@@ -270,22 +271,22 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#producer -->
+    <!-- http://w3id.org/gbo/pgo#producer -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#producer">
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#producer">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://w3id.org/gbo/grid#produces"/>
-                        <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#energy"/>
+                        <owl:onProperty rdf:resource="http://w3id.org/gbo/pgo#produces"/>
+                        <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#energy"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.meteck.org/files/ontologies/PW.owl#properContains"/>
                         <owl:someValuesFrom>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://w3id.org/gbo/grid#produces"/>
-                                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#energy"/>
+                                <owl:onProperty rdf:resource="http://w3id.org/gbo/pgo#produces"/>
+                                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#energy"/>
                             </owl:Restriction>
                         </owl:someValuesFrom>
                     </owl:Restriction>
@@ -295,8 +296,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo/grid#produces"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#energy"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo/pgo#produces"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#energy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a person, company, system or device who generates goods and services for sale.</obo:IAO_0000115>
@@ -304,14 +305,14 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#prosumer -->
+    <!-- http://w3id.org/gbo/pgo#prosumer -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#prosumer">
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#prosumer">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/gbo/grid#consumer"/>
-                    <rdf:Description rdf:about="http://w3id.org/gbo/grid#producer"/>
+                    <rdf:Description rdf:about="http://w3id.org/gbo/pgo#consumer"/>
+                    <rdf:Description rdf:about="http://w3id.org/gbo/pgo#producer"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -321,9 +322,9 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#smart_grid -->
+    <!-- http://w3id.org/gbo/pgo#smart_grid -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#smart_grid">
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#smart_grid">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#system"/>
         <obo:IAO_0000115>smart grid, a secure, integrated, reconfigurable, electronically controlled system used to deliver electric power that operates in parallel with a traditional power grid.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.britannica.com/technology/smart-grid</obo:IAO_0000119>
@@ -332,9 +333,9 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#smart_meter -->
+    <!-- http://w3id.org/gbo/pgo#smart_meter -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#smart_meter">
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#smart_meter">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#sensor"/>
         <obo:IAO_0000115>A smart meter is an electronic device that records information—such as consumption of electric energy, voltage levels, current, and power factor—and communicates the information to the consumer and electricity suppliers.</obo:IAO_0000115>
         <rdfs:label>smart meter</rdfs:label>
@@ -342,55 +343,55 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#solar_energy -->
+    <!-- http://w3id.org/gbo/pgo#solar_energy -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#solar_energy">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#energy"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#solar_energy">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#energy"/>
         <obo:IAO_0000115>electrical energy generated from the resource sun.</obo:IAO_0000115>
         <rdfs:label>solar energy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gbo/grid#thermal_energy -->
+    <!-- http://w3id.org/gbo/pgo#thermal_energy -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#thermal_energy">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#energy"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#thermal_energy">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#energy"/>
         <obo:IAO_0000115>electrical energy generated from the resource heat.</obo:IAO_0000115>
         <rdfs:label>thermal energy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gbo/grid#vehicle_battery -->
+    <!-- http://w3id.org/gbo/pgo#vehicle_battery -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#vehicle_battery">
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#vehicle_battery">
         <rdfs:subClassOf rdf:resource="http://w3id.org/gbo#hardware_component"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#energy_storage"/>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#energy_storage"/>
         <obo:IAO_0000115>An automotive battery, or car battery, is a rechargeable battery that is used to start a motor vehicle.</obo:IAO_0000115>
         <rdfs:label>vehicle battery</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gbo/grid#wind_energy -->
+    <!-- http://w3id.org/gbo/pgo#wind_energy -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#wind_energy">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#energy"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#wind_energy">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#energy"/>
         <obo:IAO_0000115>electrical energy generated from the resource wind.</obo:IAO_0000115>
         <rdfs:label>wind energy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/gbo/grid#wind_power_station -->
+    <!-- http://w3id.org/gbo/pgo#wind_power_station -->
 
-    <owl:Class rdf:about="http://w3id.org/gbo/grid#wind_power_station">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/grid#producer"/>
+    <owl:Class rdf:about="http://w3id.org/gbo/pgo#wind_power_station">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/gbo/pgo#producer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/gbo/grid#produces"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/grid#wind_energy"/>
+                <owl:onProperty rdf:resource="http://w3id.org/gbo/pgo#produces"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/gbo/pgo#wind_energy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A wind farm or wind park, or wind power plant,[1] is a group of wind turbines in the same location used to produce electricity. Wind farms vary in size from a small number of turbines to several hundred wind turbines covering an extensive area. Wind farms can be either onshore or offshore.</obo:IAO_0000115>
@@ -410,19 +411,19 @@
     
 
 
-    <!-- http://w3id.org/gbo/grid#household_1 -->
+    <!-- http://w3id.org/gbo/pgo#household_1 -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/gbo/grid#household_1">
-        <rdf:type rdf:resource="http://w3id.org/gbo/grid#household"/>
-        <PW:properContains rdf:resource="http://w3id.org/gbo/grid#photovoltaic_system_1"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/gbo/pgo#household_1">
+        <rdf:type rdf:resource="http://w3id.org/gbo/pgo#household"/>
+        <PW:properContains rdf:resource="http://w3id.org/gbo/pgo#photovoltaic_system_1"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://w3id.org/gbo/grid#photovoltaic_system_1 -->
+    <!-- http://w3id.org/gbo/pgo#photovoltaic_system_1 -->
 
-    <owl:NamedIndividual rdf:about="http://w3id.org/gbo/grid#photovoltaic_system_1">
-        <rdf:type rdf:resource="http://w3id.org/gbo/grid#photovoltaic_system"/>
+    <owl:NamedIndividual rdf:about="http://w3id.org/gbo/pgo#photovoltaic_system_1">
+        <rdf:type rdf:resource="http://w3id.org/gbo/pgo#photovoltaic_system"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
